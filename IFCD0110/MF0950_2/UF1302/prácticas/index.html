@@ -3,7 +3,7 @@
 <html lang="es-ES"> <!-- la marca en mayuscula indica el pais, es decir, español de españa en este caso -->
     <head>
         <title>Curso diseño páginas web</title>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"><!-- Es OBLIGATORIO Y NECESARIO poner el meta charset para indicar el codigo de caracteres que se utiliza, es el mismo siempre ya que el standard UTF-8 contiene todos los idiomas y dialectos mundiales -->
         <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="tittle" content="Confección y publicación de páginas web">
@@ -34,7 +34,7 @@
         
             <h2 >¿Qué es HTML?</h2>
         
-            <p> HTML es el lenguaje de marcado estándar para la creación de páginas Web.</p>
+            <p> HTML es el lenguaje de marcado estándar para la creación de páginas Web.</p><!-- La etiqueta p tiene display block (etiqueta tipo bloque), es decir hace un punto y a parte y cambia de párrafo. Sin embargo, hay etiquetas que no lo tienen, la etiqueta strong (marca en negrita) es una etiqueta en línea. Esto son valores por defecto, pero luego por CSS se puede variar todo. Aunque varies con CSS el valor semántico de la información no varía-->
 
             <ul>
                 <li>HTML significa Hyper Text Markup Language</li>
@@ -50,7 +50,7 @@
             <code> <!-- Cambia el tipo de letra para que parezca código -->
                 <!-- Para que de un efecto código en el documento y el navegador no lo vea como realmente código utilizamos las ENTIDADES. En este caso usamos &lt; y &gt; para sustituir los <>. Con CTRL+D seleccionamos el símbolo y marcara de uno a uno cada vez que pulsamos -->
                 &lt;!DOCTYPE html&gt;<br> <!-- <br> hace un salto de línea -->
-                &lt;html lang="es-ES"&gt;<br>
+                &lt;html lang="es-ES"&gt;<br><!-- con & hacemos escapes de código, es decir que comentarios con aspecto de código no se considere como tal -->
                 &lt;head&gt;<br>
                 &lt;title&gt;Page Title&lt;/title&gt;<br>
                 &lt;meta charset="UTF-8"&gt; <br>
@@ -66,7 +66,7 @@
             </div>
             <div>
                 <h3>Explicación de las etiquetas básicas</h3>
-                    <ol>
+                    <ol> <!-- con <ol>li*9 generamos una order list con 9 atributos en la lista-->
                     <li>La etiqueta <code>&lt;!DOCTYPE html&gt;</code> define este documento para ser HTML5.</li>
                     <li>La etiqueta <code>&lt;html&gt;</code> define el elemento raíz de una página HTML.</li>
                     <li>El atributo <code>lang="es-ES"</code> especifica el idioma del documento y va dentro de la etiqueta <code>&lt;html&gt;</code>.</li>
@@ -77,7 +77,6 @@
                     <li>La etiqueta <code>&lt;h1&gt;</code> define un encabezado.</li>
                     <li>La etiqueta <code>&lt;p&gt;</code> define un párrafo.</li>
                 </ol>
-            </div>
                 <div>
                     <h4>Etiquetas HTML</h4>
                     <p>Las etiquetas HTML son los nombres de elementos entre paréntesis angulares:</p>
