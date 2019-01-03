@@ -9,19 +9,23 @@
         <meta name="tittle" content="Confección y publicación de páginas web">
         <meta name="author" content="Jesús">
         
-        <style>     </style>
+        <style>
+        table, th, td {
+            border: 5px solid black;
+            }     
+        </style> <!-- generamos estilo a todas las etiquetas llamadas como las marcadas, se separan por "," y las propiedades y el valor tiene que ir entre {}. Cada vez que se añade propiedades y valor se separan con ";"  -->
         <script>    </script>
         
         <link href="css/estilos.css" rel="stylesheet">
         <script src="js/funciones.js" type="text/javascript"> </script>
         
-        <!-- <base href="https://www.mipagina.com/img/" target="_blank"> Esto referencia la carpeta para abreviar caminos -->
+        <!--  <base href="https://www.mipagina.com/img/" target="_blank">Esto referencia la carpeta para abreviar caminos cuando por ejemplo luego se buscan imágenes-->
 
-        <link rel="icon" type="img/png" href="imagen.png">
+        <link rel="icon" type="img/png" href="imagen.png"> <!-- resolver duda -->
         <link rel="icon" type="img/gif" href="imagen.gif">
         <link rel="icon" type="img/vnd.microsoft.icon" href="imagen.ico">
         
-        <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> la manera de vstudio de hacer las 3 anteriores-->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- la manera de vstudio de hacer las 3 anteriores-->
 
     </head>
     <body>
@@ -99,11 +103,42 @@
                         <img src="img/img_chrome.png" alt="imagen navegador Chrome" width="635" height="361"><!-- etiqueta que no lleva cierre, y lleva un mínimo de 2 atributos. src, indica donde está el archivo.alt, indica la información de la imagen. Luego quedarian dos atributos más, width indica la anchura y height marca la altura de la imagen, normalmente la que manda es la anchura por la característica del dispositivo. Se puede poner en pixeles o porcentual, lo ideal es lo segundo por los distintos dispositivos -->
 
                     </div>
+
+                    <div>
+                        <h6>Versiones de HTML</h6>
+                        <p>Desde los primeros días de la web, ha habido muchas versiones de HTML:</p>
+                            <table><!-- style="border: 5px solid black" --> <!-- Se puede dar un border sólo, pero ya está en desuso. Ahora se marca estilos en línea. *Hemos generado un estilo general en el head -->
+                                <tr><!-- define las filas de la tabla -->
+                                    <th>Versión</th><!-- table header o td marca el principio resaltado de la tabla -->
+                                    <th>Año</th>
+                                </tr>
+                                <tr>
+                                    <td>HTML</td><!-- define las celdas y tienen que tener el mismo número que los th para que no queden celdas vacias -->
+                                    <td>1991</td>
+                                </tr>
+                                <tr>
+                                    <td>HTML 2.0</td>
+                                    <td>1995</td>
+                                </tr>
+                                <tr>
+                                    <td>HTML 3.2</td>
+                                    <td>1997</td>
+                                </tr>
+                                <tr>
+                                    <td>HTML 4.01</td>
+                                    <td>1999</td>
+                                </tr>
+                                <tr>
+                                    <td>XHTML</td>
+                                    <td>2000</td>
+                                </tr>
+                                <tr>
+                                    <td>HTML5</td>
+                                    <td>2014</td>
+                                </tr>
+                               	
+                            </table>
+                    </div>
                     
-            
-
-            
-    
-
     </body>
 </html>
