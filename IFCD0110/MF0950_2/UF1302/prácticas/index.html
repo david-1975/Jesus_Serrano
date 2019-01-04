@@ -12,6 +12,8 @@
         <style>
         body{/* estilo al body */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* cambia la fuente a toda la página */
+            width: 90%;
+            margin: 0 auto;/* esto genera unos margenes automaticos laterales y con el 0 de arriba y abajo */
             }
         hr{
             border-top: 1px solid #eee;
@@ -32,8 +34,8 @@
         .nota{/* con esto generamos un estilo exclusivamente a los elementos que queremos, luego cuando tengamos página de estilo no hará falta porque lo administraremos con id */
             background-color: #ffffcc; 
             border-left: 6px solid #ffeb3b; /* le generamos un estilo al borde izquierdo */
-            margin-bottom: 16px;
-            padding: 5px 10px 5px 16px; /* genera margen interior diferenciando empezando up, left, down, right */
+            margin-bottom: 20px;
+            padding: 10px 10px 5px 16px; /* genera margen interior diferenciando empezando up, right, down, left */
             }
         code{
             color: red;
@@ -48,6 +50,28 @@
             font-size: 24px;
             padding: 16px;
             }
+        code span {/* estilo anidado, en este caso se aplicaría el estilo a las etiquetas span que esten dentro de la etiqueta code */
+            color:mediumblue;
+        }
+        code span span{
+            color:brown;
+        }
+        code span span span{
+            color:royalblue
+        }
+        .code{
+            margin-top: 16px;
+            margin-bottom: 16px;
+            padding: 8px 12px;
+            background-color: white;
+            border-left: 4px solid green;
+        }
+        .ejemplo{
+            background-color: #f1f1f1;
+            padding: 8px 16px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);/* esto le genera la sombra */
+        
         </style> <!-- generamos estilo a todas las etiquetas llamadas como las marcadas, se separan por "," y las propiedades y el valor tiene que ir entre {}. Cada vez que se añade propiedades y valor se separan con ";"  -->
         <script>    </script>
         
@@ -81,29 +105,27 @@
             </ul>
          <hr>   
             <h2>Estructura básica de un HTML</h2>
-            <div>
-                
-            <div> <!-- Genera una estructura con lo que hay en su interior -->
+            <div class="ejemplo">
+            <h3>Ejemplo</h3>    
+            <div class="code"> <!-- Genera una estructura con lo que hay en su interior -->
             <code> <!-- Cambia el tipo de letra para que parezca código -->
                 <!-- Para que de un efecto código en el documento y el navegador no lo vea como realmente código utilizamos las ENTIDADES. En este caso usamos &lt; y &gt; para sustituir los <>. Con CTRL+D seleccionamos el símbolo y marcara de uno a uno cada vez que pulsamos -->
-                &lt;!DOCTYPE html&gt;<br> <!-- <br> hace un salto de línea -->
-                &lt;html lang="es-ES"&gt;<br><!-- con & hacemos escapes de código, es decir que comentarios con aspecto de código no se considere como tal -->
-                &lt;head&gt;<br>
-                &lt;title&gt;Page Title&lt;/title&gt;<br>
-                &lt;meta charset="UTF-8"&gt; <br>
-                &lt;/head&gt;<br>
-                &lt;body&gt;<br>
-
-                &lt;h1&gt;Encabezado de la página&lt;/h1&gt;<br>
-                &lt;p&gt;Párrafo de texto&lt;/p&gt;<br>
-
-                &lt;/body&gt;<br>
-                &lt;/html&gt;
+                <span>&lt;<span>!DOCTYPE <span>html</span></span>&gt;</span><br> <!-- <br> hace un salto de línea -->
+                <span>&lt;<span>html <span>lang="es-ES"</span></span>&gt;</span><br><!-- con & hacemos escapes de código, es decir que comentarios con aspecto de código no se considere como tal -->
+                <span>&lt;<span>head</span>&gt;</span><br>
+                <span>&lt;<span>title</span>&gt;<span style="color:black">Título de la página</span>&lt;<span>/title</span>&gt;</span><br><!-- le damos un ESTILO EN LINEA añadiendo atributo style -->
+                <span>&lt;<span>meta <span>charset="UTF-8"</span></span>&gt;</span> <br>
+                <span>&lt;<span>/head</span>&gt;</span><br>
+                <span>&lt;<span>/body</span>&gt;</span><br>
+                <span>&lt;<span>h1</span>&gt;<span style="color:black">Encabezado de la página</span><span>&lt;/h1</span>&gt;</span><br>
+                <span>&lt;<span>p</span>&gt;<span style="color:black">Párrafo de texto</span>&lt;<span>/p</span>&gt;</span><br>
+                <span>&lt;<span>/body</span>&gt;</span><br>
+                <span>&lt;<span>/html</span>&gt;</span>
             </code>
             </div>    
             </div>
             
-                <h3>Explicación de las etiquetas básicas</h3>
+                <h2>Explicación de las etiquetas básicas</h2>
                     <ol> <!-- con <ol>li*9 generamos una order list con 9 atributos en la lista-->
                     <li>La etiqueta <code>&lt;!DOCTYPE html&gt;</code> define este documento para ser HTML5.</li>
                     <li>La etiqueta <code>&lt;html&gt;</code> define el elemento raíz de una página HTML.</li>
@@ -117,7 +139,7 @@
                 </ol>
                 <hr>
                 
-                    <h4>Etiquetas HTML</h4>
+                    <h2>Etiquetas HTML</h2>
                     <p>Las etiquetas HTML son los nombres de elementos entre paréntesis angulares:</p>
                     <div class="etiquetasHTML">
                     <p><b>&lt;Nombre de etiqueta&gt;</b> contenido va aquí ...<b>&lt;/Nombre de etiqueta&gt;</b> </p>    
@@ -134,18 +156,17 @@
                     <div class="nota"> <!-- generamos el estilo con el atributo class -->
                         <p>Consejo: La etiqueta de inicio también se llama la etiqueta de apertura y la etiqueta final como etiqueta de cierre.</p>
                     </div>
-            
-                
-                    <div><!-- No son necesarios tantos div, pero como es un ejemplo vamos poniendo -->
-                        <h5>Navegadores web</h5>
+                    <hr>
+                        
+                        <h2>Navegadores web</h2>
                         <p>El propósito de un navegador web (Chrome, IE, Firefox, Safari) es leer los documentos HTML y mostrarlos.<br> <!--<br> hace un salto de línea -->
                         El navegador no muestra las etiquetas HTML, pero los utiliza para determinar cómo mostrar el documento:</p>
                         <img src="img/img_chrome.png" alt="imagen navegador Chrome" width="635" height="361"><!-- etiqueta que no lleva cierre, y lleva un mínimo de 2 atributos. src, indica donde está el archivo.alt, indica la información de la imagen. Luego quedarian dos atributos más, width indica la anchura y height marca la altura de la imagen, normalmente la que manda es la anchura por la característica del dispositivo. Se puede poner en pixeles o porcentual, lo ideal es lo segundo por los distintos dispositivos -->
-
-                    </div>
+                        <hr>        
+                   
 
                     <div>
-                        <h6>Versiones de HTML</h6>
+                        <h2>Versiones de HTML</h2>
                         <p>Desde los primeros días de la web, ha habido muchas versiones de HTML:</p>
                             <table><!-- style="border: 5px solid black" --> <!-- Se puede dar un border sólo, pero ya está en desuso. Ahora se marca estilos en línea. *Hemos generado un estilo general en el head -->
                                 <tr><!-- define las filas de la tabla -->
@@ -179,25 +200,28 @@
                                	
                             </table>
                     </div>
-
-                    <div>
+                    <hr>
+                    <h2>Estructura de páginas Web</h2>
+                    <p>A continuación se muestra una visualización de una estructura de la página HTML:</p>
+                    <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd">
                         &lt;Html lang="es-ES"&gt;
-                        <div>&lt;Head&gt;
-                            <div>
+                        <div style="width:90%;border:1px solid grey;padding:3px;margin:20px">
+                        &lt;Head&gt;
+                            <div style="width:90%;border:1px solid grey;padding:5px;margin:20px"">
                                 &lt;title&gt;<br>
                                 &lt;meta charset="UTF-8"&gt;
                             </div>
 
                         </div>
-                        <div>&lt;Body&gt;
-                            <div>
-                                <div>
+                        <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd">&lt;Body&gt;
+                            <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
+                                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">
                                     &lt;h1&gt;Este es el encabezado&lt;/h1&gt;
                                 </div>
-                                <div>
+                                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">
                                     &lt;p&gt;Párrafo de texto 1&lt;/p&gt;
                                 </div>
-                                <div>
+                                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">
                                     &lt;p&gt;Párrafo de texto 2&lt;/p&gt;
                                 </div>
                             </div>
@@ -207,7 +231,13 @@
                     </div>
                     <div class="nota"><!-- le damos atributo class para que aplique el estilo -->
                         <p>Nota: Sólo el contenido dentro de la sección <code>&lt;Body&gt;</code>  (el área blanca arriba) se muestra en un navegador.</p>
+                   
+
+
+
+
+
                     </div>
-                    
+                    <hr>
     </body>
 </html>
