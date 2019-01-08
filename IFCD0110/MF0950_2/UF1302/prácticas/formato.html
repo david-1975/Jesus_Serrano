@@ -90,7 +90,7 @@
             background-color: #f1f1f1;
             padding: 8px 16px;
             margin: 20px 0;
-            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);/* esto le genera la sombra */
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);}/* esto le genera la sombra */
         
         </style> <!-- generamos estilo a todas las etiquetas llamadas como las marcadas, se separan por "," y las propiedades y el valor tiene que ir entre {}. Cada vez que se añade propiedades y valor se separan con ";"  -->
         <script>    </script>
@@ -153,16 +153,114 @@
             <td>&lt;h5&gt;</td>
             <td>Describe un encabezado de tipo 5</td>
             <td><h5>Encabezado tipo 5</h5></td>
-            <td>&lt;h5&gt;Esto es un encabezado tipo 5&lt/h5&gt;
-        </td>
+            <td>&lt;h5&gt;Esto es un encabezado tipo 5&lt/h5&gt;</td>
+        </tr>
         <tr>
             <td>&lt;h6&gt;</td>
             <td>Describe un encabezado de tipo 6</td>
             <td><h6>Encabezado tipo 6</h6></td>
-            <td>&lt;h6&gt;Esto es un encabezado tipo 6&lt/h6&gt;
-        </td>
+            <td>&lt;h6&gt;Esto es un encabezado tipo 6&lt/h6&gt;</td>
+        </tr>
         </table>
+        <br>
         <hr>
+        <h2>Etiquetas que dan formato al texto</h2>
+        <p>HTML define etiquetas especiales para la definición de texto con un especial significado.</p>
+        <P>HTML utiliza etiquetas para el formato de salida, como negrita o cursiva texto.</p>
+        <table>
+            <tr>
+                <th>Etiqueta</th>
+                <th>Descripción</th>
+                <th>Ejemplo</th>
+                <th>Utilización</th>
+            </tr>
+            <tr>
+                <td>&lt;b&gt;</td><b>  
+                <td>Define un texto en negrita</td>
+                <td><b>Este texto está en negrita</b></td>
+                <td>&lt;b&gt;Este texto está en negrita&lt;b&gt;</td>
+            </tr> <!--  se debería usar para el aspecto visual únicamente, si el texto entre dichas etiquetas no necesariamente es más importante o no requiere más enfasis que el resto, pero queremos que esté en bold por el motivo que consideremos, entonces es la etiqueta adecuada. -->
+            <tr>
+                <td>&lt;i&gt;</td>
+                <td>Define un texto en cursiva</td>
+                <td><i>Este texto está en cursiva</i></td>
+                <td>&lt;i&gt;Este texto está en cursiva&lt;i&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;strong&gt;</td><!--Básicamente, <strong> se debería utilizar cuando se va a hacer enfasis en un texto, por ejemplo algo que debería leerse en voz alta, para que los lectores (o quienes escuchan) lo tengan muy en cuenta.-->
+                <td>Define un texto en importante</td>
+                <td><strong>Este texto está resaltado</strong></td>
+                <td>&lt;strong&gt;Este texto está resaltado&lt;strong&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;em&gt;</td><!--Lo mismo ocurre con <em> e <i>, siendo <em> el elemento que agrega el toque semántico, e <i> el del aspecto visual únicamente.-->
+                <td>Define un texto enfatizado</td>
+                <td><em>Este texto está enfatizado</em></td>
+                <td>&lt;em&gt;Este texto está enfatizado&lt;em&gt;</td>
+                <!--<strong> y <em> aplican tipos de enfasis distintos, siendo (a partir de HTML5) <strong> un enfasis o importancia fuerte y <em> un enfasis que establece un aspecto particular de una frase, como puede ser un extranjerismo o una traducción.-->
+            </tr>
+            <tr>
+                <td>&lt;small&gt;</td>
+                <td>Define un texto más pequeño</td>
+                <td>Este texto es<small> más pequeño</small></td>
+                <td>&lt;Este texto essmall&gt; más pequeño&lt;small&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;sup&gt;</td>
+                <td>Define un texto en superíndice</td>
+                <td>Este texto es un<sup>superíndice</sup> de texto</td>
+                <td>&lt;Este texto es unsup&gt; superíndice&lt;sup&gt; de texto</td>
+            </tr>
+            <tr>
+                <td>&lt;sub&gt;</td>
+                <td>Define un texto en subíndice</td>
+                <td>Este texto es un <sub>subíndice</sub> de texto</td>
+                <td>&lt;Este texto es unsub&gt; subíndice&lt;sub&gt; de texto</td>
+            </tr>
+            <tr>
+                <td>&lt;ins&gt;</td>
+                <td>Define un texto insertado o agregado</td>
+                <td>Este texto está <ins>insertado</ins></td>
+                <td>Este texto está &lt;ins&gt;insertado&lt;ins&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;s&gt;</td>
+                <td>Define un texto tachado</td>
+                <td><s>Este texto está tachado</s></td>
+                <td>&lt;s&gt; Este texto está tachado&lt;s&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;u&gt;</td>
+                <td>Define un texto subrayado</td>
+                <td>Este texto está <u>subrayado</s></td>
+                <td>Este texto está &lt;u&gt; subrayado&lt;u&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;del&gt;</td>
+                <td>Define un texto eliminado o borrado</td>
+                <td>Este texto está <del>tachado</del> eliminado</td>
+                <td>Este texto está&lt;del&gt;tachado&lt;del&gt; eliminado</td>
+            </tr>
+            <tr>
+                <td>&lt;mark&gt;</td>
+                <td>Define un texto marcado</td>
+                <td><mark>Este texto está marcado</mark></td>
+                <td>&lt;mark&gt;Este texto está marcado&lt;mark&gt;</td>
+            </tr>
+        </table>
+        
+        <p class="nota"> Nota: Los navegadores muestran <code>&lt;strong&gt;</code>como <code>&lt;b&gt;</code>, y <code>&lt;em&gt;</code>como <code>&lt;i&gt;</code>. Sin embargo, hay una diferencia en el significado de las siguientes etiquetas: <code>&lt;b&gt;</code>y <code>&lt;i&gt;</code>define el texto en negrita y cursiva, pero <code>&lt;strong&gt;</code>y<code>&lt;em&gt;</code> significa que el texto es <strong>"importante"</strong>.</p>
+        <hr>
+        <h3>Ejemplo de uso</h3>
+        <p><strong><mark>Texto en negrita y resaltado</mark></strong></p>
+        <hr>
+        <p><strong>Teoría</strong> de la relatividad: e=mc<up>2</up></p>
+        <p><em>Molécula</em>del <b>agua</b>: H<sub>2</sub>O</p>
+        <hr>
+        <p><strong>HTML</strong> (<i><b>H</b>yper<b>T</b>ext <b>Markup</b><b>L</b>anguage</i>)</p>
+        <p><strong>W3C</strong> (<i><b>W</b>orld <b>W</b>ide <b>W</b>eb <b>C</b>onsortium</i>)</p>
+
+        
 
     </body>
 
