@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="es-ES"> <!-- la marca en mayuscula indica el pais, es decir, español de españa en este caso -->
+    <head>
+        <title>Etiquetas que dan formato al texto</title>
+        <meta charset="UTF-8"><!-- Es OBLIGATORIO Y NECESARIO poner el meta charset para indicar el codigo de caracteres que se utiliza, es el mismo siempre ya que el standard UTF-8 contiene todos los idiomas y dialectos mundiales -->
+        <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="tittle" content="Etiquetas que dan formato al texto">
+        <meta name="author" content="Jesús">
+        
+       <style>
+        body{/* estilo al body */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* cambia la fuente a toda la página */
+            width: 90%;
+            margin: 0 auto;/* esto genera unos margenes automaticos laterales y con el 0 de arriba y abajo */
+            }
+        hr{
+            border-top: 1px solid #eee;
+            margin: 20px 0; /* cuando marcamos los margenes con 2 cifras se detecta automáticamente que el estilo se refiere engrupando up-down y left-right */
+            }
+        h1,h2,h3,h4,h5,h6 {
+            font-family:Arial, Helvetica, sans-serif;
+            }
+        table, th, td { /* con esto damos el mismo estilo al table, th y td */
+            border: 1px solid black;
+              }
+        
+        table h1,h2,h3,h4,h5,h6 {
+            margin: 0;
+            text-align: left;
+        }
+        table{
+            width: 100%;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+        }
+        td{
+            padding:8px;
+            text-align:left;
+            border:1px solid #dddddd;
+        }
+		th{
+            padding:8px;
+            text-align:center;
+            border:1px solid #dddddd;
+		   }
+        
+        tr:nth-child(even){
+                background-color: #cccccc;
+            }
+        
+        div{ /* con esto creamos estilo en todos los div */
+            background-color: #f1f1f1;  /* Le damos color al fondo. El número en hexadecimal va con # delante */
+            /* border: 1px solid #cccccc;  Le da borde a los div */
+            margin: 10px; /* da margen exterior  a los div */
+            padding: 10px; /*o relleno interior, le da margenes al div interno */
+            }
+        .nota{/* con esto generamos un estilo exclusivamente a los elementos que queremos, luego cuando tengamos página de estilo no hará falta porque lo administraremos con id */
+            background-color: #ffffcc; 
+            border-left: 6px solid #ffeb3b; /* le generamos un estilo al borde izquierdo */
+            margin-bottom: 20px;
+            padding: 10px 10px 5px 16px; /* genera margen interior diferenciando empezando up, right, down, left */
+            }
+        code{
+            color: red;
+            background-color: #f1f1f1;
+            padding-left: 4px;
+            padding-right: 4px;
+            font-size: 110%;
+            }
+        .etiquetasHTML{/* aqui le damos un estilo propio a etiqueta "privada" para ello siempre hay que poner delante un punto */
+            border: 1px solid #cccccc;
+            background-color: #f1f1f1;
+            font-size: 24px;
+            padding: 16px;
+            }
+        code span {/* estilo anidado, en este caso se aplicaría el estilo a las etiquetas span que esten dentro de la etiqueta code */
+            color:mediumblue;
+        }
+        code span span{
+            color:brown;
+        }
+        code span span span{
+            color:royalblue
+        }
+        .code{
+            margin-top: 16px;
+            margin-bottom: 16px;
+            padding: 8px 12px;
+            background-color: white;
+            border-left: 4px solid green;
+        }
+        .ejemplo{
+            background-color: #f1f1f1;
+            padding: 8px 16px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);}/* esto le genera la sombra */
+		 .cite{
+			margin-top: 16px;
+            margin-bottom: 16px;
+            padding: 8px 12px;
+            background-color: white;
+            border-left: 4px solid #2196f3;
+		   }
+        
+        </style> <!-- generamos estilo a todas las etiquetas llamadas como las marcadas, se separan por "," y las propiedades y el valor tiene que ir entre {}. Cada vez que se añade propiedades y valor se separan con ";"  -->
+        <script>    </script>
+        
+        <link href="css/estilos.css" rel="stylesheet">
+        <script src="js/funciones.js" type="text/javascript"> </script>
+        
+        <!--  <base href="https://www.mipagina.com/img/" target="_blank">Esto referencia la carpeta para abreviar caminos cuando por ejemplo luego se buscan imágenes-->
+
+        <link rel="icon" type="img/png" href="img/html5.png"> <!-- Esto es para diferentes sistemas-->
+        <link rel="icon" type="img/gif" href="img/html5.png">
+        <link rel="icon" type="img/vnd.microsoft.icon" href="img/html5.png">
+        
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"><!-- la manera de vstudio de hacer las 3 anteriores-->
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon"> 
+
+    </head>
+    <body>
+    <h1>HTML Bloques</h1> 
+    <hr>
+    <h2>Etiquetas que citan el texto</h2>
+    <p>Las abreviaturas de marcado <code>&lt;abbr&gt;</code> pueden proporcionar información útil a los navegadores, sistemas de traducción y motores de búsqueda. Utiliza el atributo <code>&lt;title&gt;</code> para definir el significado de la abreviación. </p>
+    <p>La etiqueta de marcado <code>&lt;cite&gt;</code> hace referencia a un trabajo creativo como uin libro, una película, un programa de televisión o una canción, no el nombre de una persona</p>
+    <p>La etiqueta de marcado <code>&lt;blockquote&gt;</code> define una cita larga que se representa como un elemento de bloque. No genera automáticamente comillas alrededor del contenido.</p>
+    <p>La etiqueta de marcado <code>&lt;q&gt;</code> define una cita corta en línea. Marca las citas a otros autores o documentos. Genera automáticamente comillas alrededor del contenido.</p>
+    <p>La etiqueta de marcado <code>&lt;dfn&gt;</code> define un término y debe contener el atributo <code>&lt;title&gt;</code> para la definición/explicación del término el interior.</p>
+    <hr>
+    
+    <table>
+    	<tr><!--Recordar que suman el número de filas que montaremos en la tabla-->
+            <th>Etiqueta</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Utilización</th>
+        </tr>
+        <tr>
+        	<td>&lt;abbr&gt;</td>
+        	<td>Define un abreviatura</td>
+        	<td>Esto es un texto abreviado <abbr title="HyperText Markup Language">HTML</abbr></td>
+        	<td>Esto es un texto abreviado &lt;abbr title="HyperText Markup Language"&gt;HTML</td>
+        </tr>
+        <tr>
+        	<td>&lt;q&gt;</td>
+        	<td>Define una breve cita</td>
+        	<td><q>Esto es una breve cita</q></td>
+        	<td>&lt;q&gt;Esto es una breve cita&lt;q&gt;</td>
+        </tr>
+        <tr>
+        	<td>&lt;blockquote&gt;</td>
+        	<td>Define una cita de otra fuente</td>
+        	<td><blockquote style="margin-bottom:0; margin-top:0;">Este texto es de otra fuente</blockquote></td><!--Generamos un estilo en línea para que no genere margenes grandes en la tabla-->
+        	<td>&lt;blockquote&gt;Este texto es de otra fuente&lt;/blockquote&gt;</td>
+        </tr>
+        <tr>
+        	<td>&lt;cite&gt;</td>
+        	<td>Define el título de una obra</td>
+        	<td><cite>Este texto es un texto citado</cite></td>
+        	<td>&lt;cite&gt;Este texto es un texto citado&lt;/cite&gt;</td>
+        </tr>
+        <tr>
+        	<td>&lt;dfn&gt;</td><!--Es para ayudar al navegador, es decir mejora SEO-->
+        	<td>Define un término</td>
+        	<td>Esto es un término <dfn title="HyperText Markup Language">HTML</dfn></td>
+        	<td>Esto es un término &lt;dfn title="HyperText Markup Language"&gt;HTML&lt;/dfn&gt;</td>
+        </tr>
+    </table>
+    <br>
+    <div><!--Para hacer un padre con varios hijos div>div*2 +TAB y nos genera 2 div dentro de otro.-->
+    <h3> Ejemplo de uso</h3>
+   	  <div class="cite">
+    	<p><strong>EL LENGUAJE <dfn><abbr title="HyperTect Markup Language">HTML</abbr></dfn></strong>
+    	</p>
+    	<blockquote>
+    	<p>Como <strong>Tim Berners-Lee</strong>, el padre de la Web, escribió en <cite>Tejiendo la Web</cite>: <q>Yo llegué en el momento justo, interesado, cuando el hipertexto e Internet habían visto la luz. La tarea que me correspondía era hacer que casaran</q></p>
+    	</blockquote>
+    		
+    	</div>
+    	<div class="code">
+    	<p><strong>CÓDIGO <dfn><abbr title="HyperTect Markup Language">HTML</abbr></dfn></strong>
+    	</p>
+    	<small>
+    	<p style="line-height: 20px; margin-left: 40px;"><!--estilo de alto de línea-->&lt;p&gt;&lt;strong&gt;EL LENGUAJE &lt;dfn&gt;&lt;abbr title=&quot;HyperTect Markup Language&quot;&gt;HTML&lt;/abbr&gt;&lt;/dfn&gt;&lt;/strong&gt;
+    	&lt;/p&gt;
+    	&lt;blockquote&gt;
+		&lt;p&gt;Como &lt;strong&gt;Tim Berners-Lee&lt;/strong&gt;, el padre de la Web, escribió en &lt;cite&gt;Tejiendo la Web&lt;/cite&gt;: &lt;q&gt;Yo llegué en el momento justo, interesado, cuando el hipertexto e Internet habían visto la luz. La tarea que me correspondía era hacer que casaran&lt;/q&gt;&lt;/p&gt;
+   		&lt;/blockquote&gt;</p></small>
+   		
+    	</div>   	
+    </div>
+    <br>
+    <div class="nota">
+    	<p><b>Nota: </b> Por defecto,<code>&lt;blockquote&gt;</code>  incluye un margen izquierdp cuando se visualiza. Esta característica se usó de forma incorrecta en el pasado para lograr una sangría en el texto. Sin embargo, para ello se debe emplear la propiedad <em>margin-left</em> de CSS.</p>
+    </div>
+    <hr>
+    <h2>Etiquetas que agrupan el texto </h2>
+    <p>El elemento <code>&lt;div&gt;</code> se utiliza a menudo como un contenedor para otros elementos HTML. La etiqueta <code>&lt;div&gt;</code> tiene atributos pero no son necesarios, los más comunes son <i>style</i>, <i>class</i>  y <i>id</i>, para dar estilos CSS al bloque de contenido.
+	</p>
+    <p>El elemento <code>&lt;span&gt;</code> se utiliza como un contenedor para agrupar algún texto en línea.La etiqueta <code>&lt;span&gt;</code>, también tiene atributos pero tampoco son necesarios. Los más comunes son <i>style</i>, <i>class</i>  y <i>id</i>, para dar estilos CSS al bloque de contenido.
+    </p>
+	
+   <table>
+   	<tr>
+   		<th>Etiqueta</th>
+   		<th>Descripción</th>
+   		<th>Ejemplo</th>
+   		<th>Utilización</th>
+   	</tr>
+   	<tr>
+   		<td>&lt;div&gt;</td>
+   		<td>Define una sección en un documento (en bloque)</td>
+	  <td><div style="border:1px solid blue">El elemento &lt;div&gt; es un elemento de bloque.</div></td>
+	  <td>&lt;div&gt;El elemento &lt;div&gt; es un elemento de bloque.&lt;div&gt;</td>
+   	</tr>
+   	<tr>
+   		<td>&lt;span&gt;</td>
+   		<td>Define una sección en un documento (en línea)</td>
+	  <td>Esto es un <span style="border:1px solid blue">elemento de linea</span></td>
+	  <td>Esto es un &lt;span&gt;elemento de linea&lt;/span&gt;</td>
+   	</tr>
+   </table>
+   <br>
+   <!--div>div*3>lorem-->
+   <div style="overflow:hidden;border:1px solid red;margin:auto 0;"> <!--overflow lo que hace es evitar que los div floten entre la pagina entera-->
+	
+  		<div style="float:left;width: 30%;border:1px solid blue;"><!--Como ya hemos añadido estilo en el head al div ya tiene margin y paddin-->Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eaque, deleniti voluptatibus animi autem atque facere cum minima debitis culpa vitae minus, et illo distinctio similique laudantium possimus, dolor! Necessitatibus.</div>
+   		<div style="float:left;width: 30%;border:1px solid blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam error harum quo quia, itaque, consequatur sequi quidem, fugiat quod architecto optio. Inventore incidunt sunt suscipit sapiente a quibusdam perferendis! Saepe.</div>
+   		<div style="float:left;width: 30%;border:1px solid blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corporis laborum adipisci ipsam, sapiente vel perferendis, fugit natus doloribus nulla, debitis optio sint dignissimos aperiam ratione ut quo est consectetur?</div>
+   </div>
+   <br>
+   <div class="nota">
+   	<p><strong>Nota:</strong> Un elemento en bloque siempre empieza en una nueva línea y ocupa todo el ancho disponible (se extiende hacia la izquierda y la derecha tanto como sea posible).</p>
+   </div>
+    <hr>
+    
+    
+    
+</body>
+
+</html>
