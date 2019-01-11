@@ -9,7 +9,7 @@
         <meta name="tittle" content="Etiquetas que dan formato al texto">
         <meta name="author" content="Jesús">
         
-       <style>
+    <style>
         body{/* estilo al body */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* cambia la fuente a toda la página */
             width: 90%;
@@ -103,6 +103,50 @@
             background-color: white;
             border-left: 4px solid #2196f3;
 		   }
+		 span{
+			 padding: 2px 5px;
+			 margin: 2px;
+			 font-size: 87.5%;
+			 color: #212529;
+			 background-color: white;
+			 border-radius: 3px;/*esto hace esquinas redondeadas*/
+		   }
+		kbd{
+			background-color: #000000;    
+            padding: 4px 6px;
+			color: white;
+			border-radius: 5px;
+		}
+		#divpadre{
+			overflow: hidden;			
+			margin: auto;
+			padding: 0;
+			width: 90%;
+			background-color: white;
+			text-align: center;
+			
+		}
+		#divhijo1{/*Si se utiliza float hay que darle width siempre*/
+			float:left;
+			width:33.33%;
+			background-color: white;
+			padding: 0;margin:0;
+		}
+		#divhijo2{
+			float:left;
+			width:33.33%;
+			background-color: white;
+			padding: 0;margin:0;
+		}
+		#divhijo3{
+			float:left;
+			width:33.33%;
+			background-color: white;
+			padding: 0;margin:0;
+		}
+		samp{
+			font-size: 130%;
+		}
         
         </style> <!-- generamos estilo a todas las etiquetas llamadas como las marcadas, se separan por "," y las propiedades y el valor tiene que ir entre {}. Cada vez que se añade propiedades y valor se separan con ";"  -->
         <script>    </script>
@@ -219,25 +263,120 @@
    	<tr>
    		<td>&lt;span&gt;</td>
    		<td>Define una sección en un documento (en línea)</td>
-	  <td>Esto es un <span style="border:1px solid blue">elemento de linea</span></td>
+	  <td>Esto es un <span style="border:1px solid blue;border-radius: 0;font-size: 100%;">elemento de linea</span></td>
 	  <td>Esto es un &lt;span&gt;elemento de linea&lt;/span&gt;</td>
    	</tr>
    </table>
    <br>
-   <!--div>div*3>lorem-->
-   <div style="overflow:hidden;border:1px solid red;margin:auto 0;"> <!--overflow lo que hace es evitar que los div floten entre la pagina entera-->
-	
-  		<div style="float:left;width: 30%;border:1px solid blue;"><!--Como ya hemos añadido estilo en el head al div ya tiene margin y paddin-->Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eaque, deleniti voluptatibus animi autem atque facere cum minima debitis culpa vitae minus, et illo distinctio similique laudantium possimus, dolor! Necessitatibus.</div>
-   		<div style="float:left;width: 30%;border:1px solid blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam error harum quo quia, itaque, consequatur sequi quidem, fugiat quod architecto optio. Inventore incidunt sunt suscipit sapiente a quibusdam perferendis! Saepe.</div>
-   		<div style="float:left;width: 30%;border:1px solid blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corporis laborum adipisci ipsam, sapiente vel perferendis, fugit natus doloribus nulla, debitis optio sint dignissimos aperiam ratione ut quo est consectetur?</div>
+   <div>
+  	<h3> Ejemplo de uso</h3>
+   	  	<div class="cite">
+   	  	<p><strong>Elementos DIV-SPAN</strong></p>
+		  <div style="border: 2px solid black; margin: 10 px 15 px 10 px 15px;padding: 0;">	
+				<div style="background-color: orange;padding: 5px;margin:0;">
+					<span>HTML</span><span> lenguaje de marcas de hipertexto</span><span> se utiliza para el desarrollo de páginas web.</span>
+				</div>
+				<div style="background-color: blue;padding: 5px;margin:0;">
+					<span>CSS</span><span> hojas de estilo en cascada</span><span> se utiliza para definir y crear la presentación HTML.</span>
+			</div>
+				<div style="background-color: green;padding:5px;margin:0;">
+					<span>JavaScript</span><span> lenguaje de programación</span><span> se utiliza para dar dinamismo a las páginas web.</span>
+			</div>
+		  </div>    	
+		</div>
+   	
+    	<div class="code">
+			<p><strong>Código <dfn><abbr title="HyperTect Markup Language">HTML</abbr></dfn></strong></p>
+				<small><p style="line-height: 20px; margin-left: 40px;">&lt;div&gt;&lt;div&gt;&lt;span&gt;HTML&lt;/span&gt;&lt;span&gt; lenguaje de marcas de hipertexto&lt;/span&gt;&lt;span&gt; se utiliza para el desarrollo de páginas web.&lt;/span&gt;
+				&lt;/div&gt;&lt;div&gt;&lt;span&gt;CSS&lt;/span&gt;&lt;span&gt; hojas de estilo en cascada&lt;/span&gt;&lt;span&gt; se utiliza para definir y crear la presentación HTML.&lt;/span&gt;
+				&lt;/div&gt;&lt;div&gt;&lt;span&gt;JavaScript&lt;/span&gt;&lt;span&gt; lenguaje de programación&lt;/span&gt;&lt;span&gt; se utiliza para dar dinamismo a las páginas web.&lt;/span&gt;
+				&lt;/div&gt;&lt;/div&gt;</p></small>
+   	    </div>  	
+    </div>
+    <br>
+   <div class="nota">
+   	<p><strong>Nota:</strong> Un elemento en bloque siempre empieza en una nueva línea y ocupa todo el ancho disponible (se extiende hacia la izquierda y la derecha tanto como sea posible). Un elemento en línea no se inicia en una nueva línea, sólo ocupa el mismo ancho que sea necesario.</p>
    </div>
+   <hr>
+   
+   <h2>Etiquetas de código de computadora</h2>
+   <ul>
+   	<li>La etiqueta <code>&lt;code&gt;</code> define un fragmento de código de ordenador.</li>
+   	<li>La etiqueta <code>&lt;kbd&gt;</code> representa comandos de entrada del usuario.</li>
+   	<li>La etiqueta <code>&lt;samp&gt;</code> representa la salida de un programa o sistema informático.</li>
+   	<li>La etiqueta <code>&lt;var&gt;</code> se utiliza como expresión matemática o variable de la programación.</li>
+   </ul>
+   <br>
+   <table>
+   	<tr>
+   		<th>Etiqueta</th>
+   		<th>Descripción</th>
+   		<th>Visualización</th>
+   		<th>Utilización</th>
+   	</tr>
+   	<tr>
+   		<td>&lt;code&gt;</td>
+   		<td>Define un código de programación</td>
+   		<td>Usar este código <code>function(maim)</code></td>
+   		<td>Usar este código &lt;code&gt;function(maim)&lt;code&gt;</td>
+   	</tr>
+   	<tr>
+   		<td>&lt;kbd&gt;</td>
+   		<td>Define una entrada de teclado</td>
+   		<td>Para guardar <kbd>CTRL</kbd> + <kbd>S</kbd></td>
+   		<td>Para guardar &lt;kbd&gt;CTRL&lt;kbd&gt; + &lt;kbd&gt;S&lt;kbd&gt;</td>
+   	</tr>
+   	<tr>
+   		<td>&lt;samp&gt;</td>
+   		<td>Define la salida de la computadora</td>
+   		<td><samp>Error: página no encontrada</samp></td>
+   		<td>&lt;samp&gt;Error: página no encontrada&lt;samp&gt;</td>
+   	</tr>
+   	<tr>
+   		<td>&lt;var&gt;</td>
+   		<td>Define una variable aritmética</td>
+   		<td>Einstein escribió: <var>E</var>=<var>mc</var><sup>2</sup></td>
+   		<td>Einstein escribií: &lt;var&gt;E&lt;var&gt;=&lt;var&gt;mc&lt;var&gt;2</td>
+   	</tr>
+   </table>
    <br>
    <div class="nota">
-   	<p><strong>Nota:</strong> Un elemento en bloque siempre empieza en una nueva línea y ocupa todo el ancho disponible (se extiende hacia la izquierda y la derecha tanto como sea posible).</p>
+   	<p><strong>Nota:</strong> Las etiquetas de código de computadora cambian el tipo de letra simulando código informático.</p>
    </div>
-    <hr>
-    
-    
+   <hr>
+   <div id="divpadre">
+   	<div id="divhijo1">
+   		<p><b>Errores HTML</b></p>
+   		<samp>Error '404 not found'</samp><br><br>
+   		<samp>Error '400 bad request'</samp><br><br>
+   		<samp>Error '401 unauthorized'</samp><br><br>
+   		<samp>Error '403 Forbiden'</samp><br>
+   	</div>
+   	<div id="divhijo2">
+   		<p><b>Comandos básicos</b></p>
+   		<p><kbd>CTRL</kbd> + <kbd>s</kbd> para guardar</p>
+   		<p><kbd>CTRL</kbd> + <kbd>c</kbd> para copiar</p>
+   		<p><kbd>CTRL</kbd> + <kbd>v</kbd> para pegar</p>
+   		<p><kbd>CTRL</kbd> + <kbd>x</kbd> para cortar</p>
+   	</div>
+   	<div id="divhijo3">
+   	<p><b>Fórmulas históricas</b></p>
+   		<p><var>a<sup>2</sup></var>+<var>b<sup>2</sup></var>=<var>c<sup>2</sup></var> Pitágoras</p>
+   		<p><var>E</var>=<var>mc</var><sup>2</sup> Einstein</p>
+   		<p> <var>F</var>= <var>G [(m1 x m2)/r²]</var> Newton</p>
+   		<p><var>iħ (∂/∂t).ψ</var>=<var>Hψ</var> Schrodinger</p> 
+   	</div>
+   </div>
+   <br>
+   
+   <!--div>div*3>lorem-->
+   <div style="overflow:hidden;border:1px solid red;margin:auto;width: 80%"> <!--overflow lo que hace es evitar que los div floten entre la pagina entera-->
+	
+  		<div style="float:left;width: 28%;border:1px solid blue;"><!--Como ya hemos añadido estilo en el head al div ya tiene margin y paddin-->Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eaque, deleniti voluptatibus animi autem atque facere cum minima debitis culpa vitae minus, et illo distinctio similique laudantium possimus, dolor! Necessitatibus.</div>
+   		<div style="float:left;width: 28%;border:1px solid blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam error harum quo quia, itaque, consequatur sequi quidem, fugiat quod architecto optio. Inventore incidunt sunt suscipit sapiente a quibusdam perferendis! Saepe.</div>
+   		<div style="float:left;width: 28%;border:1px solid blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corporis laborum adipisci ipsam, sapiente vel perferendis, fugit natus doloribus nulla, debitis optio sint dignissimos aperiam ratione ut quo est consectetur?</div>
+   </div>
+   <br>
     
 </body>
 
