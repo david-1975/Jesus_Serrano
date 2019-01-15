@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es-ES"><head>
+<title>Listas HTML</title>
+<meta charset="utf-8">
+
+<meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="title" content="Confección y publicación de páginas web">
+<meta name="author" content="Jesús Serrano">
+
+<link rel="icon" type="image/png" href="img/html5.png">
+<link rel="icon" type="image/gif" href="img/html5.gif">
+<link rel="icon" type="image/vnd.microsoft.icon" href="img/html5.ico">
+
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="img/favicon.ico" type="image/ico">
+ 
+<style>
+	
+body {
+font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+width:90%;
+margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6 {
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.nota {
+background-color: #ffffcc;
+border-left: 6px solid #ffeb3b;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:20px;
+padding-right:5px;
+	 }
+hr {
+border: 1px solid #eeeeee;
+}
+code {
+color: crimson;
+background-color: #f1f1f1;
+padding-left: 4px;
+padding-right: 4px;
+font-size: 110%;
+}
+.etiquetasHTML {
+border: 1px solid #cccccc;
+background-color: #f1f1f1;
+font-size: 22px;
+padding: 12px;
+}
+code span {
+color: mediumblue;
+}
+code span span {
+color: brown;
+}
+code span span span {
+color: crimson;
+}
+.code {
+margin-top: 16px;
+margin-bottom: 16px;
+background-color: #ffffff;
+padding: 8px 12px;
+border-left: 4px solid #4CAF50;
+color: black;
+}
+.ejemplo {
+background-color: #f1f1f1;
+padding: 8px 16px;
+margin: 20px 0;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+table h1,h2,h3,h4,h5,h6 {
+margin:0;
+}
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+table td, #table th {
+border: 1px solid #cccccc;
+text-align: left;
+padding: 8px;
+}
+#table tr:nth-child(even) {
+background-color: #dddddd;
+}
+kbd {
+  padding: 0.2rem 0.4rem;
+  font-size: 87.5%;
+  color: #fff;
+  background-color: #212529;
+  border-radius: 0.2rem;
+}
+samp {
+  font-size: 130%;
+}
+.cite {
+margin-top: 16px;
+margin-bottom: 16px;
+background-color: #FFFFFF;
+padding: 8px 12px;
+border-left: 4px solid #2196F3;
+color: black;
+}
+.blockquote {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+divDoble{
+	display:block;
+	overflow: hidden;
+	float: none;
+	}
+	.float2div{
+		float:left;
+		width: 50%;
+		
+	}
+	#divPadre{
+		overflow:hidden;
+		/*border:1px solid red;*/
+		margin: 0 auto; 
+		width:95%;
+	}
+	#divHijo1{
+		float: left;
+		width: 33.33%;
+		/*border:1px solid blue;*/
+		/*padding: 10px;*/
+	}
+		#divHijo2{
+		float: left;
+		width: 33.33%;
+		/*border:1px solid blue;*/
+			/*padding: 10px;*/
+	}
+		#divHijo3{
+		float: left;
+		width: 33.33%;
+		/*border:1px solid blue;*/
+		/*padding: 10px;*/
+		clear: right;
+	}
+		span{ 
+		padding: 2px 5px;
+		margin: 2px;
+		font-size: 87.5%;
+		color:  #212529;
+		background-color: #ffffff;
+		border-radius: 0.2rem;
+	}
+</style>
+
+<script>   </script>
+ 
+ <link href="css/estilos.css" rel="stylesheet" type="text/css">
+ <script src="js/funciones.js" type="text/javascript"></script>
+<!-- <base href="https://www.mipagina.com/img/" target="_blank"> -->
+
+</head>
+
+<body>
+<h1>HTML Listas</h1>
+<p>Las listas se utilizan para enumerar varios elementos en un documento y se pueden estructurar en 3 tipos: listas desordenadas, listas ordenadas y listas de definición.</p>
+<hr>
+<h2>Listas desordenadas</h2>
+<p>La etiqueta <code>&lt;ul&gt;</code>  define una lista desordenada (viñetas). Utilice la etiqueta <code>&lt;ul&gt;</code> junto con la etiqueta <code>&lt;li&gt;</code> para crear listas desordenadas.Se puede utilizar el estilo CSS list-style-type para especificar el tipo de viñeta. El atributo type en la entiqueta <code>&lt;ul&gt;</code> no se admite en HTML5.</p>
+
+<div style="overflow:hidden;border:1px solid red;margin:auto;width: 80%">
+ 	<div style="float:left;margin:auto;width: 33%;">
+	  <p><strong>Tecnologías Web </strong></p>
+  		<ul style="list-style-type: disc;">
+    		<li>HTML</li>
+    		<li>CSS</li>
+    		<li>JavaScript</li>
+    	</ul></div>
+ 	<div style="float:left;margin:auto;width: 33%;">
+  	  <p><strong>Tecnologías internet</strong></p>
+   	  <ul style="list-style-type:square">
+      		<li>HTTP</li>
+      		<li>URL</li>
+      		<li>www</li>
+      	</ul></div>
+ 	<div style="float:left;margin:auto;width: 33%;">
+   	  <ul style="list-style-type:none">
+     		<p><strong>Lenguajes de marcas</strong></p>
+      		<li>HTML</li>
+      		<li>XML</li>
+      		<li>XHTML</li>
+      	</ul></div>
+ </div>
+<br>
+<hr>
+<h2>Listas ordenadas</h2>
+<p>La etiqueta <code>&lt;ol&gt;</code> define una lista ordenada. Una lista ordenada puede ser numérico o alfabético.</p>
+<p>Utilice el <code>&lt;li&gt;</code> etiqueta para definir elementos de la lista. Al igual que en la listas desordenadas, se puede utilizar el estilo CSS list-style-type para especificar el tipo de viñeta.</p>
+
+ <div style="overflow:hidden;border:1px solid red;margin:auto;width: 80%">
+ 	<div style="float:left;margin:auto;width: 33%;">
+  		<p><strong>Tecnologías Web </strong></p>
+   		<ol style="list-style-type:decimal;">
+    		<li>HTML</li>
+    		<li>CSS</li>
+    		<li>JavaScript</li>
+   </ol></div>
+ 	<div style="float:left;margin:auto;width: 33%;">
+    	<p><strong>Tecnologías internet</strong></p>
+     	<ol style="list-style-type:lower-roman">
+      		<li>HTTP</li>
+      		<li>URL</li>
+      		<li>www</li>
+      	</ol></div>
+ 	<div style="float:left;margin:auto;width: 33%;">
+     	<ol style="list-style-type:lower-latin">
+     		<p><strong>Lenguajes de marcas</strong></p>
+      		<li>HTML</li>
+      		<li>XML</li>
+      		<li>XHTML</li>
+      	</ol></div>
+</div>
+<br>
+<hr>
+<h2>Listas de definición</h2>
+<p>La <code>&lt;dl&gt;</code> etiqueta define una lista de descripción.</p>
+<p>La etiqueta <code>&lt;dl&gt;</code> se utiliza en conjunción con <code>&lt;dt&gt;</code> (define términos / nombres) y <code>&lt;dd&gt;</code> (describe cada término / nombre).</p>
+<div style="overflow:hidden;border:1px solid red;margin:auto;width: 80%">
+<dl>
+  <dt style="padding:10px">Café</dt>
+  <dd>Es una bebida de color negro y se suele servir caliente.</dd>
+  <dt style="padding:10px">Leche</dt>
+  <dd>Es una bebida de color blanco y se puede servir fría y caliente.</dd>
+</dl>
+</div>
+<br>
+<hr>
+
+<h2>Etiquetas para formar listas</h2>
+<br>
+<table id="table">
+  <tr>
+<th>Etiqueta</th>
+<th>Descripción</th>
+</tr>
+
+<tr>
+<td>&lt;ul&gt;</td>
+<td>Define una lista desordenada</td>
+</tr>
+<tr>
+<td>&lt;ol&gt;</td>
+<td>Define una lista ordenada</td>
+</tr>
+<tr>
+<td>&lt;li&gt;</td>
+<td>Define los elementos de las listas</td>
+</tr>
+<tr>
+<td>&lt;dl&gt;</td>
+<td>Define una lista de definición</td>
+</tr>
+<tr>
+  <td>&lt;dt&gt;</td>
+  <td>Define el título de la lista de definición</td>
+  </tr>
+<tr>
+  <td>&lt;dd&gt;</td>
+  <td>Describe el elemento del título de definición</td>
+  </tr>
+</table>
+<br>
+<div class="nota">
+  <p><b>Nota: </b>La etiqueta <code>&lt;td&gt;</code> marca un elemento a definir y  debe insertarse inmediatamente después de la etiqueta<code>&lt;dt&gt;</code>. Sólo se puede especificar una leyenda (título) por tabla.</p>
+</div>
+<br>
+<hr>
+
+
+<table>
+<caption>Ejemplos de listas anidadas</caption>
+	<tr>
+		<th>Ejemplo</th>
+		<th>Código</th>
+	</tr>
+	<tr>
+		<td style="width: 50%">
+			<ol style="list-style-type:lower-roman">
+				<li>
+					PRIMER ELEMENTO
+				</li>
+				<li>SEGUNDO ELEMENTO
+				  <ul>
+						<li>
+							COSA 1
+						</li>
+						<li>
+							COSA 2
+						</li>
+				  </ul>
+				</li>
+				<li>
+					TERCER ELEMENTO
+		  </li>
+				<li>
+					<dl>
+						<dt>CONCEPTO 1</dt>
+						<dd>Aquí definimos el concepto 1</dd>
+						<dt>CONCEPTO 2</dt>
+						<dd>Aquí definimos el concepto 2</dd>
+					</dl>
+				</li>
+				<li>
+					CUARTO ELEMENTO
+		  </li>
+				</ol>
+		</td>
+		<td style="width: 50%"><p>&lt;ol style=&quot;list-style-type:lower-roman&quot;&gt;<br>
+  &lt;li&gt; PRIMER ELEMENTO
+  &lt;/li&gt;<br>
+  &lt;li&gt;SEGUNDO ELEMENTO&lt;ul&gt;&lt;li&gt; COSA 1
+	      &lt;/li&gt;&lt;li&gt; COSA 2
+	      &lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;<br>
+	      &lt;li&gt; TERCER ELEMENTO
+	      &lt;/li&gt;<br>
+	      &lt;li&gt;&lt;dl&gt;&lt;dt&gt;CONCEPTO 1&lt;/dt&gt;<br>
+	      &lt;dd&gt;Aquí definimos el concepto 1&lt;/dd&gt;<br>
+	      &lt;dt&gt;CONCEPTO 2&lt;/dt&gt;<br>
+	      &lt;dd&gt;Aquí definimos el concepto 2&lt;/dd&gt;<br>
+	      &lt;/dl&gt;<br>
+	      &lt;/li&gt;<br>
+	      &lt;li&gt;	      CUARTO ELEMENTO	      &lt;/li&gt;<br>
+	      &lt;/ol&gt;</p>
+		</td>					
+  </tr>
+</table>
+<br>
+
+
+</body>
+</html>
+
+
+
+
+
+
