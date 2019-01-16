@@ -147,6 +147,7 @@
 		samp{
 			font-size: 130%;
 		}
+		
         
         </style> <!-- generamos estilo a todas las etiquetas llamadas como las marcadas, se separan por "," y las propiedades y el valor tiene que ir entre {}. Cada vez que se añade propiedades y valor se separan con ";"  -->
         <script>    </script>
@@ -164,10 +165,25 @@
         <link rel="icon" href="img/favicon.ico" type="image/x-icon"> 
 
     </head>
-    <body>
-    <h1>HTML Bloques</h1> 
-    <hr>
-    <h2>Etiquetas que citan el texto</h2>
+<body>
+<a href="index.html" style="text-align: left">
+<div style="overflow: auto;background-color: white;margin: 20px;">
+	<div style="float: left;background-color: white;"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página"></div>
+	<div style="float: left;background-color: white;"><h2>LENGUAJE DE MARCAS</h2><a href="introduccion.html">Introducción</a>  | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a></div>
+</div>
+</a>
+
+    <h1 id="inicio">HTML Bloques</h1> 
+    <hr> <!-- linea horizontal, separa semánticamente el significado del contexto -->
+        <a href="index.html">Indice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a>
+        <hr>
+        <ul>
+        	<li><a href="#citan">Etiquetas que citan el texto</a></li>
+        	<li><a href="#agrupan">Etiquetas que agrupan el texto</a></li>
+        	<li><a href="#codigo">Etiquetas de código de computadora</a></li>
+        </ul>
+        <hr>    
+    <h2 id="citan">Etiquetas que citan el texto</h2>
     <p>Las abreviaturas de marcado <code>&lt;abbr&gt;</code> pueden proporcionar información útil a los navegadores, sistemas de traducción y motores de búsqueda. Utiliza el atributo <code>&lt;title&gt;</code> para definir el significado de la abreviación. </p>
     <p>La etiqueta de marcado <code>&lt;cite&gt;</code> hace referencia a un trabajo creativo como uin libro, una película, un programa de televisión o una canción, no el nombre de una persona</p>
     <p>La etiqueta de marcado <code>&lt;blockquote&gt;</code> define una cita larga que se representa como un elemento de bloque. No genera automáticamente comillas alrededor del contenido.</p>
@@ -215,6 +231,7 @@
     </table>
     <br>
     <div><!--Para hacer un padre con varios hijos div>div*2 +TAB y nos genera 2 div dentro de otro.-->
+    
     <h3> Ejemplo de uso</h3>
    	  <div class="cite">
     	<p><strong>EL LENGUAJE <dfn><abbr title="HyperTect Markup Language">HTML</abbr></dfn></strong>
@@ -240,8 +257,9 @@
     <div class="nota">
     	<p><b>Nota: </b> Por defecto,<code>&lt;blockquote&gt;</code>  incluye un margen izquierdp cuando se visualiza. Esta característica se usó de forma incorrecta en el pasado para lograr una sangría en el texto. Sin embargo, para ello se debe emplear la propiedad <em>margin-left</em> de CSS.</p>
     </div>
+    <p><a href="#inicio">Volver al inicio</a></p>    
     <hr>
-    <h2>Etiquetas que agrupan el texto </h2>
+    <h2 id="agrupan">Etiquetas que agrupan el texto </h2>
     <p>El elemento <code>&lt;div&gt;</code> se utiliza a menudo como un contenedor para otros elementos HTML. La etiqueta <code>&lt;div&gt;</code> tiene atributos pero no son necesarios, los más comunes son <i>style</i>, <i>class</i>  y <i>id</i>, para dar estilos CSS al bloque de contenido.
 	</p>
     <p>El elemento <code>&lt;span&gt;</code> se utiliza como un contenedor para agrupar algún texto en línea.La etiqueta <code>&lt;span&gt;</code>, también tiene atributos pero tampoco son necesarios. Los más comunes son <i>style</i>, <i>class</i>  y <i>id</i>, para dar estilos CSS al bloque de contenido.
@@ -297,9 +315,10 @@
    <div class="nota">
    	<p><strong>Nota:</strong> Un elemento en bloque siempre empieza en una nueva línea y ocupa todo el ancho disponible (se extiende hacia la izquierda y la derecha tanto como sea posible). Un elemento en línea no se inicia en una nueva línea, sólo ocupa el mismo ancho que sea necesario.</p>
    </div>
+   <p><a href="#inicio">Volver al inicio</a></p>
    <hr>
    
-   <h2>Etiquetas de código de computadora</h2>
+   <h2 id="codigo">Etiquetas de código de computadora</h2>
    <ul>
    	<li>La etiqueta <code>&lt;code&gt;</code> define un fragmento de código de ordenador.</li>
    	<li>La etiqueta <code>&lt;kbd&gt;</code> representa comandos de entrada del usuario.</li>
@@ -377,6 +396,8 @@
    		<div style="float:left;width: 28%;border:1px solid blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corporis laborum adipisci ipsam, sapiente vel perferendis, fugit natus doloribus nulla, debitis optio sint dignissimos aperiam ratione ut quo est consectetur?</div>
    </div>
    <br>
+   <p><a href="#inicio">Volver al inicio</a></p>
+   <hr>
     
 </body>
 

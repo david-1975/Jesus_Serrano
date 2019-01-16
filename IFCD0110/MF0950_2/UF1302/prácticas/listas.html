@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="es-ES"><head>
+<html lang="es-ES">
+<head>
 <title>Listas HTML</title>
 <meta charset="utf-8">
 
@@ -153,6 +154,7 @@ divDoble{
 		background-color: #ffffff;
 		border-radius: 0.2rem;
 	}
+	
 </style>
 
 <script>   </script>
@@ -164,10 +166,29 @@ divDoble{
 </head>
 
 <body>
-<h1>HTML Listas</h1>
-<p>Las listas se utilizan para enumerar varios elementos en un documento y se pueden estructurar en 3 tipos: listas desordenadas, listas ordenadas y listas de definición.</p>
+<a href="index.html" style="text-align: left">
+<div style="overflow: auto;background-color: white;margin: 20px;">
+	<div style="float: left;background-color: white;"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página"></div>
+	<div style="float: left;background-color: white;"><h2>LENGUAJE DE MARCAS</h2><a href="introduccion.html">Introduccion</a>  | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a></div>
+</div>
+</a>
+<h1 id="inicio">HTML Listas</h1>
 <hr>
-<h2>Listas desordenadas</h2>
+<hr> <!-- linea horizontal, separa semánticamente el significado del contexto -->
+        <a href="index.html">Indice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a>
+        <hr>
+        <ul>
+        	<li><a href="#desordenadas">Listas desordenadas</a></li>
+        	<li><a href="#ordenadas"> Listas ordenadas</a></li>
+        	<li><a href="#listas">Listas de definición</a></li>
+        	<li><a href="#etiquetas"> Etiquetas para formar listas</a></li>
+        	<li><a href="#ejemplos">Ejemplos</a></li>
+        </ul>
+        <hr>
+<p>Las listas se utilizan para enumerar varios elementos en un documento y se pueden estructurar en 3 tipos: listas desordenadas, listas ordenadas y listas de definición.</p>
+
+<hr>
+<h2 id="desordenadas">Listas desordenadas</h2>
 <p>La etiqueta <code>&lt;ul&gt;</code>  define una lista desordenada (viñetas). Utilice la etiqueta <code>&lt;ul&gt;</code> junto con la etiqueta <code>&lt;li&gt;</code> para crear listas desordenadas.Se puede utilizar el estilo CSS list-style-type para especificar el tipo de viñeta. El atributo type en la entiqueta <code>&lt;ul&gt;</code> no se admite en HTML5.</p>
 
 <div style="overflow:hidden;border:1px solid red;margin:auto;width: 80%">
@@ -194,8 +215,9 @@ divDoble{
       	</ul></div>
  </div>
 <br>
+<p><a href="#inicio">Volver al inicio</a></p>
 <hr>
-<h2>Listas ordenadas</h2>
+<h2 id="ordenadas">Listas ordenadas</h2>
 <p>La etiqueta <code>&lt;ol&gt;</code> define una lista ordenada. Una lista ordenada puede ser numérico o alfabético.</p>
 <p>Utilice el <code>&lt;li&gt;</code> etiqueta para definir elementos de la lista. Al igual que en la listas desordenadas, se puede utilizar el estilo CSS list-style-type para especificar el tipo de viñeta.</p>
 
@@ -223,8 +245,9 @@ divDoble{
       	</ol></div>
 </div>
 <br>
+<p><a href="#inicio">Volver al inicio</a></p>
 <hr>
-<h2>Listas de definición</h2>
+<h2 id="listas">Listas de definición</h2>
 <p>La <code>&lt;dl&gt;</code> etiqueta define una lista de descripción.</p>
 <p>La etiqueta <code>&lt;dl&gt;</code> se utiliza en conjunción con <code>&lt;dt&gt;</code> (define términos / nombres) y <code>&lt;dd&gt;</code> (describe cada término / nombre).</p>
 <div style="overflow:hidden;border:1px solid red;margin:auto;width: 80%">
@@ -236,9 +259,10 @@ divDoble{
 </dl>
 </div>
 <br>
+<p><a href="#inicio">Volver al inicio</a></p>
 <hr>
 
-<h2>Etiquetas para formar listas</h2>
+<h2 id="etiquetas">Etiquetas para formar listas</h2>
 <br>
 <table id="table">
   <tr>
@@ -276,10 +300,11 @@ divDoble{
   <p><b>Nota: </b>La etiqueta <code>&lt;td&gt;</code> marca un elemento a definir y  debe insertarse inmediatamente después de la etiqueta<code>&lt;dt&gt;</code>. Sólo se puede especificar una leyenda (título) por tabla.</p>
 </div>
 <br>
+<p><a href="#inicio">Volver al inicio</a></p>
 <hr>
 
 
-<table>
+<table id="ejemplos">
 <caption>Ejemplos de listas anidadas</caption>
 	<tr>
 		<th>Ejemplo</th>
@@ -337,6 +362,8 @@ divDoble{
   </tr>
 </table>
 <br>
+<p><a href="#inicio">Volver al inicio</a></p>
+<hr>
 
 
 </body>

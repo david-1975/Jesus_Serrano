@@ -153,6 +153,7 @@ divDoble{
 		background-color: #ffffff;
 		border-radius: 0.2rem;
 	}
+
 </style>
 
 <script>   </script>
@@ -164,9 +165,26 @@ divDoble{
 </head>
 
 <body>
-<h1>HTML Tablas</h1>
+<a href="index.html" style="text-align: left">
+<div style="overflow: auto;background-color: white;margin: 20px;">
+	<div style="float: left;background-color: white;"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página"></div>
+	<div style="float: left;background-color: white;"><h2>LENGUAJE DE MARCAS</h2><a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a></div>
+</div>
+</a>
+<h1 id="inicio">HTML Tablas</h1>
+<hr> <!-- linea horizontal, separa semánticamente el significado del contexto -->
+        <a href="index.html">Indice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a>
+        
 <hr>
-<h2>Etiquetas de estructura de datos  en filas y columnas</h2>
+<ul>
+	<li><a href="#etiquetas">Etiquetas de estructura de datos  en filas y columnas</a></li>
+	<li><a href="#scope">El atributo scope</a></li>
+	<li><a href="#colspan">El atributo colspan y rowspan</a></li>
+	<li><a href="#colgroup">La etiqueta colgroup y col</a></li>
+	<li><a href="#agrupacion">Agrupación por filas</a></li>
+</ul>
+<hr>
+<h2 id="etiquetas">Etiquetas de estructura de datos  en filas y columnas</h2>
 <p>Una tabla HTML se define con la <code>&lt;table&gt;</code>etiqueta. Cada fila de la tabla se define con la <code>&lt;tr&gt;</code>etiqueta. Un encabezado de la tabla se define con la <code>&lt;th&gt;</code>etiqueta. Por defecto, encabezados de la tabla están en negrita y centrado. A los datos / celda de la tabla se define con la <code>&lt;td&gt;</code> etiqueta y pueden contener todo tipo de elementos HTML; texto, imágenes, listas, otras tablas, etc...</p>
 
 <table id="table">
@@ -221,9 +239,10 @@ divDoble{
   <p><b>Nota: </b>La etiqueta <code>&lt;caption&gt;</code> define un título de la tabla y  debe insertarse inmediatamente después de la <code>&lt;table&gt;</code> etiqueta. Sólo se puede especificar una leyenda (título) por tabla.</p>
 </div>
 <br>
+<p><a href="#inicio">Volver al inicio</a></p>
 <hr>
 
-<h2>El atributo scope</h2>
+<h2 id="scope">El atributo scope</h2>
 <p>El atributo <strong>scope</strong> especifica si una celda de encabezado es una cabecera de una columna, fila o grupo de columnas o filas. El atributo scope no tiene ningún efecto visual en los navegadores web normales, pero puede ser utilizado por los lectores de pantalla.</p>
 <table style="width: 100%" class="tableDemo">
   <tr>
@@ -314,8 +333,9 @@ divDoble{
   </tr>
 </table>
 <br>
+<p><a href="#inicio">Volver al inicio</a></p>
 <hr>
-<h2>El atributo colspan y rowspan</h2>
+<h2 id="colspan">El atributo colspan y rowspan</h2>
 <p>El atributo <strong>colspan</strong> define el número de columnas de una celda que debe ocupar al espandirse las celdas y el atributo <strong>rowspan</strong> especifica el número de filas de una celda que debe ocupar. Sólo se escifica el atributo en las etiquetas <code>&lt;th&gt;</code> y <code>&lt;td&gt;</code>.</p>
 <table style="width: 100%" class="tableDemo">
   <tr>
@@ -392,8 +412,9 @@ divDoble{
   </tr>
 </table>
 <br>
+<p><a href="#inicio">Volver al inicio</a></p>
 <hr>
-<h2>La etiqueta colgroup y col</h2>
+<h2 id="colgroup">La etiqueta colgroup y col</h2>
 <p>La etiqueta <code>&lt;colgroup&gt;</code> especifica un grupo de una o más columnas en una tabla para  la aplicación de estilos CSS para columnas completas, en lugar de repetir los estilos para cada celda, y para cada fila. Para definir propiedades diferentes a una columna dentro de un &lt;colgroup&gt;, utilice la etiqueta &lt;col&gt;  dentro de la etiqueta &lt;colgroup&gt; junto con el atributo span para nombrar cuantas columnas se deben agrupar.</p>
 <style>
 .tableDemo table{
@@ -501,8 +522,9 @@ padding: 8px;
   </tr>
 </table>
 <br>
+<p><a href="#inicio">Volver al inicio</a></p>
 <hr>
-<h2>Agrupación por filas</h2>
+<h2 id="agrupacion">Agrupación por filas</h2>
 <p>HTML provee tres elementos que pueden ayudar a los autores a organizar la información presentada en una tabla. Éstos son: thead, para agrupar las filas que presentan información de encabezado; tfoot para contener a las filas que representan un pie o resumen; y tbody, para representar un bloque de filas que consiste en un cuerpo de datos.</p>
 <table style="width: 100%" class="tableDemo">
   <tr>
@@ -705,7 +727,7 @@ padding: 8px;
   </td>
   </tr>
 </table>
-<p>&nbsp;</p>
+<p><a href="#inicio">Volver al inicio</a></p>
 </body>
 </html>
 
