@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="es-ES"> <!-- la marca en mayuscula indica el pais, es decir, español de españa en este caso -->
-    <head>
+<head>
         <title>HTML Formato</title>
         <meta charset="UTF-8"><!-- Es OBLIGATORIO Y NECESARIO poner el meta charset para indicar el codigo de caracteres que se utiliza, es el mismo siempre ya que el standard UTF-8 contiene todos los idiomas y dialectos mundiales -->
         <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
@@ -112,34 +112,45 @@
         <link rel="icon" href="img/favicon.ico" type="image/x-icon"> 
 
     </head>
-    <body>
-<a href="index.html">
-<div id="menu">
-	<div style="float: left;background-color: white;"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página"></div>
-	<div style="float: left;background-color: white;"><h2>LENGUAJE DE MARCAS</h2><a href="introduccion.html">Introducción</a>  | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a></div>
-</div>
-</a>
-        <h1 id="inicio">Formato HTML</h1>       
-        <hr> <!-- linea horizontal, separa semánticamente el significado del contexto -->
-        <a href="index.html">Indice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a>
-        <hr>
-        <ul>
+<body>
+<header>
+	<a href="index.html" style="text-align: left">
+		<div style="overflow: auto;background-color: white;margin: 20px;">
+			<div style="float: left;background-color: white;"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página"></div>
+			<div style="float: left;background-color: white;"><h2>LENGUAJE DE MARCAS</h2><a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a> | <a href="semantica.html">Semántica</a></div>
+		</div>
+	</a>
+<h1 id="inicio">HTML Formato</h1>
+</header>
+<hr>
+<nav> 
+	<a href="index.html">Indice</a> | <a href="introduccion.html">Introducción</a>  | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a> | <a href="semantica.html">Semántica</a>
+</nav>
+<hr>
+<main>
+<aside>
+	<ul>
         	<li><a href="#formato">El formato del texto</a></li>
         	<li><a href="#encabezados">Encabezados de texto</a></li>
         	<li><a href="#etiquetasformato">Etiquetas que dan formato al texto</a></li>
         	<li><a href="#etiquetasseparan">Etiquetas que separan el texto</a></li>
-        </ul>
-
-        <hr>
+	</ul>
+</aside>
+<hr>
+<section>
+   <article>  
     <h2 id="formato">El formato del texto</h2>
-        <img src="img/html-formatos-de-texto.png" al="Formatos de texto" width="600px" style="float:right;"><!--Con width le damos una anchura y con el style float  alineamos sólo la imagen a la derecha-->
-        
+        <figure style="float:right;">
+        <img src="img/html-formatos-de-texto.png" al="Formatos de texto" width="600px"><!--Con width le damos una anchura y con el style float  alineamos sólo la imagen a la derecha-->
+        </figure>
         <p>El formato de texto, es el marcado que se aplica a un texto para añadirle datos de forma.</p>
         <p>Al texto resultante se le conoce como texto formateado, texto con estilos o texto enriquecido.</p>
-        <p><a href="#inicio">Volver al inicio</a></p>
-        <hr>
-        <h2 id="encabezados">Encabezados de texto</h2>        
-	<p>Los motores de búsqueda utilizan los encabezados para indexar la estructura y el contenido de sus páginas web.</p>
+	    <p><a href="#inicio">Volver al inicio</a></p>
+    </article>    
+    <hr>
+    <article>   
+    	<h2 id="encabezados">Encabezados de texto</h2>        
+		<p>Los motores de búsqueda utilizan los encabezados para indexar la estructura y el contenido de sus páginas web.</p>
 			<p>Los usuarios ojean las páginas por sus títulos. Es importante utilizar los encabezados para mostrar la estructura del documento.</p>
 			<p>Los encabezamientos<code>&lt;h1&gt;</code> deben ser utilizados para los encabezados principales, seguido por los encabezamientos <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, etc... que son menos importantes. </p>
 		   <div class="nota">
@@ -193,7 +204,9 @@
         </table>
         <br>
         <p><a href="#inicio">Volver al inicio</a></p>
-        <hr>
+      </article> 
+      <hr>
+       <article>
         <h2 id="etiquetasformato">Etiquetas que dan formato al texto</h2>
         <p>HTML define etiquetas especiales para la definición de texto con un especial significado.</p>
         <p>HTML utiliza etiquetas para el formato de salida, como negrita o cursiva texto.</p>
@@ -282,7 +295,9 @@
         	<p> <b>Nota: </b>Los navegadores muestran <code>&lt;strong&gt;</code>como <code>&lt;b&gt;</code>, y <code>&lt;em&gt;</code>como <code>&lt;i&gt;</code>. Sin embargo, hay una diferencia en el significado de las siguientes etiquetas: <code>&lt;b&gt;</code>y <code>&lt;i&gt;</code>define el texto en negrita y cursiva, pero <code>&lt;strong&gt;</code>y<code>&lt;em&gt;</code> significa que el texto es <strong>"importante"</strong>.</p>
 		</div>
         <p><a href="#inicio">Volver al inicio</a></p>
-        <hr>
+      </article>
+      <hr>
+      <article>
        <h2 id="etiquetasseparan">Etiquetas que separan el texto</h2>
                
          <p>La etiqueta <code>&lt;p&gt;</code>separa el texto, añadiendo automáticamente un espacio (margen) antes y después de cada elemento <code>&lt;p&gt;</code>. El navegador eliminará todos los espacios en blanco y las líneas adicionales cuando se visualiza la etiqueta <code>&lt;p&gt;</code>.</p>
@@ -323,15 +338,7 @@ Esto es un texto preformateado.&lt;pre&gt;</pre></td>
          <div class="nota">
          	<p><b>Nota:</b> Utilice el elmento <code>&lt;pre&gt;</code> cuando quiera mostrar el texto con formato inusual, o algún tipo de códgo informático.</p>
          </div>
-      
-         
-           
-            
-             
-              
-               
-                
-    <hr>        
+<hr>      
          <h3>Ejemplo de uso</h3>
 			<p><strong><mark>Texto en negrita y resaltado</mark></strong></p>
 			<hr>
@@ -340,10 +347,19 @@ Esto es un texto preformateado.&lt;pre&gt;</pre></td>
 			<hr>
 			<p><strong>HTML</strong> (<em><strong>H</strong>yper<strong>T</strong>ext <strong>Markup</strong><strong>L</strong>anguage</em>)</p>
 			<p><strong>W3C</strong> (<i><b>W</b>orld <b>W</b>ide <b>W</b>eb <b>C</b>onsortium</i>)</p>
-
-        
+ 	</article>
+ </section>        
 <p><a href="#inicio">Volver al inicio</a></p>
-   <hr>
-    </body>
-
+</main>
+<hr>
+<footer style="text-align: center">
+ <a href="#">Política de cookies</a> | 
+ <a href="#">Política de privacidad</a> | 
+ <a href="#">Aviso legal</a> | 
+ <a href="#">Mapa web</a> | 
+ <a href="#">otro</a>
+ <br>
+ <br>
+ </footer>  
+</body>
 </html>

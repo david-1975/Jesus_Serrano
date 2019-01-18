@@ -70,7 +70,26 @@
 			
 			text-decoration: none;
 			}
-	
+	      a:link {
+		  color: blue;
+		  background-color: transparent;
+		  text-decoration: none;
+				}
+		a:visited {
+		  color: #012E72;
+		  background-color: transparent;
+		  text-decoration: none;
+				}
+		a:hover {
+		  color: red;
+		  background-color: transparent;
+		  text-decoration: underline;
+				}
+		a:active {
+		  color: yellow;
+		  background-color: transparent;
+		  text-decoration: underline;
+				}
         </style> <!-- generamos estilo a todas las etiquetas llamadas como las marcadas, se separan por "," y las propiedades y el valor tiene que ir entre {}. Cada vez que se añade propiedades y valor se separan con ";"  -->
         <script>    </script>
                 <link href="css/estilos.css" rel="stylesheet">
@@ -86,41 +105,52 @@
 
     </head>
 <body>
+<header>
 <h1 style="text-align: center">HTML</h1>
 
 <a href="index.html" style="text-align: left">
 <div style="overflow: auto;background-color: white;margin: 20px;">
 	<div style="float: left;background-color: white;"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página"></div>
-	<div style="float: left;background-color: white;"><h2>LENGUAJE DE MARCAS</h2><a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a></div>
+	<div style="float: left;background-color: white;"><h2>LENGUAJE DE MARCAS</h2><a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a> | <a href="semantica.html">Semántica</a></div>
 </div>
 </a>
-
+</header>
+<nav>
 <h1>INDICE</h1>
 <hr> 
-<a href="index.html">Indice</a>  | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a>
-
+<a href="index.html">Indice</a> | <a href="introduccion.html">Introducción</a>  | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a> | <a href="semantica.html">Semántica</a>
+</nav>
 <hr>
+<main>
 <div style="overflow: auto;width: 100%;text-align: center;">
-	<div style="float: left; width: 18%;padding: 5px;margin: 5px;"><a href="introduccion.html">
-			<div> <img src="https://www.w3.org/html/logo/img/gallery/sproutcore.jpg" alt="sproutcore" width="128" height="128" title="Introducción"></div>
+	<div style="float: left; width: 25%;padding: 5px;margin: 5px;"><a href="introduccion.html">
+			<div> <img src="img/HTML5_Logo_128.png" alt="sproutcore" width="200" height="200" title="Introducción"></div>
 			<div><p>Introducción</p></div>
 		</a></div>
-	<div style="float: left;width: 18%;padding: 5px;margin: 5px;"><a href="formato.html">
-			<div><img src="https://www.w3.org/html/logo/img/gallery/html5demos.png"  alt="sproutcore" width="128" height="128" title="Formato"></div>
+	<div style="float: left;width: 25%;padding: 5px;margin: 5px;"><a href="formato.html">
+			<div><img src="img/html-formatos.png"  alt="sproutcore" width="200" height="200" title="Formato"></div>
 			<div><p>Formato</p></div>
 		</a></div>
-	<div style="float: left;width: 18%;padding: 5px;margin: 5px;"><a href="bloques.html">
-			<div><img src="https://www.w3.org/html/logo/img/gallery/superbusinc.png" alt="superbusinc" width="128" height="128" title="Bloques"></div>
+	<div style="float: left;width: 25%;padding: 5px;margin: 5px;"><a href="bloques.html">
+			<div><img src="img/html-bloques.png" alt="superbusinc" width="200" height="200" title="Bloques"></div>
 			<div><p>Bloques</p></div>
 		</a></div>
-	<div style="float: left;width: 18%;padding: 5px;margin: 5px;"><a href="tablas.html">
-			<div><img src="https://www.w3.org/html/logo/img/gallery/html5boilerplate.png" alt="sproutcore" width="128" height="128" title="Tablas"></div>
+	<div style="float: left;width: 25%;padding: 5px;margin: 5px;"><a href="tablas.html">
+			<div><img src="img/html-tablas.png" alt="sproutcore" width="200" height="200" title="Tablas"></div>
 			<div><p>Tablas</p></div>
 		</a></div>
-	<div style="float: left;width: 18%;padding: 5px;margin: 5px;"><a href="listas.html">
-			<div><img src="https://www.w3.org/html/logo/img/gallery/phonegap.png" alt="sproutcore" width="128" height="128" title="Listas"></div>
+	<div style="float: left;width: 25%;padding: 5px;margin: 5px;"><a href="listas.html">
+			<div><img src="img/html-listas.png" alt="sproutcore" width="200" height="200" title="Listas"></div>
 			<div><p>Listas</p></div>
 		</a></div>
+	<div style="float: left;width: 25%;padding: 5px;margin: 5px;"><a href="multimedia.html">
+			<div><img src="img/k-meleon.jpg" alt="sproutcore" width="200" height="200" title="Multimedia"></div>
+			<div><p>Multimedia</p></div>
+		</a></div>
+	<div style="float: left;width: 25%;padding: 5px;margin: 5px;"><a href="semantica.html">
+		<div><img src="img/img_sem_elements.gif" width="200" height="200" title="Semántica"></div>
+		<div><p>Semántica</p></div>
+	</a></div>	
 </div>
 
 
@@ -170,6 +200,16 @@
     </div>
 		
  </div> 
- <br>       
+ </main>
+ <hr>
+ <footer style="text-align: center">
+ <a href="#">Política de cookies</a> | 
+ <a href="#">Política de privacidad</a> | 
+ <a href="#">Aviso legal</a> | 
+ <a href="#">Mapa web</a> | 
+ <a href="#">otro</a>
+ <br>
+ <br>
+ </footer>       
 </body>
 </html>

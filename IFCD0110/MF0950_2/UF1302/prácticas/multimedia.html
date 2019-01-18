@@ -91,7 +91,27 @@
             padding: 8px 16px;
             margin: 20px 0;
             box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);}/* esto le genera la sombra */
-        #menu{
+        a:link {
+		  color: black;
+		  background-color: transparent;
+		  text-decoration: none;
+				}
+		a:visited {
+		  color:#012E72
+		  background-color: transparent;
+		  text-decoration: none;
+				}
+		a:hover {
+		  color: red;
+		  background-color: transparent;
+		  text-decoration: underline;
+				}
+		a:active {
+		  color: yellow;
+		  background-color: transparent;
+		  text-decoration: underline;
+				}
+		 #menu{
 		overflow: auto;
 		background-color: white;
 		margin:20px;
@@ -113,22 +133,41 @@
 
 </head>
 <body>
-<a href="index.html">
-<div id="menu">
-	<div style="float: left;background-color: white;"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página"></div>
-	<div style="float: left;background-color: white;"><h2>LENGUAJE DE MARCAS</h2><a href="introduccion.html">Introducción</a>  | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a></div>
-</div>
-</a>
-        <h1 id="inicio">Multimedia</h1>       
-        <hr> <!-- linea horizontal, separa semánticamente el significado del contexto -->
-        <a href="index.html">Indice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a>
+<header>
+	<a href="index.html" style="text-align: left">
+	<div style="overflow: auto;background-color: white;margin: 20px;">
+		<div style="float: left;background-color: white;"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página"></div>
+		<div style="float: left;background-color: white;"><h2>LENGUAJE DE MARCAS</h2><a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a> | <a href="semantica.html">Semántica</a></div>
+	</div>
+	</a>
+	<h1 id="inicio">Multimedia en HTML</h1>
+</header>
 <hr>
-<ul>
-	<li><a href="#video">Video</a></li>
-	<li><a href="#audio">Audio</a></li>
-	<li><a href="#iframe">Iframes</a></li>
-</ul>
+<nav>
+	<a href="index.html">Indice</a> | <a href="introduccion.html">Introducción</a>  | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a> | <a href="semantica.html">Semántica</a>
+</nav>
 <hr>
+
+<hr>
+<main>
+<aside>
+	<ul>
+		<li><a href="#video">Video</a></li>
+		<li><a href="#audio">Audio</a></li>
+		<li><a href="#objects">Objetos</a></li>
+		<li><a href="#iframe">Iframes</a></li>
+	</ul>
+</aside>
+<hr>
+<section>
+	<div style="overflow: auto; background-color: white; width: 100%">
+		<figure style="float: right">
+			<img src="img/html-multimedia.png" alt="Logo multimedia" width="400" title="Multimedia HTML"> 
+		</figure> 
+		<p>Multimedia viene en muchos formatos diferentes. Puede ser casi cualquier cosa que usted puede escuchar o ver.</p>
+		<p>Ejemplos: Imágenes, música, sonido, vídeos, discos, películas, animaciones y mucho más.</p>
+		<p>Las páginas Web a menudo contienen elementos multimedia de diferentes tipos y formatos.</p>
+	</div>
 <table>
 	<tr>
 		<th>Etiqueta</th>
@@ -136,23 +175,23 @@
 	</tr>
 	<tr>
 		<td>&lt;video&gt;</td>
-		<td>estándar para incrustar un vídeo en una página web</td>
+		<td>Define un vídeo en una página web</td>
 	</tr>
 	<tr>
 		<td>&lt;source&gt;</td>
-		<td></td>
+		<td>Define una fuente de vídeo o audio</td>
 	</tr>
 	<tr>
 		<td>&lt;track&gt;</td>
-		<td></td>
+		<td>Define un archivo de texto para subtítulos</td>
 	</tr>
 	<tr>
 		<td>&lt;audio&gt;</td>
-		<td>estándar para incrustar un audio en una página web</td>
+		<td>Define un audio en una página web</td>
 	</tr>
 	<tr>
 		<td>&lt;iframe&gt;</td>
-		<td>estándar para incrustar un elemento externo en una página web</td>
+		<td>Define un elemento externo en una página web</td>
 	</tr>
 	<tr>
 		<td>&lt;object&gt;</td>
@@ -163,120 +202,135 @@
 		<td></td>
 	</tr>
 </table>
-<hr>
-<h2 id="video">HTML Video</h2>                                 
-<p>La etiqueta <code>&lt;video&gt;</code>  especifica una forma estándar para incrustar un vídeo en una página web.</p>
-<p>El atributo controls agrega controles de vídeo, como reproducción, pausa y volumen.</p>
-<p>Es una buena idea incluir siempre los atributos width y height. Si la altura y anchura no están establecidos, la página puede parpadear mientras se carga el vídeo.</p>
-<p>El <code>&lt;source&gt;</code>elemento le permite especificar los archivos de vídeo alternativas que el navegador puede elegir. El navegador usará el primer formato reconocido.</p>
-<p>El texto entre el <code>&lt;video&gt;</code> y <code>&lt;/video&gt;</code> etiquetas sólo se mostrará en los navegadores que no soportan el <code>&lt;video&gt;</code> elemento.</p>
+<hr>	
+<article>
+	<h2 id="video">HTML Video</h2>                                 
+	<p>La etiqueta <code>&lt;video&gt;</code>  especifica una forma estándar para incrustar un vídeo en una página web.</p>
+	<p>El atributo controls agrega controles de vídeo, como reproducción, pausa y volumen.</p>
+	<p>Es una buena idea incluir siempre los atributos width y height. Si la altura y anchura no están establecidos, la página puede parpadear mientras se carga el vídeo.</p>
+	<p>El <code>&lt;source&gt;</code>elemento le permite especificar los archivos de vídeo alternativas que el navegador puede elegir. El navegador usará el primer formato reconocido.</p>
+	<p>El texto entre el <code>&lt;video&gt;</code> y <code>&lt;/video&gt;</code> etiquetas sólo se mostrará en los navegadores que no soportan el <code>&lt;video&gt;</code> elemento.</p>
 
-<div style="overflow: auto"><h3>Ejemplo de uso</h3>
-  <div style="float:left;">
-	  <div style="background-color:white; float:left;">
-			<video width="320" height="240" controls preload="auto" autoplay poster="img/comodo-dragon.jpg"><!--Lo normal es que el usuario inicie el video, o si el video es corto utilizar loop para marcar el numero de reproducciones-->
-				<source src="video/mov_bbb.mp4" type="video/mp4">
-				<source src="video/mov_bbb.ogg" type="video/ogg"><!--Normalmente con mp4 es válido, incluso se puede poner en la etiqueta video src y el archivo mp4 solamente-->
-				<source src="video/mov_bbb.ogg" type="video/ogg">
-				<track src="subtitulos_en.vtt" kind="subtitulos" srclang="en" label="English"> <!--Esto como ejemplo para añadir subtitulos-->	
-			</video>
-		</div>
-		<div style="float:left; font-size: 12px">
-				&lt;video width=&quot;320&quot; height=&quot;240&quot; controls preload=&quot;auto&quot; autoplay poster=&quot;img/comodo-dragon.jpg&quot;&gt;<br>
-			&lt;source src=&quot;video/mov_bbb.mp4&quot; type=&quot;video/mp4&quot;&gt;<br>
-			&lt;source src=&quot;video/mov_bbb.ogg&quot; type=&quot;video/ogg&quot;&gt;<br>
-			&lt;source src=&quot;video/mov_bbb.ogg&quot; type=&quot;video/ogg&quot;&gt;<br>
-			&lt;track src=&quot;subtitulos_en.vtt&quot; kind=&quot;subtitulos&quot; srclang=&quot;en&quot; label=&quot;English&quot;&gt;<br>
-			&lt;/video&gt;
-		</div>
-  </div>
+	<div style="overflow: auto"><h3>Ejemplo de uso</h3>
 	  <div style="float:left;">
-			<div style="background-color:white; float: left">
-			  <video src="video/mov_bbb.mp4" width="320" height="240" controls poster="img/comodo-dragon.jpg"><!--Esta es la manera rápida de marcarlo, pero no la mejor porque no da opciones-->
-			</video>
-	  </div>
-		  <div style="float: left; font-size: 12px">		
-			&lt;video src=&quot;video/mov_bbb.mp4&quot; width=&quot;320&quot; height=&quot;240&quot; controls poster=&quot;img/comodo-dragon.jpg&quot;&gt;<br>
-			&lt;/video&gt;<br>
-		</div>
-</div>
-</div>
-<p><a href="#inicio">Volver al inicio</a></p>
-<hr>
-<h2 id="audio">Audio</h2>
-<p>La etiqueta <code>&lt;audio&gt;</code>  especifica una forma estándar para incrustar un audio en una página web.</p>
-<p>El atributo controls  agrega controles de audio, como reproducción, pausa y volumen.</p>
-<p>El elemento <code>&lt;source&gt;</code> le permite especificar los archivos de audio alternativos que el navegador puede elegir. El navegador usará el primer formato reconocido.</p>
-<p>El texto entre las etiquetas <code>&lt;audio&gt;</code> y <code>&lt;/audio&gt;</code>  sólo se mostrará en los navegadores que no soportan el elemento &lt;audio&gt;.</p>
-
-<div style="overflow: auto">
-<h3>Ejemplo de uso</h3>	
-  <div style="background-color:white; float:left;">
-			<audio controls>
-				<source src="audio/intro.mp3" type="audio/mp3">
-				<source src="audio/intro.ogg" type="audio/ogg"><!--ejemplo para ogg-->
-				<source src="audio/intro.mp3" type="audio/wav"><!--ejemplo para wav aunque no tengamos el archivo-->
-			</audio>
-		</div>
-		<div style="float:left">
-		&lt;audio controls&gt;<br>
-			&lt;source src=&quot;audio/intro.mp3&quot; type=&quot;audio/mp3&quot;&gt;<br>
-			&lt;source src=&quot;audio/intro.ogg&quot; type=&quot;audio/ogg&quot;&gt;<br>
-			&lt;source src=&quot;audio/intro.mp3&quot; type=&quot;audio/wav&quot;&gt;<br>
-			&lt;/audio&gt;
-		</div>	
-</div>
-<p><a href="#inicio">Volver al inicio</a></p>
-<hr>
-<h3>HTML Object</h3>
-<p>El <code>&lt;object&gt;</code>elemento es soportado por todos los navegadores.</p>
-<p>El <code>&lt;object&gt;</code>elemento define un objeto incrustado dentro de un documento HTML.</p>
-<div style="overflow: auto">
- <h3>Ejemplo de uso</h3>	
-  <div style="background-color:white; float:left;">
-			<object width="400" height="50" data="swf/bookmark.swf"></object>
-	</div>
-		<div style="float:left">
-		&lt;object width=&quot;400&quot; height=&quot;50&quot; data=&quot;bookmark.swf&quot;&gt;&lt;/object&gt; </div>	
-</div>
-<p><a href="#inicio">Volver al inicio</a></p>
-<hr>
- 
-<h3 id="iframe">HTML Iframe</h3>
-<p>El elemento <code>&lt;iframe&gt;</code> es soportado por todos los navegadores.</p>
-<p>El elemento <code>&lt;iframe&gt;</code> define un objeto incrustado dentro de un documento HTML.</p>
-<div style="overflow: auto">
- <h3>Ejemplo de uso</h3>
- 	<div style="float: left">	
 		  <div style="background-color:white; float:left;">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/MEVEUTnFzu8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<video width="320" height="240" controls preload="auto" autoplay poster="img/comodo-dragon.jpg"><!--Lo normal es que el usuario inicie el video, o si el video es corto utilizar loop para marcar el numero de reproducciones-->
+					<source src="video/mov_bbb.mp4" type="video/mp4">
+					<source src="video/mov_bbb.ogg" type="video/ogg"><!--Normalmente con mp4 es válido, incluso se puede poner en la etiqueta video src y el archivo mp4 solamente-->
+					<source src="video/mov_bbb.ogg" type="video/ogg">
+					<track src="subtitulos_en.vtt" kind="subtitulos" srclang="en" label="English"> <!--Esto como ejemplo para añadir subtitulos-->	
+				</video>
 			</div>
-				<div style="float:left; font-size: 12px">
-				&lt;object width=&quot;400&quot; height=&quot;50&quot; data=&quot;bookmark.swf&quot;&gt;&lt;/object&gt; </div>	
-</div>	
-	<div style="float: left">
-		<div style="background-color:white; float:left;">
-			<a href="http://www.marca.com" target="mi-iframe">Marca</a> |
-			<a href="http://www.as.com" target="mi-iframe">As</a> |
-			<a href="http://www.diariosport.com" target="mi-iframe">Sport</a>
-		</div>	
-		</div>	
-			<iframe name="mi-iframe"  width="100%" frameborder="1" height="500 px"></iframe>					
-</div>
-<div>
-<h4>Ejemplo de uso incrustando twitter</h4>
-
-<blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">Mapping an asteroid requires views from all directions. During Preliminary Survey, I used MapCam to snap this image of Bennu from a distance of about 8 miles (13 km) as I flew toward the asteroid during a pass over its equator. <a href="https://t.co/Hw1Qmc4UyP">https://t.co/Hw1Qmc4UyP</a> <a href="https://t.co/UodU5gcVCJ">pic.twitter.com/UodU5gcVCJ</a></p>&mdash; NASA&#39;s OSIRIS-REx (@OSIRISREx) <a href="https://twitter.com/OSIRISREx/status/1085620739611348992?ref_src=twsrc%5Etfw">16 de enero de 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-<br>
-<div class="nota">
-  <p><b>Nota: </b>Es un elemento externo, el cual no se puede controlar. Es decir , conectamos directamente a la página</p>
-</div>
-
+			<div style="float:left; font-size: 12px">
+					&lt;video width=&quot;320&quot; height=&quot;240&quot; controls preload=&quot;auto&quot; autoplay poster=&quot;img/comodo-dragon.jpg&quot;&gt;<br>
+				&lt;source src=&quot;video/mov_bbb.mp4&quot; type=&quot;video/mp4&quot;&gt;<br>
+				&lt;source src=&quot;video/mov_bbb.ogg&quot; type=&quot;video/ogg&quot;&gt;<br>
+				&lt;source src=&quot;video/mov_bbb.ogg&quot; type=&quot;video/ogg&quot;&gt;<br>
+				&lt;track src=&quot;subtitulos_en.vtt&quot; kind=&quot;subtitulos&quot; srclang=&quot;en&quot; label=&quot;English&quot;&gt;<br>
+				&lt;/video&gt;
+			</div>
+	  </div>
+		  <div style="float:left;">
+				<div style="background-color:white; float: left">
+				  <video src="video/mov_bbb.mp4" width="320" height="240" controls poster="img/comodo-dragon.jpg"><!--Esta es la manera rápida de marcarlo, pero no la mejor porque no da opciones-->
+				</video>
+		  </div>
+			  <div style="float: left; font-size: 12px">		
+				&lt;video src=&quot;video/mov_bbb.mp4&quot; width=&quot;320&quot; height=&quot;240&quot; controls poster=&quot;img/comodo-dragon.jpg&quot;&gt;<br>
+				&lt;/video&gt;<br>
+			</div>
+	</div>
+	</div>
+	<p><a href="#inicio">Volver al inicio</a></p>
+</article>
 <hr>
-<p><a href="#inicio">Volver al inicio</a></p>
+<article>
+	<h2 id="audio">Audio</h2>
+	<p>La etiqueta <code>&lt;audio&gt;</code>  especifica una forma estándar para incrustar un audio en una página web.</p>
+	<p>El atributo controls  agrega controles de audio, como reproducción, pausa y volumen.</p>
+	<p>El elemento <code>&lt;source&gt;</code> le permite especificar los archivos de audio alternativos que el navegador puede elegir. El navegador usará el primer formato reconocido.</p>
+	<p>El texto entre las etiquetas <code>&lt;audio&gt;</code> y <code>&lt;/audio&gt;</code>  sólo se mostrará en los navegadores que no soportan el elemento &lt;audio&gt;.</p>
 
+	<div style="overflow: auto">
+	<h3>Ejemplo de uso</h3>	
+	  <div style="background-color:white; float:left;">
+				<audio controls>
+					<source src="audio/intro.mp3" type="audio/mp3">
+					<source src="audio/intro.ogg" type="audio/ogg"><!--ejemplo para ogg-->
+					<source src="audio/intro.mp3" type="audio/wav"><!--ejemplo para wav aunque no tengamos el archivo-->
+				</audio>
+			</div>
+			<div style="float:left">
+			&lt;audio controls&gt;<br>
+				&lt;source src=&quot;audio/intro.mp3&quot; type=&quot;audio/mp3&quot;&gt;<br>
+				&lt;source src=&quot;audio/intro.ogg&quot; type=&quot;audio/ogg&quot;&gt;<br>
+				&lt;source src=&quot;audio/intro.mp3&quot; type=&quot;audio/wav&quot;&gt;<br>
+				&lt;/audio&gt;
+			</div>	
+	</div>
+	<p><a href="#inicio">Volver al inicio</a></p>
+</article>
+<hr>
+<article>
+	<h3 id="objects">HTML Object</h3>
+	<p>El <code>&lt;object&gt;</code>elemento es soportado por todos los navegadores.</p>
+	<p>El <code>&lt;object&gt;</code>elemento define un objeto incrustado dentro de un documento HTML.</p>
+	<div style="overflow: auto">
+	 <h3>Ejemplo de uso</h3>	
+	  <div style="background-color:white; float:left;">
+				<object width="400" height="50" data="swf/bookmark.swf"></object>
+		</div>
+			<div style="float:left">
+			&lt;object width=&quot;400&quot; height=&quot;50&quot; data=&quot;bookmark.swf&quot;&gt;&lt;/object&gt; </div>	
+	</div>
+	<p><a href="#inicio">Volver al inicio</a></p>	
+</article>
+<hr>
+<article>
+		<h3 id="iframe">HTML Iframe</h3>
+	<p>El elemento <code>&lt;iframe&gt;</code> es soportado por todos los navegadores.</p>
+	<p>El elemento <code>&lt;iframe&gt;</code> define un objeto incrustado dentro de un documento HTML.</p>
+	<div style="overflow: auto">
+	 <h3>Ejemplo de uso</h3>
+		<div style="float: left">	
+			  <div style="background-color:white; float:left;">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/MEVEUTnFzu8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+					<div style="float:left; font-size: 12px">
+					&lt;object width=&quot;400&quot; height=&quot;50&quot; data=&quot;bookmark.swf&quot;&gt;&lt;/object&gt; </div>	
+	</div>	
+		<div style="float: left">
+			<div style="background-color:white; float:left;">
+				<a href="http://www.marca.com" target="mi-iframe">Marca</a> |
+				<a href="http://www.as.com" target="mi-iframe">As</a> |
+				<a href="http://www.diariosport.com" target="mi-iframe">Sport</a>
+			</div>	
+			</div>	
+				<iframe name="mi-iframe"  width="100%" frameborder="1" height="500 px"></iframe>					
+	</div>
+	<div>
+	<h4>Ejemplo de uso incrustando twitter</h4>
+
+	<blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">Mapping an asteroid requires views from all directions. During Preliminary Survey, I used MapCam to snap this image of Bennu from a distance of about 8 miles (13 km) as I flew toward the asteroid during a pass over its equator. <a href="https://t.co/Hw1Qmc4UyP">https://t.co/Hw1Qmc4UyP</a> <a href="https://t.co/UodU5gcVCJ">pic.twitter.com/UodU5gcVCJ</a></p>&mdash; NASA&#39;s OSIRIS-REx (@OSIRISREx) <a href="https://twitter.com/OSIRISREx/status/1085620739611348992?ref_src=twsrc%5Etfw">16 de enero de 2019</a></blockquote>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</div>
+	<br>
+	<div class="nota">
+	  <p><b>Nota: </b>Es un elemento externo, el cual no se puede controlar. Es decir , conectamos directamente a la página</p>
+	</div>
+	<p><a href="#inicio">Volver al inicio</a></p>
+</article>
+</section>
+</main>
 </body>
-
+<hr>
+<footer style="text-align: center">
+ <a href="#">Política de cookies</a> | 
+ <a href="#">Política de privacidad</a> | 
+ <a href="#">Aviso legal</a> | 
+ <a href="#">Mapa web</a> | 
+ <a href="#">otro</a>
+ <br>
+ <br>
+ </footer>  
 </html>

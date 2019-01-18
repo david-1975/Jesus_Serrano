@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="es-ES"> <!-- la marca en mayuscula indica el pais, es decir, español de españa en este caso -->
-    <head>
+<head>
         <title>Introducción a HTML</title>
         <meta charset="UTF-8"><!-- Es OBLIGATORIO Y NECESARIO poner el meta charset para indicar el codigo de caracteres que se utiliza, es el mismo siempre ya que el standard UTF-8 contiene todos los idiomas y dialectos mundiales -->
         <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
@@ -88,19 +88,28 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- la manera de vstudio de hacer las 3 anteriores-->
         <link rel="icon" href="img/favicon.ico" type="image/x-icon"> 
 
-    </head>
-    <body>
-<a href="index.html" style="text-align: left">
-<div style="overflow: auto;background-color: white;margin: 20px;">
-	<div style="float: left;background-color: white;"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página"></div>
-	<div style="float: left;background-color: white;"><h2>LENGUAJE DE MARCAS</h2><a href="introduccion.html">Introduccion</a>  | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a></div>
-</div>
-</a>
-
-        <h1 id="inicio">Introducción a HTML</h1>
-        <hr> <!-- linea horizontal, separa semánticamente el significado del contexto -->
-        <a href="index.html">Indice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a>
-        <hr>
+</head>
+<body>
+<header>
+	<a href="index.html" style="text-align: left">
+		<div style="overflow: auto;background-color: white;margin: 20px;">
+			<div style="float: left;background-color: white;">
+				<img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página">
+				</div>
+			<div style="float: left;background-color: white;"><h2>LENGUAJE DE MARCAS</h2>
+				<a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a> | <a href="semantica.html">Semántica</a>
+			</div>
+		</div>
+	</a>
+<h1 id="inicio">Introducción al HTML</h1>
+</header>
+<hr>
+<nav>
+	<a href="index.html">Indice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a> | <a href="semantica.html">Semántica</a>
+</nav>
+<hr>
+<main>
+	<aside>
         <ul>
         	<li><a href="#queeshtml">¿Qué es HTML?</a></li>
         	<li><a href="#estructura">Estructura básica de un HTML</a></li>
@@ -110,7 +119,9 @@
         	<li><a href="#versiones">Versiones de HTML</a></li>
         	<li><a href="#estructuraspw">Estructura de páginas Web</a></li>
         </ul>
+    </aside>
         <hr>
+    <section></section>
             <h2 id="queeshtml">¿Qué es HTML?</h2>
         
             <p> HTML es el lenguaje de marcado estándar para la creación de páginas Web.</p><!-- La etiqueta p tiene display block (etiqueta tipo bloque), es decir hace un punto y a parte y cambia de párrafo. Sin embargo, hay etiquetas que no lo tienen, la etiqueta strong (marca en negrita) es una etiqueta en línea. Esto son valores por defecto, pero luego por CSS se puede variar todo. Aunque varies con CSS el valor semántico de la información no varía-->
@@ -258,5 +269,16 @@
                     </div>
                     <hr>
                     <p><a href="#inicio">Volver al inicio</a></p>
-    </body>
+</main>
+<hr>
+<footer style="text-align: center">
+ <a href="#">Política de cookies</a> | 
+ <a href="#">Política de privacidad</a> | 
+ <a href="#">Aviso legal</a> | 
+ <a href="#">Mapa web</a> | 
+ <a href="#">otro</a>
+ <br>
+ <br>
+ </footer>                  
+</body>
 </html>
