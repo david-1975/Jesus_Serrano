@@ -9,7 +9,7 @@
         <meta name="tittle" content="Confección y publicación de páginas web">
         <meta name="author" content="Jesús">
         
-        <style>
+       <style>
         body{/* estilo al body */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* cambia la fuente a toda la página */
             width: 90%;
@@ -23,13 +23,33 @@
             font-family:Arial, Helvetica, sans-serif;
             }
         table, th, td { /* con esto damos el mismo estilo al table, th y td */
-            border: 3px solid black;
+            border: 1px solid black;
+              }
+        
+        table h1,h2,h3,h4,h5,h6 {
+            margin: 0;
+            text-align: left;
+        }
+        table{
+            width: 100%;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+        }
+        td,th{
+            padding:8px;
+            text-align:center;
+            border:1px solid #dddddd;
+        }
+        
+        tr:nth-child(even){
+                background-color: #cccccc;
             }
+        
         div{ /* con esto creamos estilo en todos los div */
             background-color: #f1f1f1;  /* Le damos color al fondo. El número en hexadecimal va con # delante */
             /* border: 1px solid #cccccc;  Le da borde a los div */
-            margin: 20px; /* da margen exterior  a los div */
-            padding: 20px; /*o relleno interior, le da margenes al div interno */
+            margin: 10px; /* da margen exterior  a los div */
+            padding: 10px; /*o relleno interior, le da margenes al div interno */
             }
         .nota{/* con esto generamos un estilo exclusivamente a los elementos que queremos, luego cuando tengamos página de estilo no hará falta porque lo administraremos con id */
             background-color: #ffffcc; 
@@ -71,8 +91,31 @@
             padding: 8px 16px;
             margin: 20px 0;
             box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);}/* esto le genera la sombra */
-        
-			
+        a:link {
+		  color: black;
+		  background-color: transparent;
+		  text-decoration: none;
+				}
+		a:visited {
+		  color:#012E72
+		  background-color: transparent;
+		  text-decoration: none;
+				}
+		a:hover {
+		  color: red;
+		  background-color: transparent;
+		  text-decoration: underline;
+				}
+		a:active {
+		  color: yellow;
+		  background-color: transparent;
+		  text-decoration: underline;
+				}
+		 #menu{
+		overflow: auto;
+		background-color: white;
+		margin:20px;
+	}
         </style> <!-- generamos estilo a todas las etiquetas llamadas como las marcadas, se separan por "," y las propiedades y el valor tiene que ir entre {}. Cada vez que se añade propiedades y valor se separan con ";"  -->
         <script>    </script>
         
@@ -96,7 +139,7 @@
 			<div style="float: left;background-color: white;">
 				<img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página">
 				</div>
-			<div style="float: left;background-color: white;"><h2>LENGUAJE DE MARCAS</h2>
+			<div style="float: left;background-color: white;"><h2 style="text-align: center">LENGUAJE DE MARCAS</h2>
 				<a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a> | <a href="semantica.html">Semántica</a>
 			</div>
 		</div>
@@ -265,7 +308,7 @@
                         &lt;/Html&gt;
                     </div>
                     <div class="nota"><!-- le damos atributo class para que aplique el estilo -->
-                        <p>Nota: Sólo el contenido dentro de la sección <code>&lt;Body&gt;</code>  (el área blanca arriba) se muestra en un navegador.</p>
+                        <p><strong>Nota:</strong> Sólo el contenido dentro de la sección <code>&lt;Body&gt;</code>  (el área blanca arriba) se muestra en un navegador.</p>
                     </div>
                     <hr>
                     <p><a href="#inicio">Volver al inicio</a></p>
@@ -275,7 +318,7 @@
  <a href="#">Política de cookies</a> | 
  <a href="#">Política de privacidad</a> | 
  <a href="#">Aviso legal</a> | 
- <a href="#">Mapa web</a> | 
+ <a href="index.html#mapaweb">Mapa web</a> | 
  <a href="#">otro</a>
  <br>
  <br>

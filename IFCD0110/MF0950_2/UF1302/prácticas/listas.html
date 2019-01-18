@@ -19,76 +19,81 @@
 <style>
 	
 body {
-font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
-width:90%;
-margin: 0 auto;
+		font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		width:90%;
+		margin: 0 auto;
 }
 h1,h2,h3,h4,h5,h6 {
-font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .nota {
-background-color: #ffffcc;
-border-left: 6px solid #ffeb3b;
-padding-top:10px;
-padding-bottom:10px;
-padding-left:20px;
-padding-right:5px;
+		background-color: #ffffcc;
+		border-left: 6px solid #ffeb3b;
+		padding-top:10px;
+		padding-bottom:10px;
+		padding-left:20px;
+		padding-right:5px;
 	 }
 hr {
-border: 1px solid #eeeeee;
+		border: 1px solid #eeeeee;
+		margin: 20px 0;
 }
 code {
-color: crimson;
-background-color: #f1f1f1;
-padding-left: 4px;
-padding-right: 4px;
-font-size: 110%;
+		color: crimson;
+		background-color: #f1f1f1;
+		padding-left: 4px;
+		padding-right: 4px;
+		font-size: 110%;
 }
 .etiquetasHTML {
-border: 1px solid #cccccc;
-background-color: #f1f1f1;
-font-size: 22px;
-padding: 12px;
-}
+		border: 1px solid #cccccc;
+		background-color: #f1f1f1;
+		font-size: 22px;
+		padding: 12px;
+		}
 code span {
-color: mediumblue;
+		color: mediumblue;
 }
 code span span {
-color: brown;
+		color: brown;
 }
 code span span span {
-color: crimson;
+		color: crimson;
 }
 .code {
-margin-top: 16px;
-margin-bottom: 16px;
-background-color: #ffffff;
-padding: 8px 12px;
-border-left: 4px solid #4CAF50;
-color: black;
+		margin-top: 16px;
+		margin-bottom: 16px;
+		background-color: #ffffff;
+		padding: 8px 12px;
+		border-left: 4px solid #4CAF50;
+		color: black;
 }
 .ejemplo {
-background-color: #f1f1f1;
-padding: 8px 16px;
-margin: 20px 0;
-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+		background-color: #f1f1f1;
+		padding: 8px 16px;
+		margin: 20px 0;
+		box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 table h1,h2,h3,h4,h5,h6 {
-margin:0;
+		margin:0;
 }
 table {
-font-family: arial, sans-serif;
-border-collapse: collapse;
-width: 100%;
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
 }
 table td, #table th {
-border: 1px solid #cccccc;
-text-align: left;
-padding: 8px;
+		border: 1px solid #cccccc;
+		text-align: left;
+		padding: 8px;
 }
 #table tr:nth-child(even) {
-background-color: #dddddd;
+		background-color: #dddddd;		
 }
+	#table{
+		width: 50%;
+	
+	}
 kbd {
   padding: 0.2rem 0.4rem;
   font-size: 87.5%;
@@ -100,12 +105,12 @@ samp {
   font-size: 130%;
 }
 .cite {
-margin-top: 16px;
-margin-bottom: 16px;
-background-color: #FFFFFF;
-padding: 8px 12px;
-border-left: 4px solid #2196F3;
-color: black;
+		margin-top: 16px;
+		margin-bottom: 16px;
+		background-color: #FFFFFF;
+		padding: 8px 12px;
+		border-left: 4px solid #2196F3;
+		color: black;
 }
 .blockquote {
   margin-top: 0;
@@ -133,20 +138,20 @@ divDoble{
 		/*border:1px solid blue;*/
 		/*padding: 10px;*/
 	}
-		#divHijo2{
+#divHijo2{
 		float: left;
 		width: 33.33%;
 		/*border:1px solid blue;*/
 			/*padding: 10px;*/
 	}
-		#divHijo3{
+#divHijo3{
 		float: left;
 		width: 33.33%;
 		/*border:1px solid blue;*/
 		/*padding: 10px;*/
 		clear: right;
 	}
-		span{ 
+span{ 
 		padding: 2px 5px;
 		margin: 2px;
 		font-size: 87.5%;
@@ -154,11 +159,42 @@ divDoble{
 		background-color: #ffffff;
 		border-radius: 0.2rem;
 	}
-	#menu{
+#menu{
 		overflow: auto;
 		background-color: white;
 		margin:20px;
 	}
+div{ /* con esto creamos estilo en todos los div */
+            background-color: #f1f1f1;  /* Le damos color al fondo. El número en hexadecimal va con # delante */
+            /* border: 1px solid #cccccc;  Le da borde a los div */
+            margin: 10px; /* da margen exterior  a los div */
+            padding: 10px; /*o relleno interior, le da margenes al div interno */
+            }
+a:link {
+		  color: black;
+		  background-color: transparent;
+		  text-decoration: none;
+				}
+a:visited {
+		  color:#012E72
+		  background-color: transparent;
+		  text-decoration: none;
+				}
+a:hover {
+		  color: red;
+		  background-color: transparent;
+		  text-decoration: underline;
+				}
+a:active {
+		  color: yellow;
+		  background-color: transparent;
+		  text-decoration: underline;
+				}
+#menu{
+		overflow: auto;
+		background-color: white;
+		margin:20px;
+		}
 </style>
 
 <script>   </script>
@@ -174,7 +210,7 @@ divDoble{
 	<a href="index.html" style="text-align: left">
 	<div style="overflow: auto;background-color: white;margin: 20px;">
 		<div style="float: left;background-color: white;"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página"></div>
-		<div style="float: left;background-color: white;"><h2>LENGUAJE DE MARCAS</h2><a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a> | <a href="semantica.html">Semántica</a></div>
+		<div style="float: left;background-color: white;"><h2 style="text-align: center">LENGUAJE DE MARCAS</h2><a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a> | <a href="semantica.html">Semántica</a></div>
 	</div>
 	</a>
 	<h1 id="inicio">HTML Listas</h1>
@@ -208,21 +244,21 @@ divDoble{
 			<p>La etiqueta <code>&lt;ul&gt;</code>  define una lista desordenada (viñetas). Utilice la etiqueta <code>&lt;ul&gt;</code> junto con la etiqueta <code>&lt;li&gt;</code> para crear listas desordenadas.Se puede utilizar el estilo CSS list-style-type para especificar el tipo de viñeta. El atributo type en la entiqueta <code>&lt;ul&gt;</code> no se admite en HTML5.</p>
 
 			<div style="overflow:hidden;border:1px solid red;margin:auto;width: 80%">
-				<div style="float:left;margin:auto;width: 33%;">
+				<div style="float:left;margin:auto;width: 30%;">
 				  <p><strong>Tecnologías Web </strong></p>
 					<ul style="list-style-type: disc;">
 						<li>HTML</li>
 						<li>CSS</li>
 						<li>JavaScript</li>
 					</ul></div>
-				<div style="float:left;margin:auto;width: 33%;">
+				<div style="float:left;margin:auto;width: 30%;">
 				  <p><strong>Tecnologías internet</strong></p>
 				  <ul style="list-style-type:square">
 						<li>HTTP</li>
 						<li>URL</li>
 						<li>www</li>
 					</ul></div>
-				<div style="float:left;margin:auto;width: 33%;">
+				<div style="float:left;margin:auto;width: 30%;">
 				  <ul style="list-style-type:none">
 						<p><strong>Lenguajes de marcas</strong></p>
 						<li>HTML</li>
@@ -240,21 +276,21 @@ divDoble{
 			<p>Utilice el <code>&lt;li&gt;</code> etiqueta para definir elementos de la lista. Al igual que en la listas desordenadas, se puede utilizar el estilo CSS list-style-type para especificar el tipo de viñeta.</p>
 
 			 <div style="overflow:hidden;border:1px solid red;margin:auto;width: 80%">
-				<div style="float:left;margin:auto;width: 33%;">
+				<div style="float:left;margin:auto;width: 30%;">
 					<p><strong>Tecnologías Web </strong></p>
 					<ol style="list-style-type:decimal;">
 						<li>HTML</li>
 						<li>CSS</li>
 						<li>JavaScript</li>
 			   </ol></div>
-				<div style="float:left;margin:auto;width: 33%;">
+				<div style="float:left;margin:auto;width: 30%;">
 					<p><strong>Tecnologías internet</strong></p>
 					<ol style="list-style-type:lower-roman">
 						<li>HTTP</li>
 						<li>URL</li>
 						<li>www</li>
 					</ol></div>
-				<div style="float:left;margin:auto;width: 33%;">
+				<div style="float:left;margin:auto;width: 30%;">
 					<ol style="list-style-type:lower-latin">
 						<p><strong>Lenguajes de marcas</strong></p>
 						<li>HTML</li>
@@ -287,25 +323,24 @@ divDoble{
 			<br>
 			<table id="table">
 			  <tr>
-			<th>Etiqueta</th>
-			<th>Descripción</th>
-			</tr>
-
-			<tr>
-			<td>&lt;ul&gt;</td>
-			<td>Define una lista desordenada</td>
+				<th>Etiqueta</th>
+				<th>Descripción</th>
 			</tr>
 			<tr>
-			<td>&lt;ol&gt;</td>
-			<td>Define una lista ordenada</td>
+				<td>&lt;ul&gt;</td>
+				<td>Define una lista desordenada</td>
 			</tr>
 			<tr>
-			<td>&lt;li&gt;</td>
-			<td>Define los elementos de las listas</td>
+				<td>&lt;ol&gt;</td>
+				<td>Define una lista ordenada</td>
 			</tr>
 			<tr>
-			<td>&lt;dl&gt;</td>
-			<td>Define una lista de definición</td>
+				<td>&lt;li&gt;</td>
+				<td>Define los elementos de las listas</td>
+			</tr>
+			<tr>
+				<td>&lt;dl&gt;</td>
+				<td>Define una lista de definición</td>
 			</tr>
 			<tr>
 			  <td>&lt;dt&gt;</td>
@@ -392,7 +427,7 @@ divDoble{
  <a href="#">Política de cookies</a> | 
  <a href="#">Política de privacidad</a> | 
  <a href="#">Aviso legal</a> | 
- <a href="#">Mapa web</a> | 
+ <a href="index.html#mapaweb">Mapa web</a> | 
  <a href="#">otro</a>
  <br>
  <br>

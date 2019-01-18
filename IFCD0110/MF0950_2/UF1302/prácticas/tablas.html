@@ -18,7 +18,7 @@
 <style>
 	
 body {
-font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 width:90%;
 margin: 0 auto;
 }
@@ -35,6 +35,7 @@ padding-right:5px;
 	 }
 hr {
 border: 1px solid #eeeeee;
+	margin: 20px 0;
 }
 code {
 color: crimson;
@@ -110,7 +111,7 @@ color: black;
   margin-top: 0;
   margin-bottom: 0;
 }
-divDoble{
+#divDoble{
 	display:block;
 	overflow: hidden;
 	float: none;
@@ -145,6 +146,18 @@ divDoble{
 		/*padding: 10px;*/
 		clear: right;
 	}
+	
+	.tableDemo table{
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	}
+	.tableDemo td, th{
+	border: 1px solid #cccccc;
+	text-align: left;
+	padding: 8px;
+		}
+
 		span{ 
 		padding: 2px 5px;
 		margin: 2px;
@@ -153,7 +166,36 @@ divDoble{
 		background-color: #ffffff;
 		border-radius: 0.2rem;
 	}
-
+ div{ /* con esto creamos estilo en todos los div */
+            background-color: #f1f1f1;  /* Le damos color al fondo. El número en hexadecimal va con # delante */
+            /* border: 1px solid #cccccc;  Le da borde a los div */
+            margin: 10px; /* da margen exterior  a los div */
+            padding: 10px; /*o relleno interior, le da margenes al div interno */
+            }
+	 a:link {
+		  color: black;
+		  background-color: transparent;
+		  text-decoration: none;
+				}
+		a:visited {
+		  color:#012E72
+		  background-color: transparent;
+		  text-decoration: none;
+				}
+		a:hover {
+		  color: red;
+		  background-color: transparent;
+		  text-decoration: underline;
+				}
+		a:active {
+		  color: yellow;
+		  background-color: transparent;
+		  text-decoration: underline;
+				}
+		 #menu{
+		overflow: auto;
+		background-color: white;
+		margin:20px;
 </style>
 
 <script>   </script>
@@ -167,16 +209,15 @@ divDoble{
 	<a href="index.html" style="text-align: left">
 		<div style="overflow: auto;background-color: white;margin: 20px;">
 			<div style="float: left;background-color: white;"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página"></div>
-			<div style="float: left;background-color: white;"><h2>LENGUAJE DE MARCAS</h2><a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a> | <a href="semantica.html">Semántica</a></div>
+			<div style="float: left;background-color: white;"><h2 style="text-align: center">LENGUAJE DE MARCAS</h2><a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a> | <a href="semantica.html">Semántica</a></div>
 		</div>
 	</a>
 <h1 id="inicio">HTML Tablas</h1>
 </header>
 <hr>
-<nav>
-	
+<nav>	
 	<a href="index.html">Indice</a> | <a href="introduccion.html">Introducción</a>  | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a> | <a href="semantica.html">Semántica</a>
-	</nav>	   
+</nav>	   
 <hr>
 <main>
 	<aside>
@@ -443,21 +484,7 @@ divDoble{
 	<article>
 	<h2 id="colgroup">La etiqueta colgroup y col</h2>
 	<p>La etiqueta <code>&lt;colgroup&gt;</code> especifica un grupo de una o más columnas en una tabla para  la aplicación de estilos CSS para columnas completas, en lugar de repetir los estilos para cada celda, y para cada fila. Para definir propiedades diferentes a una columna dentro de un &lt;colgroup&gt;, utilice la etiqueta &lt;col&gt;  dentro de la etiqueta &lt;colgroup&gt; junto con el atributo span para nombrar cuantas columnas se deben agrupar.</p>
-	<style>
-	.tableDemo table{
-	font-family: arial, sans-serif;
-	border-collapse: collapse;
-	width: 100%;
-	}
-	.tableDemo td, th{
-	border: 1px solid #cccccc;
-	text-align: left;
-	padding: 8px;
-		}
-
-
-
-	</style>
+	
 	<table style="width: 100%" class="tableDemo">
 	  <tr>
 		<td style="width: 25%">
@@ -767,7 +794,7 @@ divDoble{
  <a href="#">Política de cookies</a> | 
  <a href="#">Política de privacidad</a> | 
  <a href="#">Aviso legal</a> | 
- <a href="#">Mapa web</a> | 
+ <a href="index.html#mapaweb">Mapa web</a> | 
  <a href="#">otro</a>
  <br>
  <br>
