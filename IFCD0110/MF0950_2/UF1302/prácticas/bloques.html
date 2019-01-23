@@ -153,7 +153,7 @@
 		  text-decoration: none;
 				}
 		a:visited {
-		  color:#012E72
+		  color:#012E72;
 		  background-color: transparent;
 		  text-decoration: none;
 				}
@@ -171,7 +171,7 @@
 		overflow: auto;
 		background-color: white;
 		margin:20px;
-        
+		}
         </style> <!-- generamos estilo a todas las etiquetas llamadas como las marcadas, se separan por "," y las propiedades y el valor tiene que ir entre {}. Cada vez que se añade propiedades y valor se separan con ";"  -->
         <script>    </script>
         
@@ -190,16 +190,16 @@
     </head>
 <body>
 <header>
-<a href="index.html" style="text-align: left">
-	<div style="overflow: auto;background-color: white;margin: 20px;">
-		<div style="float: left;background-color: white;">
-			<img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página">
+	<div style="overflow: auto;background-color: white;margin: 20px">
+		<div style="float: left;background-color: white">
+			<a href="index.html" style="text-align: left"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Pagina principal"></a>
 			</div>
 		<div style="float: left;background-color: white;">
-			<h2 style="text-align: center; margin: 20px;">LENGUAJE DE MARCAS</h2><a style="padding: 10px" href="introduccion.html">Introducción</a> | <a  style="padding: 10px" href="formato.html">Formato</a> | <a style="padding: 10px;" href="bloques.html">Bloques</a> | <a  style="padding: 10px;" href="tablas.html">Tablas</a> | <a style="padding: 10px; " href="listas.html">Listas</a> | <a  style="padding: 10px; " href="multimedia.html">Multimedia</a> | <a  style="padding: 10px; " href="semantica.html">Semántica</a>
+			<h2 style="text-align:center; margin: 20px">LENGUAJE DE MARCAS</h2>
+			 <a href="introduccion.html" style="padding:10px;" >Introducción</a> | <a style="padding: 10px;"
+			href="formato.html">Formato</a> | <a style="padding: 10px;" href="bloques.html">Bloques</a> | <a style="padding: 10px;" href="tablas.html">Tablas</a> | <a style="padding: 10px;" href="listas.html">Listas</a> | <a  style="padding: 10px; " href="multimedia.html">Multimedia</a> | <a style="padding: 10px;" href="semantica.html">Semántica</a>
 			</div>
 	</div>
-</a>
 	<h1 id="inicio">HTML Bloques</h1>
 </header>
 <hr>
@@ -282,12 +282,12 @@
 			<div class="code">
 			<p><strong>CÓDIGO <dfn><abbr title="HyperTect Markup Language">HTML</abbr></dfn></strong>
 			</p>
-			<small>
-			<p style="line-height: 20px; margin-left: 40px;"><!--estilo de alto de línea-->&lt;p&gt;&lt;strong&gt;EL LENGUAJE &lt;dfn&gt;&lt;abbr title=&quot;HyperTect Markup Language&quot;&gt;HTML&lt;/abbr&gt;&lt;/dfn&gt;&lt;/strong&gt;
+			
+			<p style="line-height: 20px; margin-left: 40px;"><!--estilo de alto de línea-->&lt;p&gt;&lt;strong&gt;EL <small>LENGUAJE &lt;dfn&gt;&lt;abbr title=&quot;HyperTect Markup Language&quot;&gt;HTML&lt;/abbr&gt;&lt;/dfn&gt;&lt;/strong&gt;
 			&lt;/p&gt;
 			&lt;blockquote&gt;
 			&lt;p&gt;Como &lt;strong&gt;Tim Berners-Lee&lt;/strong&gt;, el padre de la Web, escribió en &lt;cite&gt;Tejiendo la Web&lt;/cite&gt;: &lt;q&gt;Yo llegué en el momento justo, interesado, cuando el hipertexto e Internet habían visto la luz. La tarea que me correspondía era hacer que casaran&lt;/q&gt;&lt;/p&gt;
-			&lt;/blockquote&gt;</p></small>
+			&lt;/blockquote&gt;</small></p>
 
 			</div>   	
 		</div>
@@ -329,7 +329,7 @@
 		<h3> Ejemplo de uso</h3>
 			<div class="cite">
 			<p><strong>Elementos DIV-SPAN</strong></p>
-			  <div style="border: 2px solid black; margin: 10 px 15 px 10 px 15px;padding: 0;">	
+			  <div style="border: 2px solid black; margin: 10px 15px 10px 15px;padding: 0;">	
 					<div style="background-color: orange;padding: 5px;margin:0;">
 						<span>HTML</span><span> lenguaje de marcas de hipertexto</span><span> se utiliza para el desarrollo de páginas web.</span>
 					</div>
@@ -344,10 +344,10 @@
 
 			<div class="code">
 				<p><strong>Código <dfn><abbr title="HyperTect Markup Language">HTML</abbr></dfn></strong></p>
-					<small><p style="line-height: 20px; margin-left: 40px;">&lt;div&gt;&lt;div&gt;&lt;span&gt;HTML&lt;/span&gt;&lt;span&gt; lenguaje de marcas de hipertexto&lt;/span&gt;&lt;span&gt; se utiliza para el desarrollo de páginas web.&lt;/span&gt;
+					<p style="line-height: 20px; margin-left: 40px;"><small>&lt;div&gt;&lt;div&gt;&lt;span&gt;HTML&lt;/span&gt;&lt;span&gt; lenguaje de marcas de hipertexto&lt;/span&gt;&lt;span&gt; se utiliza para el desarrollo de páginas web.&lt;/span&gt;
 					&lt;/div&gt;&lt;div&gt;&lt;span&gt;CSS&lt;/span&gt;&lt;span&gt; hojas de estilo en cascada&lt;/span&gt;&lt;span&gt; se utiliza para definir y crear la presentación HTML.&lt;/span&gt;
 					&lt;/div&gt;&lt;div&gt;&lt;span&gt;JavaScript&lt;/span&gt;&lt;span&gt; lenguaje de programación&lt;/span&gt;&lt;span&gt; se utiliza para dar dinamismo a las páginas web.&lt;/span&gt;
-					&lt;/div&gt;&lt;/div&gt;</p></small>
+					&lt;/div&gt;&lt;/div&gt;</small></p>
 			</div>  	
 		</div>
 		<br>
@@ -445,10 +445,12 @@
  <a href="#">Política de cookies</a> | 
  <a href="#">Política de privacidad</a> | 
  <a href="#">Aviso legal</a> | 
- <a href="index.html#mapaweb">Mapa web</a> | 
- <a href="#">otro</a>
+ <a href="#mapaweb">Mapa web</a> | 
+ <a href="https://es-es.facebook.com/"><img src="img/iconos32x32/facebooknegro32.png" alt="acceso facebook" width="24" height="24" title="Página de Facebook"></a> |
+ <a href="https://twitter.com/?lang=es"> <img src="img/iconos32x32/twitternegro32.png" alt="acceso twitter" width="24" height="24" title="Página de Twitter"></a> |
+ <a href="https://www.instagram.com/?hl=es"> <img src="img/iconos32x32/instagramnegro32.png" alt="acceso instagram" width="24" height="24" title="Página de Instagram"></a>
  <br>
  <br>
- </footer>     
+ </footer>      
 </body>
 </html>

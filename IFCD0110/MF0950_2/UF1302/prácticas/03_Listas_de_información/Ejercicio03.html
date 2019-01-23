@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es-ES">
+<head>	
+	<title>Etiquetas de listas, citas, división y enlaces</title>
+	
+	<meta charset="utf-8">
+	<meta name="Description" content="Ejercicio 02">
+	<meta name="Keywords" content="HTML, formato">
+	<meta name="tittle" content="Etiquetas de listas, citas, división y enlaces">
+	<meta name="author" content="Jesús Serrano">
+	
+	<style>
+		body{
+			width:80%;
+			color: #8523AA;
+			margin: auto;
+			padding: 16px;
+			font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+			font-size: 16px;
+		}
+		div{
+			border: 1px dotted #6067D9;
+			align-content: center;
+			width: 90%;
+			padding: 14px;
+			margin: 14px auto;
+			background-color:lightgrey;
+			}
+		h2{
+			background-color:grey;
+			color:darkblue;
+		}
+		a{
+			color: black;
+		}
+		footer{
+			color: black;
+		}
+		span{
+			color:black;
+			text-decoration-line: underline;
+		}
+	</style>
+</head>
+<body>
+<main>
+	<section>
+	<h2>&gt; Definición de accesibilidad web</h2>					
+			<p>Normalmente la <strong>accesibilidad web</strong> se asocia con la idea de desarrollar páginas web que puedan ser utilizadas por las personas con discapacidad, tal como podemos leer en las siguientes definiciones:</p>
+			<div>
+				<p>La accesibilidad Web significa que personas con algún tipo de discapacidad van a poder hacer uso de la Web. En concreto, al hablar de accesibilidad Web se está haciendo referencia a un diseño Web que va a permitir que estas personas puedan percibir, entender, navegar e interactuar con la Web, aportando a su vez contenidos. La accesibilidad Web también beneficia a otras personas, incluyendo personas de edad avanzada que han visto mermadas sus habilidad a consecuencia de la edad.</p>
+				<p>Fuente: <a href="https://www.w3c.es/Traducciones/es/WAI/intro/accessibility" target="_blank" title="Introducción a la accesibilidad web de la W3C">Introducción a la Accesibilidad Web</a>, <a href="https://www.w3.org/" target="_blank" title="W3C">W3C</a> .</p>
+			</div>
+			<div>
+				<p>La <a href="https://es.wikipedia.org/wiki/Accesibilidad_web" target="_blank" title="Accesibilidad web según Wikipedia">accesibilidad</a> web o de la interfaz, indica la capacidad de acceso a la <a href="https://es.wikipedia.org/wiki/World_Wide_Web" target="_blank" title="World Wide Web">Web</a> y a sus contenidos por todas las personas, independientemente de la <a href="https://es.wikipedia.org/wiki/Discapacidad" target="_blank" title="Definición de discapacidad">discapacidad</a> (física, intelectual o técnica) que presenten o de las que se deriven del contexto de uso (tecnológicas o ambientales). Esta cualidad está íntimamente relacionada con la <a href="https://es.wikipedia.org/wiki/Usabilidad" target="_blank" title="Definición de usabilidad">usabilidad</a>.</p>
+				<p>El máximo organismo dentro de la jerarquía de <a href="https://es.wikipedia.org/wiki/Internet" target="_blank" title="Internet">Internet</a> que se encarga de promover la accesibilidad es el <a href="https://www.w3.org/" target="_blank" title="W3C">W3C</a>, en especial su grupo de trabajo <a href="https://es.wikipedia.org/wiki/Web_Accessibility_Initiative" target="_blank" title="WAI">WAI</a>.</p>
+				<p>En <a href="https://es.wikipedia.org/wiki/Espa%C3%B1a" target="_blank" title="España">España</a> una de las asociaciones que trabaja en este campo es el <a href="http://www.sidar.org/#goto_a11yhoy" target="_blank" title="Seminario Iberoamericano sobre Discapacidad y Accesibilidad en la Red">SIDAR</a>. En enero de 2007 el <a href="https://www.incibe.es/" target="_blank" title="Ahora conocido como INCIBE">Instituto Nacional de Tecnologías de la Comunicación</a> (INTECO) creó el Centro de Referencia en Accesibilidad y Estándares Web con el objetivo de fomentar la accesibilidad y crear un foco de conocimiento al respecto.</p>
+				<p>Fuente: <a href="https://es.wikipedia.org/wiki/Accesibilidad_web" target="_blank" title="Accesibilidad web">Accesibilidad web</a>, <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank" title="Wikipedia, la enciclopedia libre">Wikipedia</a>.</p>
+			</div>
+			<div>
+				<cite><q>A web site is accessible if people with specific disabilities can use it with the same effectiveness, safety and security as non-disabled people.</q></cite>
+				<hr>
+				<p>Un sitio web es accesible si las personas con discapacidad lo pueden utilizar con la misma efectividad, seguridad y protección que las personas sin discapacidad.</p>
+				<p>Fuente: <cite><a href="https://scholar.google.com/citations?user=a-qHaRIAAAAJ&hl=es#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Des%26user%3Da-qHaRIAAAAJ%26citation_for_view%3Da-qHaRIAAAAJ%3AroLk4NBRz8UC%26tzom%3D-60" target="_blank" title="Acceso a página de artículos de Giorgio Brajnik">Validity and Reliability of Accessibility Evaluation Methods</a></cite>, Giorgio Brajnik.</p>
+			</div>
+	</section>
+	<section>
+			<h2>&gt; Guía breve para crear sitios web accesibles</h2>
+			<p>El <a href="https://www.w3.org/" target="_blank" title="W3C">World Wide Web Consortium (W3C)</a> publica la guía <a href="https://www.w3.org/WAI/quicktips/" target="_blank" title="Guía accesibilidad web W3C">Quick Tips to Make Accessible Web Sites</a> (traducción al español disponible en <a href="https://www.w3c.es/Divulgacion/GuiasBreves/Accesibilidad" target="_blank" title="Descargar archivo pdf sobre guía de accesibilidad"></a>Guía breve para crear sitios web accesibles). Los 10 consejos que proporcionan son:</p>
+			<div><ol>
+				<li>
+					<span>Imágenes y animaciones</span>: Use el atributo <strong>alt</strong> para describir la función de cada elemento visual.
+				</li>
+				<li>
+					<span>Mapas de imagen</span>: Use el elemento <strong>map</strong> y texto para las zonas activas.
+				</li>
+				<li>
+					<span>Multimedia</span>: Proporcione subtítulos y transcripción del sonido, y descripción del vídeo.
+				</li>
+				<li>
+					<span>Enlaces de hipertexto</span>: Use texto que tenga sentido leído fuera de contexto. Por ejemplo, evite "pincha aquí".
+				</li>
+				<li>
+					<span>Organización de las páginas</span>: Use encabezados, listas y estructura consistente. Use <strong>CSS</strong> para la maquetación donde sea posible.
+				</li>
+				<li>
+					<span>Figuras y diagramas</span>: Descríbalos brevemente en la pagina o use el atributo <strong>longdesc</strong>.
+				</li>
+				<li>
+					<span>Scripts, applets y plug-ins</span>: Ofrezca contenido alternativo si las funciones nuevas no son accesibles.
+				</li>
+				<li>
+					<span>Marcos</span>: Use el elemento <strong>noframes</strong> y títulos con sentido.
+				</li>
+				<li>
+					<span>Tablas</span>: Facilite la lectura línea a línea. Resuma.
+				</li>
+				<li>
+					<span>Revise su trabajo</span>: Verifique. Use las herramientas, puntos de comprobación y pautas de <a href="http://www.w3.org/TR/WCAG/" target="_blank" title="W3C">http://www.w3.org/TR/WCAG/</a> .
+				</li>
+			</ol>	
+			</div>
+			<p>Esta guía son únicamente consejos que ayudan cuando se tiene un "primer contacto" con la accesibilidad web, pero en ningún caso implican que su cumplimiento garantice que se alcance algún nivel de <a href="http://accesibilidadweb.dlsi.ua.es/?menu=niveles-2.0" target="_blank" title="Niveles de adecuación segun la Universidad de Alicante">adecuación</a> (A, AA o AAA).</p>
+			<p>Los consejos proporcionados en esta guía breve se pueden resumir en los siguientes puntos:</p>
+			<ul>
+				<li>
+					Utiliza estándares abiertos.
+				</li>
+				<li>
+					Utiliza los estándares correctamente: comprueba que el sitio web se valida correctamente.
+				</li>
+				<li>
+					Evita el uso de tecnologías propietarias.
+				</li>
+				<li>
+					Proporciona alternativas al contenido que puede presentar problemas de accesibilidad.
+				</li>
+			</ul>
+			<div>
+				<p style="margin: 12px;"><strong>Importante</strong></p>
+				
+				<dl>
+					<dt style="text-decoration-line: underline; color: black;">
+						<img src="icon_eye.gif" alt="Ojo" title="Imagen de un ojo" style="margin-top: 4px;margin-left: 10px; margin-right: 8px; float: left;"><strong>Visual</strong>
+					</dt>
+					<dd>
+						La ceguera, la baja visión y la ceguera al color.
+					</dd>
+				</dl>
+				<dl>
+					<dt style="text-decoration-line: underline; color: black;">
+						<img src="icon_ear.gif" alt="Oido" title="Imagen de una oreja" style="margin-top: 4px;margin-left: 10px;margin-right: 8px; float: left;"><strong>Audición</strong>
+					</dt>
+					<dd>
+						La sordera.
+					</dd>
+				</dl>
+				<dl>
+					<dt style="text-decoration-line: underline; color: black;">
+						<img src="icon_hand.gif" alt="Mano" title="Imagen de una mano" style="margin-top: 4px;margin-left: 10px;margin-right: 8px; float: left;"><strong>Motor</strong>
+					</dt>
+					<dd>
+						La incapacidad para utilizar un ratón, el tiempo de respuesta lento, el control motor delicado.
+					</dd>
+				</dl>
+				<dl>
+					<dt style="text-decoration-line: underline; color: black;">
+						<img src="icon_brain.gif" alt="Cerebro" title="Imagen de un cerebro" style="margin-top: 4px;margin-left: 10px;margin-right: 8px; float: left;"><strong>Cognitivo</strong>
+					</dt>
+					<dd>
+						Dificultades de aprendizaje, distracción, incapacidad para recordar o concentrarse en grandes cantidades de información.
+					</dd>
+				</dl>
+			</div>		
+	</section>
+</main>
+<footer>
+	<p>Alumno: Jesús Serrano Redondo <span style="float: right">Módulo 1 UF 1</span></p>
+</footer>
+</body>
+</html>

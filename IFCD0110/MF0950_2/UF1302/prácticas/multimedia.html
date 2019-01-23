@@ -97,7 +97,7 @@
 		  text-decoration: none;
 				}
 		a:visited {
-		  color:#012E72
+		  color:#012E72;
 		  background-color: transparent;
 		  text-decoration: none;
 				}
@@ -115,35 +115,35 @@
 			overflow: auto;
 			background-color: white;
 			margin:20px;
-	}
-        </style> <!-- generamos estilo a todas las etiquetas llamadas como las marcadas, se separan por "," y las propiedades y el valor tiene que ir entre {}. Cada vez que se añade propiedades y valor se separan con ";"  -->
-        <script>    </script>
-        
+				}
+		 .iframes{
+			  overflow: auto;			  
+			  text-align: center;
+			 
+		   }
+        </style> <!-- generamos estilo a todas las etiquetas llamadas como las marcadas, se separan por "," y las propiedades y el valor tiene que ir entre {}. Cada vez que se añade propiedades y valor se separan con ";"  -->       
         <link href="css/estilos.css" rel="stylesheet">
-        <script src="js/funciones.js" type="text/javascript"> </script>
-        
+        <script src="js/funciones.js" type="text/javascript"> </script>       
         <!--  <base href="https://www.mipagina.com/img/" target="_blank">Esto referencia la carpeta para abreviar caminos cuando por ejemplo luego se buscan imágenes-->
-
         <link rel="icon" type="img/png" href="img/html5.png"> <!-- Esto es para diferentes sistemas-->
         <link rel="icon" type="img/gif" href="img/html5.png">
-        <link rel="icon" type="img/vnd.microsoft.icon" href="img/html5.png">
-        
+        <link rel="icon" type="img/vnd.microsoft.icon" href="img/html5.png">        
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"><!-- la manera de vstudio de hacer las 3 anteriores-->
         <link rel="icon" href="img/favicon.ico" type="image/x-icon"> 
 
 </head>
 <body>
 <header>
-<a href="index.html" style="text-align: left">
-	<div style="overflow: auto;background-color: white;margin: 20px;">
-		<div style="float: left;background-color: white;">
-			<img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Inicio de la página">
+	<div style="overflow: auto;background-color: white;margin: 20px">
+		<div style="float: left;background-color: white">
+			<a href="index.html" style="text-align: left"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Pagina principal"></a>
 			</div>
 		<div style="float: left;background-color: white;">
-			<h2 style="text-align: center; margin: 20px;">LENGUAJE DE MARCAS</h2><a style="padding: 10px" href="introduccion.html">Introducción</a> | <a  style="padding: 10px" href="formato.html">Formato</a> | <a style="padding: 10px;" href="bloques.html">Bloques</a> | <a  style="padding: 10px;" href="tablas.html">Tablas</a> | <a style="padding: 10px; " href="listas.html">Listas</a> | <a  style="padding: 10px; " href="multimedia.html">Multimedia</a> | <a  style="padding: 10px; " href="semantica.html">Semántica</a>
-		</div>
+			<h2 style="text-align:center; margin: 20px">LENGUAJE DE MARCAS</h2>
+			 <a href="introduccion.html" style="padding:10px;" >Introducción</a> | <a style="padding: 10px;"
+			href="formato.html">Formato</a> | <a style="padding: 10px;" href="bloques.html">Bloques</a> | <a style="padding: 10px;" href="tablas.html">Tablas</a> | <a style="padding: 10px;" href="listas.html">Listas</a> | <a  style="padding: 10px; " href="multimedia.html">Multimedia</a> | <a style="padding: 10px;" href="semantica.html">Semántica</a>
+			</div>
 	</div>
-</a>
 	<h1 id="inicio">HTML Multimedia</h1>
 </header>
 <hr>
@@ -164,7 +164,7 @@
 <section>
 	<div style="overflow: auto; background-color: white; width: 100%">
 		<figure style="float: right">
-			<img src="img/html-multimedia.png" alt="Logo multimedia" width="400" title="Multimedia HTML"> 
+			<img src="img/html-multimedia.png" alt="Logo multimedia" width="300" title="Multimedia HTML"> 
 		</figure> 
 		<p>Multimedia viene en muchos formatos diferentes. Puede ser casi cualquier cosa que usted puede escuchar o ver.</p>
 		<p>Ejemplos: Imágenes, música, sonido, vídeos, discos, películas, animaciones y mucho más.</p>
@@ -220,7 +220,7 @@
 					<source src="video/mov_bbb.mp4" type="video/mp4">
 					<source src="video/mov_bbb.ogg" type="video/ogg"><!--Normalmente con mp4 es válido, incluso se puede poner en la etiqueta video src y el archivo mp4 solamente-->
 					<source src="video/mov_bbb.ogg" type="video/ogg">
-					<track src="subtitulos_en.vtt" kind="subtitulos" srclang="en" label="English"> <!--Esto como ejemplo para añadir subtitulos-->	
+					<track src="subtitulos_en.vtt" srclang="en" label="English"> <!--Esto como ejemplo para añadir subtitulos-->	
 				</video>
 			</div>
 			<div style="float:left; font-size: 12px">
@@ -292,23 +292,23 @@
 		<h3 id="iframe">HTML Iframe</h3>
 	<p>El elemento <code>&lt;iframe&gt;</code> es soportado por todos los navegadores.</p>
 	<p>El elemento <code>&lt;iframe&gt;</code> define un objeto incrustado dentro de un documento HTML.</p>
-	<div style="overflow: auto">
+	<div class="iframes">
 	 <h3>Ejemplo de uso</h3>
 		<div style="float: left">	
 			  <div style="background-color:white; float:left;">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/MEVEUTnFzu8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/MEVEUTnFzu8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 					<div style="float:left; font-size: 12px">
 					&lt;object width=&quot;400&quot; height=&quot;50&quot; data=&quot;bookmark.swf&quot;&gt;&lt;/object&gt; </div>	
-	</div>	
-		<div style="float: left">
-			<div style="background-color:white; float:left;">
+		</div>	
+		<div style="float:right">
+			
 				<a href="http://www.marca.com" target="mi-iframe">Marca</a> |
 				<a href="http://www.as.com" target="mi-iframe">As</a> |
 				<a href="http://www.diariosport.com" target="mi-iframe">Sport</a>
+				
 			</div>	
-			</div>	
-				<iframe name="mi-iframe"  width="100%" frameborder="1" height="500 px"></iframe>					
+				<iframe name="mi-iframe" width="1100"  height="500"></iframe>					
 	</div>
 	<div>
 	<h4>Ejemplo de uso incrustando twitter</h4>
@@ -324,17 +324,18 @@
 </article>
 </section>
 </main>
-</body>
 <hr>
-<footer>
- <br>
- <br>
+ <footer style="text-align: center">
  <a href="#">Política de cookies</a> | 
  <a href="#">Política de privacidad</a> | 
  <a href="#">Aviso legal</a> | 
- <a href="index.html#mapaweb">Mapa web</a> | 
- <a href="#">otro</a>
+ <a href="#mapaweb">Mapa web</a> | 
+ <a href="https://es-es.facebook.com/"><img src="img/iconos32x32/facebooknegro32.png" alt="acceso facebook" width="24" height="24" title="Página de Facebook"></a> |
+ <a href="https://twitter.com/?lang=es"> <img src="img/iconos32x32/twitternegro32.png" alt="acceso twitter" width="24" height="24" title="Página de Twitter"></a> |
+ <a href="https://www.instagram.com/?hl=es"> <img src="img/iconos32x32/instagramnegro32.png" alt="acceso instagram" width="24" height="24" title="Página de Instagram"></a>
  <br>
  <br>
- </footer>  
+ </footer>   
+</body>
+
 </html>
