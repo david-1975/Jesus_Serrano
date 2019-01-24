@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="es-ES">
+<head>	
+	<title>Ejercicio 04: Tablas de datos</title>
+	
+	<meta charset="utf-8">
+	<meta name="Description" content="Ejercicio 02">
+	<meta name="Keywords" content="HTML, formato">
+	<meta name="tittle" content="Tablas de datos">
+	<meta name="author" content="Jesús Serrano">
+	
+	<style>
+		body{
+			background-color:lightgray;
+			margin: auto;
+			text-align: center;
+			font-size: 18px;
+			font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+		}
+		table {
+			text-align: center;	
+			border: 1px solid rgba(145,145,145,1.00);
+			margin: auto;
+			border-collapse: collapse;
+			
+		}
+		th, td{
+			border: 1px solid rgba(145,145,145,1.00);
+		}
+		section {
+			background-color: white;
+			width: 90%;
+			margin: auto;
+			padding: 10px;
+		}
+		li{
+			text-align: left;
+		}
+		caption{
+			font-weight: 600;
+			margin: auto;			
+		}
+		h2{
+			color: rgba(42,30,144,1.00);
+		}
+		div{
+			text-align: center;			
+		}
+		img{
+			padding-top: 10px;
+		}
+		hr{
+			margin: 20px 30px ;
+		}
+		footer{
+			background-color: white;
+			text-align: left;
+		}
+		p{
+			margin-left: 20px;
+		}
+		a:link {
+		  color: black;
+		  background-color: transparent;
+		  text-decoration: none;
+				}
+		a:visited {
+		  color: darkgreen;
+		  background-color: transparent;
+		  text-decoration: none;
+				}
+		a:hover {
+		  color: blue;
+		  background-color: transparent;
+		  text-decoration: underline;
+				}
+		a:active {
+		  color: violet;
+		  background-color: transparent;
+		  text-decoration: underline;
+				}
+	</style>
+</head>
+<body>
+<main>
+<h1 style="text-align: left; margin-left: 20px;">Navegadores web</h1>
+<hr>
+<section>
+<table style="background-color:rgba(199,218,252,1.00); width: 100%">
+	<tr>
+		<td>
+			<img src="img/navegadores.png" alt="Navegadores Web" title="Navegadores web" height="150" usemap="#navegadores">
+			<map name="navegadores">				
+			 <area shape="circle" coords="42,48,37" href="https://www.google.com/chrome/" alt="Chrome" title="Acceso a Chrome" target="_blank">           
+              <area shape="circle" coords="153,108,38" href="https://www.mozilla.org/es-ES/firefox/" alt="Firefox" title="Acceso a la web de Firefox" target="_blank">
+              <area shape="circle" coords="174,44,30" href="https://www.apple.com/es/safari/" alt="Safari" title="Acceso a la web de Safari" target="_blank">
+              <area shape="circle" coords="72,112,34" href="https://www.microsoft.com/es-es/download/internet-explorer-11-for-windows-7-details.aspx" title="Acceso a la web de Internet Explorer" alt="IExplorer" target="_blank">
+              <area shape="circle" coords="110,45,34" href="https://www.opera.com/es" alt="Opera" title="Acceso a la web de Opera" target="_blank">
+            </map>	
+		</td>
+		<td>
+			<h2 style="color: green; text-align: left; margin-left: 4px;">Principales características</h2>
+			<ul>
+				<li><strong>Seguridad y provacidad:</strong> Ofrecen seguridad contra software malicioso.</li>
+				<li><strong>Velocidad:</strong> Cargan rápidametne páginas y aplicaciones web.</li>
+				<li><strong>Productividad:</strong> Contienen marcadores, pestañas e historial.</li>
+				<li><strong>Compatibilidad:</strong> Están en continuo crecimiento y desarrollo.</li>
+				<li><strong>Simplicidad:</strong> Están diseñados para ser lo más sencillo posible.</li>
+			</ul>
+		</td>
+	</tr>	
+</table>	
+</section>
+<hr>
+<section>
+	<h2>Navegadores más usados</h2>
+	<p>
+		Algunos navegadores vienen incorporados a su sistema operativo como es el caso de Internet Explorer o Microsoft Edge en Windows, Safari en MacOS e iOS, Firefox, Opera en Linux y Chrome en Android. Para hacernos una idea con datos y conocer mejor el porcentaje de usuarios de cada navegador, el ranking final de navegadores más empleados en el mundo es el siguiente:
+	</p>
+	<table>
+		<caption>Cuota de mercado 2018</caption>
+		<colgroup>
+			<col span="3" style="background-color:rgba(209,253,182,0.50)">
+			<col span="3" style="background-color:rgba(227,176,0,0.50)">
+		</colgroup>		
+		<thead style="background-color:rgba(247,234,149,0.5)">
+			<tr>
+				<th scope="col" style="overflow: auto">
+					<div><img src="img/chrome.png" alt="Chrome" title="Google Chrome" height="48"></div>
+					<div style="text-align: center;">Chrome</div>
+				</th>
+				<th scope="col" style="overflow: auto">
+					<div><img src="img/safari.png" alt="Safari" title="Safari" height="48"></div>
+					<div style="text-align: center;">Safari</div>
+				</th>
+				<th scope="col" style="overflow: auto">
+					<div><img src="img/firefox.png" alt="Firefox" title="Mozilla Firefox" height="48"></div>
+					<div style="text-align: center;">Firefox</div>
+				</th>
+				<th scope="col" style="overflow: auto">
+					<div><img src="img/explorer.png" alt="Explorer" title="Internet Explorer" height="48"></div>
+					<div style="text-align: center;">Explorer</div>
+				</th>
+				<th scope="col" style="overflow: auto">
+					<div><img src="img/edge.png" alt="Edge" title="Microsoft Edge" height="48"></div>
+					<div style="text-align: center;">Edge</div>
+				</th>
+				<th scope="col" style="overflow: auto">
+					<div><img src="img/opera.png" alt="Opera" title="Opera" height="48"></div>
+					<div style="text-align: center;">Opera</div>
+				</th>				
+			</tr>
+		</thead>
+		<tbody style="background-color:rgba(162,47,49,0.3);">
+			<tr>
+				<td>58,4%</td>
+				<td>15,3%</td>
+				<td>10,1%</td>
+				<td>9,2%</td>
+				<td>4,9%</td>
+				<td>2,1%</td>
+			</tr>
+		</tbody>
+		<tfoot style="background-color:rgba(260,234,149,0.5)">
+			<tr>
+				<td><a href="software/ChromeSetup.exe">Descargar</a></td>
+				<td><a href="software/SafariSetup.exe">Descargar</a></td>
+				<td><a href="software/FirefoxInstaller.exe">Descargar</a></td>
+				<td><a href="software/EIE11_ES-XL_WOL_WIN764.EXE">Descargar</a></td>
+				<td><a href="software/microsoft_edge_browser_0506643803.exe">Descargar</a></td>
+				<td><a href="software/OperaSetup.exe">Descargar</a></td>
+			</tr>
+		</tfoot>
+	</table>
+	
+</section>
+<hr>
+<section>
+	<h2>Funcionabilidad de los navegadores web</h2>
+	<p>Todos los navegadores incluyen la mayoría de las siguientes características: navegación por pestañas, bloqueador de ventanas emergentes, soporte para motores de búsqueda, gestor de descargas, marcadores, corrector ortográfico, y atajos del teclado. Para mantener la privacidad casi todos los navegadores ofrecen maneras sencillas de borrar cookies, cachés web y el historial.</p>
+	<table>
+	<caption>Funcionalidades de los navegadores web</caption>
+	<colgroup>
+		<col span="1" style="background-color: rgba(209,253,182,0.50)">
+		<col span="6" style="background-color: rgba(227,176,0,0.50)">
+	</colgroup>
+	<thead style="background-color:rgba(68,120,200,0.30) ">
+		<tr>
+			<th>FUNCIONES</th>
+			<th scope="col" style="overflow: auto">
+				<div><img src="img/chrome.png" alt="Chrome" title="Google Chrome" height="48"></div>
+				<div style="float: left; margin-left: 4px">Chrome</div>
+			</th>
+			<th scope="col" style="overflow: auto">
+				<div><img src="img/safari.png" alt="Safari" title="Safari" height="48"></div>
+				<div style="text-align: center;">Safari</div>
+			</th>
+			<th scope="col" style="overflow: auto">
+				<div><img src="img/firefox.png" alt="Firefox" title="Mozilla Firefox" height="48"></div>
+				<div style="text-align: center;">Firefox</div>
+			</th>
+			<th scope="col" style="overflow: auto">
+				<div><img src="img/explorer.png" alt="Explorer" title="Internet Explorer" height="48"></div>
+				<div style="text-align: center;">Explorer</div>
+			</th>
+			<th scope="col" style="overflow: auto">
+				<div><img src="img/edge.png" alt="Edge" title="Microsoft Edge" height="48"></div>
+				<div style="text-align: center;">Edge</div>
+			</th>
+			<th scope="col" style="overflow: auto">
+				<div><img src="img/opera.png" alt="Opera" title="Opera" height="48"></div>
+				<div style="text-align: center;">Opera</div>
+			</th>	
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Sincronización en la nube</th>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+		</tr>
+		<tr>
+			<th>Gestor de descargas</th>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+		</tr>
+		<tr>
+			<th>Navegación privada</th>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+		</tr>
+		<tr>
+			<th>Modo de pantalla completa</th>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+		</tr>
+		<tr>
+			<th>Pestañas verticales</th>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+		</tr>
+		<tr>
+			<th>Extensiones personalizadas</th>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td> 
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+		</tr>
+	</tbody>
+	<tfoot style="background-color:rgba(68,100,100,0.50) ">
+		<tr>
+			<th>Valoración</th>
+			<td><img src="img/estrella_32x32.png" alt="star" title="Estrellas" height="14"> 6</td>
+			<td><img src="img/estrella_32x32.png" alt="star" title="Estrellas" height="14"> 3</td>
+			<td><img src="img/estrella_32x32.png" alt="star" title="Estrellas" height="14"> 6</td>
+			<td><img src="img/estrella_32x32.png" alt="star" title="Estrellas" height="14"> 4</td>
+			<td><img src="img/estrella_32x32.png" alt="star" title="Estrellas" height="14"> 4</td>
+			<td><img src="img/estrella_32x32.png" alt="star" title="Estrellas" height="14"> 6</td>
+		</tr>
+	</tfoot>			
+	</table>	
+</section>	
+<hr>
+<section>
+	<h2>Compatibidad de los navegadores web</h2>
+	<p>La compatibilidad entre navegadores se refiere a que una página web se muestre de forma muy similar en todos los navegadores y en todos los sistemas operativos. Aunque los navegadores cada vez cumplen más los estándares que marca la W3C, entre ellos hay diferencias: reglas que no son soportadas, diferentes interpretaciones de una especificación, lo cual se traduce en que las páginas web no siempre se ven igual entre ellos.</p>
+	<table>
+	<caption>
+	Compatibilidad entre sistemas operativos
+	</caption>
+	<colgroup>
+		<col span="1" style="background-color: lightgreen">
+		<col span="6" style="background-color: beige">
+	</colgroup>
+	<thead style="background-color:rgba(68,120,200,0.50) ">
+		<tr>
+			<th>COMPATIBILIDAD</th>
+			<th scope="col" style="overflow: auto">
+				<div><img src="img/chrome.png" alt="Chrome" title="Google Chrome" height="48"></div>
+				<div style="float: left; margin-left: 4px">Chrome</div>
+			</th>
+			<th scope="col" style="overflow: auto">
+				<div><img src="img/safari.png" alt="Safari" title="Safari" height="48"></div>
+				<div style="text-align: center;">Safari</div>
+			</th>
+			<th scope="col" style="overflow: auto">
+				<div><img src="img/firefox.png" alt="Firefox" title="Mozilla Firefox" height="48"></div>
+				<div style="text-align: center;">Firefox</div>
+			</th>
+			<th scope="col" style="overflow: auto">
+				<div><img src="img/explorer.png" alt="Explorer" title="Internet Explorer" height="48"></div>
+				<div style="text-align: center;">Explorer</div>
+			</th>
+			<th scope="col" style="overflow: auto">
+				<div><img src="img/edge.png" alt="Edge" title="Microsoft Edge" height="48"></div>
+				<div style="text-align: center;">Edge</div>
+			</th>
+			<th scope="col" style="overflow: auto">
+				<div><img src="img/opera.png" alt="Opera" title="Opera" height="48"></div>
+				<div style="text-align: center;">Opera</div>
+			</th>	
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Windows</th>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+		</tr>
+		<tr>
+			<th>macOS</th>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+		</tr>
+		<tr>
+			<th>Linux</th>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+		</tr>
+		<tr>
+			<th>Android</th>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+		</tr>
+		<tr>
+			<th>IOS</th>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+		</tr>
+		<tr>
+			<th>Windows Phone</th>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_delete.png" alt="No" title="No" height="14"> No</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+			<td><img src="img/icon_check.png" alt="Yes" title="Sí" height="14"> Sí</td>
+		</tr>
+	</tbody>
+	<tfoot style="background-color:rgba(68,100,100,0.50) ">
+		<tr>
+			<th>Valoración</th>
+			<td><img src="img/estrella_32x32.png" alt="star" title="Estrellas" height="14"> 5</td>
+			<td><img src="img/estrella_32x32.png" alt="star" title="Estrellas" height="14"> 3</td>
+			<td><img src="img/estrella_32x32.png" alt="star" title="Estrellas" height="14"> 5</td>
+			<td><img src="img/estrella_32x32.png" alt="star" title="Estrellas" height="14"> 2</td>
+			<td><img src="img/estrella_32x32.png" alt="star" title="Estrellas" height="14"> 2</td>
+			<td><img src="img/estrella_32x32.png" alt="star" title="Estrellas" height="14"> 6</td>
+		</tr>
+	</tfoot>			
+	</table>
+</section>
+<hr>
+<section>
+	<h2>Detalles del software de los navegadores web</h2>
+	<p>Los navegadores de Internet siempre cumplen con el solo objetivo de permitirnos acceder a Internet desde cualquier lugar en que nos encontremos, e independientemente de la plataforma desde la cual los estemos usando. Sin embargo, cada plataforma exige que los navegadores web se comporten o estén desarrollados de una determinada manera.</p>
+	<table>
+		<caption>
+		Detalles del navegador
+		</caption>
+		<colgroup>
+			<col span="1" style="background-color: lightyellow">
+			<col span="6" style="background-color: beige">
+		</colgroup>
+		<thead style="background-color:rgba(68,120,200,0.50) ">
+			<tr>
+				<th>DETALLES DEL SOFTWARE</th>
+				<th scope="col" style="overflow: auto">
+					<div><img src="img/chrome.png" alt="Chrome" title="Google Chrome" height="48"></div>
+					<div style="float: left; margin-left: 4px">Chrome</div>
+				</th>
+				<th scope="col" style="overflow: auto">
+					<div><img src="img/safari.png" alt="Safari" title="Safari" height="48"></div>
+					<div style="text-align: center;">Safari</div>
+				</th>
+				<th scope="col" style="overflow: auto">
+					<div><img src="img/firefox.png" alt="Firefox" title="Mozilla Firefox" height="48"></div>
+					<div style="text-align: center;">Firefox</div>
+				</th>
+				<th scope="col" style="overflow: auto">
+					<div><img src="img/explorer.png" alt="Explorer" title="Internet Explorer" height="48"></div>
+					<div style="text-align: center;">Explorer</div>
+				</th>
+				<th scope="col" style="overflow: auto">
+					<div><img src="img/edge.png" alt="Edge" title="Microsoft Edge" height="48"></div>
+					<div style="text-align: center;">Edge</div>
+				</th>
+				<th scope="col" style="overflow: auto">
+					<div><img src="img/opera.png" alt="Opera" title="Opera" height="48"></div>
+					<div style="text-align: center;">Opera</div>
+				</th>	
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Plataforma</th>
+				<td>WebKit</td>
+				<td>WebKit</td>
+				<td>Gecko</td>
+				<td>Trident</td>
+				<td>EdgeHTML</td>
+				<td>WebKit</td>
+			</tr>
+			<tr>
+				<th>Motor de Java Script</th>
+				<td>V8</td>
+				<td>Nitro</td>
+				<td>TraceMonkey</td>
+				<td>Chakra</td>
+				<td>Chakra</td>
+				<td>Carakan</td>
+			</tr>
+			<tr>
+				<th>Código abierto</th>
+				<td>Sí</td>
+				<td>No</td>
+				<td>Sí</td>
+				<td>No</td>
+				<td>No</td>
+				<td>No</td>
+			</tr>
+		</tbody>
+		<tfoot style="background-color:rgba(68,100,100,0.50) ">
+			<tr>
+				<th>Página web</th>
+				<td><a href="https://www.google.com/chrome/" title="Acceso a la web de Chrome" target="_blank">Chrome</a></td>
+				<td><a href="https://www.apple.com/es/safari/" title="Acceso a la web de Safari" target="_blank">Safari</a></td>
+				<td><a href="https://www.mozilla.org/es-ES/firefox/" title="Acceso a la web de Firefox" target="_blank">Firefox</a></td>
+				<td><a href="https://www.microsoft.com/es-es/download/internet-explorer-11-for-windows-7-details.aspx" title="Acceso a la web de Internet Explorer" target="_blank">IExplorer</a></td>
+				<td><a href="https://www.microsoft.com/es-es/windows/microsoft-edge" title="Acceso a la web de Edge" target="_blank">Edge</a></td>
+				<td><a href="https://www.opera.com/es" title="Acceso a la web de Opera" target="_blank">Opera</a></td>
+			</tr>
+		</tfoot>
+	</table>
+</section>
+<hr>
+</main>
+<footer>
+	<p>Alumno: Jesús Serrano Redondo <span style="float: right">Módulo 1 UF 1</span></p>
+</footer>
+</body>
+</html>
