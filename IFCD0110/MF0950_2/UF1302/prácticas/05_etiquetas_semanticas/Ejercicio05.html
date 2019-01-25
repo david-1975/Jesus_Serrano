@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="es-ES">
+<head>	
+	<title>Ejercicio 05: Etiquetas semánticas</title>
+	
+	<meta charset="utf-8">
+	<meta name="Description" content="Ejercicio 02">
+	<meta name="Keywords" content="HTML, formato">
+	<meta name="tittle" content="Etiquetas semánticas">
+	<meta name="author" content="Jesús Serrano">
+	
+	<style>
+		body{
+			width: 99%;
+			font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+			background-color: lightgray;
+		}
+		main{
+			background-color: white;
+			width: 99%;
+			margin: auto;
+		}			
+		header{
+			background-color: darkblue;
+			color: white;
+			text-align: center;
+			
+			}
+				header h1{
+					font-family: Constantia, Lucida Bright, DejaVu Serif, Georgia, serif;
+					font-size: 100px;
+					margin: 0;
+				}
+				header p{
+					font-size: 36px;
+					padding-bottom: 10px;
+					margin: 0;
+				}
+		nav{
+			background-color: antiquewhite;
+			text-align: center;
+			padding: 10px;
+		}
+				nav a:link {
+					background-color: darkblue;
+					color: white;
+					text-decoration: none;
+					padding: 4px;
+				}				
+				nav a:visited {
+				  color: white;
+				  background-color: darkblue;
+				  text-decoration: none;
+					padding: 4px;
+						}
+				nav a:hover {
+				  color: blue;
+				  background-color: darkblue;
+				  text-decoration: none;
+					padding: 4px;
+						}
+				nav a:active {
+				  color: violet;
+				  background-color: darkblue;
+				  text-decoration: underline;
+					padding: 4px;
+						}
+		section{
+			margin:0;
+			display: block;
+			padding: 0;
+		}
+		.contenedor{
+			overflow: auto;
+			width: 95%;
+			padding: 1%;
+			margin: auto;
+		}
+		.estrella{
+			width: 16px;
+			height: 12px;
+			}
+		h2{
+			background-color: orangered;
+			color: white;
+			text-align: center;
+			padding-bottom: 6px;
+		}
+		a:link {
+		  color: black;
+		  background-color: transparent;
+		  text-decoration: none;
+				}
+		a:visited {
+		  color:#012E72;
+		  background-color: transparent;
+		  text-decoration: none;
+				}
+		a:hover {
+		  color: red;
+		  background-color: transparent;
+		  text-decoration: underline;
+				}
+		a:active {
+		  color: yellow;
+		  background-color: transparent;
+		  text-decoration: underline;
+		}
+		#vodafone {
+			background-color: white;
+			width: 20%;
+			float: left;
+			text-align: left;
+			
+		}
+		ul{
+			  list-style-type:none;	
+			
+		}
+		ul, li{
+			margin: 0 0 0 0;
+			padding: 2px;			
+		}
+				li a:link {
+				  color: black;
+				  background-color: transparent;
+				  text-decoration: none;
+						}
+				li a:visited {
+				  color: black;
+				  background-color: transparent;
+				  text-decoration: none;
+						}
+				li a:hover {
+				  color: red;
+				  background-color: transparent;
+				  text-decoration: underline;
+						}
+				li a:active {
+				  color: yellow;
+				  background-color: transparent;
+					text-decoration: underline;
+				}
+		footer{
+			background-color: darkblue;
+			color: white;
+			text-align: center;
+			display: block;
+			width: 100%;
+			overflow:hidden; 
+		}
+				footer a:link {
+				  color: black;
+				  background-color: transparent;
+				  text-decoration: none;
+						}
+				footer a:visited {
+				  color: white;
+				  background-color: transparent;
+				  text-decoration: none;
+						}
+				footer a:hover {
+				  color: red;
+				  background-color: transparent;
+				  text-decoration: underline;
+						}
+				footer a:active {
+				  color: yellow;
+				  background-color: transparent;
+					text-decoration: underline;
+				}		
+	</style>
+</head>
+<body>
+	<main>
+		<header>
+			<h1>Título del Periódico</h1>
+			<p>El mayor magazine digital de España</p>
+		</header>
+		<nav>
+			<a href="#">Internacional</a>	
+			<a href="#">Opinión</a>
+			<a href="#">Sociedad</a>
+			<a href="#">Economía</a>
+			<a href="#">Ciencia</a>
+			<a href="#">Tecnología</a>
+			<a href="#">Cultura</a>
+			<a href="#">Gente</a>
+			<a href="#">Deportes</a>
+			<a href="#">Televisión</a>
+			<a href="#">Vídeo</a>
+		</nav>
+		<section>
+			<h2>Tecnología</h2>
+			<div class="contenedor">	
+				<article style="width: 30%; float: left;">
+					<div>
+						<img src="img/galaxy-note_9.jpg" style="width: 100%" alt="SamSung" title="Samsung Galaxy Note 9">
+					</div>
+					<div>
+						<h3><a href="#">Análisis | Un mes con el Samsung Galaxy Note 9</a></h3>
+						<address>LAURA PÉREZ <img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"><img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"><img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"><img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"><img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"></address>
+						<p>Probamos el último modelo de la firma coreana, un terminal de gama alta que brilla por su pantalla, su característico lápiz digital S Pen y su funcionamiento con el uso de Inteligencia Artificial.</p>
+					</div>
+				</article>
+				<article style="width: 30%;float: right;">
+					<div>
+						<img src="img/honor-view20.jpg" style="width: 100%" alt="Huawei" title="Huawei Honor view 20">
+					</div>
+					<div>
+						<h3><a href="#">Honor View20, un móvil con más píxeles que ninguno</a></h3>
+						<address>ANA GÓMEZ <img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"><img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"><img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"><img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"></address>
+						<p>La segunda marca de Huawei lanza un teléfono inteligente con la cámara frontal oculta y la trasera de 48 megapíxeles. Se maneja por inteligencia artificial y por un superprocesador, el más potente.</p>
+					</div>
+				</article>
+				<article style="width: 30%; margin: auto;">
+					<div>
+						<img src="img/pocophone-f1.jpg" style="width: 100%" alt="Xiaomi" title="Xiaomi Pocophone F1">
+					</div>
+					<div>
+						<h3><a href="#">Pocophone F1, ¿el mejor móvil en relación calidad-precio?</a></h3>
+						<address>ANTONIO SÁNCHEZ <img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"><img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"><img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"></address>
+						<p>La segunda marca de la china Xiaomi se lanza al mercado con un terminal caracterizado por especificaciones de gama alta y un precio de gama media que logra eliminando lo superfluo.</p>
+					</div>
+				</article>
+			</div>
+			</section>
+			<section>					
+				<div class="contenedor">
+				<nav id="vodafone">
+				<h3 style="background-color: white;"><img src="img/logo-vodafone.png" alt="Logo Vodafone"></h3>	
+					<ul>
+						<li><img src="img/lista-icono.png" alt="icono"><a href="#">Más populares</a></li>
+						<li><img src="img/lista-icono.png" alt="icono"><a href="#">Redes sociales</a></li>
+						<li><img src="img/lista-icono.png" alt="icono"><a href="#">Ordenadores</a></li>
+						<li><img src="img/lista-icono.png" alt="icono"><a href="#">Gadgets</a></li>
+						<li><img src="img/lista-icono.png" alt="icono"><a href="#">Videoconsolas</a></li>
+						<li><img src="img/lista-icono.png" alt="icono"><a href="#">Teléfonos Móviles</a></li>
+						<li><img src="img/lista-icono.png" alt="icono"><a href="#">WhatsApp</a></li>
+						<li><img src="img/lista-icono.png" alt="icono"><a href="#">Tablets</a></li>
+						<li><img src="img/lista-icono.png" alt="icono"><a href="#">Smartphones</a></li>
+					</ul>
+				</nav>
+				<article style=" width: 35%; float: left; margin-left: 40px;margin-top: 40px;">
+					<div>
+						<iframe width="392" height="220" src="https://www.youtube.com/embed/IP3rOxqQQAw"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					<div style="width: 392px">
+						<h3>El superordenador que fabrica humanos virtuales para probar medicinas</h3>
+					</div>	
+				</article>
+				<article style="width: 35%; float: left; margin-left: 40px; margin-top: 40px;">
+					<div>
+					<iframe width="392" height="220" src="https://www.youtube.com/embed/6_YopNlxcYU"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div style="width: 392px">
+					<h3>Una retina de grafeno para devolver la vista a 230 millones de personas</h3>
+					</div>
+				</article>
+				</div>			
+			</section>		
+		<section>
+			<h2>Videojuegos</h2>
+			<div class="contenedor">
+				<article style="width: 30%; float: left;">
+					<div>
+						<img src="img/fornite.jpg" style="width: 100%" alt="Fornite" title="Desafíos de Fornite">
+					</div>
+					<div>
+						<h3>Cómo completar los desafíos de Fortnite de la Semana 8 de la Temporada 7</h3>
+						<address>JOSÉ ORTÍZ <img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"><img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"><img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"><img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"><img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"></address>
+						<p>Ya están disponibles los desafíos correspondientes a la Semana 8 de la Temporada 7 del Pase de Batalla de Fortnite Battle Royale. Completadlos con nuestra guía.</p>
+					</div>
+				</article>				
+				<aside  style="width: 30%; float: right;">
+					<h3 style="margin-top: 0">Contenido relacionado</h3>
+					<div style="height: 15%;">
+						<div style="float: left; width: 50%;">
+							<img src="img/red_dead_redemption2.jpg" alt="RDR2" title="Red Dead Redemption 2" style=" width: 100%">
+						</div>
+						<div style="float: left; width: 50%;">
+							<h3 style="margin-left: 10px;"><a href="#">Red Dead Redemption 2, número 1 en USA.</a></h3>
+						</div>
+					</div>
+					<hr>
+					<div style="height: 15%;">
+						<div style="float: left; width: 50%;">
+							<img src="img/red_dead_redemption3.jpg" alt="RDR3" title="Los trucos del Red Dead Redemption 2" style="width: 100%">
+						</div>
+						<div style="float: left; width: 50%;">
+							<h3 style="margin-left: 10px;"><a href="#">Todos los trucos de Red Dead Redemption 2.</a></h3>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<div style="float: left; width: 50%;">
+							<img src="img/assassins-creed-odyssey.jpg" alt="Assasins" title="Assassin's Creed Odyssey" style="width: 100%">
+						</div>
+						<div style="float: left; width: 50%;">
+							<h3 style="margin-left: 10px;"><a href="#">Assassin's Creed Odyssey, Guía completa.</a></h3>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<div style="float: left; width: 50%;">
+							<img src="img/call-of-duty.jpg" alt="CoD4" title="Call of Duty: Black Ops 4" style="width: 100%">
+						</div>
+						<div style="float: left; width: 50%;">
+							<h3 style="margin-left: 10px;"><a href="#">Call of Duty: Black Ops 4, Guía de logros y trofeos.</a></h3>
+						</div>
+					</div>
+				</aside>
+				<article style="width: 30%; margin: auto;">
+					<div>
+						<img src="img/gta5.jpg" style="width: 100%" alt="GTA5" title="Trucos y claves">
+					</div>
+					<div>
+						<h3>Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</h3>
+						<address>PEDRO ZAMBRANO <img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"><img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"><img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"><img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"><img src="img/estrella_32x32.png" class="estrella" alt="estrella" title="valoración"></address>
+						<p>Ganar dinero infinito, coches de lujo, salud, munición, armas, tanques, eliminar estrellas… Recopilamos todos los trucos y claves de GTA 5 (Grand Theft Auto V) para todas las plataformas.</p>
+					</div>
+				</article>
+			</div>
+		</section>	
+		<footer>
+			<a href="#">Aviso Legal</a> | <a href="#">Política de privacidad</a> | <a href="#">Política de protección de datos</a> | <a href="#">Política de Cookies</a>
+			<details>
+					 <summary>&copy;2004-2019.</summary>
+				<p>WebMaster ™. Todos los derechos reservados.</p>
+				<p>Todo el contenido y gráficos de esta web son propiedad de WebMaster ™</p>
+				<div style="overflow: hidden;">
+				<p><span style="float: left">Alumno: Jesús Serrano Redondo</span><span style="float: right">Módulo 1 UF 1</span></p></div>
+			</details>
+		</footer>
+	</main>
+</body>
+</html>
