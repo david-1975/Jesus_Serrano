@@ -9,62 +9,70 @@
 	<meta name="tittle" content="Etiquetas semánticas">
 	<meta name="author" content="Jesús Serrano">
 	
-	<style>
+<style>
 		body{
 			width: 99%;
 			font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
 			background-color: lightgray;
+			padding:10px 0px ;
+			margin: auto;
 		}
 		main{
 			background-color: white;
-			width: 95%;
+			width: 93%;
 			margin: auto;
 			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.4)
 		}			
-		header{
-			background-color: darkblue;
-			color: white;
+		header{			
+			color:rgba(0,6,116,1.00);
 			text-align: center;
-			
+			background:url(img/tecnologia.jpg) no-repeat center  ;
+			background-size: cover;			    
+            
 			}
 				header h1{
 					font-family: Constantia, Lucida Bright, DejaVu Serif, Georgia, serif;
 					font-size: 100px;
-					margin: 0;
+					margin: 0;					
 				}
 				header p{
 					font-size: 36px;
 					padding-bottom: 10px;
 					margin: 0;
+					font-weight: 700;					
 				}
 		nav{
 			background-color: antiquewhite;
 			text-align: center;
 			padding: 10px;
-		}
+			}
 				nav a:link {
 					background-color: darkblue;
 					color: white;
 					text-decoration: none;
 					padding: 4px;
+					border-radius: 20px;
 				}				
 				nav a:visited {
-				  color: white;
-				  background-color: darkblue;
-				  text-decoration: none;
+					color: white;
+					background-color: darkblue;
+					text-decoration: none;
 					padding: 4px;
+					border-radius: 20px;
 						}
 				nav a:hover {
-				  color: blue;
-				  background-color: rgb(65, 65, 109);
-				  text-decoration: none;
+					color: blue;
+					background-color: rgb(65, 65, 109);
+					text-decoration: none;
 					padding: 4px;
+					border-radius: 20px;
 						}
 				nav a:active {
-				  color: violet;
-				  background-color: rgb(65, 65, 109);
-				  text-decoration: underline;
+					color: violet;
+					background-color: rgb(65, 65, 109);
+					text-decoration: underline;
 					padding: 4px;
+					border-radius: 20px;
 						}
 		section{
 			margin:0;
@@ -111,17 +119,27 @@
 			background-color: white;
 			width: 20%;
 			float: left;
-			text-align: left;
-			
+			text-align: left;			
 		}
+				#vodafone a:link {		  
+				  background-color: transparent;		  
+						}
+				#vodafone a:visited {		  
+				  background-color: transparent;		  
+						}
+				#vodafone a:hover {		  
+				  background-color: transparent;		 
+						}
+				#vodafone a:active {		  
+				  background-color: transparent;		
+					}
 		ul {
-			 list-style-image: url(img/lista-icono.png);
+			list-style-image: url(img/lista-icono.png);
 			margin: 14px;
-		}
-		ul, li{
-			
+			}
+		ul, li{			
 			padding: 3px;			
-		}
+			}
 				li a:link {
 				  color: black;
 				  background-color: transparent;
@@ -141,7 +159,7 @@
 				  color: yellow;
 				  background-color: transparent;
 					text-decoration: underline;
-				}
+						}
 		footer{
 			background-color: darkblue;
 			color: white;
@@ -149,7 +167,7 @@
 			display: block;
 			width: 100%;
 			overflow:hidden; 
-		}
+				}
 				footer a:link {
 				  color: black;
 				  background-color: transparent;
@@ -166,11 +184,13 @@
 				  text-decoration: underline;
 						}
 				footer a:active {
-				  color: yellow;
-				  background-color: transparent;
-					text-decoration: underline;
-				}		
-	</style>
+						color: yellow;
+						background-color: transparent;
+						text-decoration: underline;
+						}
+</style>
+
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 	<main>
@@ -196,7 +216,7 @@
 			<div class="contenedor">	
 				<article style="width: 30%; float: left;">
 					<div>
-						<img src="img/galaxy-note_9.jpg" style="width: 100%" alt="SamSung" title="Samsung Galaxy Note 9">
+						<a href="#"><img src="img/galaxy-note_9.jpg" style="width: 100%" alt="SamSung" title="Samsung Galaxy Note 9"></a>
 					</div>
 					<div>
 						<h3><a href="#">Análisis | Un mes con el Samsung Galaxy Note 9</a></h3>
@@ -206,7 +226,7 @@
 				</article>
 				<article style="width: 30%;float: right;">
 					<div>
-						<img src="img/honor-view20.jpg" style="width: 100%" alt="Huawei" title="Huawei Honor view 20">
+						<a href="#"><img src="img/honor-view20.jpg" style="width: 100%" alt="Huawei" title="Huawei Honor view 20"></a>
 					</div>
 					<div>
 						<h3><a href="#">Honor View20, un móvil con más píxeles que ninguno</a></h3>
@@ -216,7 +236,7 @@
 				</article>
 				<article style="width: 30%; margin: auto;">
 					<div>
-						<img src="img/pocophone-f1.jpg" style="width: 100%" alt="Xiaomi" title="Xiaomi Pocophone F1">
+						<a href="#"><img src="img/pocophone-f1.jpg" style="width: 100%" alt="Xiaomi" title="Xiaomi Pocophone F1"></a>
 					</div>
 					<div>
 						<h3><a href="#">Pocophone F1, ¿el mejor móvil en relación calidad-precio?</a></h3>
@@ -228,35 +248,35 @@
 			</section>
 			<section>					
 				<div class="contenedor">
-				<nav id="vodafone">
-				<h3 style="background-color: white;"><img src="img/logo-vodafone.png" alt="Logo Vodafone"></h3>	
-					<ul>
-						<li><a href="#">Más populares</a></li>
-						<li><a href="#">Redes sociales</a></li>
-						<li><a href="#">Ordenadores</a></li>
-						<li><a href="#">Gadgets</a></li>
-						<li><a href="#">Videoconsolas</a></li>
-						<li><a href="#">Teléfonos Móviles</a></li>
-						<li><a href="#">WhatsApp</a></li>
-						<li><a href="#">Tablets</a></li>
-						<li><a href="#">Smartphones</a></li>
-					</ul>
-				</nav>
-				<article style=" width: 35%; float: left; margin-left: 40px;margin-top: 40px;">
-					<div>
-						<iframe width="392" height="220" src="https://www.youtube.com/embed/IP3rOxqQQAw"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-					<div style="width: 392px">
-						<h3>El superordenador que fabrica humanos virtuales para probar medicinas</h3>
-					</div>	
-				</article>
-				<article style="width: 35%; float: left; margin-left: 40px; margin-top: 40px;">
-					<div>
-					<iframe width="392" height="220" src="https://www.youtube.com/embed/6_YopNlxcYU"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-					<div style="width: 392px">
-					<h3>Una retina de grafeno para devolver la vista a 230 millones de personas</h3>
-					</div>
-				</article>
+					<nav id="vodafone">
+					<h3 style="background-color: white;"><a href="https://www.vodafone.es/c/particulares/es/" target="_blank"><img src="img/logo-vodafone.png" alt="Logo Vodafone" style="width: 200px"></a></h3>
+						<ul>
+							<li><a href="#">Más populares</a></li>
+							<li><a href="#">Redes sociales</a></li>
+							<li><a href="#">Ordenadores</a></li>
+							<li><a href="#">Gadgets</a></li>
+							<li><a href="#">Videoconsolas</a></li>
+							<li><a href="#">Teléfonos Móviles</a></li>
+							<li><a href="#">WhatsApp</a></li>
+							<li><a href="#">Tablets</a></li>
+							<li><a href="#">Smartphones</a></li>
+						</ul>
+					</nav>
+					<article style=" width: 35%; float: left; margin-left: 40px;margin-top: 40px;">
+						<div>
+							<iframe width="392" height="220" src="https://www.youtube.com/embed/IP3rOxqQQAw"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+						<div style="width: 392px">
+							<h3>El superordenador que fabrica humanos virtuales para probar medicinas</h3>
+						</div>	
+					</article>
+					<article style="width: 35%; float: left; margin-left: 40px; margin-top: 40px;">
+						<div>
+							<iframe width="392" height="220" src="https://www.youtube.com/embed/6_YopNlxcYU"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div style="width: 392px">
+							<h3>Una retina de grafeno para devolver la vista a 230 millones de personas</h3>
+						</div>
+					</article>
 				</div>			
 			</section>		
 		<section>
@@ -264,7 +284,7 @@
 			<div class="contenedor">
 				<article style="width: 30%; float: left;">
 					<div>
-						<img src="img/fornite.jpg" style="width: 100%" alt="Fornite" title="Desafíos de Fornite">
+						<a href="#"><img src="img/fornite.jpg" style="width: 100%" alt="Fornite" title="Desafíos de Fornite"></a>
 					</div>
 					<div>
 						<h3><a href="#">Cómo completar los desafíos de Fortnite de la Semana 8 de la Temporada 7</a></h3>
@@ -276,7 +296,7 @@
 					<h3 style="margin-top: 0">Contenido relacionado</h3>
 					<div style="height: 15%;">
 						<div style="float: left; width: 50%;">
-							<img src="img/red_dead_redemption2.jpg" alt="RDR2" title="Red Dead Redemption 2" style=" width: 100%">
+							<a href="#"><img src="img/red_dead_redemption2.jpg" alt="RDR2" title="Red Dead Redemption 2" style=" width: 100%"></a>
 						</div>
 						<div style="float: left; width: 50%;">
 							<h3 style="margin-left: 10px;"><a href="#">Red Dead Redemption 2, número 1 en USA.</a></h3>
@@ -285,7 +305,7 @@
 					<hr>
 					<div style="height: 15%;">
 						<div style="float: left; width: 50%;">
-							<img src="img/red_dead_redemption3.jpg" alt="RDR3" title="Los trucos del Red Dead Redemption 2" style="width: 100%">
+							<a href="#"><img src="img/red_dead_redemption3.jpg" alt="RDR3" title="Los trucos del Red Dead Redemption 2" style="width: 100%"></a>
 						</div>
 						<div style="float: left; width: 50%;">
 							<h3 style="margin-left: 10px;"><a href="#">Todos los trucos de Red Dead Redemption 2.</a></h3>
@@ -294,7 +314,7 @@
 					<hr>
 					<div>
 						<div style="float: left; width: 50%;">
-							<img src="img/assassins-creed-odyssey.jpg" alt="Assasins" title="Assassin's Creed Odyssey" style="width: 100%">
+							<a href="#"><img src="img/assassins-creed-odyssey.jpg" alt="Assasins" title="Assassin's Creed Odyssey" style="width: 100%"></a>
 						</div>
 						<div style="float: left; width: 50%;">
 							<h3 style="margin-left: 10px;"><a href="#">Assassin's Creed Odyssey, Guía completa.</a></h3>
@@ -303,7 +323,7 @@
 					<hr>
 					<div>
 						<div style="float: left; width: 50%;">
-							<img src="img/call-of-duty.jpg" alt="CoD4" title="Call of Duty: Black Ops 4" style="width: 100%">
+							<a href="#"><img src="img/call-of-duty.jpg" alt="CoD4" title="Call of Duty: Black Ops 4" style="width: 100%"></a>
 						</div>
 						<div style="float: left; width: 50%;">
 							<h3 style="margin-left: 10px;"><a href="#">Call of Duty: Black Ops 4, Guía de logros y trofeos.</a></h3>
@@ -312,7 +332,7 @@
 				</aside>
 				<article style="width: 30%; margin: auto;">
 					<div>
-						<img src="img/gta5.jpg" style="width: 100%" alt="GTA5" title="Trucos y claves">
+						<a href="#"><img src="img/gta5.jpg" style="width: 100%" alt="GTA5" title="Trucos y claves"></a>
 					</div>
 					<div>
 						<h3><a href="#">Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</a></h3>

@@ -1,15 +1,15 @@
 
 <!DOCTYPE html>
 <html lang="es-ES"> <!-- la marca en mayuscula indica el pais, es decir, español de españa en este caso -->
-    <head>
-        <title>Curso diseño páginas web</title>
+<head>
+        <title>HTML Semántica</title>
         <meta charset="UTF-8"><!-- Es OBLIGATORIO Y NECESARIO poner el meta charset para indicar el codigo de caracteres que se utiliza, es el mismo siempre ya que el standard UTF-8 contiene todos los idiomas y dialectos mundiales -->
         <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
         <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="tittle" content="Confección y publicación de páginas web">
+        <meta name="tittle" content="Etiquetas de contenido multimedia">
         <meta name="author" content="Jesús">
         
-        <style>
+       <style>
         body{/* estilo al body */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* cambia la fuente a toda la página */
             width: 90%;
@@ -77,7 +77,7 @@
             color:brown;
         }
         code span span span{
-            color:royalblue;
+            color:royalblue
         }
         .code{
             margin-top: 16px;
@@ -118,8 +118,10 @@
 	}
         </style> <!-- generamos estilo a todas las etiquetas llamadas como las marcadas, se separan por "," y las propiedades y el valor tiene que ir entre {}. Cada vez que se añade propiedades y valor se separan con ";"  -->
         <script>    </script>
-                <link href="css/estilos.css" rel="stylesheet">
-                
+        
+        <link href="css/estilos.css" rel="stylesheet">
+        <script src="js/funciones.js" type="text/javascript"> </script>
+        
         <!--  <base href="https://www.mipagina.com/img/" target="_blank">Esto referencia la carpeta para abreviar caminos cuando por ejemplo luego se buscan imágenes-->
 
         <link rel="icon" type="img/png" href="img/html5.png"> <!-- Esto es para diferentes sistemas-->
@@ -129,10 +131,9 @@
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"><!-- la manera de vstudio de hacer las 3 anteriores-->
         <link rel="icon" href="img/favicon.ico" type="image/x-icon"> 
 
-    </head>
+</head>
 <body>
 <header>
-
 	<div style="overflow: auto;background-color: white;margin: 20px">
 		<div style="float: left;background-color: white">
 			<a href="index.html" style="text-align: left"><img src="img/HTML5_Logo_128.png" alt="Logo HTML" width="128" height="128" title="Pagina principal"></a>
@@ -143,119 +144,134 @@
 			href="formato.html">Formato</a> | <a style="padding: 10px;" href="bloques.html">Bloques</a> | <a style="padding: 10px;" href="tablas.html">Tablas</a> | <a style="padding: 10px;" href="listas.html">Listas</a> | <a  style="padding: 10px; " href="multimedia.html">Multimedia</a> | <a style="padding: 10px;" href="semantica.html">Semántica</a>
 			</div>
 	</div>
-
-<h1>INDICE</h1>
+<h1 id="inicio">HTML Semántica </h1>
 </header>
-<hr> 
+<hr> <!-- linea horizontal, separa semánticamente el significado del contexto -->
 <nav>
 	<a href="index.html">Indice</a> | <a href="introduccion.html">Introducción</a>  | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a> | <a href="semantica.html">Semántica</a>
 </nav>
 <hr>
 <main>
-<div style="overflow: auto;width: 100%;text-align: center;">
-	<div style="float: left; width: 12%;padding: 5px;margin: 5px;"><a href="introduccion.html">
-			<div> <img src="img/HTML5_Logo_128.png" alt="sproutcore" width="100" height="100" title="Introducción"></div>
-			<div><p>Introducción</p></div>
-		</a></div>
-	<div style="float: left;width: 12%;padding: 5px;margin: 5px;"><a href="formato.html">
-			<div><img src="img/html-formatos.png"  alt="sproutcore" width="100" height="100" title="Formato"></div>
-			<div><p>Formato</p></div>
-		</a></div>
-	<div style="float: left;width: 12%;padding: 5px;margin: 5px;"><a href="bloques.html">
-			<div><img src="img/html-bloques.png" alt="superbusinc" width="100" height="100" title="Bloques"></div>
-			<div><p>Bloques</p></div>
-		</a></div>
-	<div style="float: left;width: 12%;padding: 5px;margin: 5px;"><a href="tablas.html">
-			<div><img src="img/html-tablas.png" alt="sproutcore" width="100" height="100" title="Tablas"></div>
-			<div><p>Tablas</p></div>
-		</a></div>
-	<div style="float: left;width: 12%;padding: 5px;margin: 5px;"><a href="listas.html">
-			<div><img src="img/html-listas.png" alt="sproutcore" width="100" height="100" title="Listas"></div>
-			<div><p>Listas</p></div>
-		</a></div>
-	<div style="float: left;width: 12%;padding: 5px;margin: 5px;"><a href="multimedia.html">
-			<div><img src="img/k-meleon.jpg" alt="sproutcore" width="100" height="100" title="Multimedia"></div>
-			<div><p>Multimedia</p></div>
-		</a></div>
-	<div style="float: left;width: 12%;padding: 5px;margin: 5px;"><a href="semantica.html">
-		<div><img src="img/img_sem_elements.gif" width="100" height="100" title="Semántica"></div>
-		<div><p>Semántica</p></div>
-	</a></div>	
-</div>
-
-
-
-<hr>
-<div id="mapaweb" style="font-size: 14px; background-color: antiquewhite;overflow: auto;">
-	<div style="float: left;width: 12%; background-color: antiquewhite"><p style="text-align: center"><a href="introduccion.html"><b>Introducción</b></a></p>
-     	<ul>
-        	<li><a href="introduccion.html#queeshtml">¿Qué es HTML?</a></li>
-        	<li><a href="introduccion.html#estructura">Estructura básica de un HTML</a></li>
-        	<li><a href="introduccion.html#explicacion">Explicación de las etiquetas básicas</a></li>
-        	<li><a href="introduccion.html#etiquetas">Etiquetas HTML</a></li>
-        	<li><a href="introduccion.html#navegadores">Navegadores web</a></li>
-        	<li><a href="introduccion.html#versiones">Versiones de HTML</a></li>
-        	<li><a href="introduccion.html#estructuraspw">Estructura de páginas Web</a></li>
-        </ul></div>
-	<div style="float: left;width: 12%; background-color: antiquewhite"><p style="text-align: center"><a href="formato.html"><b>Formato</b></a></p>
-      	<ul>
-        	<li><a href="formato.html#formato">El formato del texto</a></li>
-        	<li><a href="formato.html#encabezados">Encabezados de texto</a></li>
-        	<li><a href="formato.html#etiquetasformato">Etiquetas que dan formato al texto</a></li>
-        	<li><a href="formato.html#etiquetasseparan">Etiquetas que separan el texto</a></li>
-        </ul></div>
-	<div style="float: left;width: 12%; background-color: antiquewhite"><p style="text-align: center"><a href="bloques.html"><b>Bloques</b></a></p>
-        <ul>
-        	<li><a href="bloques.html#citan">Etiquetas que citan el texto</a></li>
-        	<li><a href="bloques.html#agrupan">Etiquetas que agrupan el texto</a></li>
-        	<li><a href="bloques.html#codigo">Etiquetas de código de computadora</a></li>
-        </ul>
-        </div>
-	<div style="float: left;width: 12%; background-color: antiquewhite"><p style="text-align: center"><a href="tablas.html"><b>Tablas</b></a></p>
-        <ul><li><a href="tablas.html#etiquetas">Etiquetas de estructura de datos  en filas y columnas</a></li>
-			<li><a href="tablas.html#scope">El atributo scope</a></li>
-			<li><a href="tablas.html#colspan">El atributo colspan y rowspan</a></li>
-			<li><a href="tablas.html#colgroup">La etiqueta colgroup y col</a></li>
-			<li><a href="tablas.html#agrupacion">Agrupación por filas</a></li>
-		</ul>
+<aside>
+	<ul>
+		<li><a href="#elementos">Elementos semánticos</a></li>
+		<li><a href="#grafico">Gráfico</a></li>	
+	</ul>
+</aside>
+<section>
+<article>
+	<hr>
+	<h2 id="elementos">Elementos Semánticos</h2>
+	<div style="overflow: auto; background-color: white; width: 100%">
+		<figure style="float: right">
+			<img src="img/HTML5_Logo_256.png" alt="Logo html" width="200" title="HTML5"> 
+		</figure> 
+		<p>Un elemento semántico describe claramente su significado tanto para el navegador y el desarrollador.</p>
+		<p>Los ejemplos de <strong>no-semánticos</strong> elementos: <code>&lt;div&gt;</code> y <code>&lt;span&gt;</code> - dicen nada acerca de su contenido.</p>
+		<p>Ejemplos de <strong>semánticas</strong> elementos: <code>&lt;form&gt;</code>, <code>&lt;table&gt;</code> y <code>&lt;article&gt;</code> - definen claramente su contenido.</p>
 	</div>
-	<div style="float: left;width: 12%; background-color: antiquewhite"><p style="text-align: center"><a href="listas.html"><b>Listas</b></a></p>
-       	<ul>
-        	<li><a href="listas.html#desordenadas">Listas desordenadas</a></li>
-        	<li><a href="listas.html#ordenadas"> Listas ordenadas</a></li>
-        	<li><a href="listas.html#listas">Listas de definición</a></li>
-        	<li><a href="listas.html#etiquetas"> Etiquetas para formar listas</a></li>
-        	<li><a href="listas.html#ejemplos">Ejemplos</a></li>
-        </ul>
-    </div>
-    <div style="float: left;width: 8%; background-color: antiquewhite"><p style="text-align: center"><a href="multimedia.html"><b>Multimedia</b></a></p>
-       	<ul>
-			<li><a href="multimedia.html#video">Video</a></li>
-			<li><a href="multimedia.html#audio">Audio</a></li>
-			<li><a href="multimedia.html#objects">Objetos</a></li>
-			<li><a href="multimedia.html#iframe">Iframes</a></li>
-		</ul>
-    </div>
-    <div style="float: left;width: 8%; background-color: antiquewhite"><p style="text-align: center"><a href="semantica.html"><b>Semántica</b></a></p>
-       	<ul>
-			<li><a href="semantica.html#elementos">Elementos semánticos</a></li>
-			<li><a href="semantica.html#grafico">Gráfico</a></li>	
-		</ul>
-    </div>
-		
- </div> 
- </main>
- <hr>
+	
+	<hr>
+	<table>
+		<tr>
+			<th>Etiqueta</th>
+			<th>Descripción</th>
+		</tr>
+		<tr>
+		  <td>&lt;article&gt;</td>
+		  <td>Define un articulo</td>
+	  </tr>
+		<tr>
+		  <td>&lt;aside&gt;</td>
+		  <td>Define un contenido añadido a la información de la página</td>
+	  </tr>
+		<tr>
+		  <td>&lt;details&gt;</td>
+		  <td>Define detalles adicionales que el usuario puede ocultar</td>
+	  </tr>
+		<tr>
+		  <td>&lt;figcaption&gt;</td>
+		  <td>Define un titulo para el elemento &lt;figure&gt;</td>
+	  </tr>
+		<tr>
+		  <td>&lt;figure&gt;</td>
+		  <td>Especifica contenido añadido de la información, normalmente imágenes</td>
+	  </tr>
+		<tr>
+		  <td>&lt;footer&gt;</td>
+		  <td>Define el pie de página de un documento o sección</td>
+	  </tr>
+		<tr>
+		  <td>&lt;header&gt;</td>
+		  <td>Define la cabecera</td>
+	  </tr>
+		<tr>
+		  <td>&lt;main&gt;</td>
+		  <td>Define el contenido principal de la página</td>
+	  </tr>
+		<tr>
+		  <td>&lt;mark&gt;</td>
+		  <td>Define texto marcado</td>
+	  </tr>
+		<tr>
+		  <td>&lt;nav&gt;</td>
+		  <td>Define links de navegación en la página</td>
+	  </tr>
+		<tr>
+		  <td>&lt;section&gt;</td>
+		  <td>Define una sección en un documento</td>
+	  </tr>
+		<tr>
+		  <td>&lt;summary&gt;</td>
+		  <td>Define la cabecera de un elemento &lt;details&gt;</td>
+	  </tr>
+		<tr>
+		  <td>&lt;time&gt;</td>
+		  <td>Define una fecha/hora</td>
+	  </tr>
+	</table>
+</article>
+<article>
+	<p><a href="#inicio">Volver al inicio</a></p>
+	<hr>
+	<p>HTML5 ofrece nuevos elementos semánticos que definen las diferentes partes de la página web:  </p>
+	<div id="grafico" style="width: 50%; overflow: auto; margin: auto">
+	 <div style="float: left">
+	  <ul>
+		<li>&lt;article&gt;</li>
+		<li>&lt;aside&gt;</li>
+		<li>&lt;details&gt;</li>
+		<li>&lt;figcaption&gt;</li>
+		<li>&lt;figure&gt;</li>
+		<li>&lt;footer&gt;</li>
+		<li>&lt;header&gt;</li>
+		<li>&lt;main&gt;</li>
+		<li>&lt;mark&gt;</li>
+		<li>&lt;nav&gt;</li>
+		<li>&lt;section&gt;</li>
+		<li>&lt;summary&gt;</li>
+		<li>&lt;time&gt;</li>
+	  </ul></div>
+	<div  style="float: left">
+	  <img src="img/img_sem_elements.gif"  alt="elementos semanticos" width="256" title="Elementos smánticos">
+	</div>
+	</div>
+<p><a href="#inicio">Volver al inicio</a></p>
+</article>
+</section>
+</main>
+<hr>
  <footer style="text-align: center">
  <a href="#">Política de cookies</a> | 
  <a href="#">Política de privacidad</a> | 
  <a href="#">Aviso legal</a> | 
- <a href="#mapaweb">Mapa web</a> | 
+ <a href="index.html#mapaweb">Mapa web</a> | 
  <a href="https://es-es.facebook.com/"><img src="img/iconos32x32/facebooknegro32.png" alt="acceso facebook" width="24" height="24" title="Página de Facebook"></a> |
  <a href="https://twitter.com/?lang=es"> <img src="img/iconos32x32/twitternegro32.png" alt="acceso twitter" width="24" height="24" title="Página de Twitter"></a> |
  <a href="https://www.instagram.com/?hl=es"> <img src="img/iconos32x32/instagramnegro32.png" alt="acceso instagram" width="24" height="24" title="Página de Instagram"></a>
  <br>
  <br>
- </footer>       
+ </footer>   
+
 </body>
 </html>
