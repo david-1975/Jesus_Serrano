@@ -10,6 +10,119 @@ hr{
 	border-top: 1px solid #eee;
 	margin: 20px 0;
 	}
+h2{
+	border-bottom: 2px solid black;
+}
+.spannegrita{
+	font-weight: bold;
+}
+span.dotted {border-style: dotted;}
+span.dashed {border-style: dashed;}
+span.solid {border-style: solid;}
+span.double {border-style: double;}
+span.groove {border-style: groove;}
+span.ridge {border-style: ridge;}
+span.inset {border-style: inset;}
+span.outset {border-style: outset;}
+span.none {border-style: none;}
+span.hidden {border-style: hidden;}
+span.mix {border-style: dotted dashed solid double;}
+li {
+	margin:12px;
+}
+p.anchouno {
+  border-style: solid;
+  border-width: 5px;
+}
+
+p.anchodos {
+  border-style: solid;
+  border-width: medium;
+}
+
+p.anchotres {
+  border-style: dotted;
+  border-width: 2px;
+}
+
+p.anchocuatro {
+  border-style: dotted;
+  border-width: thick;
+}
+
+p.anchocinco {
+  border-style: double;
+  border-width: 15px;
+}
+
+p.anchoseis {
+  border-style: double;
+  border-width: thick;
+}
+
+p.anchosiete {
+  border-style: solid;
+  border-width: 2px 10px 4px 20px;
+}
+p.coloruno {
+  border-style: solid;
+  border-color: red;
+}
+
+p.colordos {
+  border-style: solid;
+  border-color: green;
+} 
+
+p.colortres {
+  border-style: solid;
+  border-color: red green blue yellow;
+} 
+p.lados {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+p.ladosdos {
+  border-style: dotted solid;
+}
+p.abreviado {
+  border: 5px solid red;
+}
+p.abreviadodos {
+  border-left: 6px solid red;
+  background-color: lightgrey;
+}
+div.radius1{
+	float: left;
+	background-color: lightgreen;
+	border-radius:15px 50px 30px 5px;
+	width: 200px;
+	height: 200px;
+}
+div.radius2{
+	float: left;
+	background-color: lightgreen;
+	width: 200px;
+	height: 200px;
+	border-radius:15px 50px 30px;
+}
+div.radius3{
+	float: left;
+	background-color: lightgreen;
+	width: 200px;
+	height: 200px;
+	border-radius:15px 50px;
+}
+div.radius4{
+	float: left;
+	background-color: lightgreen;
+	width: 200px;
+	height: 200px;
+	border-radius:100px;
+	text-align: center;
+}
 h1,h2,h3,h4,h5,h6 {
 	font-family:Arial, Helvetica, sans-serif;
 	}
