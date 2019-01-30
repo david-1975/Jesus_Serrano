@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+a{
+	background-color: lightgoldenrodyellow;
+	border: 1px solid darkred;
+	border-radius: 10px;
+	display: block;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	width: 25%;
+}
+a:link{
+		background-color: lightgoldenrodyellow;
+		border: 1px solid darkred;
+		color: darkred;
+		text-decoration: none;
+				}
+a:visited {
+			background-color: lightgoldenrodyellow;
+			border: 1px solid darkred;
+			color: darkred;
+			text-decoration: none;
+				}
+a:hover {
+			background-color: lightgoldenrodyellow;
+			border: 1px solid darkred;
+			color: blue;
+			text-decoration: underline;
+				}
+a:active {
+			background-color: lightgoldenrodyellow;
+			border: 1px solid darkred;
+			color: violet;
+			text-decoration: underline;
+				}
+abbr{
+	border: 1px solid rgba(52,252,3,1.00);
+	color:darkred;
+	padding: 4px;
+	text-decoration: none;	
+}
+b{
+	color: darkblue;
+}
+blockquote{
+	text-align: justify;
+	text-indent: 60px;
+	word-spacing: 4px;
+}
+body{
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 26px;		
+}
+cite{
+	color: darkblue;
+	font-weight: 600;
+}
+del{text-decoration-color: darkred;}
+div{
+	align-content: center;
+	background-color: lightgoldenrodyellow;
+	border: 1px solid darkred;
+	box-shadow: 10px 5px 5px grey;	
+	margin: 10px;
+	padding: 20px;
+	width: 95%;	
+}
+em{color: darkred;}
+hr{	
+	border: 1px solid black;
+	margin: 60px auto;
+	width: 15%;
+}
+h1{
+	background-color: darkred;
+	text-align: center;
+	text-shadow: 2px 2px 5px grey;	
+	text-transform:uppercase;	
+}
+h2{	
+	border-top: 5px dotted darkred;
+	border-bottom: 5px dotted darkred;
+	margin: 30px auto;
+	padding: 5px;
+	text-align: center;
+	text-decoration-color: palevioletred;
+	text-shadow: 2px 2px 5px grey;
+	width: 95%;	
+}
+h3{	
+	border-bottom: 5px dashed darkred;
+	border-color: darkred;
+	border-top: 5px dashed darkred;
+	margin: 30px auto;
+	text-align: center;
+	text-shadow: 2px 2px 5px grey;
+	width: 70%;
+}
+i{color: darkred;}
+ins{text-decoration-color: darkred;}
+li{
+	background-color: lightyellow;
+	border:2px solid darkred;
+	border-radius: 15px;
+	box-shadow: 10px 5px 5px grey;
+	line-height: 1.5;
+	margin: 20px;
+	padding: 20px;
+}
+mark{	
+	border: 1px solid darkred;
+	color: mediumvioletred;
+	padding: 14px;
+}
+p{
+	background-color: lightyellow;
+	border:2px solid darkred;
+	border-radius: 15px;
+	box-shadow: 10px 5px 5px grey;
+	line-height: 1.5;
+	margin: 20px;
+	padding: 20px;	
+}
+ul{
+	list-style-image: url(../img/boton-de-reproduccion.png);
+	margin-left: 50px;
+}
+q { quotes: "« " " »";}
+s{text-decoration-color: darkred;}
+span{
+	background-color: lightyellow;
+	border:2px solid darkred;
+	border-radius: 15px;
+	box-shadow: 10px 5px 5px grey;
+	display: block;
+	line-height: 1.5;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	width: 90%;
+}
+sup{color: darkred;}
+strong{color: darkred;}
+u{text-decoration-color: darkblue;}
