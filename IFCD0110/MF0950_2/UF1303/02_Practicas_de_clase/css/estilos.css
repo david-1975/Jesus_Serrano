@@ -1,99 +1,48 @@
 @charset "utf-8";
 /* CSS Document */
-
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+		}
+a:visited {
+  color:#012E72;
+  background-color: transparent;  
+		}
+a:hover {
+  color: red;
+  background-color: transparent;  
+		}
+a:active {
+  color: yellow;
+  background-color: transparent;  
+		}
 body{
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 	width: 90%;
 	margin: 0 auto;
 	}
-hr{
-	border-top: 1px solid #eee;
-	margin: 20px 0;
+code{
+	color: red;
+	background-color: #f1f1f1;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: 110%;
 	}
-h2{
-	border-bottom: 2px solid black;
+code span {
+	color:mediumblue;
 }
-.spannegrita{
-	font-weight: bold;
+code span span{
+	color:brown;
 }
-span.dotted {border-style: dotted;}
-span.dashed {border-style: dashed;}
-span.solid {border-style: solid;}
-span.double {border-style: double;}
-span.groove {border-style: groove;}
-span.ridge {border-style: ridge;}
-span.inset {border-style: inset;}
-span.outset {border-style: outset;}
-span.none {border-style: none;}
-span.hidden {border-style: hidden;}
-span.mix {border-style: dotted dashed solid double;}
-li {
-	margin:12px;
+code span span span{
+	color:royalblue
 }
-p.anchouno {
-  border-style: solid;
-  border-width: 5px;
-}
-
-p.anchodos {
-  border-style: solid;
-  border-width: medium;
-}
-
-p.anchotres {
-  border-style: dotted;
-  border-width: 2px;
-}
-
-p.anchocuatro {
-  border-style: dotted;
-  border-width: thick;
-}
-
-p.anchocinco {
-  border-style: double;
-  border-width: 15px;
-}
-
-p.anchoseis {
-  border-style: double;
-  border-width: thick;
-}
-
-p.anchosiete {
-  border-style: solid;
-  border-width: 2px 10px 4px 20px;
-}
-p.coloruno {
-  border-style: solid;
-  border-color: red;
-}
-
-p.colordos {
-  border-style: solid;
-  border-color: green;
-} 
-
-p.colortres {
-  border-style: solid;
-  border-color: red green blue yellow;
-} 
-p.lados {
-  border-top-style: dotted;
-  border-right-style: solid;
-  border-bottom-style: dotted;
-  border-left-style: solid;
-}
-p.ladosdos {
-  border-style: dotted solid;
-}
-p.abreviado {
-  border: 5px solid red;
-}
-p.abreviadodos {
-  border-left: 6px solid red;
-  background-color: lightgrey;
-}
+div{ 
+	background-color: #f1f1f1;
+	margin: 10px;
+	padding: 10px; 
+	}
 div.radius1{
 	float: left;
 	background-color: lightgreen;
@@ -123,13 +72,90 @@ div.radius4{
 	border-radius:100px;
 	text-align: center;
 }
+hr{
+	border-top: 1px solid #eee;
+	margin: 20px 0;
+	}
 h1,h2,h3,h4,h5,h6 {
 	font-family:Arial, Helvetica, sans-serif;
 	}
+h2{
+	border-bottom: 2px solid black;
+}
+li {
+	margin:12px;
+}
+p.anchouno {
+  border-style: solid;
+  border-width: 5px;
+}
+p.anchodos {
+  border-style: solid;
+  border-width: medium;
+}
+p.anchotres {
+  border-style: dotted;
+  border-width: 2px;
+}
+p.anchocuatro {
+  border-style: dotted;
+  border-width: thick;
+}
+
+p.anchocinco {
+  border-style: double;
+  border-width: 15px;
+}
+p.anchoseis {
+  border-style: double;
+  border-width: thick;
+}
+p.anchosiete {
+  border-style: solid;
+  border-width: 2px 10px 4px 20px;
+}
+p.coloruno {
+  border-style: solid;
+  border-color: red;
+}
+p.colordos {
+  border-style: solid;
+  border-color: green;
+} 
+p.colortres {
+  border-style: solid;
+  border-color: red green blue yellow;
+} 
+p.lados {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+p.ladosdos {
+  border-style: dotted solid;
+}
+p.abreviado {
+  border: 5px solid red;
+}
+p.abreviadodos {
+  border-left: 6px solid red;
+  background-color: lightgrey;
+}
+span.dotted {border-style: dotted;}
+span.dashed {border-style: dashed;}
+span.solid {border-style: solid;}
+span.double {border-style: double;}
+span.groove {border-style: groove;}
+span.ridge {border-style: ridge;}
+span.inset {border-style: inset;}
+span.outset {border-style: outset;}
+span.none {border-style: none;}
+span.hidden {border-style: hidden;}
+span.mix {border-style: dotted dashed solid double;}
 table, th, td {
 	border: 1px solid black;
 	  }
-
 table h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 	text-align: left;
@@ -144,44 +170,9 @@ td,th{
 	text-align:center;
 	border:1px solid #dddddd;
 }
-
 tr:nth-child(even){
 		background-color: #cccccc;
 	}
-
-div{ 
-	background-color: #f1f1f1;
-	margin: 10px;
-	padding: 10px; 
-	}
-.nota{
-	background-color: #ffffcc; 
-	border-left: 6px solid #ffeb3b; 
-	margin-bottom: 20px;
-	padding: 10px 10px 5px 16px;
-	}
-code{
-	color: red;
-	background-color: #f1f1f1;
-	padding-left: 4px;
-	padding-right: 4px;
-	font-size: 110%;
-	}
-.etiquetasHTML{
-	border: 1px solid #cccccc;
-	background-color: #f1f1f1;
-	font-size: 24px;
-	padding: 16px;
-	}
-code span {
-	color:mediumblue;
-}
-code span span{
-	color:brown;
-}
-code span span span{
-	color:royalblue
-}
 .code{
 	margin-top: 16px;
 	margin-bottom: 16px;
@@ -195,32 +186,63 @@ code span span span{
 	margin: 20px 0;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);/* esto le genera la sombra */
 	}
-a:link {
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
-		}
-a:visited {
-  color:#012E72;
-  background-color: transparent;
-  text-decoration: none;
-		}
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-		}
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-		}
-#menu{
-overflow: auto;
-background-color: white;
-margin: 20px;
+.etiquetasHTML{
+	border: 1px solid #cccccc;
+	background-color: #f1f1f1;
+	font-size: 24px;
+	padding: 16px;
+	}
+.nav1{
+	background-color: darkviolet;
+	text-align: center;
 }
-
+.nav1 a{
+	background-color: darkred;
+	color: yellow;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+.nav1 a:hover{
+	background-color: red;
+	color: orange;
+	text-decoration: none;
+}
+.nav2{
+	background-color: darkviolet;
+	list-style: none;
+	margin: 0;
+	overflow: auto;		
+	padding: 0;
+}
+.nav2 li{
+	background-color: darkred;	
+	float: left;
+	margin-right: 10px;	
+	text-align: center;
+	text-decoration: none;
+	width: 100px;
+}
+.nav2 li:hover{
+	background-color: red;
+	color: orange;
+}
+.nav2 li a{
+	color: yellow;	
+	padding: 10px 20px;
+	text-decoration: none;
+}
+.nav2 li a:hover{		
+	color: orange;	
+}
+.nota{
+	background-color: #ffffcc; 
+	border-left: 6px solid #ffeb3b; 
+	margin-bottom: 20px;
+	padding: 10px 10px 5px 16px;
+	}
+.spannegrita{
+	font-weight: bold;
+}
 #divPadre{
 	width: 99%;
 	border:1px solid grey;
@@ -277,4 +299,9 @@ margin: 20px;
 	border:1px solid grey;
 	padding:5px;
 	margin:20px;
+}
+#menu{
+overflow: auto;
+background-color: white;
+margin: 20px;
 }

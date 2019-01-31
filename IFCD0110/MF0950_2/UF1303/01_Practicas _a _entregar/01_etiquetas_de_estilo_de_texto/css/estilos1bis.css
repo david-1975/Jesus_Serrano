@@ -1,37 +1,25 @@
 @charset "utf-8";
 /* CSS Document */
-a{
-	background-color: lightgrey;
-	border: 1px solid blue;
-	border-radius: 5px;
-	display: block;
-	margin: auto;
-	padding: 10px;
-	text-align: center;
-	text-decoration: none;
-	width: 30%;
-}
 a:link{
 		background-color: lightgrey;
 		border: 1px solid blue;
-		color: black;
+		border-radius: 5px;
+		display: block;
+		margin: auto;
+		padding: 10px;
+		text-align: center;
 		text-decoration: none;
+		width: 30%;
 				}
-a:visited {
-			background-color: lightgrey;
-			border: 1px solid blue;
+a:visited {			
 			color: darkgreen;
 			text-decoration: none;
 				}
 a:hover {
-			background-color: lightgrey;
-			border: 1px solid blue;
 			color: blue;
 			text-decoration: underline;
 				}
 a:active {
-			background-color: lightgrey;
-			border: 1px solid blue;
 			color: violet;
 			text-decoration: underline;
 				}
@@ -51,7 +39,7 @@ blockquote{
 }
 body{
 	background-color: lightgray;
-	font-family:Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
+	font-family: 'Forum', cursive;
 	font-size: 150%;	
 }
 cite{
