@@ -2,29 +2,84 @@
 /* CSS Document */
 *{
 	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 body{	
 	background-image: url(../img/textura.jpg);
 	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
 	font-size: 120%;
+	padding: 10px;
 }
-.main{	
-	background: whitesmoke url(../img/libreta-espiral.gif) repeat-y top left;
-	box-shadow: 10px 5px 5px grey;
-	margin: auto;	
-	padding: 30px;
-	width: 80%;	
+.articulo{
+	color: dodgerblue;
+	text-decoration: none;
+}
+.enlace{	
+	color: dodgerblue;
+	text-decoration: none;
+}
+.footer{
+	background-color: lightgoldenrodyellow;
+	border: 1px dashed red;	
+	font-size: 100%;
+	margin: 30px auto;
+	padding: 5px;
+	text-align: center;
+	width: 80%;
 }
 .header{
 	background-color: lightgoldenrodyellow; 
-	border-bottom: 10px groove red;	
-	margin: auto;
+	border-bottom: 20px groove red;	
+	margin: 0 auto;
+	padding: 0;
 	text-align: center;	
 	width: 85%;
 }
 .hr{
-	margin: 10px auto;
+	margin: 20px auto;
 	width: 20%;
+}
+.h2{
+	border-bottom: 10px groove red;
+	font-variant: small-caps;
+	margin: 60px auto 20px auto;
+}
+.introduccion{
+	font-size: 120%;	
+	line-height: 1.5;
+	text-align: justify;
+	margin: 30px 0;
+}
+.iralindice{
+	background-color: red;
+	color: white;
+	padding: 10px;	
+	text-decoration: none;
+}
+.iralindice:hover{
+	background-color: lightcoral;
+	color: green;
+}
+.iralindicea{
+	background-color: blue;
+	color: white;
+	padding: 10px;	
+	text-decoration: none;
+}
+.iralindicea:hover{	
+	background-color: lightskyblue;
+	color: red;
+}
+.iralindiceb{
+	background-color: green;
+	color: white;
+	padding: 10px;	
+	text-decoration: none;
+}
+.iralindiceb:hover{
+	background-color: lightgreen;
+	color: blue;
 }
 .menu{	
 	align-content: center;
@@ -32,19 +87,22 @@ body{
 	border: 1px solid lightgrey;	
 	margin: auto;
 	overflow: auto;		
-	padding: 20px;
+	padding: 10px;
 	width: 85%;	
 }
-.menu ul{
-	list-style: none;
+.main{	
+	background: whitesmoke url(../img/libreta-espiral.gif) repeat-y top left;
+	box-shadow: 10px 5px 5px grey;
 	margin: auto;
-	padding: 0;
-	text-align: center;
-	width: 80%;	
+	max-width: 950px;	
+	padding: 30px;
+	width: 80%;
+	
 }
 .menu li{
 	background-color: darkred;
 	border: 1px solid yellow;
+	color: white;
 	float: left;	
 	padding: 10px;		
 	text-decoration: none;	
@@ -59,58 +117,132 @@ body{
 	padding: 10px 20px;
 	text-decoration: none;
 }
-.menu li a:hover{		
-			color: orange;	
+.menu li a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+		}
+.menu li a:visited {
+  color:white;  
+		}
+.menu li a:hover {
+  color: orange;  
+		}
+.menu li a:active {
+  color: yellow;   
+		}
+.menu ul{
+	list-style: none;
+	margin: auto;
+	padding: 0;
+	text-align: center;
+	width: 100%;	
 }
 .section{	
 	background: lightgoldenrodyellow url("../img/chincheta-roja.png") no-repeat right top;
 	border: 1px solid black;
+	box-shadow: 10px 5px 5px grey;
 	margin: auto;
-	padding: 20px;
+	padding: 40px 20px;
 	width: 80%;
 }
-.h2{
-	border-bottom: 10px groove red;
-	font-variant: small-caps;
-	margin: 60px auto 20px auto;
-}
-.spanh2{
-	color: darkblue;
-}
-.introduccion{
-	font-size: 24px;
-	font-weight: 700;
-	line-height: 1.5;
-	margin: 30px 0;
-}
-.articulo{
-	color: dodgerblue;
-	text-decoration: none;
-}
-.parrafos{
-	line-height: 1.5;
-	list-style: none;
-	margin-left: 0;
+.parrafo{
+	background-color:rgba(229,254,152,1.00) ; 
+	border-left: 6px solid red;
+	font-size: 95%;
+	padding: 10px 10px 5px 16px;
 	text-align: justify;
 }
-.parrafo1{
-	background-color:rgba(175,191,12,1.00) ; 
+.parrafoa{
+	background-color:lightblue; 
+	border-left: 6px solid blue;
+	font-size: 95%;
+	padding: 10px 10px 5px 16px;
+	text-align: justify;
+}
+.parrafob{
+	background-color:lightgreen; 
+	border-left: 6px solid green;
+	font-size: 95%;	
+	padding: 10px 10px 5px 16px;
+	text-align: justify;
+}
+.parrafob li{
+	margin-left: 20px;
+}
+.parrafogrande{
+	background-color:rgba(229,254,152,1.00) ; 
+	border-left: 6px solid red;
+	font-size: 110%;
+	margin-bottom: 30px;	
+	padding: 10px 10px 5px 16px;
+	text-align: justify;
+}
+.parrafograndea{
+	background-color:lightblue;
+	border-left: 6px solid blue;
+	font-size: 110%;
+	margin-bottom: 30px;	
+	padding: 10px 10px 5px 16px;
+	text-align: justify;
+}
+.parrafograndeb{
+	background-color:lightgreen; 
+	border-left: 6px solid green;
+	font-size: 110%;
+	margin-bottom: 30px;	
+	padding: 10px 10px 5px 16px;
+	text-align: justify;
+}
+.parrafomediano{
+	background-color:rgba(229,254,152,1.00) ; 
 	border-left: 6px solid red;
 	font-size: 100%;
 	margin-bottom: 20px;	
 	padding: 10px 10px 5px 16px;
+	text-align: justify;
 }
-.parrafo2{
-	background-color:rgba(175,191,12,1.00) ; 
-	border-left: 6px solid red;
-	font-size: 105%;
-	margin-bottom: 20px;
+.parrafomedianoa{
+	background-color:lightblue; 
+	border-left: 6px solid blue;
+	font-size: 100%;
+	margin-bottom: 20px;	
 	padding: 10px 10px 5px 16px;
+	text-align: justify;
 }
-.parrafo3{
-	background-color:rgba(175,191,12,1.00) ; 
-	border-left: 6px solid red; 
-	font-size: 110%;
-	margin-bottom: 20px;
+.parrafomedianob{
+	background-color:lightgreen; 
+	border-left: 6px solid green;
+	font-size: 100%;
+	margin-bottom: 20px;	
 	padding: 10px 10px 5px 16px;
+	text-align: justify;
+}
+.sectiona{	
+	background: lightgreen url("../img/chincheta-azul.png") no-repeat right top;
+	border: 1px solid black;
+	box-shadow: 10px 5px 5px grey;
+	margin: auto;
+	padding: 40px 20px;
+	width: 80%;
+}
+.sectionb{	
+	background: rgba(178,174,228,1.00) url("../img/chincheta-verde.png") no-repeat right top;
+	border: 1px solid black;
+	box-shadow: 10px 5px 5px grey;
+	margin: auto;
+	padding: 40px 20px;
+	width: 80%;
+}
+.spanh2{
+	color: darkblue;
+}
+.span1{
+	color: blue;
+}
+.span2{
+	color:red;
+}
+.span3{
+	color:green;
 }

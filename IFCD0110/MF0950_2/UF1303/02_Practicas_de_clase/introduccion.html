@@ -38,9 +38,9 @@
 <main>
 	<aside>
         <ul class="nav2">
-        	<li><a href="#queeshtml">¿Qué es HTML?</a></li>
-        	<li><a href="#estructura">Estructura básica de un HTML</a></li>
-        	<li><a href="#explicacion">Explicación de las etiquetas básicas</a></li>
+        	<li><a href="#queeshtml">¿Qué es CSS?</a></li>
+        	<li><a href="#sintaxis">Sintaxis CSS</a></li>
+        	<li><a href="#selectores">Los selectores CSS</a></li>
         	<li><a href="#etiquetas">Etiquetas HTML</a></li>
         	<li><a href="#navegadores">Navegadores web</a></li>
         	<li><a href="#versiones">Versiones de HTML</a></li>
@@ -49,151 +49,40 @@
     </aside>
         <hr>
     <section></section>
-            <h2 id="queeshtml">¿Qué es CSS?</h2>
-        
-            <p> HTML es el lenguaje de marcado estándar para la creación de páginas Web.</p>
-
-            <ul>
-                <li><strong>CSS</strong> significa <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets (Hojas de estilos en cascada)</li>
-                <li>CSS describe <strong>cómo los elementos HTML se van a mostrar en la pantalla, papel, o en otros medios</strong></li>
-                <li>CSS <strong>ahorra mucho trabajo</strong> . Se puede controlar el diseño de varias páginas web a la vez</li>
-                <li>Estilo externas se almacenan en <strong>archivos CSS</strong></li>
-            </ul>
-            <p><a href="#inicio">Volver al inicio</a></p>
-         <hr>   
-            <h2 id="estructura">Estructura básica de un HTML</h2>
-            <div class="ejemplo">
-            <h3>Ejemplo</h3>    
-            <div class="code"> 
-            <code>
-                <span>&lt;<span>!DOCTYPE <span>html</span></span>&gt;</span><br> <!-- <br> hace un salto de línea -->
-                <span>&lt;<span>html <span>lang="es-ES"</span></span>&gt;</span><br><!-- con & hacemos escapes de código, es decir que comentarios con aspecto de código no se considere como tal -->
-                <span>&lt;<span>head</span>&gt;</span><br>
-                <span>&lt;<span>title</span>&gt;<span style="color:black"></span>Título de la página</span>&lt;<span>&lt;<span>/title</span>&gt;</span><br> <!-- le damos un ESTILO EN LINEA añadiendo atributo style -->
-                <span>&lt;<span>meta <span>charset="UTF-8"</span></span>&gt;</span> <br>
-                <span>&lt;<span>/head</span>&gt;</span><br>
-                <span>&lt;<span>/body</span>&gt;</span><br>
-                <span>&lt;<span>h1</span>&gt;<span style="color:black">Encabezado de la página</span><span>&lt;/h1</span>&gt;</span><br>
-                <span>&lt;<span>p</span>&gt;<span style="color:black">Párrafo de texto</span>&lt;<span>/p</span>&gt;</span><br>
-                <span>&lt;<span>/body</span>&gt;</span><br>
-                <span>&lt;<span>/html</span>&gt;</span>
-            </code>
-            </div>    
-            </div>
-            
-                <h2 id="explicacion">Explicación de las etiquetas básicas</h2>
-                    <ol> <!-- con <ol>li*9 generamos una order list con 9 atributos en la lista-->
-                    <li>La etiqueta <code>&lt;!DOCTYPE html&gt;</code> define este documento para ser HTML5.</li>
-                    <li>La etiqueta <code>&lt;html&gt;</code> define el elemento raíz de una página HTML.</li>
-                    <li>El atributo <code>lang="es-ES"</code> especifica el idioma del documento y va dentro de la etiqueta <code>&lt;html&gt;</code>.</li>
-                    <li>La etiqueta <code>&lt;head&gt;</code> contiene información de metadatos sobre el documento.</li>
-                    <li>La etiqueta <code>&lt;title&gt;</code> especifica un título para el documento HTML.</li>
-                    <li>La etiqueta <code>&lt;meta charset="UTF-8"&gt;</code> define la codificación de caracteres.</li>
-                    <li>La etiqueta <code>body&gt;</code> engloba el contenido de la página visible.</li>
-                    <li>La etiqueta <code>&lt;h1&gt;</code> define un encabezado.</li>
-                    <li>La etiqueta <code>&lt;p&gt;</code> define un párrafo.</li>
-                </ol>
-                <p><a href="#inicio">Volver al inicio</a></p>
-                <hr><!-- horizontal rule hace un salto de línea -->
-                
-                    <h2 id="etiquetas">Etiquetas HTML</h2>
-                    <p>Las etiquetas HTML son los nombres de elementos entre paréntesis angulares:</p>
-                    <div class="etiquetasHTML">
-                    <p><b>&lt;Nombre de etiqueta&gt;</b> contenido va aquí ...<b>&lt;/Nombre de etiqueta&gt;</b> </p>    
-                    </div>
-
-                    <dl><!-- definition list -->
-                        <dt><b>Etiquetas HTML</b></dt><!-- da el título -->
-                        <dd>Normalmente vienen en pares como <code>&lt;p&gt;</code> y <code>&lt;/p&gt;</code>. </dd><!-- da la descripción -->
-                        <dt><b>Las etiquetas HTML</b></dt><!-- la etiqueta <b> resala el texto que hay dentro -->
-                        <dd>Están formadas por una etiqueta de inicio y una etiqueta de fin.</dd>                    
-                        <dt><b>La etiqueta final</b></dt> <!-- Se puede hacer la lista de definición con un dt solo o incluso sin dt -->
-                        <dd>Se escribe igual que la etiqueta de inicio, pero con una barra inclinada insertada antes de que el nombre de la etiqueta.</dd>
-                    </dl>
-                    <div class="nota"> <!-- generamos el estilo con el atributo class -->
-                        <p>Consejo: La etiqueta de inicio también se llama la etiqueta de apertura y la etiqueta final como etiqueta de cierre.</p>
-                    </div>
-                    <p><a href="#inicio">Volver al inicio</a></p>
-                    <hr>
-                        
-                        <h2 id="navegadores">Navegadores web</h2>
-                        <p>El propósito de un navegador web (Chrome, IE, Firefox, Safari) es leer los documentos HTML y mostrarlos.<br> <!--<br> hace un salto de línea -->
-                        El navegador no muestra las etiquetas HTML, pero los utiliza para determinar cómo mostrar el documento:</p>
-                        <img src="img/img_chrome.png" alt="imagen navegador Chrome" width="635" height="361"><!-- etiqueta que no lleva cierre, y lleva un mínimo de 2 atributos. src, indica donde está el archivo.alt, indica la información de la imagen. Luego quedarian dos atributos más, width indica la anchura y height marca la altura de la imagen, normalmente la que manda es la anchura por la característica del dispositivo. Se puede poner en pixeles o porcentual, lo ideal es lo segundo por los distintos dispositivos -->
-                   <p><a href="#inicio">Volver al inicio</a></p>    
-                   <hr>    
-                   <div>
-                        <h2 id="versiones">Versiones de HTML</h2>
-                        <p>Desde los primeros días de la web, ha habido muchas versiones de HTML:</p>
-                            <table><!-- style="border: 5px solid black" --> <!-- Se puede dar un border sólo, pero ya está en desuso. Ahora se marca estilos en línea. *Hemos generado un estilo general en el head -->
-                                <tr><!-- define las filas de la tabla -->
-                                    <th>Versión</th><!-- table header o th marca el principio resaltado de la tabla -->
-                                    <th>Año</th>
-                                </tr>
-                                <tr>
-                                    <td>HTML</td><!-- define las celdas y tienen que tener el mismo número que los th para que no queden celdas vacias -->
-                                    <td>1991</td>
-                                </tr>
-                                <tr>
-                                    <td>HTML 2.0</td>
-                                    <td>1995</td>
-                                </tr>
-                                <tr>
-                                    <td>HTML 3.2</td>
-                                    <td>1997</td>
-                                </tr>
-                                <tr>
-                                    <td>HTML 4.01</td>
-                                    <td>1999</td>
-                                </tr>
-                                <tr>
-                                    <td>XHTML</td>
-                                    <td>2000</td>
-                                </tr>
-                                <tr>
-                                    <td>HTML5</td>
-                                    <td>2014</td>
-                                </tr>
-                               	
-                            </table>
-                    </div>
-                    <p><a href="#inicio">Volver al inicio</a></p>
-                    <hr>
-                    <h2 id="estructuraspw">Estructura de páginas Web</h2>
-                    <p>A continuación se muestra una visualización de una estructura de la página HTML:</p>
-                    <div id="divPadre">
-                        &lt;Html lang="es-ES"&gt;
-                        <div id="divHead">
-                        &lt;Head&gt;
-                            <div id="divTitle">
-                                &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/estilos.css&quot;&gt;<br>                                
-                            </div>
-                          <div id="divMeta">
-                            	&lt;style&gt;h1 {font-size:14px; color:Blue;}p {font-size:12px;}&lt;/style&gt;<br>
-                            </div>
-
-                        </div>
-                        <div id="divBody">
-                        &lt;Body&gt;
-                            <div id="divBlanco">
-                                <div id="divEncabezado">
-                                    &lt;h1&gt;Este es el encabezado&lt;/h1&gt;
-                                </div>
-                                <div id="divParrafo1">
-                                    &lt;p&gt;Párrafo de texto 1&lt;/p&gt;
-                                </div>
-                                <div id="divParrafo2">
-                                    &lt;p&gt;Párrafo de texto 2&lt;/p&gt;
-                                </div>
-                            </div>
-                            &lt;/Body&gt;
-                        </div> 
-                        &lt;/Html&gt;
-                    </div>
-                    <div class="nota"><!-- le damos atributo class para que aplique el estilo -->
-                        <p><strong>Nota:</strong> Sólo el contenido dentro de la sección <code>&lt;Body&gt;</code>  (el área blanca arriba) se muestra en un navegador.</p>
-                    </div>                    
-                    <p><a href="#inicio">Volver al inicio</a></p>
+<h2 id="queeshtml">¿Qué es CSS?</h2>
+	<p> CSS es un lenguaje que describe el estilo de un documento HTML.</p>
+	<ul>
+		<li><strong>CSS</strong> significa <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets (Hojas de estilos en cascada)</li>
+		<li>CSS describe <strong>cómo los elementos HTML se van a mostrar en la pantalla, papel, o en otros medios</strong></li>
+		<li>CSS <strong>ahorra mucho trabajo</strong> . Se puede controlar el diseño de varias páginas web a la vez</li>
+		<li>Estilo externas se almacenan en <strong>archivos CSS</strong></li>
+	</ul>
+	<p><a href="#inicio">Volver al inicio</a></p>
+	<hr>   
+<h2 id="sintaxis">Sintaxis CSS</h2>            
+	<p>Un conjunto de reglas CSS consta de un selector y un bloque de declaración:</p>
+	<p class="selector"><img src="img/selector.gif" alt="selector CSS" width="50%" title="Ejemplo de una sintaxis CSS"></p>
+	<p>El selector para la etiqueta HTML en la que desea estilo. El bloque de declaración contiene uno o más atributos separados por punto y coma.</p>            
+	<p>Cada declaración incluye una propiedad CSS y un valor, <strong>separados por dos puntos.</strong></p>
+	<p><strong>Una declaración CSS siempre termina con un punto y coma, y los bloques de declaraciones están rodeados por llaves.</strong></p>
+	<p><a href="#inicio">Volver al inicio</a></p>
+	<hr><!-- horizontal rule hace un salto de línea -->
+<h2 id="selectores">Los selectores CSS</h2>
+	<p>Los selectores CSS se utilizan para "encontrar" (o seleccionar) elementos HTML en función de su nombre de etiquetas, ID, clase, atributo, y mucho más.</p>
+	<ul>
+		<li>Etiquetas: Le da un valor CSS a las etiquetas mencionadas.</li>
+		<li>Atributo id: es un elemento único dentro del HTML, en CSS se selecciona con <strong>#</strong> (almohadilla) y su nombre no puede empezar por un número.</li>
+		<li>Atributo class: selecciona elementos con un atributo class añadido. Se selecciona con <strong>.</strong> (un punto). Se le pueden añadir varias clases a un mismo elemento.</li>
+		<li>Agrupación de selectores: agrupa los atributos en un sólo selector, ahorra código y se separan por <strong>,</strong> (coma).</li>
+	</ul>
+		<div class="ejemplos">
+			<div style=""><span class="colorrojo">p</span>{ <br> 	text-align: center;<br>  color: red;<br>}</div>
+			<div><span class="colorrojo">#para1</span>{<br>  text-align: center;<br>  color: red;<br>}</div>
+			<div><span class="colorrojo">.center</span>{ <br> text-align: center;<br>  color: red;<br>}</div>
+			<div><span class="colorrojo">h1, h2, p</span>{<br>  text-align: center;  <br>color: red;<br>}</div>
+		</div>
+	<p><a href="#inicio">Volver al inicio</a></p>
+	<hr>
 </main>
 <hr>
  <footer style="text-align: center">

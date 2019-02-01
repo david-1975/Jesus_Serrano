@@ -19,9 +19,20 @@
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-<h1>Bordes CSS</h1>
+<h1 id="inicio">Bordes CSS</h1>
 <hr>
-<h2>Estilo de borde</h2>
+<ul>
+	<li><a href="#estilo">Estilo de borde</a></li>
+	<li><a href="#ancho">Ancho del borde</a></li>
+	<li><a href="#color">Color del borde</a></li>
+	<li><a href="#individuales">Border - Lados individuales</a></li>
+	<li><a href="#propiedades">Border - Abreviación de las propiedades</a></li>
+	<li><a href="#redondeados">Bordes redondeados</a></li>
+	<li><a href="#tabla">Todas las propiedades de borde CSS</a></li>
+	<li><a href="#outline">Outline</a></li>
+</ul>
+<hr>
+<h2 id="estilo">Estilo de borde</h2>
 		<p>La propiedad <code>border-style</code> especifica qué tipo de frontera que se vea.</p>
 		<p>Se permiten los siguientes valores:</p>
 		<ul>
@@ -37,21 +48,11 @@
 		  <li><span class="spannegrita">hidden</span> - Define un borde oculto<span class="hidden">border-style: hidden</span></li>
 		  <li><span class="spannegrita">mixed</span> - Define un borde mexclado<span class="mix">border-style: mixed</span></li>
 		</ul>
-		<p>La propiedad <code>border-style</code>  puede tener de uno a cuatro valores (por el borde superior, borde derecho, borde inferior y el borde izquierdo).</p>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
-		
-		<br>
-	<h2>Ancho del borde</h2>
+		<div class="nota"><p><strong>Nota: </strong>La propiedad <code>border-style</code>  puede tener de uno a cuatro valores (por el borde superior, borde derecho, borde inferior y el borde izquierdo).</p></div>
+<br>
+		<a href="#inicio">Volver al inicio</a>
+		<hr>
+	<h2 id="ancho">Ancho del borde</h2>
 		<p>La propiedad <code>border-width</code> especifica la anchura de los cuatro bordes.</p>
 		<p>La anchura se puede establecer como un tamaño específico (en px, pt, cm, em, etc) o mediante el uso de uno de los tres valores predefinidos:  thin (fino), medium (medio), or thick (grueso).</p>
 		<p>La propiedad <code>border-width</code> puede tener de uno a cuatro valores (por el borde superior, borde derecho, borde inferior y el borde izquierdo).</p>
@@ -63,7 +64,9 @@
 		<p class="anchoseis"> border-style: double; border-width: thick</p>
 		<p class="anchosiete">border-style: solid; border-width: 2px 10px 4px 20px</p>
 		<br>
-	<h2>Color del borde</h2>
+		<a href="#inicio">Volver al inicio</a>
+		<hr>
+	<h2 id="color">Color del borde</h2>
 		<p>La propiedad <code>border-color</code> se utiliza para establecer el color de los cuatro bordes.</p>
 		<p>El color se puede ajustar por:</p>
 		<ul>
@@ -78,7 +81,9 @@
 		<p class="colordos">border-color: green</p>
 		<p class="colortres">border-color: red green blue yellow</p>
 		<br>
-	<h2>Border - Lados individuales</h2>
+		<a href="#inicio">Volver al inicio</a>
+		<hr>
+	<h2 id="individuales">Border - Lados individuales</h2>
 		<p>De los ejemplos anteriores se han visto que es posible especificar un borde diferente para cada lado.</p>
 		<p>En CSS, también hay propiedades para especificar cada uno de los bordes (superior, derecho, inferior e izquierda):</p>
 		<p class="lados">border-top-style: dotted; border-right-style: solid; border-bottom-style: dotted; border-left-style: solid;</p>
@@ -92,7 +97,9 @@
 			<li>1 valor: Se refiere a todos los lados. </li>
 		</ul>
 		<br>
-	<h2>Border - Abreviación de las propiedades</h2>
+		<a href="#inicio">Volver al inicio</a>
+		<hr>
+	<h2 id="propiedades">Border - Abreviación de las propiedades</h2>
 	    <p>Como se puede ver en los ejemplos anteriores, hay muchas propiedades a tener en cuenta cuando se trata de bordes.</p>
 		<p>Para acortar el código, también es posible especificar todas las propiedades de borde individuales en una sola propiedad.</p>
 	    <p>La propiedad <code>border</code> es una propiedad abreviada para las siguientes propiedades de borde individuales:</p>
@@ -100,11 +107,14 @@
 	      <li>border-width</li>
 	      <li>border-style (necesario)</li>
 	      <li>border-color</li>
+	    </ul>
 	      <p class="abreviado">border: 5px solid red;</p>
 	      <p>También puede especificar todas las propiedades de borde individuales para un solo lado:</p>
 	      <p class="abreviadodos">border-left: 6px solid red; background-color: lightgrey;</p>
 	      <br>
-	 <h2>Bordes redondeados</h2>
+	      <a href="#inicio">Volver al inicio</a>
+		<hr>
+	 <h2 id="redondeados">Bordes redondeados</h2>
 	      <p>La propiedad <code>border-radius</code> se utiliza para añadir bordes redondeados a un elemento, al igual que en <code>border-style</code> se le puede añadir en varios valores:</p>
 	      <div style="overflow: auto;">
 	      <div class="radius1">4 Valores: border-radius:15px 50px 30px 5px;</div>
@@ -113,7 +123,9 @@
 	      <div class="radius4">Valor único: border-radius:100px;</div>
 	      </div>
 	      <br>
-	 <h2>Todas las propiedades de borde CSS</h2>
+	      <a href="#inicio">Volver al inicio</a>
+		<hr>
+	 <h2 id="tabla">Todas las propiedades de borde CSS</h2>
 	      <table>
 	        <tbody>
 	          <tr>
@@ -122,90 +134,65 @@
               </tr>
 	          <tr>
 	            <td><a href="https://www.w3schools.com/cssref/pr_border.asp">border</a></td>
-	            <td>Sets all the border properties in one declaration</td>
+	            <td>Establece todas las propiedades de borde en una declaración</td>
               </tr>
 	          <tr>
 	            <td><a href="https://www.w3schools.com/cssref/pr_border-bottom.asp">border-bottom</a></td>
-	            <td>Sets all the bottom border properties in one declaration</td>
+	            <td>Establece todas las propiedades del bottom de borde en una declaración </td>
               </tr>
 	          <tr>
 	            <td><a href="https://www.w3schools.com/cssref/pr_border-bottom_color.asp">border-bottom-color</a></td>
-	            <td>Sets the color of the bottom border</td>
+	            <td>Establece el color del bottom del borde, esto se puede hacer con top, left and right.</td>
               </tr>
 	          <tr>
 	            <td><a href="https://www.w3schools.com/cssref/pr_border-bottom_style.asp">border-bottom-style</a></td>
-	            <td>Sets the style of the bottom border</td>
+	            <td>Establece el estilo del bottom del borde, esto se puede hacer con top, left and right.</td>
               </tr>
 	          <tr>
 	            <td><a href="https://www.w3schools.com/cssref/pr_border-bottom_width.asp">border-bottom-width</a></td>
-	            <td>Sets the width of the bottom border</td>
+	            <td>Establece la anchura del bottom del borde, esto se puede hacer con top, left and right.</td>
               </tr>
 	          <tr>
 	            <td><a href="https://www.w3schools.com/cssref/pr_border-color.asp">border-color</a></td>
-	            <td>Sets the color of the four borders</td>
-              </tr>
-	          <tr>
-	            <td><a href="https://www.w3schools.com/cssref/pr_border-left.asp">border-left</a></td>
-	            <td>Sets all the left border properties in one declaration</td>
-              </tr>
-	          <tr>
-	            <td><a href="https://www.w3schools.com/cssref/pr_border-left_color.asp">border-left-color</a></td>
-	            <td>Sets the color of the left border</td>
-              </tr>
-	          <tr>
-	            <td><a href="https://www.w3schools.com/cssref/pr_border-left_style.asp">border-left-style</a></td>
-	            <td>Sets the style of the left border</td>
-              </tr>
-	          <tr>
-	            <td><a href="https://www.w3schools.com/cssref/pr_border-left_width.asp">border-left-width</a></td>
-	            <td>Sets the width of the left border</td>
-              </tr>
+	            <td>Establece el color de los 4 lados del borde</td>
+              </tr>	          
 	          <tr>
 	            <td><a href="https://www.w3schools.com/cssref/css3_pr_border-radius.asp">border-radius</a></td>
-	            <td>Sets all the four border-*-radius properties for rounded corners</td>
-              </tr>
-	          <tr>
-	            <td><a href="https://www.w3schools.com/cssref/pr_border-right.asp">border-right</a></td>
-	            <td>Sets all the right border properties in one declaration</td>
-              </tr>
-	          <tr>
-	            <td><a href="https://www.w3schools.com/cssref/pr_border-right_color.asp">border-right-color</a></td>
-	            <td>Sets the color of the right border</td>
-              </tr>
-	          <tr>
-	            <td><a href="https://www.w3schools.com/cssref/pr_border-right_style.asp">border-right-style</a></td>
-	            <td>Sets the style of the right border</td>
-              </tr>
-	          <tr>
-	            <td><a href="https://www.w3schools.com/cssref/pr_border-right_width.asp">border-right-width</a></td>
-	            <td>Sets the width of the right border</td>
-              </tr>
+	            <td>Establece el borde de las 4 esquinas</td>
+              </tr>	         
 	          <tr>
 	            <td><a href="https://www.w3schools.com/cssref/pr_border-style.asp">border-style</a></td>
-	            <td>Sets the style of the four borders</td>
-              </tr>
-	          <tr>
-	            <td><a href="https://www.w3schools.com/cssref/pr_border-top.asp">border-top</a></td>
-	            <td>Sets all the top border properties in one declaration</td>
-              </tr>
-	          <tr>
-	            <td><a href="https://www.w3schools.com/cssref/pr_border-top_color.asp">border-top-color</a></td>
-	            <td>Sets the color of the top border</td>
-              </tr>
-	          <tr>
-	            <td><a href="https://www.w3schools.com/cssref/pr_border-top_style.asp">border-top-style</a></td>
-	            <td>Sets the style of the top border</td>
-              </tr>
-	          <tr>
-	            <td><a href="https://www.w3schools.com/cssref/pr_border-top_width.asp">border-top-width</a></td>
-	            <td>Sets the width of the top border</td>
-              </tr>
+	            <td>Establece el estilo de los 4 lados</td>
+              </tr>	          
 	          <tr>
 	            <td><a href="https://www.w3schools.com/cssref/pr_border-width.asp">border-width</a></td>
-	            <td>Sets the width of the four borders</td>
+	            <td>Establece la anchura de los 4 bordes</td>
               </tr>
             </tbody>
           </table>
+          <a href="#inicio">Volver al inicio</a>
+		<hr>
+<h2 class="outline">Outline CSS</h2>
+		<p><code>Outline</code> es una línea que se dibuja alrededor de los elementos, fuera de los bordes, para hacer que el elemento "destaque".</p>
+		<div class="esquema">
+		  <div class="outline1">Outline
+		    <div class="border">Border
+		      <div class="contenido">Contenido</div>
+	        </div>
+	      </div>
+</div>
+		<p>CSS tiene las siguientes propiedades del contorno:</p>
+		<ul>
+		  <li>outline-style</li>
+		  <li>outline-color</li>
+		  <li>outline-width</li>
+		  <li>outline-offset</li>
+		  <li>outline</li>
 </ul>
+		<div class="nota">
+		  <p><strong>Nota: </strong> <code>Outline</code> difiere de los <code>border</code>! A diferencia del border, el contorno se dibuja fuera del borde del elemento, y puede superponerse otros contenidos. Además, el outline no es una parte de las dimensiones del elemento; total de anchura y la altura del elemento no se ve afectada por el ancho del contorno.</p>
+		</div>
+		<a href="#inicio">Volver al inicio</a>
+		<hr>
 </body>
 </html>

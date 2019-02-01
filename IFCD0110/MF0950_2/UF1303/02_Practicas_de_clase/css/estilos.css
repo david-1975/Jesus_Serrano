@@ -6,28 +6,28 @@ a:link {
   text-decoration: none;
 		}
 a:visited {
-  color:#012E72;
-  background-color: transparent;  
+	background-color: transparent;
+ 	color:black;    
 		}
 a:hover {
-  color: red;
-  background-color: transparent;  
+	background-color: transparent; 
+  	color: red;   
 		}
 a:active {
-  color: yellow;
-  background-color: transparent;  
+	background-color: transparent;
+  	color: yellow;    
 		}
 body{
 	font-family: 'Titillium Web', sans-serif;
-	width: 90%;
 	margin: 0 auto;
+	width: 90%;	
 	}
-code{
-	color: red;
+code{	
 	background-color: #f1f1f1;
-	padding-left: 4px;
-	padding-right: 4px;
+	color: red;
 	font-size: 110%;
+	padding-left: 4px;
+	padding-right: 4px;	
 	}
 code span {
 	color:mediumblue;
@@ -44,33 +44,33 @@ div{
 	padding: 10px; 
 	}
 div.radius1{
-	float: left;
 	background-color: lightgreen;
 	border-radius:15px 50px 30px 5px;
-	width: 200px;
+	float: left;
 	height: 200px;
+	width: 200px;	
 }
 div.radius2{
-	float: left;
 	background-color: lightgreen;
-	width: 200px;
-	height: 200px;
 	border-radius:15px 50px 30px;
+	float: left;
+	height: 200px;
+	width: 200px;	
 }
 div.radius3{
-	float: left;
 	background-color: lightgreen;
-	width: 200px;
-	height: 200px;
 	border-radius:15px 50px;
+	float: left;
+	height: 200px;
+	width: 200px;	
 }
 div.radius4{
-	float: left;
 	background-color: lightgreen;
-	width: 200px;
-	height: 200px;
 	border-radius:100px;
+	float: left;	
+	height: 200px;	
 	text-align: center;
+	width: 200px;
 }
 hr{
 	border-top: 1px solid #eee;
@@ -126,11 +126,11 @@ p.colortres {
   border-style: solid;
   border-color: red green blue yellow;
 } 
-p.lados {
-  border-top-style: dotted;
-  border-right-style: solid;
-  border-bottom-style: dotted;
-  border-left-style: solid;
+p.lados {  
+	border-bottom-style: dotted;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-top-style: dotted;
 }
 p.ladosdos {
   border-style: dotted solid;
@@ -144,15 +144,15 @@ p.abreviadodos {
 }
 span.dotted {border-style: dotted;}
 span.dashed {border-style: dashed;}
-span.solid {border-style: solid;}
 span.double {border-style: double;}
 span.groove {border-style: groove;}
-span.ridge {border-style: ridge;}
-span.inset {border-style: inset;}
-span.outset {border-style: outset;}
-span.none {border-style: none;}
 span.hidden {border-style: hidden;}
+span.inset {border-style: inset;}
 span.mix {border-style: dotted dashed solid double;}
+span.none {border-style: none;}
+span.outset {border-style: outset;}
+span.ridge {border-style: ridge;}
+span.solid {border-style: solid;}
 table, th, td {
 	border: 1px solid black;
 	  }
@@ -161,31 +161,65 @@ table h1,h2,h3,h4,h5,h6 {
 	text-align: left;
 }
 table{
-	width: 100%;
-	font-family: arial, sans-serif;
 	border-collapse: collapse;
+	font-family: arial, sans-serif;	
+	width: 100%;
 }
 td,th{
-	padding:8px;
-	text-align:center;
 	border:1px solid #dddddd;
+	padding:8px;
+	text-align:center;	
 }
 tr:nth-child(even){
 		background-color: #cccccc;
 	}
+.outline1{
+	background-color: green;
+	border: 1px dashed white;
+	color: white;
+}
+.border{
+	border: 1px solid black;
+	color: black;
+}
 .code{
+	background-color: white;
+	border-left: 4px solid green;
 	margin-top: 16px;
 	margin-bottom: 16px;
 	padding: 8px 12px;
-	background-color: white;
-	border-left: 4px solid green;
+}
+.colorrojo{
+	color: red;
+}
+.contenido{
+	border: 1px solid black;
+	color: black;
 }
 .ejemplo{
 	background-color: #f1f1f1;
-	padding: 8px 16px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);/* esto le genera la sombra */	
 	margin: 20px 0;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);/* esto le genera la sombra */
+	padding: 8px 16px;
 	}
+.ejemplos{	
+	background-color: slategrey;
+	margin: auto;	
+	overflow: auto;
+	text-align: left;
+	width: 80%;
+}
+.ejemplos div{
+	float: left;
+	margin: 14px;
+	width: 20%;
+}
+.esquema{
+	background-color: white;
+	margin: auto;
+	text-align: center;
+	width: 80%;	
+}
 .etiquetasHTML{
 	border: 1px solid #cccccc;
 	background-color: #f1f1f1;
@@ -240,6 +274,9 @@ tr:nth-child(even){
 	margin-bottom: 20px;
 	padding: 10px 10px 5px 16px;
 	}
+.selector{
+	text-align: center;
+}
 .spannegrita{
 	font-weight: bold;
 }
@@ -277,31 +314,32 @@ tr:nth-child(even){
 	background-color:#ddd;
 }
 #divBlanco{
-	width:90%;
-	border:1px solid grey;
-	padding:3px;
-	margin:20px;
 	background-color:#fff;
-}
-#divEncabezado{
-	width:90%;
 	border:1px solid grey;
-	padding:5px;margin:20px;
-}
-#divParrafo1{
-	width:90%;
-	border:1px solid grey;
-	padding:5px;
-	margin:20px;	
-}
-#divParrafo2{
-	width:90%;
-	border:1px solid grey;
-	padding:5px;
 	margin:20px;
+	padding:3px;
+	width:90%;
+}
+#divEncabezado{	
+	border:1px solid grey;
+	margin:20px;
+	padding:5px;
+	width:90%;
+}
+#divParrafo1{	
+	border:1px solid grey;	
+	margin:20px;
+	padding:5px;
+	width:90%;	
+}
+#divParrafo2{	
+	border:1px solid grey;	
+	margin:20px;
+	padding:5px;
+	width:90%;
 }
 #menu{
-overflow: auto;
-background-color: white;
-margin: 20px;
+	background-color: white;
+	margin: 20px;
+	overflow: auto;
 }
