@@ -227,47 +227,52 @@ tr:nth-child(even){
 	padding: 16px;
 	}
 .nav1{
-	background-color: darkviolet;
+	background-color: black;
+	padding: 20px;
 	text-align: center;
 }
 .nav1 a{
-	background-color: darkred;
-	color: yellow;
+	background-color: grey;
+	color: black;
 	padding: 10px 20px;
 	text-decoration: none;
 }
 .nav1 a:hover{
-	background-color: red;
-	color: orange;
+	background-color: darkgrey;
+	color: darkblue;
 	text-decoration: none;
 }
 .nav2{
-	background-color: darkviolet;
+	<!--background-color: darkgray;-->
 	list-style: none;
 	margin: 0;
 	overflow: auto;		
 	padding: 0;
 }
-.nav2 li{
-	background-color: darkred;	
+/*.nav2 li{
+	background-color: ghostwhite;	
 	float: left;
-	margin-right: 10px;	
+	margin-right: 50px;	
 	text-align: center;
 	text-decoration: none;
-	width: 100px;
+	width: 130px;*/
 }
-.nav2 li:hover{
-	background-color: red;
+/*.nav2 li:hover{
+	background-color: black;
 	color: orange;
+	margin: auto;
+	padding: 10px 20px;
 }
 .nav2 li a{
-	color: yellow;	
+	color: darkblue;
+	margin: auto;
 	padding: 10px 20px;
 	text-decoration: none;
 }
 .nav2 li a:hover{		
-	color: orange;	
-}
+	color: orange;
+	padding: 10px 20px;
+}*/
 .nota{
 	background-color: #ffffcc; 
 	border-left: 6px solid #ffeb3b; 
