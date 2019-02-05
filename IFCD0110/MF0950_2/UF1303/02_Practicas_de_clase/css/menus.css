@@ -1,0 +1,236 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	box-sizing: border-box;	
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1em;
+}
+
+/* -------------Menú Estilo 1-------------- */
+#menu1  {
+	border: 1px solid black;
+	margin: auto;	
+	padding:10px;
+	width:80%;
+}
+#menu1 ul {	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;	
+}
+#menu1 ul li{
+	border:1px solid gray;
+	display: inline-block;		
+}
+#menu1 ul li a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px;
+	width: 100px;	
+}
+#menu1 ul li a:hover {	
+	text-decoration:none;	
+}
+/* -------------Menú Estilo 2-------------- */
+
+#menu2  {
+	border: 1px solid black;
+	height: auto;
+	margin: auto;
+	overflow: hidden;	
+	width:80%;
+}
+#menu2 ul {
+	border: 1px solid blue;
+	float: left;
+	left: 22%; /*Siempre que esté la propiedad position, hay que poner los elementos de posicion (left, right, top o bottom*/
+	list-style-type: none;
+	margin: 0;
+	overflow: auto; /*Siempre que en un hijo hay un float, el padre tiene que llevar overflow para que no desborde*/
+	padding: 0;
+	position: relative;/*Para dar una posición absoluta a un hijo el padre tiene que llevar posición relativa, pero no al contrario. */
+}
+#menu2 ul li {
+	
+	border: 1px solid red;
+	float: left;
+	margin: 10px 10px;
+	position: relative;/*Lo ponemos para tener uno de cada, pero no sería necesario en este caso para centrar el menú*/
+	right: 0;
+	text-align: center;
+	width: 100px;/*width: 100px;Lo hacemos para que esten separados y tengan anchura los elementos li*/
+}
+#menu2 ul li a{		
+	display: block;	
+	padding: 10px;
+	text-decoration: none;	
+}
+
+/* -------------Menú Estilo 3-------------- */
+#menu3 {
+	border: 1px solid black;
+	height: auto;
+	margin: auto;
+	padding: 10px;
+	width:80%;
+}
+#menu3 ul{	
+	border: 1px solid blue;
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+}
+#menu3 ul li{
+	border: 1px solid red;
+	display: inline;	/*El ancho del elemento será el que procure el texto que hay, un width en esta propiedad no hace nada*/
+	margin: 10px;
+	padding:10px 20px;
+}
+#menu3 ul li a{		
+	text-decoration: none;
+}
+.amarillo{
+	background-color: yellow;
+	color: black;
+}
+.amarillo:hover{
+	opacity: 0.4;
+}
+.azul{
+	background-color: darkblue;
+	color: white;
+}
+.azul:hover{
+	opacity: 0.8;
+}
+.rojo{
+	background-color: darkred;
+	color: white;
+}
+.rojo:hover{
+	opacity: 0.8;
+}
+.verde{
+	background-color: darkgreen;
+	color: white;
+}
+.verde:hover{
+	opacity: 0.8;
+}
+.violeta{
+	background-color: darkviolet;
+	color: white;
+}
+.violeta:hover{
+	opacity: 0.8;
+}
+/* -------------Menú Estilo 4-------------- */
+#menu4{
+	border: 1px solid red;
+	margin: auto;
+	overflow: hidden;
+	padding: 20px;
+	width: 80%;
+}
+#menu4a {
+	border: 1px solid black;
+	float: left;
+	height: auto;
+	margin: auto;
+	padding: 10px;
+	width:30%;
+}
+#menu4a ul{		
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	width: auto;
+}
+#menu4a ul li{
+	background-color: maroon;
+	border: 1px solid red;	
+	display: block;	
+	margin: 10px;
+	padding:10px 20px;
+	text-align: center;
+}
+#menu4a ul li a{	
+	color: white;
+	text-decoration: none;
+	width: 100%;
+}
+#menu4b {
+	border: 1px solid black;
+	float: right;
+	height: auto;
+	margin: auto;
+	padding: 10px;
+	width:30%;
+}
+#menu4b ul{		
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	width: auto;
+}
+#menu4b ul li{
+	background-color: maroon;
+	border: 1px solid red;	
+	display: block;	
+	margin: 10px;
+	padding:10px 20px;
+	text-align: center;
+}
+#menu4b ul li a{	
+	color: white;
+	text-decoration: none;
+}
+#menu4c {
+	border: 1px solid black;
+	height: auto;
+	margin: auto;
+	padding: 10px;
+	width:30%;	
+}
+#menu4c ul{		
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	width: auto;
+}
+#menu4c ul li{
+	background-color: maroon;
+	border: 1px solid red;	
+	display: block;	
+	margin: 10px;
+	padding:10px 20px;
+	text-align: center;
+}
+#menu4c ul li a{	
+	color: white;
+	text-decoration: none;
+}
+/* -------------Menú Estilo 5-------------- */
+#menu5{
+	border: 1px solid black;
+	height: auto;
+	margin: auto;
+	padding: 10px;
+	width:80%;
+}
+#menu5 ul{
+	
+	list-style-type: none;
+}
+#menu5 ul li{
+	display: fixed;
+}
+#menu ul li a{
+	
+}
