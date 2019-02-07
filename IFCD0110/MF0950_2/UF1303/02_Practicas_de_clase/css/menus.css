@@ -6,6 +6,8 @@
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 1em;
 }
+hr{margin: 60px;}
+h2{margin: 20px 0;}
 
 /* -------------Menú Estilo 1-------------- */
 #menu1  {
@@ -132,37 +134,40 @@
 	border: 1px solid red;
 	margin: auto;
 	overflow: hidden;
-	padding: 20px;
+	padding: 10px;
 	width: 80%;
 }
 #menu4a {
 	border: 1px solid black;
 	float: left;
 	height: auto;
-	margin: auto;
+	margin: 0 auto;
 	padding: 10px;
 	width:30%;
 }
 #menu4a ul{		
 	list-style-type: none;
 	margin: 0;
-	padding: 10px;
-	text-align: center;
-	
+	padding: 0px;	
 }
 #menu4a ul li{
 	background-color: maroon;
-	border: 1px solid red;	
-	display: block;	
-	margin: 10px;
-	padding:10px 20px;
-	text-align: center;
+	border: 1px solid blue;	
+	text-align: left;	
 }
-#menu4a ul li a{	
-	border: 2px solid white;
+#menu4a ul li a{		
 	color: white;
-	text-decoration: none;
-	width: 100%;
+	display: block;
+	margin: 0 10px;
+	padding: 10px 0px;
+	text-decoration: none;	
+}
+#menu4a ul li a:hover{
+	background-color: red;
+}
+#menu4a ul li img{		
+	height: 24px;
+	vertical-align: -0.4em;
 }
 #menu4b {
 	border: 1px solid black;
@@ -175,22 +180,28 @@
 #menu4b ul{		
 	list-style-type: none;
 	margin: 0;
-	padding: 10px;
-	text-align: center;
+	padding: 10px;	
 	width: auto;
 }
 #menu4b ul li{
 	
-	text-align: center;
+	text-align: right;
 }
 #menu4b ul li a{	
 	background-color: maroon;
 	border: 1px solid red;
 	color: white;	
 	display: block;	
-	margin: 10px;
+	margin: 0px;
 	padding:10px 20px;	
 	text-decoration: none;
+}
+#menu4b ul li img{		
+	height: 24px;
+	vertical-align: -0.4em;
+}
+#menu4b ul li a:hover{
+	background-color: red;
 }
 #menu4c {
 	border: 1px solid black;
@@ -211,29 +222,175 @@
 }
 #menu4c ul li a{
 	background-color: maroon;
-	border: 1px solid red;
+	border: 1px solid blue;
 	color: white;	
 	display: block;	
-	margin: 10px;
+	margin: 0px;
 	padding:10px 20px;
 	text-align: center;		
 	text-decoration: none;
+}
+#menu4c ul li a:hover{
+	background-color: red;
+}
+#menu4c ul li img{	
+	height: 24px;
+	vertical-align: -0.4em;
 }
 /* -------------Menú Estilo 5-------------- */
 #menu5{
 	border: 1px solid black;
 	height: auto;
 	margin: auto;	
+	padding: 5px;
+	width:80%;
+}
+#menu5 ul{		
+	list-style-type: none;
+	text-align: center;	
+}
+#menu5 ul li{
+	display:inline-block; 
+	margin: 0 10px;	
+}
+#menu5 ul li a{
+	
+}
+#menu5 ul li a:hover{
+	opacity: 0.5;
+}
+#menu5 ul li img{
+	height: 24px;
+}
+/* -------------Menú Estilo 6-------------- */
+#menu6{
+	background-color: cornflowerblue;
+	border: 1px solid black;
+	box-shadow: 8px 10px 5px grey;
+	height: auto;
+	margin: auto;
+	padding:0;
+	position: fixed;
+	right: 10px;
+	top: 10%;
+		
+}
+#menu6 ul{		
+	list-style-type: none;
+	margin: 0;
+	padding: 5px;
+	text-align: center;
+}
+#menu6 ul li{	
+	margin: 20px 0;
+}
+#menu6 ul li a{
+	
+}
+#menu6 ul li a:hover{
+	opacity: 0.5;
+}
+#menu6 ul li img{
+	height: 24px;
+}
+/* -------------Menú Estilo 7-------------- */
+#menu7{
+	position: sticky;
+	position: -webkit-sticky; /*Safari*/
+	left: 20%;
+	margin-left: 10%;
+	top: 0;
+	width: 200px;
+}
+#menu7 img{
+	width: 200px;
+}
+/* -------------Menú Estilo 8-------------- */
+#menu8 {	
+	border: 1px solid black;	
+	margin: auto;	
 	padding: 10px;
 	width:80%;
 }
-#menu5 ul{	
-	overflow: hidden;
+#menu8 ul{	
+	background-color: black;
 	list-style-type: none;
+	margin: 0;
+	overflow:hidden;
+	padding: 0;	
 }
-#menu5 ul li{
-	float: left;	
+#menu8 ul li{
+	border-right: 1px solid #bbb;
+	float: left;
 }
-#menu ul li a{
-	display: fixed;
+#menu8 ul li a{
+	color: white;
+	display: block;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;	
+}
+#menu8 ul li a:hover{
+	background-color: red;
+}
+#menu8 ul li ul{
+	background-color: white;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);	
+	display: none; /*Para ocultar los submenús*/
+	position: absolute; /*Para que no empuje los contenidos de debajo, no ocupa un lugar*/
+	z-index: 1; /*Hace que prevalezca sobre los otros elementos y lo pone en primer plano*/
+}
+#menu8 ul li:hover ul{
+	display: block;
+}
+#menu8 ul li ul li{
+	
+	float: none;
+}
+#menu8 ul li ul li a{
+	color: black;
+}
+#menu8 ul li ul li a:hover{
+	background-color: darkgreen;
+}
+/* -------------Menú Estilo 9-------------- */
+#menu9 {	
+	border: 1px solid black;	
+	margin: auto;	
+	padding: 10px;
+	width:80%;
+}
+#menu9 ul{	
+	background-color: black;
+	list-style-type: none;
+	margin: 0px;	
+	text-align: center;
+	width: 300px;
+}
+#menu9 ul li{
+	border-right: 1px solid #bbb;
+	padding: 10px;
+}
+#menu9 ul li:hover ul{
+	display: block;
+}
+#menu9 ul li a{	
+		padding: 14px;
+}
+#menu9 ul li ul{
+	background-color: gray;
+	display: none;
+	position: relative;	
+	left: 100%;
+	top: 0;
+	width: 300px;
+}
+#menu9 ul li ul li{
+	padding: 10px;
+
+}
+#menu9 ul li ul li:hover{
+	background-color: red;
+	padding: 10px;
+
 }
