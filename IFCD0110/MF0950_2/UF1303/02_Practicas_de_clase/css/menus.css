@@ -356,41 +356,53 @@ h2{margin: 20px 0;}
 /* -------------Menú Estilo 9-------------- */
 #menu9 {	
 	border: 1px solid black;	
-	margin: auto;	
+	margin: 0 auto;	
 	padding: 10px;
 	width:80%;
 }
 #menu9 ul{	
 	background-color: black;
 	list-style-type: none;
-	margin: 0px;	
-	text-align: center;
-	width: 300px;
+	margin: 0;
+	padding: 0;	
+	width: 150px; /*si pensamos en darle anchura 150, le damos el doble para que acote todo*/
 }
-#menu9 ul li{
-	border-right: 1px solid #bbb;
-	padding: 10px;
-}
-#menu9 ul li:hover ul{
-	display: block;
+#menu9 ul li{	
+	border-right: 1px solid #bbb;	
+	position: relative; /*para un menú como este que muestra el menú de arriba a abajo position tiene que ser relative no absolute*/
 }
 #menu9 ul li a{	
-		padding: 14px;
+	color: white;
+	display: block;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration-line: none;
+}
+#menu9 ul li a:hover{
+	background-color: red;
 }
 #menu9 ul li ul{
 	background-color: gray;
-	display: none;
-	position: relative;	
-	left: 100%;
+	display: none;	
+	position: absolute;/*de esta manera quedan plegados los submenús y no ocupa un espacio como con relative*/
 	top: 0;
-	width: 300px;
+	right:-150px;/*tambien se podría poner margin-left: 150px*/
+	z-index: 1;
 }
-#menu9 ul li ul li{
-	padding: 10px;
-
+#menu9 ul li:hover > ul{ /*Aplica el estilo a todos*/
+	display:block;
 }
-#menu9 ul li ul li:hover{
-	background-color: red;
+#menu9 ul li ul li{	
+	/*position: relative;*/
+}
+#menu9 ul li ul li a:hover{
+	background-color: green;
+	color: white;
+}
+/* -------------Menú Estilo 10-------------- */
+#menu10 {	
+	border: 1px solid black;	
+	margin: 0 auto;	
 	padding: 10px;
-
+	width:80%;
 }
