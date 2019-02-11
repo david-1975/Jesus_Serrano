@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 110%;
+	font: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";	
+}
+body{
+	margin: auto;
+	width: 90%;
+}
+#cabecera{
+	background-color: darkslateblue;
+	color: wheat;
+	overflow: hidden;
+}
+#cabecera img{
+	float: left;
+}
+#cabecera h1{
+	display: block;
+	float: left;
+	font-size: 35px;
+	font-weight: 600;
+	margin-top: 30px;
+	
+}
+#cabecera p{
+	float: left;
+	margin-top: 30px;
+	font-size: 25px;
+	font-weight: 600;
+}
+#navegacion{
+	background-color: aqua;
+	
+	padding: 20px;
+}
+
+#navegacion p{
+	text-align: center;
+	color: darkblue;
+	margin: 20px;
+}
+#navegacion ul{
+	list-style: none;
+	text-align: center;
+	margin: 20px;
+}
+#navegacion li{
+	display: inline;
+	margin: 5px;
+}
+#navegacion a{
+	background-color: white;
+	border: 2px solid darkblue;
+	border-radius: 10px;
+	font-size: 70%;
+	padding: 5px;
+	text-decoration-line: none;
+}
+#principal{
+	background-color: grey;
+}
+#principal ul{	
+	list-style: none;
+}
+#seccion{
+	background-color: aqua;	
+	margin: auto;
+	overflow: hidden;
+	padding: 10px;
+	width: 97%;
+}
+#seccion h2{
+	margin-top: 20px;
+}
+#articulo01{
+	background-color: lightyellow;
+	border: 3px solid black;
+	display: inline-block;
+	float: left;
+	margin: 10px;
+	padding: 20px;
+	width: 44%;font-size: 24px;
+}
+#articulo01 figcaption{
+	font-size: 80%;
+	font-style:oblique;
+}
+#articulo01 h4{
+	color: midnightblue;
+	margin: 20px 0px;
+	font-size: 30px;
+}
+#articulo01 hr{
+	color: grey;
+	margin: 20px 0px;
+}
+
+#boton1{
+	background-color: aqua;
+	color: white;
+	margin-top: 30px;
+	padding: 10px;
+	text-decoration-line: none;	
+}
+#articulo02{
+	background-color: lightgoldenrodyellow;
+	border: 3px solid black;
+	display: inline-block;
+	float: left;
+	margin: 10px;
+	padding: 20px;
+	width: 44%;
+	font-size: 24px;
+}
+
+	
+
+#anadido{
+	background-color: aqua;	
+	margin: auto;	
+	padding: 10px;
+}
+#losdiez{	
+	margin-left: 60px;
+	overflow: hidden;
+	text-align: center;
+	
+}
+#losdiez li{
+	background-color: lightgoldenrodyellow;
+	border: 3px solid black;	
+	margin: 10px;
+	padding: 10px;
+	float: left;	
+	width: 27%;	
+}
+#losdiez li img{
+	width: 100%;
+}
+#losdiez li a{
+	color: black;
+	font-weight: 500;
+	text-decoration-line: none;
+}
+#losmas{
+	margin-left: 40px;
+	overflow: hidden;
+	text-align: center;
+	
+}
+#losmas li{
+	background-color: lightgoldenrodyellow;
+	border: 2px solid black;	
+	margin: 10px;
+	padding: 10px;
+	float: left;
+	width: 20%;
+}
+#losmas li img{
+	width: 100%;
+}
+#losmas li a{
+	color: black;
+	font-weight: 500;
+	text-decoration-line: none;
+}
+#pie{
+	background-color: darkslateblue;
+	color: wheat;	
+	overflow: hidden;
+	text-align: center;	
+}
+#pie p{
+	margin: 10px;
+}
+#pie ul{
+	margin-left: 200px;
+	width: 90%;
+}
+#pie ul li{	
+	background-color: lightgoldenrodyellow;
+	border: 3px solid black;	
+	margin: 10px;	
+	padding: 10px;
+	float: left;	
+	list-style: none;
+	text-align: left;
+	width: 20%;
+}
+#pie ul li ul{
+	margin-left: 0;
+}
+#pie ul li ul li{
+	border: none;
+	float: none;	
+	padding: 0;
+	width: 100%;
+}
+#pie ul li ul li a{	
+	color: black;	
+	
+	text-decoration-line: none;
+	font-size: 45%;	
+}
+#pie ul li a img{
+	vertical-align: -0.4em;
+	width: 24px;	
+}
+#pie li p{
+	color: midnightblue;
+	font-weight: 500;
+	margin-top: 20px;
+}
+#pie details{
+	display: inline-block;
+	width: 100%;	
+}
