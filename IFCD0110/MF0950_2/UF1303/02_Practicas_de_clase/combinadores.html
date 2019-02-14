@@ -3,6 +3,13 @@
 <head>
 <meta charset="utf-8">
 <title>Pseudo clases</title>
+		<meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="tittle" content="Introducción a CSS">
+        <meta name="author" content="Jesús">
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 	*{
 		box-sizing: border-box;
@@ -13,27 +20,29 @@
 		font-family: lucida grande, lucida sans unicode, lucida sans, dejavu seriff, verdana;
 		font-size: 1,5em;
 		margin: 10px;
-		padding: 10px;
-		
+		padding: 10px;		
 	}
 	.flex-container{
 		align-content: space-between; /*justifica los espacios verticalemnte*/
 		align-items: left;/* justifica el contenido verticalmente	*/	
-		background-color: lightgreen;
-		display: flex;		
-		flex-direction: row; column
-		flex-wrap: wrap;/*le añadimos a los div de abajo un width para que se abran un mínimo, si no dependería del contenido, con esta opción van apareciendo debajo los div en vez de hacer el acordeón que lo haría el nowrap
+		background-color: lightgreen;		
+		/* Compatibilidad con el navegador */ 
+ 		 display: -webkit-flex; /* Safari */
+		display: -mz-flex;/*Firefox, no necesario, lo soporta*/
+		display: -ms-flex;/*Microsoft, no necesario, lo soporta*/
+		display: -o-flex;/*Opera, no necesario, lo soporta*/
+		display: flex;	/*para el resto de navegadores*/
+		flex-direction: row; /*column*/
+		flex-wrap:wrap;/*le añadimos a los div de abajo un width para que se abran un mínimo, si no dependería del contenido, con esta opción van apareciendo debajo los div en vez de hacer el acordeón que lo haría el nowrap
 		justify-content: center;/*justifica el contenido horizontalmente*/
 	}
 	.flex-container > div{
 		background-color: lightblue;
 		font-size: 14px;
-		margin: 10px;
+		margin: 10px auto;
 		padding: 20px;		
 		width: 23%;
 	}
-	
-
 
 	#div1 p {
   	background-color: yellow;
@@ -91,13 +100,22 @@
 	body {
     background-color: goldenrod;
   }
+	.flex-container{			
+		flex-direction: row;	
+		}
+	.flex-container > div {
+			width: 45%;
+		}
 }
 @media screen and (max-width: 800px) {
   body {
     background-color: cadetblue;
-  }
+  		}
+	.flex-container{			
+		flex-direction: row;	
+		}
 	.flex-container > div {
-			width: 40%;
+			width: 45%;
 		}
 }
 @media screen and (max-width: 600px) {
