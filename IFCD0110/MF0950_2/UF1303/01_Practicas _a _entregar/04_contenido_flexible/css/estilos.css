@@ -1,0 +1,228 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: white;	
+	display: flex;
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	flex-direction: column;
+	margin: auto;
+	width: 90%;
+}
+/*---------------------nav------------------------------*/
+nav{
+	background-color: blue;
+	overflow: hidden;
+}
+#logo{
+	float: left;
+	margin: 10px 20px 10px 50px;
+	padding: 20px;
+	width: 15%;
+}
+#logo img{
+	width: 100%;
+}
+#nav{
+	float: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+#opciones{
+	background-color: midnightblue;
+	border-radius: 5px;
+	font-size: 1,5em;
+	margin-right: 60px;
+	padding: 10px;
+	
+}
+#opciones a{
+	color: lightgray;
+	padding: 20px;
+	text-decoration-line: none;
+}
+#navegacion{
+	color: lightgrey;		
+	font-size: 2,5em;
+	margin: 10px;
+}
+#navegacion a {
+	color: lightgrey;
+	padding: 10px;
+	text-decoration-line: none;
+}
+#navegacion + a {
+	color: white;
+	font-weight: 600px;
+}
+/*--------------------header-------------------------------*/
+header{
+	background-image: url(../img/foto-playa.jpg);
+	border-bottom: 3px solid yellow;
+	height: 500px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+#oferta{
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	border-top: 4px solid yellow;	
+	color: white;
+	font-size: 120%;
+	height: 60%;	
+	margin: 30px 50px;
+	padding: 10px;
+	width: 25%;	
+}
+#oferta figcaption{
+	font-size: 80%;
+}
+#oferta figcaption span{
+	font-size: 150%;
+}
+#oferta a{
+	background-color: rgba(0, 0, 0, 0.8);
+	border: 1px solid white;
+	border-radius: 10px;
+	color: white;
+	display: inline-block;
+	font-size: 120%;
+	margin: 20px 8px;
+	padding: 15px;
+	text-decoration: none;
+}
+/*--------------------main-------------------------------*/
+main{
+	display: flex;
+	flex-direction: column;
+}
+
+section div {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	
+}
+article{
+	box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.3);
+	margin: 15px;
+	
+}
+section p span{
+	color: aqua;
+	font-variant: small-caps;
+	font-size: 200%;
+	}
+section p{
+	font-size: 100%;
+	margin: 15px;
+}
+.foto{
+	position: relative;
+	margin: 10px;
+}
+.foto img{	
+	filter: opacity(0.7) brightness(0,7);
+	width: 100%;
+}
+.foto figcaption{
+	color: white;
+	font-weight: 600;
+	font-size: 150%;
+	font-variant: small-caps;
+	position: absolute;
+	bottom: 20px;
+	left: 15px;
+	text-shadow: 2px 2px 5px black;
+}
+.oferta{
+	background-color: white;
+	color: grey;
+	display: block;
+	float: right;
+	font-variant: small-caps;
+	
+	font-size: 125%;
+	margin: 0 10px;
+	
+}
+.boton{
+	background-color: dodgerblue;	
+	color: white;
+	font-variant: small-caps;
+	margin: 15px;
+	padding: 5px;
+	text-decoration: none;
+	float: right;
+}
+/*--------------------footer-------------------------------*/
+
+footer{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+#eviajes{
+	background-color: dodgerblue;
+	padding: 20px;
+	margin: 20px 0;
+}
+#eviajes hr{
+	margin: 20px auto;
+	width: 90%;
+}
+#eviajes h2{
+	background-color: dodgerblue;
+	color: white;
+	font-weight: 300;
+	padding: 10px 100px;
+	position: absolute;
+	top: 35px;
+	left: 28%;
+}
+#eviajes1{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+#eviajes1 div{
+	
+}
+#eviajes1 img{
+	display: block;
+	margin: auto;
+	width: 40%
+}
+#eviajes1 a{
+	color: white;
+	display: block;
+	font-size: 150%;
+	font-weight: 600;
+	margin: 10px 0;
+	text-decoration: none;
+}
+#rrss{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+#legal{
+	background-color: darkslategrey;	
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin: 10px;
+	padding: 20px;
+}
+#legal a{
+	color: white;
+	text-decoration: none;
+}
+
+
