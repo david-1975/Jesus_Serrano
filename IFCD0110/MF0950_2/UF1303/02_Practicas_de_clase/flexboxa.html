@@ -13,7 +13,8 @@
 <style>
 	.contenedor{
 		background-color: royalblue;
-		display: flex; /*Propiedad que define la flexión*/		
+		display: flex; /*Propiedad que define la flexión*/	
+		
 	}
 	.contenedor > div{
 		background-color: powderblue;
@@ -373,8 +374,17 @@
 		width: 3%;
 	}
 /*------------------------------------*/
+	body{
+		overflow: hidden;
+	}
+	.contenedor1{
+		float: left;
+		width: 50%;
+	}
 	.contenedor2{		
-		display: flex;		
+		display: flex;	
+		float: left;
+		width: 50%;
 	}
 	.contenedor3{		
 		display: inline-flex;		
@@ -382,7 +392,7 @@
 	.contenedor3 > div{
 		width: 30%;
 	}
-	.contenedor4{
+/*	.contenedor4{
 		display: flex;
 	}
 	.contenedor4 > div{
@@ -399,201 +409,204 @@
 	}
 	.contenedor6 > div{
 		width: 20%;
-	}
+	}*/
 /*------------------------------------*/
 </style>
 </head>
 <body>
 <h1>Flexbox</h1>
 <br>
-<h2>Display:flex</h2>
-<div class="contenedor">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-</div>
-<h2>flex-direction:row/column</h2>
-<div class="contenedor2">
-<h3>row</h3>
-	<div class="contenedor2a">
+<div class="contenedor1">
+	<h2>Display:flex</h2>
+	<div class="contenedor">
 		<div>1</div>
 		<div>2</div>
 		<div>3</div>
+		<div>4</div>
+		<div>5</div>
 	</div>
-<h3>column</h3>
-	<div class="contenedor2b">
-		<div>1</div>
-		<div>2</div>
-		<div>3</div>		
-	</div>	
+</div>
+<div class="contenedor2">
+	<h2>flex-direction:row/column</h2>
+
+	<h3>row</h3>
+		<div class="contenedor2a">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+	<h3>column</h3>
+		<div class="contenedor2b">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>		
+		</div>	
 </div>
 <br>
 <h2>flex-wrap: wrap/nowrap/wrap-reverse</h2>
 <div class="contenedor3">
-<h3>wrap</h3>
-<div class="contenedor3a">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
-	
-</div>
-<br><h3>nowrap</h3>
-<div class="contenedor3b">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
-	
-</div>
-<br><h3>wrap-reverse</h3>
-<div class="contenedor3c">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
-	
-</div>
+	<h3>wrap</h3>
+	<div class="contenedor3a">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+
+	</div>
+	<br><h3>nowrap</h3>
+	<div class="contenedor3b">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+
+	</div>
+	<br><h3>wrap-reverse</h3>
+	<div class="contenedor3c">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+
+	</div>
 </div>
 <br>
 <h2>justify-content: center / flex-start / flex-end / space-around /space-between</h2>
 <div class="contenedor4">
-<h3>center</h3>
-<div class="contenedor4a">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-</div>
-<h3>flex-start</h3>
-<div class="contenedor4b">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-</div>
-<h3>flex-end</h3>
-<div class="contenedor4c">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-</div>
-<h3>space-around</h3>
-<div class="contenedor4d">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-</div>
-<h3>space-between</h3>
-<div class="contenedor4e">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-</div>
+	<h3>center</h3>
+	<div class="contenedor4a">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+	</div>
+	<h3>flex-start</h3>
+	<div class="contenedor4b">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+	</div>
+	<h3>flex-end</h3>
+	<div class="contenedor4c">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+	</div>
+	<h3>space-around</h3>
+	<div class="contenedor4d">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+	</div>
+	<h3>space-between</h3>
+	<div class="contenedor4e">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+	</div>
 </div>
 <br>
 <h2>align-content: center / flex-start / flex-end / space-around /space-between / stretch</h2>
 <div class="contenedor5">
-<h3>center</h3>
-<div class="contenedor5a">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
-	
-</div>
-<h3>flex-start</h3>
-<div class="contenedor5b">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
-	
-</div>
-<h3>flex-end</h3>
-<div class="contenedor5c">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
+	<h3>center</h3>
+	<div class="contenedor5a">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
 
-</div>
-<h3>space-around</h3>
-<div class="contenedor5d">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
+	</div>
+	<h3>flex-start</h3>
+	<div class="contenedor5b">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
 
-</div>
-<h3>space-between</h3>
-<div class="contenedor5e">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
-	
-</div>
-<h3>stretch</h3>
-<div class="contenedor5f">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>	
-</div>
+	</div>
+	<h3>flex-end</h3>
+	<div class="contenedor5c">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+
+	</div>
+	<h3>space-around</h3>
+	<div class="contenedor5d">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+
+	</div>
+	<h3>space-between</h3>
+	<div class="contenedor5e">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+
+	</div>
+	<h3>stretch</h3>
+	<div class="contenedor5f">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>	
+	</div>
 </div>
 <br>
 <h2>align-item: center / flex-start / flex-end / stretch / baseline</h2>
 <div class="contenedor6">
-<h3>center</h3>
-<div class="contenedor6a">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
+	<h3>center</h3>
+	<div class="contenedor6a">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+	</div>
+	<h3>flex-start</h3>
+	<div class="contenedor6b">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+	</div>
+	<h3>flex-end</h3>
+	<div class="contenedor6c">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+	</div>
+	<h3>stretch</h3>
+	<div class="contenedor6d">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+	</div>
+	<h3>baseline</h3>
+	<div class="contenedor6e">
+		<div style="font-size: 200%">1</div>
+		<div style="font-size: 75%">2</div>
+		<div style="font-size: 120%">3</div>
+	</div>
 </div>
-<h3>flex-start</h3>
-<div class="contenedor6b">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-</div>
-<h3>flex-end</h3>
-<div class="contenedor6c">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-</div>
-<h3>stretch</h3>
-<div class="contenedor6d">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-</div>
-<h3>baseline</h3>
-<div class="contenedor6e">
-	<div style="font-size: 200%">1</div>
-	<div style="font-size: 75%">2</div>
-	<div style="font-size: 120%">3</div>
-</div>
-</div>
-<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>

@@ -5,7 +5,11 @@
 	padding: 0;
 }
 body{
-	background-color: white;	
+	background-color: white;
+	display: -webkit-flex; /* Safari */
+ 	display: -mz-flex; /* Firefox */
+  	display: -ms-flex; /* Explorer */
+  	display: -o-flex; /* Opera */
 	display: flex;
 	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
 	flex-direction: column;
@@ -16,23 +20,36 @@ body{
 nav{
 	background-color: blue;
 	float: right;
+	display: -webkit-flex; /* Safari */
+ 	display: -mz-flex; /* Firefox */
+  	display: -ms-flex; /* Explorer */
+  	display: -o-flex; /* Opera */
 	display: flex;	
+	width: 100%;
 }
 #logo{	
 	margin: 10px 20px 10px 50px;
 	padding: 20px;
-	width: 15%;
+	width: 20%;
 }
 #logo img{
 	width: 100%;
 }
 #nav{
 	float: right;
+	display: -webkit-flex; /* Safari */
+ 	display: -mz-flex; /* Firefox */
+  	display: -ms-flex; /* Explorer */
+  	display: -o-flex; /* Opera */
 	display: flex;
 	flex-direction: column;	
 }
 #opciones{	
 	border-radius: 5px;
+	display: -webkit-flex; /* Safari */
+ 	display: -mz-flex; /* Firefox */
+  	display: -ms-flex; /* Explorer */
+  	display: -o-flex; /* Opera */
 	display: flex;
 	flex-direction: row;
 	font-size: 1,5em;
@@ -51,24 +68,38 @@ nav{
 	color: white;
 }
 #navegacion{
+	display: -webkit-flex; /* Safari */
+ 	display: -mz-flex; /* Firefox */
+  	display: -ms-flex; /* Explorer */
+  	display: -o-flex; /* Opera */
+	display: flex;
 	margin: 10px 10px 0 0;
 }
 #navegacion a {
 	color: lightgrey;
-	font-size: 130%;
+	font-size: 110%;
 	padding: 20px;
 	text-decoration-line: none;
 }
-#navegacion a:hover{
-	color: white;
-	
+#navegacion a:hover{	
+	color: white;	
 }
-
+#inicio {
+	color: white;
+	font-weight: 600;
+}
+#inicio:hover {	
+	font-weight: 600;
+}
 /*--------------------header-------------------------------*/
 header{
 	background-image: url(../img/foto-playa.jpg);
 	border-bottom: 3px solid yellow;
 	height: 500px;
+	display: -webkit-flex; /* Safari */
+ 	display: -mz-flex; /* Firefox */
+  	display: -ms-flex; /* Explorer */
+  	display: -o-flex; /* Opera */
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
@@ -88,8 +119,7 @@ header{
 	font-size: 80%;
 }
 #oferta figcaption span{
-	font-size: 150%;
-	
+	font-size: 150%;	
 }
 #oferta a{
 	background-color: rgba(0, 0, 0, 0.8);
@@ -103,20 +133,25 @@ header{
 	text-decoration: none;
 }
 #oferta a:hover{
-	background-color: rgba(1, 1, 0, 0.2);
-	
+	background-color: rgba(1, 1, 0, 0.2);	
 }
 /*--------------------main-------------------------------*/
 main{
+	display: -webkit-flex; /* Safari */
+ 	display: -mz-flex; /* Firefox */
+  	display: -ms-flex; /* Explorer */
+  	display: -o-flex; /* Opera */
 	display: flex;
 	flex-direction: column;
 }
-
 section div {
+	display: -webkit-flex; /* Safari */
+ 	display: -mz-flex; /* Firefox */
+  	display: -ms-flex; /* Explorer */
+  	display: -o-flex; /* Opera */
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
-	
+	flex-wrap: nowrap;	
 }
 section p span{
 	color: aqua;
@@ -132,18 +167,16 @@ article{
 	margin: 15px;	
 }
 .foto img:hover{
-	box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.7);
 }
 .foto{
 	position: relative;
 	margin: 10px;
 }
-
 .foto img{	
 	filter: opacity(0.7) brightness(0,7);
 	width: 100%;
 }
-
 .foto figcaption{
 	color: white;
 	font-weight: 600;
@@ -153,6 +186,10 @@ article{
 	bottom: 20px;
 	left: 15px;
 	text-shadow: 2px 2px 5px black;
+}
+.foto figcaption:hover{
+	color: black;
+	text-shadow: 2px 2px 8px white;
 }
 .oferta{
 	background-color: white;
@@ -165,6 +202,7 @@ article{
 }
 .oferta:hover{
 	color: blue;
+	font-weight: 600;
 }
 .boton{
 	background-color: dodgerblue;	
@@ -175,9 +213,19 @@ article{
 	text-decoration: none;
 	float: right;
 }
+.boton:hover{	
+	background-color: white;
+	color: blue;
+	font-weight: 600;
+	text-decoration:underline;
+}
 /*--------------------footer-------------------------------*/
 
 footer{
+	display: -webkit-flex; /* Safari */
+ 	display: -mz-flex; /* Firefox */
+  	display: -ms-flex; /* Explorer */
+  	display: -o-flex; /* Opera */
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -201,6 +249,10 @@ footer{
 	left: 28%;
 }
 #eviajes1{
+	display: -webkit-flex; /* Safari */
+ 	display: -mz-flex; /* Firefox */
+  	display: -ms-flex; /* Explorer */
+  	display: -o-flex; /* Opera */
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -211,7 +263,7 @@ footer{
 }
 #eviajes1 img{
 	display: block;
-	margin: auto;
+	margin: 10px auto;
 	width: 40%
 }
 #eviajes1 a{
@@ -222,13 +274,28 @@ footer{
 	margin: 10px 0;
 	text-decoration: none;
 }
+#eviajes1 a:hover{
+	color: black;
+}
 #rrss{
+	display: -webkit-flex; /* Safari */
+ 	display: -mz-flex; /* Firefox */
+  	display: -ms-flex; /* Explorer */
+  	display: -o-flex; /* Opera */
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
 }
+#rrss a:hover{
+	background-color: yellow;
+	border-radius: 20px;
+}
 #legal{
 	background-color: darkslategrey;	
+	display: -webkit-flex; /* Safari */
+ 	display: -mz-flex; /* Firefox */
+  	display: -ms-flex; /* Explorer */
+  	display: -o-flex; /* Opera */
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
@@ -239,5 +306,170 @@ footer{
 	color: white;
 	text-decoration: none;
 }
-
-
+#legal a:hover{
+	color: blue;	
+}
+/*--------------------mediaquery-------------------------------*/
+@media screen and (max-width: 1200px) {
+	#logo{
+		margin: 5px 10px 5px 25px;
+		padding: 10px;
+		width: 20%;
+	}
+	#logo img{		
+		width: 200px;
+	}
+}
+@media screen and (max-width: 950px) {
+  body {
+    background-color: cadetblue;
+  		}
+	nav{
+		flex-direction: column;		
+		margin: 0;
+	}
+	#logo img{
+		width: 200px;
+	}
+	#nav{
+		flex-direction: column;
+		margin: 0;
+	}
+	#opciones{
+		flex-direction: column;
+		margin: 0;
+	}	
+	#navegacion{	
+		display: -webkit-flex; /* Safari */
+		display: -mz-flex; /* Firefox */
+		display: -ms-flex; /* Explorer */
+		display: -o-flex; /* Opera */
+		display: flex;
+		flex-direction: column;
+	}
+	#navegacion a:hover{
+	background-color:darkblue;
+	}
+	#oferta{
+		font-size: 100%;
+	}
+	#oferta a{		
+		font-size: 100%;
+		margin: 10px;
+		padding: 5px;
+	}
+	#oferta img{
+		width: 100%;
+	}	
+	.oferta{
+		color: white;
+		background-color: cadetblue;
+	}
+	.boton {
+		background-color: cadetblue;
+	}
+	#eviajes{
+		margin: 0;		
+	}
+	#eviajes hr{
+		display: none;
+	}
+	#eviajes h2{	
+		font-weight: 300;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	#eviajes1{
+		align-items: center;
+		flex-direction: column;
+		font-size: 80%;
+	}
+	
+	#eviajes1 img{
+		width: 20%;
+	}
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-color: cadetblue;
+  		}
+	nav{
+		flex-direction: column;		
+		margin: 0;
+	}
+	#logo img{
+		width: 200px;
+	}
+	#nav{
+		flex-direction: column;
+		margin: 0;
+	}
+	#opciones{
+		flex-direction: column;
+		margin: 0;
+	}	
+	#navegacion{	
+		display: -webkit-flex; /* Safari */
+		display: -mz-flex; /* Firefox */
+		display: -ms-flex; /* Explorer */
+		display: -o-flex; /* Opera */
+		display: flex;
+		flex-direction: column;
+	}
+	#navegacion a:hover{
+	background-color:darkblue;
+	}
+	#oferta{
+		font-size: 100%;
+	}
+	#oferta a{		
+		font-size: 100%;
+		margin: 10px;
+		padding: 5px;
+	}
+	#oferta img{
+		width: 100%;
+	}
+	section div {			
+		flex-direction: column;
+		flex-wrap: nowrap;
+		}
+	article {
+			width: 100%;
+		}
+	.oferta{
+		color: white;
+		background-color: cadetblue;
+	}
+	.boton {
+		background-color: cadetblue;
+	}
+	#eviajes{
+		margin: 0;		
+	}
+	#eviajes hr{
+		display: none;
+	}
+	#eviajes h2{	
+		font-weight: 300;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	#eviajes1{
+		align-items: center;
+		flex-direction: column;
+		font-size: 80%;
+	}
+	
+	#eviajes1 img{
+		width: 20%;
+	}
+}

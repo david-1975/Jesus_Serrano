@@ -10,6 +10,7 @@
         <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
 <style>
 	*{
 		box-sizing: border-box;
@@ -132,14 +133,37 @@
 </style>
 </head>
 <body>
-<h1>CSS combinadores, pseudo-elementos y pseudo-clases</h1>
+<header>
+	<div style="overflow: auto;background-color: white;margin: 20px">
+		<div style="float: left;background-color: white">
+			<a href="introduccion.html" style="text-align: left"><img src="img/css3.png" alt="Logo HTML" width="128"  title="Pagina principal"></a>
+			</div>
+		<div style="float: left;background-color: white;">
+			<h2 style="text-align:center; margin: 20px">HOJAS DE ESTILO</h2>
+			 <a href="introduccion.html" style="padding:10px;" >Introducción</a> | <a style="padding: 10px;"
+			href="bordes.html">Bordes</a> | <a style="padding: 10px;" href="listas.html">Listas</a> | <a style="padding: 10px;" href="combinadores.html">Combinadores</a> |<a  style="padding: 10px; " href="flexbox.html">Flexbox</a>
+			</div>
+	</div>
+<h1 id="inicio">CSS combinadores, pseudo-elementos y pseudo-clases</h1>
+</header>
+<hr>
+<nav class="nav1">
+	<a href="introduccion.html">Introducción</a> | <a href="Bordes.html">Bordes</a> | <a href="listas.html">Listas</a> | <a href="combinadores.html">Combinadores</a> | <a href="flexbox.html">Flexbox</a>
+</nav>
+
 <hr style="border: 2px solid;">
 <h2>CSS combinadores</h2>
-<hr>
-<style>
-
-	
-</style>
+<div>
+  <p>Un combinador es algo que explica la relación entre los selectores.</p>
+</div>
+<p>Un selector CSS puede contener más de un selector simple. Entre los selectores simples, podemos incluir un combinador.</p>
+<p>Hay cuatro combinadores diferentes en CSS:</p>
+<ul>
+  <li>selector de descendiente (espacio)</li>
+  <li>selector de hijo (&gt;)</li>
+  <li>selector de hermanos adyacentes (+)</li>
+  <li>interruptor general de hermanos (~)</li>
+</ul>
 <div class="flex-container">
 	<div>
 		<h2>Selector descendiente</h2>
