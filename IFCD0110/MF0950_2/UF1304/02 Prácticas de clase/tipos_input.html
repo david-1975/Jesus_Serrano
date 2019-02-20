@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>HTML Elementos de entrada</title>
+<style>
+body {
+	width: 90%;
+	margin: 1% auto;
+	padding: 0 auto;
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 1em;
+	}
+</style>
+<!--<link href="css/bootstrap.css" rel="stylesheet" type="text/css">-->
+</head>
+<body>
+<h1>Tipos de input</h1>
+<p> <a href="introduccion.html">Introducción</a> | <a href="elementos.html">Elmentos de formulario</a> | <a href="tipos_input.html">Tipos de input</a>
+</p>
+<p>Estos son los diferentes tipos de entrada se pueden utilizar en HTML:</p>
+  
+<hr>
+<h2>&lt;input type="text"&gt;</h2>
+<p>Define un <strong>campo de entrada de texto de una línea</strong> :</p>
+<form>
+  <label for="nombre">Nombre:</label><br>
+  <input type="text" name="nombre"><br>
+  <label for="apellidos">Apellidos:</label><br>
+  <input type="text" name="apellidos"><br><br>
+  <input type="submit" value="Enviar"><br>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="password"&gt;</h2>
+ 
+<p>Define un <strong>campo de contraseña</strong> :</p>
+<form action="">
+	<label for="usuario">Usuario:</label><br>
+	<input type="text" name="usuario"><br>
+	<label for="contrasena">Contraseña:</label><br>
+	<input type="password" name="contrasena"><br><br>
+	<input type="submit" value="Acceder"><br>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="checkbox"&gt;</h2>
+<p>Define una <strong>casilla de verificación</strong> y permite seleccionar 0 o más casillas.</p>
+<form>
+	<fieldset>
+		<legend>Escoge S.O.</legend>
+	  <input type="checkbox" name="so1" id="so1" value="windows">Windows
+	  <input type="checkbox" name="so2" id="so2" value="macintosh">Macintosh
+		<input type="checkbox" name="so3" id="so3" value="linux">Linux
+	  <input type="checkbox" name="so4" id="so4" value="IOs">IOs
+	  <input type="checkbox" name="so5" id="so5" value="android">Android
+	  <input type="submit" value="Enviar"><br>	
+	</fieldset>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="radio"&gt;</h2>
+<p>Define un <strong>botón de radio</strong> . Los botones de radio permiten al usuario seleccionar sólo una de un número limitado de opciones:</p>
+<form>
+	<fieldset>
+		<legend>Escoge sexo</legend><br>  
+	  <input type="radio" name="gender" id="genero1" value="masculino" checked> Masculino<br><!--marca uno predefinido-->
+	  <input type="radio" name="gender" id="genero2" value="femenino"> Femenino<br>
+	  <input type="radio" name="gender" id="genero3" value="otro"> Otro<br><br>
+		<input type="submit" value="Enviar"><br>		
+	</fieldset>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="submit"&gt;, &lt;input type="reset"&gt; e &lt;input type="button"&gt;</h2>
+<p>&lt;input type="submit"&gt;define un botón para <strong>la presentación de</strong> datos de formulario a un <strong>formulario-handler</strong> .</p>
+<p>&lt;input type="reset"&gt;define un <strong>botón de reinicio</strong> que se recuperan todos los valores del formulario a sus valores por defecto:</p>
+<form>
+	<fieldset>
+		<legend>Botones de formulario</legend>
+		  <label for="firstname"> First name:</label><br>
+		  <input type="text" name="firstname" value="Nombre"><br>
+		  <label for="lastname"> Last name:</label><br>
+		  <input type="text" name="lastname" value="Apellido"><br><br>
+		<label for="submit"> Botón submit</label><br>
+		 <input type="submit" name="boton1" id="submit" value="Enviar"><br>
+		 <label for="reset"> Botón reset</label><br>
+ 		 <input type="reset" name="boton2" id="reset" value="Restablecer"><br>
+ 		 <label for="button"> Botón buttom, botón para JavaScript</label><br>
+ 		 <input type="button" name="boton3" id="button" value="Acción"><br>
+	</fieldset>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="color"&gt;</h2>
+<p>Se utiliza para campos de entrada que deben contener un color. En función del soporte de los navegadores, aparecerá un tipo de paleta de colores.</p>
+<form action="/action_page.php">
+ 	<fieldset>
+	<legend>Selecciona un color:</legend>
+	
+	<input type="color" name="favcolor" value="#ff0000">
+	<input type="submit">
+	</fieldset>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="date"&gt;</h2>
+<form>
+ 	<fieldset>
+	<legend>Fecha de cumpleaños:</legend>
+	
+	<input type="date" name="bday">
+	<input type="submit">
+	</fieldset>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="datetime-local"&gt;</h2>
+<form>
+ 	<fieldset>
+	<legend>Fecha de cumpleaños fecha y hora:</legend>
+	
+	<input type="datetime-local" name="bdaytime">
+	<input type="submit">
+	</fieldset>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="email"&gt;</h2>
+<form>
+ 	<fieldset>
+	<legend>Email:</legend>
+	
+	<input type="email" name="email">
+	<input type="submit">
+	</fieldset>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="file"&gt;</h2>
+<form>
+ 	<fieldset>
+	<legend>Selecciona archivo a adjuntar:</legend>
+	
+	<input type="file" name="myFile">
+	<input type="submit">
+	</fieldset>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="month"&gt;</h2>
+<form>
+ 	<fieldset>
+	<legend>Selecciona mes y año:</legend>
+	
+	<input type="month" name="bdaymonth">
+	<input type="submit">
+	</fieldset>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="range"&gt;</h2>
+<form>
+ 	<fieldset>
+	<legend>Volumen:</legend>
+	
+	<input type="range" name="bdaymonth">
+	<input type="submit">
+	</fieldset>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="number"&gt;</h2>
+<form>
+ 	<fieldset>
+	<legend>Introduce número:</legend>
+	
+	<input type="number">
+	<input type="submit">
+	</fieldset>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="week"&gt;</h2>
+<form>
+ 	<fieldset>
+	<legend>Selecciona semana del año:</legend>
+	
+	<input type="week">
+	<input type="submit">
+	</fieldset>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="time"&gt;</h2>
+<form>
+ 	<fieldset>
+	<legend>Selecciona hora:</legend>
+	
+	<input type="time">
+	<input type="submit">
+	</fieldset>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="tel"&gt;</h2>
+<form>
+ 	<fieldset>
+	<legend>Introduce teléfono:</legend>
+	
+	<input type="tel">
+	<input type="submit">
+	</fieldset>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="search"&gt;</h2>
+<form action="https://www.google.es/search">
+ 	<fieldset>
+	<legend>Búsqueda en Google:</legend>
+	<img src="img/googlelogo_color_272x92dp.png" alt="logo" height="50px"><br>
+	<input type="search" name="q">
+	<input type="submit">
+	</fieldset>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="url"&gt;</h2>
+<form>
+ 	<fieldset>
+	<legend>Introduce página web:</legend>	
+	<input type="url">
+	<input type="submit">
+	</fieldset>
+</form>
+<br>
+<hr>
+<h2>&lt;input type="image"&gt;</h2>
+<form>
+ 	<fieldset>
+	<legend>Botón submit con imagen:</legend>
+	
+	<input type="image" src="img/boton-de-reproduccion.png" alt="submit">
+	
+	</fieldset>
+</form>
+<br>
+<hr>
+
+</body>
+</html>
