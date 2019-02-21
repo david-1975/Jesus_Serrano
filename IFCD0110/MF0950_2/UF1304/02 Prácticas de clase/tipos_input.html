@@ -16,12 +16,13 @@ body {
 </head>
 <body>
 <h1>Tipos de input</h1>
-<p> <a href="introduccion.html">Introducción</a> | <a href="elementos.html">Elmentos de formulario</a> | <a href="tipos_input.html">Tipos de input</a>
+<p> <a href="introduccion.html">Introducción</a> | <a href="elementos.html">Elmentos de formulario</a> | <a href="tipos_input.html">Tipos de input</a> | <a href="atributos.html">Atributos de entrada</a> | <a href="estilos_formularios.html">Estilos en formularios</a> 
 </p>
-<p>Estos son los diferentes tipos de entrada se pueden utilizar en HTML:</p>
-  
-<hr>
-<h2>&lt;input type="text"&gt;</h2>
+<p>Estos son los diferentes tipos de entrada se pueden utilizar en HTML:</p>  
+
+<h2>Elementos de formulario HTML</h2>
+
+<h3>&lt;input type="text"&gt;</h3>
 <p>Define un <strong>campo de entrada de texto de una línea</strong> :</p>
 <form>
   <label for="nombre">Nombre:</label><br>
@@ -32,7 +33,7 @@ body {
 </form>
 <br>
 <hr>
-<h2>&lt;input type="password"&gt;</h2>
+<h3>&lt;input type="password"&gt;</h3>
  
 <p>Define un <strong>campo de contraseña</strong> :</p>
 <form action="">
@@ -44,7 +45,7 @@ body {
 </form>
 <br>
 <hr>
-<h2>&lt;input type="checkbox"&gt;</h2>
+<h3>&lt;input type="checkbox"&gt;</h3>
 <p>Define una <strong>casilla de verificación</strong> y permite seleccionar 0 o más casillas.</p>
 <form>
 	<fieldset>
@@ -59,7 +60,7 @@ body {
 </form>
 <br>
 <hr>
-<h2>&lt;input type="radio"&gt;</h2>
+<h3>&lt;input type="radio"&gt;</h3>
 <p>Define un <strong>botón de radio</strong> . Los botones de radio permiten al usuario seleccionar sólo una de un número limitado de opciones:</p>
 <form>
 	<fieldset>
@@ -72,7 +73,7 @@ body {
 </form>
 <br>
 <hr>
-<h2>&lt;input type="submit"&gt;, &lt;input type="reset"&gt; e &lt;input type="button"&gt;</h2>
+<h3>&lt;input type="submit"&gt;, &lt;input type="reset"&gt; e &lt;input type="button"&gt;</h3>
 <p>&lt;input type="submit"&gt;define un botón para <strong>la presentación de</strong> datos de formulario a un <strong>formulario-handler</strong> .</p>
 <p>&lt;input type="reset"&gt;define un <strong>botón de reinicio</strong> que se recuperan todos los valores del formulario a sus valores por defecto:</p>
 <form>
@@ -92,7 +93,33 @@ body {
 </form>
 <br>
 <hr>
-<h2>&lt;input type="color"&gt;</h2>
+<h3>&lt;input type="file"&gt;</h3>
+<form>
+ 	<fieldset>
+	<legend>Selecciona archivo a adjuntar:</legend>
+	
+	<input type="file" name="myFile">
+	<input type="submit">
+	</fieldset>
+</form>
+<br>
+<hr>
+<h3>&lt;input type="image"&gt;</h3>
+<form>
+ 	<fieldset>
+	<legend>Botón submit con imagen:</legend>
+	
+	<input type="image" src="img/boton-de-reproduccion.png" alt="submit">
+	
+	</fieldset>
+</form>
+<br>
+<hr>
+<h3>&lt;input type="hidden"&gt;</h3>
+<p>Este campo se utiliza para almacenar información, el usuario no la ve, pero con el valor (value) que le añadamos nos dará información del formulario (por ejemplo la fecha). </p>
+
+<h2>Elementos de formulario HTML5</h2>
+<h3>&lt;input type="color"&gt;</h3>
 <p>Se utiliza para campos de entrada que deben contener un color. En función del soporte de los navegadores, aparecerá un tipo de paleta de colores.</p>
 <form action="/action_page.php">
  	<fieldset>
@@ -104,7 +131,7 @@ body {
 </form>
 <br>
 <hr>
-<h2>&lt;input type="date"&gt;</h2>
+<h3>&lt;input type="date"&gt;</h3>
 <form>
  	<fieldset>
 	<legend>Fecha de cumpleaños:</legend>
@@ -115,7 +142,7 @@ body {
 </form>
 <br>
 <hr>
-<h2>&lt;input type="datetime-local"&gt;</h2>
+<h3>&lt;input type="datetime-local"&gt;</h3>
 <form>
  	<fieldset>
 	<legend>Fecha de cumpleaños fecha y hora:</legend>
@@ -126,7 +153,7 @@ body {
 </form>
 <br>
 <hr>
-<h2>&lt;input type="email"&gt;</h2>
+<h3>&lt;input type="email"&gt;</h3>
 <form>
  	<fieldset>
 	<legend>Email:</legend>
@@ -137,18 +164,7 @@ body {
 </form>
 <br>
 <hr>
-<h2>&lt;input type="file"&gt;</h2>
-<form>
- 	<fieldset>
-	<legend>Selecciona archivo a adjuntar:</legend>
-	
-	<input type="file" name="myFile">
-	<input type="submit">
-	</fieldset>
-</form>
-<br>
-<hr>
-<h2>&lt;input type="month"&gt;</h2>
+<h3>&lt;input type="month"&gt;</h3>
 <form>
  	<fieldset>
 	<legend>Selecciona mes y año:</legend>
@@ -159,18 +175,7 @@ body {
 </form>
 <br>
 <hr>
-<h2>&lt;input type="range"&gt;</h2>
-<form>
- 	<fieldset>
-	<legend>Volumen:</legend>
-	
-	<input type="range" name="bdaymonth">
-	<input type="submit">
-	</fieldset>
-</form>
-<br>
-<hr>
-<h2>&lt;input type="number"&gt;</h2>
+<h3>&lt;input type="number"&gt;</h3>
 <form>
  	<fieldset>
 	<legend>Introduce número:</legend>
@@ -181,29 +186,29 @@ body {
 </form>
 <br>
 <hr>
-<h2>&lt;input type="week"&gt;</h2>
+<h3>&lt;input type="range"&gt;</h3>
 <form>
  	<fieldset>
-	<legend>Selecciona semana del año:</legend>
+	<legend>Volumen:</legend>
 	
-	<input type="week">
+	<input type="range" name="bdaymonth">
 	<input type="submit">
 	</fieldset>
 </form>
 <br>
 <hr>
-<h2>&lt;input type="time"&gt;</h2>
-<form>
+<h3>&lt;input type="search"&gt;</h3>
+<form action="https://www.google.es/search" method="get">
  	<fieldset>
-	<legend>Selecciona hora:</legend>
-	
-	<input type="time">
+	<legend>Búsqueda en Google:</legend>
+	<img src="img/googlelogo_color_272x92dp.png" alt="logo" height="50px"><br>
+	<input type="search" name="q">
 	<input type="submit">
 	</fieldset>
 </form>
 <br>
 <hr>
-<h2>&lt;input type="tel"&gt;</h2>
+<h3>&lt;input type="tel"&gt;</h3>
 <form>
  	<fieldset>
 	<legend>Introduce teléfono:</legend>
@@ -214,18 +219,18 @@ body {
 </form>
 <br>
 <hr>
-<h2>&lt;input type="search"&gt;</h2>
-<form action="https://www.google.es/search">
+<h3>&lt;input type="time"&gt;</h3>
+<form>
  	<fieldset>
-	<legend>Búsqueda en Google:</legend>
-	<img src="img/googlelogo_color_272x92dp.png" alt="logo" height="50px"><br>
-	<input type="search" name="q">
+	<legend>Selecciona hora:</legend>
+	
+	<input type="time">
 	<input type="submit">
 	</fieldset>
 </form>
 <br>
 <hr>
-<h2>&lt;input type="url"&gt;</h2>
+<h3>&lt;input type="url"&gt;</h3>
 <form>
  	<fieldset>
 	<legend>Introduce página web:</legend>	
@@ -235,17 +240,19 @@ body {
 </form>
 <br>
 <hr>
-<h2>&lt;input type="image"&gt;</h2>
+<h3>&lt;input type="week"&gt;</h3>
 <form>
  	<fieldset>
-	<legend>Botón submit con imagen:</legend>
+	<legend>Selecciona semana del año:</legend>
 	
-	<input type="image" src="img/boton-de-reproduccion.png" alt="submit">
-	
+	<input type="week">
+	<input type="submit">
 	</fieldset>
 </form>
 <br>
 <hr>
+
+
 
 </body>
 </html>

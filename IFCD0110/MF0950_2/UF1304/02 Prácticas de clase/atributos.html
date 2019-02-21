@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<!--<meta http-equiv="Refresh" content="5">--> <!--refresca la página cada 5 segundos automáticamente-->
+<title>HTML Elementos de entrada</title>
+<style>
+body {
+	width: 90%;
+	margin: 1% auto;
+	padding: 0 auto;
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 1em;
+	}
+</style>
+<!--<link href="css/bootstrap.css" rel="stylesheet" type="text/css">-->
+</head>
+<body>
+<h1>Atributos de entrada</h1>
+<hr>
+<p> <a href="introduccion.html">Introducción</a> | <a href="elementos.html">Elmentos de formulario</a> | <a href="tipos_input.html">Tipos de input</a> | <a href="atributos.html">Atributos de entrada</a> | <a href="estilos_formularios.html">Estilos en formularios</a> 
+</p>
+<hr>
+<p>Los atributos proporcionan información adicional sobre los elementos HTML</p>
+<h2>Atributos HTML</h2>
+<ul>
+	<li>value</li>
+	<li>readonly</li>
+	<li>disabled</li>
+	<li>size</li>
+	<li>maxlenght</li>
+</ul>
+<h3>value</h3>
+<p>Especifica el valor inicial para un campo de entrada</p>
+<form action="">
+	<fieldset>
+		<legend>Atributo value</legend>
+	
+		Nombre:
+		<input type="text" name="nombre" id="nombre" value="Pedro">
+		
+		<input type="submit" value="Enviar">
+	</fieldset>
+</form>
+<h3>readonly</h3>
+<p>Especifica que el campo de entrada es de sólo lectura (no se puede cambiar)</p>
+<form action="">
+	<fieldset>
+		<legend>Atributo readonly</legend>	
+		<label for="nombre">Nombre:</label>
+		<input type="text" name="nombre" value="Pedro" readonly><br>
+		<label for="apellido">Apellido:</label>
+	  <input type="text" name="apellido">	<br>	
+		<input type="submit" value="Enviar">
+	</fieldset>
+</form>
+<h3>disabled</h3>
+<p>Especifica que el campo de entrada se desactiva.</p>
+<form action="">
+	<fieldset>
+		<legend>Atributo disabled</legend>
+		<label for="nombre">Nombre:</label>
+		<input type="text" name="nombre" value="Pedro" disabled><br>
+		<label for="apellido">Apellido:</label>
+		<input type="text" name="apellido"><br>
+		<input type="submit" value="Enviar">
+	</fieldset>
+</form>
+<h3>size</h3>
+<p>Especifica el tamaño (en caracteres) para el campo de entrada:</p>
+<form action="">
+	<fieldset>
+		<legend>Atributo size</legend>
+		<label for="nombre">Nombre:</label>
+	  <input type="text" name="nombre" size="8"><br>
+		<label for="apellido">Apellido:</label>
+	  <input type="text" name="apellido" size="20"><br>
+		<input type="submit" value="Enviar">
+	</fieldset>
+</form>
+<h3>maxlenght</h3>
+<p>Especifica la longitud máxima permitida para el campo de entrada:</p>
+<form action="">
+	<fieldset>
+		<legend>Atributo maxlenght</legend>
+		<label for="nombre">Nombre:</label>
+	  <input type="text" name="nombre" maxlenght="10"><br>
+		<label for="apellido">Apellido:</label>
+	  <input type="text" name="apellido" maxlenght="32"><br>
+		<input type="submit" value="Enviar">
+	</fieldset>
+</form>
+<br>
+<hr>
+<h2>Atributos HTML5 </h2>
+<p>HTML5 añadió los siguiente atributos para &lt;input&gt;:</p>
+<ul>
+  <li>autocomplete</li>
+  <li>autofocus</li>
+  <li>form</li>
+  <li>formaction</li>
+  <li>formenctype</li>
+  <li>formmethod</li>
+  <li>formnovalidate</li>
+  <li>formtarget</li>
+  <li>height and width</li>
+  <li>list</li>
+  <li>min and max</li>
+  <li>multiple</li>
+  <li>pattern (regexp)</li>
+  <li>placeholder</li>
+  <li>required</li>
+  <li>step</li>
+</ul>
+<br>
+<p>Los atributos de form los veremos más adelante</p>
+<h3>autocomplete</h3>
+<p>Especifica si un campo de formulario o de entrada debe tener autocompletar encendido o apagado. Si no ponemos nada, automáticamente estará en "on"</p>
+<form action="">
+	<fieldset>
+		<legend>Atributo autocomplete</legend>
+		<label for="nombre">Nombre:</label>
+		<input type="text" name="nombre" maxlenght="12" size="10" autocomplete="on">
+		<label for="apellido">Apellido:</label>
+		<input type="text" name="apellido" maxlenght="32" size="20" autocomplete="off">
+		<input type="submit" value="Enviar">
+	</fieldset>
+</form>
+<h3>autofocus</h3>
+<p>Especifica que el campo de entrada de forma automática debe obtener el foco(puntero de escritura) cuando se carga la página.</p>
+<form action="">
+	<fieldset>
+		<legend>Atributo autofocus</legend>
+		<label for="nombre">Nombre:</label>
+	  <input type="text" name="nombre" maxlenght="12" size="10" autocomplete="on" autofocus>
+		<label for="apellido">Apellido:</label>
+		<input type="text" name="apellido" maxlenght="32" size="20" autocomplete="on">
+		<input type="submit" value="Enviar">
+	</fieldset>
+</form>
+<h3>height and width</h3>
+<p>Especifican la altura y la anchura de un &lt;input type=&quot;image&quot;&gt;elemento</p>
+<form>
+ 	<fieldset>
+	<legend>Atributos height y width:</legend>
+	<label for="nombre">Nombre:</label>
+	  <input type="text" name="nombre" maxlenght="12" size="10" autocomplete="on" autofocus>
+		<label for="apellido">Apellido:</label>
+		<input type="text" name="apellido" maxlenght="32" size="20" autocomplete="on">
+	<input type="image" src="img/boton-de-reproduccion.png" height="24" width="28" alt="submit">	
+	</fieldset>
+</form>
+<h3>list</h3>
+<p>Se refiere a un elemento &lt;datalist&gt; que contiene opciones predefinidas para un elemento &lt;input&gt;</p>
+<form>
+ 	<fieldset>
+	<legend>Atributos list:</legend>
+	 <input list="navegadores">
+	  <datalist id="navegadores"><!--Esta funcionalidad con los valores option no es necesario poner nada entre etiquetas para que apareca-->
+		<option value="Internet Explorer"></option>
+		<option value="Firefox"></option>
+		<option value="Chrome"></option>
+		<option value="Opera"></option>
+		<option value="Safari"></option>
+	  </datalist>
+	  <input type="image" src="img/boton-de-reproduccion.png" height="20" width="20" alt="submit">
+	</fieldset>
+</form>
+<h3>min y max</h3>
+<p>Especifican los valores mínimo y máximo para un elemento &lt;input&gt;. Trabajan con los siguientes tipos de entrada: número, rango, fecha, fecha y hora local, el mes, el tiempo y la semana.</p>
+<form>
+  <fieldset>
+	<legend>Atributos min y max:</legend>
+	  Introduce una fecha anterior a 1980-01-01:
+	  <input type="date" name="bday" max="1979-12-31"><br>
+
+	  Introduce una fecha posterior a 2000-01-01:
+	  <input type="date" name="bday" min="2000-01-02"><br>
+
+	  Cantidad (entre 1 y 5):
+	  <input type="number" name="quantity" min="1" max="5"><br>
+
+    <input type="image" src="img/boton-de-reproduccion.png" height="20" width="20" alt="submit">
+  </fieldset>
+</form>
+<h3>multiple</h3>
+<p>Especifica que el usuario está autorizado para entroducir más de un valor en el &lt;input&gt;elemento. Trabaja con email y archivos.</p>
+<form>
+ 	<fieldset>
+	<legend>Atributo multiple:</legend>
+	
+	<input type="file" name="myFile" multiple>
+	<input type="submit">
+	</fieldset>
+</form>
+<h3>pattern (regexp)</h3>
+<p>Especifica una expresión regular que el valor &lt;input&gt; del elemento se compara. Trabaja con los siguientes tipos de entrada: texto, búsqueda, URL, teléfono, correo electrónico y contraseña. En esta web podemos ver varios tipos de patrones <a href="http://lenguajehtml.com/p/html/formularios/validaciones-html5">www.lenguajehtml.com</a> </p>
+<form>
+ <fieldset>
+	<legend>Atributo pattern:</legend>
+  Codigo pais: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="tres letras codigo de pais">
+  <input type="submit">
+  </fieldset>
+</form>
+
+<h3>placeholder</h3>
+<p>Especifica una pista que describe el valor esperado de un campo de entrada (un valor de muestra o una breve descripción del formato). </p>
+<form>
+ 	<fieldset>
+	<legend>Atributos placeholder:</legend>
+	<label for="nombre">Nombre:</label>
+	  <input type="text" name="nombre" maxlenght="12" size="12" autocomplete="on" placeholder="Escribe tu nombre">
+		<label for="apellido">Apellido:</label>
+		<input type="text" name="apellido" maxlenght="32" size="20" autocomplete="on" placeholder="Escribe tu apellido">
+	<input type="image" src="img/boton-de-reproduccion.png" height="24" width="28" alt="submit">	
+	</fieldset>
+</form>
+<h3>required</h3>
+<p>Especifica que un campo de entrada debe ser completado antes de enviar el formulario.</p>
+<form>
+ 	<fieldset>
+	<legend>Atributo required:</legend>
+	<label for="nombre">Nombre:</label>
+	  <input type="text" name="nombre" maxlenght="12" size="12" autocomplete="on" placeholder="Escribe tu nombre" required>
+		<label for="apellido">Apellido:</label>
+		<input type="text" name="apellido" maxlenght="32" size="20" autocomplete="on" placeholder="Escribe tu apellido" required>
+	<input type="image" src="img/boton-de-reproduccion.png" height="24" width="28" alt="submit">	
+	</fieldset>
+</form>
+<h3>step</h3>
+<p>Especifica los intervalos de números para un elemento &lt;input&gt;. Trabaja con los siguientes tipos de entrada: número, rango, fecha, fecha y hora local, el mes, el tiempo y la semana.</p>
+<form>
+ <fieldset><legend>Atributo step</legend>
+ <label for="points">Introduce un número múltiplo de 3:</label>
+  <input type="number" name="points" step="3">
+  <input type="submit">
+  </fieldset>
+</form>
+</body>
+</html>
