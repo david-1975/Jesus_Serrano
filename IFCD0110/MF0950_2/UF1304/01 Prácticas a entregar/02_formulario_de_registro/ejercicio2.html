@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Ejercicio formularios 02</title>
+		<meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="tittle" content="Práctica de clase">
+        <meta name="author" content="Jesús Serrano">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link href="css/estilos.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div>
+	<img src="img/img_avatar.png" alt="foto" title="Foto usuario">
+	<p><a href="#">&times;</a></p>
+	<form action="/action_page.php" method="post" name="ejercicio2" enctype="multipart/form-data" accept-charset="UTF-8">
+	<label for="usuario">Usuario</label><br>
+	<input type="text" name="usuario" id="usuario" size="56" placeholder="Entrar usuario" required><br>
+	<label for="password">Contraseña</label><br>
+	<input type="password" name="password" id="password" size="56" placeholder="Entrar contraseña" required><br>
+	<input type="submit" value="Iniciar sesión"><br>
+	<input type="checkbox" name="recordatorio" checked>Recordarme		
+	</form>
+	<div>
+		<a href="#" id="registrar">Registrarse</a>
+		<span>¿Has olvidado la <a href="#">contraseña?</a></span>
+	</div>
+</div>
+
+
+</body>
+</html>

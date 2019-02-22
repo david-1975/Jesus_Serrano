@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 90%;
+	margin: 1% auto;
+	padding: 0 auto;
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 1em;
+	}

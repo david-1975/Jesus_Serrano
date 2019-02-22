@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 40%;
+	margin: 1% auto;
+	padding: 0 auto;
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 1em;
+	}
+form{
+	background-color: lightgray;
+	margin: auto;
+	padding: 20px;
+	width: 100%;
+}
+input[type=text], textarea, input[type=checkbox]{
+	margin: 10px 0;
+	padding: 10px;
+}
+input[type=submit]{
+	background-color: forestgreen;
+	border-radius: 5px;
+	color: white;
+	margin: 10px 0;
+	padding: 10px 20px;
+}
+label{
+	margin: 10px 0;
+}
+h1{
+	padding: 10px 0;
+}
+sup{
+	color: red;
+}
