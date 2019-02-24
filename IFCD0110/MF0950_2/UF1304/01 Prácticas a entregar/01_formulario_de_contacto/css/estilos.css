@@ -18,9 +18,13 @@ form{
 	padding: 20px;
 	width: 100%;
 }
-input[type=text], textarea, input[type=checkbox]{
+input[type=text], textarea {
 	margin: 10px 0;
 	padding: 10px;
+	width: 95%;
+}
+input[type=checkbox]{
+	margin: auto;
 }
 input[type=submit]{
 	background-color: forestgreen;

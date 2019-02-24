@@ -15,6 +15,7 @@
 <body>
 <h1>Formulario de pago</h1>
 <form action="/action_page.php" method="post" name="ejercicio4" enctype="multipart/form-data" accept-charset="UTF-8">
+<div>
 <h2>Dirección de envío</h2>
 	<label for="nombre"><img src="img/user.png" height="14px"> Nombre completo</label><br>
 	<input type="text" name="nombre" id="nombre"  placeholder="Nombre y apellidos" required><br>
@@ -28,7 +29,8 @@
 	<input type="text" name="estado" id="estado"  placeholder="ES" required><br>
 	<label for="codigo"> Código postal</label><br>
 	<input type="text" name="codigo" id="codigo"  placeholder="34003" required><br>
-
+</div>
+<div>
 <h2>Pago</h2>
 	<label for="tarjetas">Selecciona una tarjeta</label><br>
 	<input type="radio"><img src="img/visa.png" alt="visa" title="visa" height="36px">
@@ -63,7 +65,9 @@
 	</select><br>
 	<label for="cvv"> CVV</label><br>
 	<input type="text" name="tarjeta" id="cvv"  placeholder="000" required><br>
-
-<input type="checkbox" name="terminos" required>Acepto los términos y <a href="#">condiciones de privacidad</a><br></form>
+</div>
+<input type="checkbox" name="terminos" required>Acepto los términos y <a href="#">condiciones de privacidad</a><br>
+<input type="submit" value="Continuar con el pago">
+</form>
 </body>
 </html>

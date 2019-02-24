@@ -23,9 +23,12 @@ img{
 }
 p{
 	float: right;	
-	margin: 10px;	
+	margin: 0 5px;	
 }
 p a{
+	color:black;
+	font-size: 150%;
+	font-weight: 700;
 	text-decoration-line: none;
 }
 input[type=submit]{
@@ -38,7 +41,8 @@ input[type=submit]{
 }
 input[type=text], input[type=password] {
 	margin: 10px 5%;
-	padding: 10px;	
+	padding: 10px;
+	width: 85%;
 }
 input[type=checkbox]{
 	margin: 10px 5px 10px 5%;
@@ -66,4 +70,11 @@ div #registrar{
 span{
 	float: right;
 	margin-right: 20px;
+}
+@media screen and (max-width: 950px){
+	img{
+	border-radius: 150px;
+	margin: 10px 0 10px 30%;
+	width: 100px;	
+}
 }

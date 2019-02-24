@@ -12,3 +12,8 @@ body {
 	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
 	font-size: 1em;
 	}
+div{
+	float: left;
+	width: 45%;
+	
+}
