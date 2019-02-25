@@ -15,59 +15,68 @@
 <body>
 <h1>Formulario de pago</h1>
 <form action="/action_page.php" method="post" name="ejercicio4" enctype="multipart/form-data" accept-charset="UTF-8">
-<div>
-<h2>Dirección de envío</h2>
-	<label for="nombre"><img src="img/user.png" height="14px"> Nombre completo</label><br>
-	<input type="text" name="nombre" id="nombre"  placeholder="Nombre y apellidos" required><br>
-	<label for="email"><img src="img/mail.png" height="14px"> Email</label><br>
-	<input type="email" name="email" id="email" placeholder="Correo eléctronico" required><br>
-	<label for="direccion"><img src="img/contactcard.png" height="14px"> Dirección</label><br>
-	<input type="text" name="direccion" id="direccion"  placeholder="Calle y número" required><br>
-	<label for="ciudad"><img src="img/building.png" height="14px"> Ciudad</label><br>
-	<input type="text" name="ciudad" id="ciudad"  placeholder="Calle y número" required><br>
-	<label for="estado"> Estado</label><br>
-	<input type="text" name="estado" id="estado"  placeholder="ES" required><br>
-	<label for="codigo"> Código postal</label><br>
-	<input type="text" name="codigo" id="codigo"  placeholder="34003" required><br>
-</div>
-<div>
-<h2>Pago</h2>
-	<label for="tarjetas">Selecciona una tarjeta</label><br>
-	<input type="radio"><img src="img/visa.png" alt="visa" title="visa" height="36px">
-	<input type="radio"><img src="img/mastercard.png" alt="mastercard" title="mastercard" height="36px">
-	<input type="radio"><img src="img/american-express.png" alt="american" title="american express" height="36px">
-	<input type="radio"><img src="img/discover.png" alt="discover" title="discover" height="36px"><br>
-	<label for="titular"> Titular de la tarjeta</label><br>
-	<input type="text" name="titular" id="titular"  placeholder="Nombre y apellidos" required><br>
-	<label for="tarjeta"> Número de la tarjeta de crédito</label><br>
-	<input type="text" name="tarjeta" id="tarjeta"  placeholder="0000-0000-0000-0000" required><br>
-	<label for="mes"> Exp Mes </label><br>
-	<select name="mes">
-		<option value="enero">Enero</option>
-		<option value="febrero">Febrero</option>
-		<option value="marzo">Marzo</option>
-		<option value="abril">Abril</option>
-		<option value="mayo">Mayo</option>
-		<option value="junio">Junio</option>
-		<option value="julio">Julio</option>
-		<option value="agosto">Agosto</option>
-		<option value="septiembre">Septiembre</option>
-		<option value="octubre">Octubre</option>
-		<option value="noviembre">Noviembre</option>
-		<option value="diciembre">Diciembre</option>
-	</select><br>
-	<label for="year">Exp Año </label><br>
-	<select name="year">
-		<option value="2020">2020</option>
-		<option value="2021">2021</option>
-		<option value="2022">2022</option>
-		<option value="2023">2023</option>
-	</select><br>
-	<label for="cvv"> CVV</label><br>
-	<input type="text" name="tarjeta" id="cvv"  placeholder="000" required><br>
-</div>
-<input type="checkbox" name="terminos" required>Acepto los términos y <a href="#">condiciones de privacidad</a><br>
-<input type="submit" value="Continuar con el pago">
+	<div>
+	<h2>Dirección de envío</h2>
+		<label for="nombre"><img src="img/user.png" height="14px"> Nombre completo</label><br>
+		<input type="text" name="nombre" id="nombre"  placeholder="Nombre y apellidos" pattern="[A-Za-z]{5,40}" title="Introduzca su nombre y apellidos con tamaño mínimo: 5. Tamaño máximo: 40" autocomplete="off" required>
+		<br>
+		<label for="email"><img src="img/mail.png" height="14px"> Email</label><br>
+		<input type="email" name="email" id="email" placeholder="Correo eléctronico" title="Introduzca su email" required><br>
+		<label for="direccion"><img src="img/contactcard.png" height="14px"> Dirección</label><br>
+		<input type="text" name="direccion" id="direccion"  placeholder="Calle y número"  pattern="[A-Za-z0-9]{5,50}" title="Introduzca su dirección" autocomplete="off"  required><br>
+		<label for="ciudad"><img src="img/building.png" height="14px"> Ciudad</label><br>
+		<input type="text" name="ciudad" id="ciudad"  placeholder="Ciudad"  pattern="[A-Za-z]{5,20}" title="Introduzca ciudad" autocomplete="off"  required><br>
+		<div class="dosizq">
+			<label for="estado"> Estado</label><br>
+			<input type="text" name="estado" id="estado"  placeholder="ES" pattern="[A-Z]{2}" title="Código de pais correcto, sólo 2 letras mayúsculas" required>
+		</div>
+		<div class="dosder">
+		<label for="codigo"> Código postal</label><br>
+		<input type="text" name="codigo" id="codigo"  placeholder="34003" pattern="[0-9]{5}" title="Código postal a de tener 5 números"  required>
+		</div>
+	</div>
+	<div>
+	<h2>Pago</h2>
+		<label for="tarjetas">Selecciona una tarjeta</label><br>
+		<input type="radio"><img src="img/visa.png" alt="visa" class="tarjeta" title="visa" height="36px">
+		<input type="radio"><img src="img/mastercard.png" alt="mastercard" class="tarjeta" title="mastercard" height="36px">
+		<input type="radio"><img src="img/american-express.png" alt="american" class="tarjeta"  title="american express" height="36px">
+		<input type="radio"><img src="img/discover.png" alt="discover" class="tarjeta"  title="discover" height="36px"><br>
+		<label for="titular"> Titular de la tarjeta</label><br>
+		<input type="text" name="titular" id="titular"  placeholder="Nombre y apellidos" pattern="[A-Za-z]{5,40}" title="Introduzca su nombre y apellidos con tamaño mínimo: 5. Tamaño máximo: 40" autocomplete="off" required><br>
+		<label for="tarjeta"> Número de la tarjeta de crédito</label><br>
+		<input type="text" name="tarjeta" id="tarjeta" pattern="[0-9-]{13,20}" title="Introduzca el número correcto de la tarjeta"  placeholder="0000-0000-0000-0000" required><br>
+		<label for="mes"> Exp Mes </label><br>
+		<select name="mes">
+			<option value="enero">Enero</option>
+			<option value="febrero">Febrero</option>
+			<option value="marzo">Marzo</option>
+			<option value="abril">Abril</option>
+			<option value="mayo">Mayo</option>
+			<option value="junio">Junio</option>
+			<option value="julio">Julio</option>
+			<option value="agosto">Agosto</option>
+			<option value="septiembre">Septiembre</option>
+			<option value="octubre">Octubre</option>
+			<option value="noviembre">Noviembre</option>
+			<option value="diciembre">Diciembre</option>
+		</select><br>
+		<div class="dosizq">
+			<label for="year">Exp Año </label><br>
+			<select name="year">
+				<option value="2020">2020</option>
+				<option value="2021">2021</option>
+				<option value="2022">2022</option>
+				<option value="2023">2023</option>
+			</select><br>
+		</div>
+		<div class="dosder">
+			<label for="cvv"> CVV</label><br>
+			<input type="text" name="tarjeta" id="cvv"  placeholder="000" title="Mire su CVV en la parte trasera de la tarjeta, son 3 dígitos" pattern="[0-9]{3}" required>
+		</div>
+	</div>
+	<p id="terminos"><input type="checkbox" name="terminos" required>Acepto los términos y <a href="#">condiciones de privacidad</a></p>
+	<input type="submit" value="Continuar con el pago">
 </form>
 </body>
 </html>

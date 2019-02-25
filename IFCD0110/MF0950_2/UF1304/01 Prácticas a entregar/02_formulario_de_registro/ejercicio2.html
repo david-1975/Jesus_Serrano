@@ -17,12 +17,12 @@
 	<img src="img/img_avatar.png" alt="foto" title="Foto usuario">
 	<p><a href="#">&times;</a></p>
 	<form action="/action_page.php" method="post" name="ejercicio2" enctype="multipart/form-data" accept-charset="UTF-8">
-	<label for="usuario">Usuario</label><br>
-	<input type="text" name="usuario" id="usuario" placeholder="Entrar usuario" required><br>
-	<label for="password">Contraseña</label><br>
-	<input type="password" name="password" id="password" placeholder="Entrar contraseña" required><br>
-	<input type="submit" value="Iniciar sesión"><br>
-	<input type="checkbox" name="recordatorio" checked>Recordarme		
+		<label for="usuario">Usuario</label><br>
+		<input type="text" name="usuario" id="usuario" placeholder="Entrar usuario"  pattern="[A-Za-z0-9!?-]{4,12}" title="Introduzca su usuario, entre 4 y 12 dígitos alfanuméricos" required><br>
+		<label for="password">Contraseña</label><br>
+		<input type="password" name="password" id="password" placeholder="Entrar contraseña" pattern="[A-Za-z0-9!?-]{8,12}" title="Contraseña entre 8 y 12 dígitos alfanuméricos" required><br>
+		<input type="submit" value="Iniciar sesión"><br>
+		<input type="checkbox" name="recordatorio" checked>Recordarme		
 	</form>
 	<div>
 		<a href="#" id="registrar">Registrarse</a>

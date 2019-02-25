@@ -26,8 +26,8 @@
 	</div>
 	<div id="manual">
 		<form action="/action_page.php" method="post" name="ejercicio3" enctype="multipart/form-data" accept-charset="UTF-8">			
-			<input type="text" name="usuario" id="usuario" placeholder="Usuario" required><br>			
-			<input type="password" name="password" id="password" placeholder="Contraseña" required><br>
+			<input type="text" name="usuario" id="usuario" placeholder="Usuario"  pattern="[A-Za-z0-9!?-]{4,12}" title="Introduzca su usuario, entre 4 y 12 dígitos alfanuméricos" required><br>			
+			<input type="password" name="password" id="password" placeholder="Contraseña" pattern="[A-Za-z0-9!?-]{8,12}" title="Contraseña entre 8 y 12 dígitos alfanuméricos" required><br>
 			<input type="submit" value="Iniciar sesión"><br>
 		</form>
 	</div>

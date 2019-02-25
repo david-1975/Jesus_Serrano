@@ -18,7 +18,7 @@ form{
 	padding: 20px;
 	width: 100%;
 }
-input[type=text], textarea {
+input[type=text], textarea,input[type=email] {
 	margin: 10px 0;
 	padding: 10px;
 	width: 95%;
@@ -32,6 +32,10 @@ input[type=submit]{
 	color: white;
 	margin: 10px 0;
 	padding: 10px 20px;
+}
+input[type=submit]:hover{
+	opacity: 0.9;
+	cursor:pointer;
 }
 label{
 	margin: 10px 0;

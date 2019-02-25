@@ -16,15 +16,15 @@
 <h1>Formulario de contacto</h1>
 <form action="/action_page.php" method="post" name="ejercicio1" enctype="multipart/form-data" accept-charset="UTF-8">
 	<label for="nombre">Nombre:<sup>*</sup></label><br>
-	<input type="text" name="nombre" id="nombre" size="80" placeholder="Tu nombre.." required><br>
+	<input type="text" name="nombre" id="nombre" size="80" placeholder="Tu nombre.." required pattern="[A-Za-z]{5,20}" title="Introduzca su nombre con tamaño mínimo: 5. Tamaño máximo: 20" autocomplete="off" autofocus><br>
 	<label for="apellido">Apellido:<sup>*</sup></label><br>
-	<input type="text" name="apellido" id="apellido" size="80"  placeholder="Tus apellidos.." required><br>
+	<input type="text" name="apellido" id="apellido" size="80"  placeholder="Tus apellidos.." required pattern="[A-Za-z]{5,40}" title="Introduzca su apellido con tamaño mínimo: 5. Tamaño máximo: 40" autocomplete="off"><br>
 	<label for="telefono">Teléfono:<sup>*</sup></label><br>
-	<input type="text" name="telefono" id="telefono" size="80"  placeholder="Tu teléfono.."  required><br>
+	<input type="text" name="telefono" id="telefono" size="80"  placeholder="Tu teléfono.." pattern="[0-9]{9}" title="El tf debe tener 9 números" required><br>
 	<label for="email">Correo electrónico:<sup>*</sup></label><br>
-	<input type="text" name="email" id="email" size="80"  placeholder="Tu correo electrónico.."  required><br>
+	<input type="email" name="email" id="email" size="80"  placeholder="Tu correo electrónico.."  required><br>
 	<label for="consulta">Consulta:<sup>*</sup></label><br>
-	<textarea name="consulta" id="consulta" rows="12" cols="70" placeholder="Tu consulta.." spellcheck="true" required></textarea><br><!--Es un corrector ortográfico-->
+	<textarea name="consulta" id="consulta" rows="6" cols="70" placeholder="Tu consulta.." spellcheck="true" required  autocomplete="off"></textarea><br><!--Es un corrector ortográfico-->
 	<input type="checkbox" name="terminos" required> Acepto los términos y <a href="#">condiciones de privacidad</a><br>
 	<input type="submit" value="Enviar"><br>
 </form>
