@@ -13,6 +13,7 @@ body{
 }
 hr{
 	border: 1px dotted #3366AB;
+	margin-bottom: 10px;
 }
 nav{
 	margin: 20px;	
@@ -77,6 +78,8 @@ table{
 }
 table td,th{
 	border: 1px solid black;
+	padding: 5px 10px 10px 10px;
+	text-align: center;	
 }
 table th{
 	width: 100%;
@@ -114,10 +117,34 @@ table th{
 	padding: 10px 30px;
 }
 .formulario input[type=submit]:hover{
-	opacity: 0.7;
 	cursor:pointer;
+	opacity: 0.7;	
 }
 footer{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding: 10px;
+}	
+footer a{
+	text-decoration-line: none;
+}
+
+.index h2{
+	background-color: rgb(239,239,239);
+	color: #3366AB;
+	display: inline-block;
+	margin: 0 20%;
+	padding: 10px;	
+}
+.index div{	
 	display: inline-flex;
-	justify-content: center;
+	flex-direction: row;
+	flex-wrap: nowrap;	
+	justify-content:space-around;
+	margin: 20px;
+	padding: 0;
+}
+.index div figcaption{	
+	text-decoration-line: none;
 }
