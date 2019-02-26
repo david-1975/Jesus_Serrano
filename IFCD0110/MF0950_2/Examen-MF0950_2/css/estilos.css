@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: rgb(239,239,239);
+	color: rgba(102,102,102,1);
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+	margin: auto;
+	width: 1024px;
+}
+hr{
+	border: 1px dotted #3366AB;
+}
+nav{
+	margin: 20px;	
+}
+nav ul{	
+	list-style: none;
+}
+nav li{	
+	display: inline;
+	
+}
+nav li a{
+	background-color: #3366AB;
+	border-radius: 5px;
+	color: white;
+	margin: 5px;
+	padding: 10px;
+	text-decoration-line: none;
+}
+header{
+	margin:10px auto;
+	width: 95%;
+}
+header img{
+	width: 100%;
+}
+main h2{
+	background-color: #3366AB;
+	color: white;
+	display: inline-block;
+	margin: 10px;
+	padding: 0;
+}
+div{
+	background-color: white;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px 15px;	
+}
+div h3{
+	margin: 10px 0;
+}
+div p{
+	margin: 20px 0;
+}
+.comentario{
+	border-left: 2px solid #3366AB;
+	padding: 15px;
+}
+.lista li{
+	color: #3366AB;
+	margin: 10px 50px;	
+}
+.cita{
+	text-align: center;
+}
+table{	
+	border: 1px solid black;
+	color: #3366AB;
+	margin: 10px auto;
+	width: 80%;
+}
+table td,th{
+	border: 1px solid black;
+}
+table th{
+	width: 100%;
+}
+.formulario{
+	background-color: white;
+	border-radius: 10px;
+	margin: 10px auto;
+	width: 50%;
+}
+.formulario h2{
+	background-color: white;
+	color: black;
+}
+.formulario input[type=text], textarea,input[type=email] {
+	background-color: rgb(239,239,239);
+	border:1px solid lightgrey;
+	margin: 15px;
+	padding: 10px;
+	resize: none;
+	width: 90%;
+}
+.formulario input[type=checkbox]{	
+	margin: 10px 5px 10px 20px;
+}
+.formulario span{
+	color: #3366AB;
+}
+.formulario input[type=submit]{
+	background-color: #3366AB;
+	border-style: none;
+	border-radius: 10px;
+	color: white;
+	margin: 10px;
+	padding: 10px 30px;
+}
+.formulario input[type=submit]:hover{
+	opacity: 0.7;
+	cursor:pointer;
+}
+footer{
+	display: inline-flex;
+	justify-content: center;
+}
