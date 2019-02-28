@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <title>Plantilla</title>
+    
+    <meta charset="UTF-8">
+    <meta name="author" content="Jesús Serrano">
+    <meta name="description" content="Plantilla propia">
+    <meta name="keywords" content="HTML CSS">
+    <meta name="tittle" content="Plantilla semática">
+    <meta name="generator" content="Dreamweaver">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--compatibilidad Internet explorer-->
+    
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	
+	<link href="css/estilosgrid.css" type="text/css" rel="stylesheet">
+	
+</head>
+<body>
+<header>
+	<div style="overflow: auto;background-color: white;margin: 20px">
+		<div style="float: left;background-color: white">
+			<a href="introduccion.html" style="text-align: left"><img src="img/css3.png" alt="Logo HTML" width="128"  title="Pagina principal"></a>
+			</div>
+		<div style="float: left;background-color: white;">
+			<h2 style="text-align:center; margin: 20px">HOJAS DE ESTILO</h2>
+			 <a href="introduccion.html" style="padding:10px;" >Introducción</a> | <a style="padding: 10px;"
+			href="bordes.html">Bordes</a> | <a style="padding: 10px;" href="listas.html">Listas</a> | <a style="padding: 10px;" href="combinadores.html">Combinadores</a>| <a  style="padding: 10px; " href="flexbox.html">Flexbox</a> | <a href="grid.html">Grid</a>
+			</div>
+	</div>
+</header>
+<h1>Grid: Diseño de cuadrícula</h1>
+
+<p>El Diseño de cuadrícula Módulo CSS ofrece un sistema basado en el diseño de la red, con filas y columnas, por lo que es más fácil diseñar páginas web sin tener que utilizar flotadores y posicionamiento.</p>
+<hr>
+<nav class="nav1">
+	<a href="introduccion.html">Introducción</a> | <a href="Bordes.html">Bordes</a> | <a href="listas.html">Listas</a> | <a href="combinadores.html">Combinadores</a> | <a href="flexbox.html">Flexbox</a> | <a href="grid.html">Grid</a>
+</nav>
+<h2>display:grid</h2>
+<p>El diseño de la red consiste en un elemento padre, con uno o más elementos secundarios. Un elemento HTML se convierte en un contenedor de cuadrícula mediante el establecimiento de la propiedad display  grid o en línea de grid .</p>
+<ul>
+  <li>La propiedad <strong>grid-template-columns</strong> define el número de columnas en un diseño de cuadrícula, y  puede definir la anchura de cada columna.</li>
+  <li>La propiedad <strong>grid-template-rows</strong> define la altura de cada fila.</li> 
+  <li>La propiedad <strong>grid-template</strong> especifica las dos opciones anteriores en orden rows / columns, separadas con la barra espaciadora y sus espacios.</li>
+  <h3>sintaxis de grid-template</h3>
+<p style="border: 1px solid grey; color: darkblue;text-align: center;">
+grid-template: none|<em>grid-template-rows</em> / <em>grid-template-columns</em>|<em>grid-template-areas</em>|initial|inherit;</p>
+</ul>
+  <style>
+	.grid-contenedor{
+		display: grid;
+		grid-template-columns: 150px auto auto 150px;/* al ponerle 3 valores aparecen 3 columnas,cada valor a parte marca el ancho de cada columna. También existe grid-template-rows que lo haría en filas*/
+		grid-template-rows: auto 150px;/* Marca la altura de las filas, si no ponemos valor cogerá automáticamente el valor auto*/
+		/*grid-template: auto 150px / 150px auto auto 150px;*/		
+		background-color: #2196F3;
+		padding: 10px;		
+	}
+	.grid-contenedor > div{
+		background-color: rgba(255, 255, 255, 0.8);
+		border: 1px solid rgba(0, 0, 0, 0.8);
+		padding: 20px;
+		font-size: 30px;
+		text-align: center;
+	}
+  </style>
+
+<div class="grid-contenedor">
+  <div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	<div>7</div>
+	<div>8</div>	
+</div>
+<hr>
+<h2>grid-gap</h2>
+<p>Se puede ajustar el tamaño de la separación mediante el uso de una de las siguientes propiedades:</p>
+<ul>
+  <li>
+  grid-column-gap: establece la distancia entre las columnas</li>
+  <li>grid-row-gap: establece la separación entre las filas</li>
+  <li>grid-gap: es una propiedad abreviada para la <em>grid-column-gap</em> y los <em>grid-row-gap</em> propiedades</li>
+</ul>
+<style>
+	.grid-contenedor2{
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		/*grid-column-gap: 20px;
+		grid-row-gap: 5px;*/
+		grid-gap: 5px 20px; /*Poniendo sólo un valor valdría para los dos elementos*/
+		background-color: #2196F3;
+		padding: 10px;	
+	}
+	.grid-contenedor2 > div {
+		background-color: rgba(255, 255, 255, 0.8);
+		border: 1px solid rgba(0, 0, 0, 0.8);
+		padding: 20px;
+		font-size: 30px;
+		text-align: center;
+	}	
+	
+</style>
+<div class="grid-contenedor2">
+  	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	<div>7</div>
+	<div>8</div>	
+</div>
+<hr>
+<h2>Líneas de cuadrícula</h2>
+<p>Dándole atributos a los div hijos del div contenedor, realizaremos una organizacion de nuestra malla (grid). </p>
+<ul>
+	<li><strong>grid-column-start </strong>: Marcamos en que posición de las columnas queremos que empiece el elemento.</li>
+	<li><strong>grid-column-end</strong>: Marcamos hasta que columna queremos que llegue el elemento. Tras este elemento, se empujaría al resto de elementos de posición.</li>
+	<li><strong>grid-column</strong> sería la abreviación de las dos: grid-column-start / grid-column-end</li>
+	<li><strong>grid-row-start</strong>: Marca en que fila empieza el item.</li>
+	<li><strong>grid-row-end</strong>: Marca hasta que fila llega el elemento, esta propiedad no empuja al resto de elementos.</li>
+	<li><strong>grid-row</strong> sería la abreviación de las dos: grid-row-start / grid-row-end</li>
+</ul>
+
+<style>
+.grid-contenedor3{
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		/*grid-column-gap: 20px;
+		grid-row-gap: 5px;*/
+		grid-gap: 20px; /*Poniendo sólo un valor valdría para los dos elementos*/
+		background-color: #2196F3;
+		padding: 10px;	
+	}
+	.grid-contenedor3 > div {
+		background-color: rgba(255, 255, 255, 0.8);
+		border: 1px solid rgba(0, 0, 0, 0.8);
+		padding: 20px;
+		font-size: 30px;
+		text-align: center;
+	}	
+	.a {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end:4;
+	}
+	.b{
+		grid-column-start: 3;
+		grid-column-end: 4;
+		/*grid-column: 3 / 4; Es la abreviación de las 2*/ 
+		grid-row-start: 1;
+		grid-row-end:3;
+		/*grid-row: 1 / 3; Es la abreviación de las 2*/
+	}
+	.c{
+		grid-row: 1 / 5;		
+	}
+	.h{
+		grid-column-end: span 4; /*con la propiedad span en el elemento end expande 2 (o la que le marquemos) columnas*/		
+	}	
+</style>
+<div class="grid-contenedor3">
+  	<div class="a">1</div>
+	<div class="b">2</div>
+	<div class="c">3</div>
+	<div class="d">4</div>
+	<div class="e">5</div>
+	<div class="f">6</div>
+	<div class="g">7</div>
+	<div class="h">8</div>	
+</div>
+<hr>
+<h2>grid-template-areas</h2>
+<p>La propiedad <strong>grid-area</strong> puede ser utilizada como una propiedad resumida para las propiedades grid-column-start, grid-column-end, grid-row-start y grid-row-end. La propiedad grid-area también se puede utilizar para asignar nombres a los elementos de la cuadrícula, para ello es necesario utilizar <strong>grid-template-areas</strong>.Los elementos de la cuadrícula con nombre pueden ser referidos a la propiedad grid-template-areas del contenedor de cuadrícula.</p>
+<p>Cada fila está definida por apóstrofes (' '). Las columnas de cada fila se define dentro de los apóstrofes, separadas por un espacio.</p>
+<style>
+	.grid-contenedor4{
+		display: grid;
+		grid-template-areas:'header header header header header'
+							'menu main main main  aside'							
+							'menu footer footer footer aside';
+		/*grid-column-gap: 20px;
+		grid-row-gap: 5px;*/
+		grid-gap: 20px; /*Poniendo sólo un valor valdría para los dos elementos*/
+		background-color: #2196F3;
+		padding: 10px;
+	}
+	.grid-contenedor4 > div{
+		background-color: rgba(255, 255, 255, 0.8);
+		border: 1px solid rgba(0, 0, 0, 0.8);
+		padding: 20px;
+		font-size: 30px;
+		text-align: center;
+	}
+	.area1{
+		grid-area: header; /*Le ponemos un nombre a cada item para utilizarlo en grid-template-areas*/
+	}
+	.area2{grid-area: menu;}
+	.area3{grid-area: main;}
+	.area4{grid-area: aside;}
+	.area5{grid-area: footer;}
+</style>
+<div class="grid-contenedor4">
+  	<div class="area1">Cabecera</div>
+	<div class="area2">Navegación</div>
+	<div class="area3">Contenido</div>
+	<div class="area4">Relacionado</div>
+	<div class="area5">Pie de página</div>		
+</div>
+<hr>
+<h2>grid-auto-flow</h2>
+<ul>
+	<li><p>La propiedad <strong>grid-auto-flow</strong> controla el número de elementos de auto-colocados se insertan en la cuadrícula.</p>
+	<p><strong>sintaxis CSS:</strong> grid-auto-flow: row|column|dense|row dense|column dense;</p>	
+	</li>
+	<li><p>La propiedad <strong>grid-auto-rows</strong> establece un tamaño para las filas de un contenedor de cuadrícula. Esta propiedad sólo afecta a las filas con el tamaño no establecido</p>
+	<p><strong>sintaxis CSS:</strong> grid-auto-columns: auto|max-content|min-content|length;</p>
+	<ul>
+		<li><strong>row:</strong>Valor por defecto. Coloca astículos llenando cada fila</li>
+		<li><strong>column:</strong> Coloca elementos rellenando cada columna</li>
+		<li><strong>dense:</strong>Coloca objetos para rellenar cualquier agujero de la rejilla</li>
+		<li><strong>row dense:</strong>Coloca elementos rellenando cada fila y rellena los agujeros de la cuadrícula</li>
+		<li><strong>column dense:</strong>Coloca elementos rellenando cada columna y rellena los agujeros de la cuadrícula</li>
+	</ul>
+	</li>	
+</ul>
+<h3>Ejemplo de uso</h3>
+
+<br>
+
+</body>
+</html>
