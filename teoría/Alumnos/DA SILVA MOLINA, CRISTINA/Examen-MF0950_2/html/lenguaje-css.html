@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Cristina">
+
+    <link href="../css/estilos.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../img/html5.ico.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="lenguaje-html.html">HTML</a></li>
+                <li><a href="lenguaje-css.html">CSS</a></li>
+                <li><a href="lenguaje-js.html">JS</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <div>
+            <img src="../img/banner-css3.jpg" alt="CSS">
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Hoja de Estilos en Cascada</h2>
+                <div>
+                    <h3>Lenguaje <small>CSS</small></h3>
+                    <p><strong>CSS</strong>, siglas en inglés de <b>C</b>ascading <b>S</b>tyle <b>S</b>heets, (<u>en español "Hojas de estilo en cascada"</u>), <strong>es un lenguaje de diseño gráfico</strong> <em>para definir y crear la presentación de un documento</em> estructurado escrito en un lenguaje de marcado. Es usado para establecer el <i><strong>diseño visual de los documentos web</strong></i>, e interfaces de usuario escritas en <b>HTML</b> o <b>XHTML</b>. Junto con HTML y JavaScript, CSS es una tecnología usada por muchos sitios web para crear páginas visualmente atractivas, interfaces de usuario para aplicaciones web.</p>
+                </div>
+                <div>
+                    <p>La especificación <strong>CSS</strong> es mantenida por el <b>W</b>orld <b>W</b>ide <b>W</b>eb <b>C</b>onsortium (<u>W3C</u>®) WWW, organización dedicada a la estandarización del MIME type text/css, registrado para su uso descrito en el RFC 23185.</p>
+                    <p><strong>CSS busca mejorar la accesibilidad del documento</strong>, provee más flexibilidad y control en la especificación de características presentacionales, permitiendo que varios documentos <b>HTML</b> compartan un mismo estilo usando una sola hoja de estilos separada en un archivo .css. Con ello, se reduce la complejidad y la repetición de código en la estructura del documento.</p>
+                </div>
+            </article>
+
+            <hr>
+
+            <article class="article2">
+                <h2>Estándar <small>CSS</small></h2>
+                <div class="cita1">
+                    <blockquote>
+                        <q>CSS separa el contenido de un documento de la forma de presentación.</q>
+                    </blockquote>
+                </div>
+                <div>
+                    <ul>
+                        <li><strong>La separación del formato y el contenido</strong> hace posible presentar el mismo documento marcado en diferentes estilos para mostrar una página web de manera distinta dependiendo del tamaño de la pantalla o tipo de dispositivo.</li>
+                        <li><b>La especificación CSS</b> describe un esquema prioritario para determinar qué reglas de estilo se aplican si más de una regla coincide para un elemento en particular. Estas reglas son aplicadas con un sistema llamado de cascada, de modo que las prioridades son calculadas y asignadas a las reglas.</li>
+                    </ul>
+                </div>
+                <div class="cita2">
+                    <p><q>Cada navegador web usa un motor de renderizado, el soporte de CSS no es exactamente igual en ninguno de ellos...</q><br>
+                    <u><b><em>Håkon Wium Lie, CTO de la compañía Opera Software y cocreador del estándar CSS</em></b></u></p>
+                </div>
+            </div>
+            </article>
+        </section>
+    </main>
+
+    <aside>
+        <hr>
+
+        <table>
+            <tr>
+                <th colspan="5">Navegadores WEB</th>
+            </tr>
+            <tr>
+                <td><img src="../img/icono-chrome.gif" alt="Icono Chrome"></td>
+                <td><img src="../img/icono-firefox.gif" alt="Icono Firefox"></td>
+                <td><img src="../img/icono-internet-explorer.gif" alt="Icono Explorer"></td>
+                <td><img src="../img/icono-opera.gif" alt="Icono Opera"></td>
+                <td><img src="../img/icono-safari.gif" alt="Icono Safari"></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.google.com/chrome/">Chrome</a></td>
+                <td><a href="https://www.mozilla.org/es-ES/">Firefox</a></td>
+                <td><a href="https://www.microsoft.com/es-es/download/internet-explorer.aspx">Explorer</a></td>
+                <td><a href="https://www.opera.com/es">Ópera</a></td>
+                <td><a href="https://www.apple.com/es/safari/">Safari</a></td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <form action="paginadeproceso.php mailto:correo@dominio.com" method="post">
+            <h3>Deja un comentario</h3>
+            <div>
+                <input type="text" name="nombreCompleto" placeholder="Escribe tu nombre y apellidos" required><br>
+                <input type="email" name="email" placeholder="Escribe tu email" required><br>
+                <input type="tel" name="telefono" placeholder="Escribe tu teléfono"><br>
+                <textarea name="comentario" cols="60" rows="5" placeholder="Escribe un comentario" required></textarea><br>
+                <label for="terminos">
+                    <input type="checkbox" id="terminos" required> Acepto los términos y condiciones
+                </label> <br>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </aside>
+
+    <footer>
+        <hr>
+        <a href="#">Aviso legal</a> | 
+        <a href="#">Política de cookies</a> | 
+        <a href="#">Política de privacidad</a> | 
+        <a href="#">Accesibilidad</a>
+        <hr>
+    </footer>
+</body>
+</html>

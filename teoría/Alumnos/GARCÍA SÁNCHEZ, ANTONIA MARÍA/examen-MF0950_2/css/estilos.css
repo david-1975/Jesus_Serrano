@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* reset y estilos generales */
+header, div, nav, aside, article, main, footer, section, body, p, h1, h2, h3, h4, h5, h6, ul, li, img, figure, a, label, textarea, input, form, fieldset {
+	margin:0;
+	padding: 0;
+}
+* {box-sizing: border-box;}
+body {
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-size: 1em;
+	width: 1024px;
+	background-color: rgb(239,239,239);
+	padding: 10px;
+	color: rgba(102,102,102,1.00);
+	margin: 50px auto;
+}
+
+/* títulos, textos y líneas de separación */
+
+hr {border: 1px dotted #3366AB;}
+.t1 {color: #3366AB;}
+.t2	{
+	background-color: #3366AB;
+	color: white;
+}
+.t3 {
+	background-color: #3366AB;;
+	color: white;
+	text-align: center;
+}
+.txtgrande {font-size: 1.2em;}
+.txtsupergrande {font-size: 2em;}
+
+/* navegación y botones */
+a {text-decoration: none;}
+nav ul {list-style-type: none;}
+nav ul li {display: inline-block;}
+nav ul li a {
+	text-decoration: none;
+	background-color: #3366AB;
+	color: white;
+	padding: 10px;
+	margin: 10px 2px;
+	border-radius: 4px;
+}
+nav ul li a:hover {
+	background-color:rgba(156,176,200,1.00);
+	color: black;
+}
+/* estilo de los divs */ 
+div {
+	background-color: white;
+	border-radius: 5px;
+	padding: 15px;
+}
+.divbordeizq {border-left: 2px solid #3366AB; border-radius: 0; padding: 30px 10px;}
+.box3 {width: 31%; margin: 10px; padding: 10px 10px 30px 10px;}
+.box2 {width: 48%; padding: 20px 15px;}
+
+/* estilo de la lista de texto */
+.divlista{padding: 15px 10px 15px  50px;}
+.listastd {
+	list-style-type: disc;
+	color: #3366AB;
+}
+
+/* estilo de la sección de textos */
+.secciontipo1 {
+	background-color: rgb(239,239,239);
+	padding: 10px;
+}
+
+/* estilos varios de aplicación general */
+.width100 {width: 100%;}
+.width90 {width: 90%;}
+.fleft {float: left;}
+.fright  {float: right;}
+.mgauto {margin: auto;} 
+.clear {overflow: hidden;}
+.colorpagina {background-color: rgb(239,239,239);}
+.txtazul {color:#3366AB;}
+.txtnegro {color: black;}
+.centrado {text-align: center;}
+
+
+/* estilo de la sección de logos */
+#logos {
+	width: 95%;
+	margin: auto;
+	padding: 10px;
+}
+#logos img {width: 75%; height: 75%}
+#logos a {
+	text-decoration: none;
+	padding: 8px 10px;
+	background-color: #3366AB;
+	color: white;
+	border-radius: 4px;
+}
+
+/* estilo de la sección de definiciones de la home */
+#articulos {
+	width: 85%;
+	margin: auto;
+	padding: 10px;
+}
+footer a {
+	color: #3366AB;
+}
+
+/* estilo de la tabla */
+table {
+	background-color: white;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	color: #3366AB;
+	border: 1px double black;
+}
+table th, tr, td {
+	padding: 10px;
+	border: 1px double black;
+}
+table a {
+	color: #3366AB;
+}
+
+/* estilo del formulario */
+form {
+	background-color: white;
+	padding: 15px;
+	margin: auto;
+	color: #3366AB;
+	border-radius: 5px;
+	width: 50%;
+	text-align: left;
+}
+input[type="text"], input[type="email"], input[type="tel"] {
+	width: 100%;
+	background-color:rgb(239,239,239);
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	border-color: 2px solid rgba(195,182,182,1.00);
+}
+input[type="submit"] {
+	background-color:#3366AB;
+	color: white;
+	border-radius: 5px;
+	border-color: none;
+	padding: 10px 15px;
+	margin: 5px;
+}
+textarea {
+	width: 100%;
+	background-color:rgb(239,239,239);
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	border-color: 2px solid rgba(195,182,182,1.00);
+	resize:none;
+}
+

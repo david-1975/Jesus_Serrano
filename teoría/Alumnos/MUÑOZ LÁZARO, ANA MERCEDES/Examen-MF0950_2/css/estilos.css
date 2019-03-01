@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin: 0; 
+padding: 0;
+box-sizing: border-box;}
+h1{
+	text-align: center;
+	color: #3366AB
+}
+h2,h3,h4,h5{ color: rgba(102,102,102,1)}
+div{
+	background-color: white;
+	border-radius: 15px;
+}
+h2{background-color: #3366AB;
+	color: rgb(239,239,239);
+	margin: 20px 0px;
+	width: auto;}
+
+.body{
+	background-color: rgb(239,239,239);
+	width: 1024px;
+	margin: auto;
+	padding: 20px;
+/* -----Header menu navegacion--------*/	
+}
+.nav ul{
+	text-align: left;
+	}
+.nav ul>li{
+	display: inline-block;
+	margin: 5px;
+	padding: 15px;
+	background-color: #3366AB;
+	border-radius: 10%;
+	color: white;
+	}
+.nav ul li>a{
+	color: white;
+	text-decoration: none;
+	
+}
+/* -----header primera foto-------- */
+#div1{
+	background-color: white;
+	overflow: hidden;
+	border-radius: 10px;
+	margin: 5px 0;
+	}
+#div1>img{
+	text-align: center;
+	padding: 8px;
+	width: 100%;
+	
+	}
+/* ------pagina index div2-------*/
+.div2{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: space-between;
+	padding: 10px;
+		
+}
+.div2> div{ width: 30%;
+	position: relative;
+	margin: auto;
+	border-radius: 15px;
+	padding-bottom: 40px;
+	}
+.div2 div>img{
+	text-align: center;
+	margin: 10px;
+	
+}
+.div2 div> a {
+	background-color: #3366AB;
+	text-decoration: none;
+	border-radius: 5px;
+	color: white;
+	padding: 10px;
+	position: absolute;
+	bottom: 10px;
+	left: 28%;
+	}
+.div2 div> a:hover{
+	background-color: darkblue;
+}
+/* ------pagina index articulos ----*/
+.article{
+	display: flex;
+	flex: row;
+	align-content: space-around;
+	justify-content: center;
+	
+}
+.article> div{
+	text-align: center;
+	width: 30%;	
+	margin: 15px;
+	padding: 15px;	
+	color: rgba(102,102,102,1);
+}
+.article div> h2{ 
+	background-color: #3366AB;
+	color: rgb(239,239,239);
+	margin: 20px 0px;
+}
+#navegadorweb{
+	text-decoration: none;
+	color: rgba(102,102,102,1);
+	
+}
+/* ------pagina HTML articulos ----*/
+.articlehtml{
+	display: flex;
+	flex-direction: column;
+	align-items:stretch;
+	
+}
+.articlehtml> div{
+	text-align: left;
+	width: auto;	
+	margin: 5px;
+	padding: 15px;	
+	color: rgba(102,102,102,1);
+}
+
+
+
+/* ------pagina HTML articulos 2 ----*/
+.articlehtml1{
+	display: flex;
+	flex-direction: column;
+	align-items:stretch;
+	
+}
+.articlehtml1> div{
+	text-align: left;
+	width: auto;	
+	margin: 5px;
+	padding: 15px;	
+	color: rgba(102,102,102,1);
+}
+
+#lista{ padding-left: 50px;}
+/* ------aside navegadores---------*/
+.aside{
+	padding: 15px 0;
+	border-top: 1px dashed #3366AB;
+}
+/*--------Formulario---------------*/
+.form {
+	border: none;
+	border-radius: 10px;
+	background-color: white;
+	overflow: hidden;
+	margin: auto; ;
+	padding: 10px 20px;
+	width: 40%;}
+.form> input{
+	margin: 15px 0;
+	text-align: left;
+	background-color: rgb(239,239,239);
+}
+	
+.form> input[type=text]{
+		width: 100%;
+		margin: 15px 0;		
+		padding: 15px 15px;
+	border-radius: 10px;
+	}
+.form> input[type=email]{
+		width: 100%;
+		margin: 10px 0;		
+		padding: 15px 15px;
+		border-radius: 10px;
+	}
+.form> input[type=tel]{
+		width: 100%;
+		margin: 10px 0;		
+		padding: 15px 15px;
+		border-radius: 10px;
+	}
+
+.form> input[type=submit]{
+		background-color:#3366AB;
+		width: auto;
+		margin: 10px 0;		
+		padding: 15px 15px;
+		color: white;
+		font-size: 1.0em;
+		border-radius: 10px;
+	}
+.form> input[type=submit]:hover{
+		background-color:rgba(102,102,102,1);
+		width: auto;
+		margin: 10px 0;		
+		padding: 15px 15px;
+		color: #3366AB;
+		font-size: 1.0em;
+	}
+		
+.form> textarea{
+		width: 100%;
+		margin: 10px 0;		
+		padding: 15px 15px;
+		border-radius: 10px;
+		background-color: rgb(239,239,239);
+	}
+/*-------tabla de navegadores------*/
+.tabla{ text-align: center;
+	margin: auto;
+	width: 70%;
+	color: #3366AB;
+	}
+.tabla td>a {
+	text-decoration: none;
+	color: #3366AB;
+}
+/* ------Pie de pagina-----------*/
+.footer{
+	text-align: center;
+	border-bottom: 1px dashed #3366AB;
+	border-top: 1px dashed #3366AB;
+	color: #3366AB;
+	font-size: 0.7em;
+	padding: 15px 0;
+	}
+.footer p> a {
+	text-decoration: none;
+	color: #3366AB;
+}

@@ -1,0 +1,221 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: rgb(239,239,239);
+	color: rgba(102,102,102,1);
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+	font-size: 1.1em;
+	margin: auto;
+	width: 1024px;
+}
+hr{
+	border: 1px dotted #3366AB;
+	margin-bottom: 10px;
+}
+/*--------------------nav-----------------*/
+nav{
+	margin: 20px;	
+}
+nav ul{	
+	list-style: none;
+}
+nav li{	
+	display: inline;	
+}
+nav li a{
+	background-color: #3366AB;
+	border-radius: 5px;
+	color: white;
+	margin: 5px;
+	padding: 10px;
+	text-decoration-line: none;
+}
+nav li a:hover{	
+	opacity: 0.5;
+}
+/*--------------------header-----------------*/
+header{
+	background-color: white;
+	border-radius: 10px;
+	margin:10px auto;
+	width: 95%;
+}
+header figure{
+	margin: 10px auto;
+	width: 90%;
+}
+header figure img{
+	margin: 20px 0;
+	width: 100%;
+}
+/*--------------------main-----------------*/
+div{
+	background-color: white;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px 15px;	
+}
+div h3{
+	margin: 10px 0;
+}
+div p{
+	margin: 20px 0;
+}
+main h2{
+	background-color: #3366AB;
+	color: white;
+	display: inline-block;
+	margin: 10px;
+	padding: 0;
+}
+.cita{
+	text-align: center;
+}
+.comentario{
+	border-left: 2px solid #3366AB;
+	padding: 15px;
+}
+.lista li{
+	color: #3366AB;
+	margin: 10px 50px;
+}
+#index1{
+	background-color:  rgb(239,239,239);
+	text-align: center;	
+}
+#index1 a{	
+	text-decoration-line: none;	
+}
+
+#index1 div{
+	background-color: rgb(239,239,239);
+}
+#index1 div article{
+	background-color:white;
+	border-radius: 10px;
+	display: -webkit-flex;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin: 10px;
+	padding: 10px;
+}
+#index1 div article a:hover{
+	opacity: 0.5;
+}
+#index1 figcaption{
+	background-color: #3366AB;
+	border-radius: 5px;
+	color: white;
+	margin: 10px auto;
+	padding: 10px;
+	text-align: center;
+	width: 50%;
+}
+#index1 h2{
+	background-color: rgb(239,239,239);
+	color: #3366AB;
+	display: inline-block;	
+	padding: 10px;	
+}
+#index2{
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;	
+	justify-content:space-around;
+}
+#index2 article{	
+	border-radius: 10px;	
+	margin: 10px;
+	padding: 5px;
+	text-align: center;
+	width: 40%;
+}
+#index2 article h3{
+	background-color:#3366AB;	
+	color: white;	
+	margin: 20px 10px;
+	padding: 10px;	
+}
+#index2 p{
+	display: inline-block;
+}
+
+/*--------------------aside-----------------*/
+table{	
+	border: 1px solid black;
+	color: #3366AB;
+	margin: 10px auto;
+	width: 80%;
+}
+table a{
+	text-decoration-line: none;
+}
+table a:hover{
+	opacity: 0.7;
+}
+table td,th{
+	border: 1px solid black;
+	padding: 5px 10px 10px 10px;
+	text-align: center;	
+}
+table th{
+	width: 100%;
+}
+.formulario{
+	background-color: white;
+	border-radius: 10px;
+	margin: 10px auto;
+	width: 50%;
+}
+.formulario h2{
+	background-color: white;
+	color: black;
+}
+.formulario input[type=text], textarea,input[type=email] {
+	background-color: rgb(239,239,239);
+	border:1px solid lightgrey;
+	border-radius: 5px;
+	margin: 15px;
+	padding: 10px;
+	resize: none;
+	width: 90%;
+}
+.formulario input[type=checkbox]{	
+	margin: 10px 5px 10px 20px;
+}
+.formulario span{
+	color: #3366AB;
+}
+.formulario input[type=submit]{
+	background-color: #3366AB;
+	border-style: none;
+	border-radius: 10px;
+	color: white;
+	margin: 10px;
+	padding: 10px 30px;
+}
+.formulario input[type=submit]:hover{
+	cursor:pointer;
+	opacity: 0.7;	
+}
+/*--------------------footer-----------------*/
+footer{
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding: 10px;
+}	
+footer a{
+	text-decoration-line: none;
+}
+footer a:hover{
+	opacity: 0.6;
+}

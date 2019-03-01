@@ -1,0 +1,165 @@
+
+/* General */
+* {
+/*     border: 1px solid black; */
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    width: 1024px;
+    background-color: rgb(239, 239, 239);
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+div {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+p {
+    color: rgb(102, 102, 102);
+}
+h1 {
+    color: #3366AB;
+}
+h2 {
+    background-color: #3366AB;
+    color: white;
+}
+img {
+    width: 100%;
+}
+hr {
+    color: #3366AB;
+    border: 1.5px dashed #3366AB;
+}
+/* Header */
+nav {
+    text-align: left;
+    padding: 10px;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    display: inline-block;
+    background-color: #3366AB;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* Footer */
+footer {
+    margin: 10px;
+}
+footer a {
+    color: #3366AB;
+    text-decoration: none;
+}
+/* Table */
+table {
+    width: 700px;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+table th, td {
+    padding: 10px;
+    border: 1px solid black;
+}
+table img {
+    width: 30px;
+}
+/* Form */
+form {
+    display: block;
+    overflow: hidden;
+    background-color: white;
+    color: #3366AB;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+}
+form input[type=text] {
+    display: block;
+    width: 94%;
+    padding: 10px;
+    margin: 10px;
+}
+form input[type=checkbox] {
+    padding: 10px;
+    margin: 10px;
+}
+form input[type=submit] {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #3366AB;
+    color: white;
+}
+form textarea {
+    display: block;
+    width: 94%;
+    padding: 10px;
+    margin: 10px;
+    resize: vertical;
+}
+/* Index */
+.is figure {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+.is a {
+    display: inline-block;
+    background-color: #3366AB;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 130px;
+}
+.is1 div {
+    display: inline-block;
+    width: 350px;
+    margin: 15px;
+}
+/* No Index */
+.nih2 {
+    text-align: left;
+    display: block;
+}
+.nih2 h2 {
+    display: inline;
+}
+.nis h3, p {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.nis1 p {
+    text-align: left;
+    margin-left: 40px;
+    border-left: 3px solid #3366AB;
+    font-size: larger;
+    padding: 20px;
+}
+.nis1 li {
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.quote {
+    position: relative;
+    font-size: xx-large;
+    bottom: 10px;
+    line-height: 50px;
+}
+u {
+    text-decoration-style: dotted;
+}

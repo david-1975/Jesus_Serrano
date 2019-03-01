@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <title>CSS Transformaciones</title>
+    
+    <meta charset="UTF-8">
+    <meta name="author" content="Jesús Serrano">
+    <meta name="description" content="Plantilla propia">
+    <meta name="keywords" content="HTML CSS">
+    <meta name="tittle" content="CSS Transformaciones">
+    <meta name="generator" content="Dreamweaver">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--compatibilidad Internet explorer-->
+    
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link href="css/estilos.css" type="text/css" rel="stylesheet">	
+</head>
+<body>
+<header>
+	<div style="overflow: auto;background-color: white;margin: 20px">
+		<div style="float: left;background-color: white">
+			<a href="introduccion.html" style="text-align: left"><img src="img/css3.png" alt="Logo HTML" width="128"  title="Pagina principal"></a>
+	  </div>
+		<div style="float: left;background-color: white;">
+			<h2 style="text-align:center; margin: 20px">HOJAS DE ESTILO</h2>
+			 <a href="introduccion.html" style="padding:10px;" >Introducción</a> | <a style="padding: 10px;"
+			href="bordes.html">Bordes</a> | <a style="padding: 10px;" href="listas.html">Listas</a> | <a style="padding: 10px;" href="combinadores.html">Combinadores</a>| <a  style="padding: 10px; " href="flexbox.html">Flexbox</a> | <a href="grid.html">Grid</a> | <a href="transiciones.html">Transiciones</a> | <a href="trasnformaciones.html">Transformaciones</a> | <a href="animaciones.html">Animaciones</a>
+	  </div>
+	</div>
+<h1>Animaciones CSS</h1>
+<p>Una animación permite a un elemento de cambiar gradualmente de un estilo a otro.
+
+Se puede cambiar tantas propiedades CSS que desee, como muchas veces que desee.
+
+Para utilizar la animación CSS, primero debe especificar algunos keyframes para la animación.
+
+Fotogramas clave conservar lo estilos el elemento tendrá en determinados momentos.</p>
+</header>
+<hr>
+<nav class="nav1">
+	<a href="introduccion.html">Introducción</a> | <a href="Bordes.html">Bordes</a> | <a href="listas.html">Listas</a> | <a href="combinadores.html">Combinadores</a> | <a href="flexbox.html">Flexbox</a> | <a href="grid.html">Grid</a> | <a href="transiciones.html">Transiciones</a> | <a href="trasnformaciones.html">Transformaciones</a> | <a href="animaciones.html">Animaciones</a>
+</nav>
+<hr>
+<h2>La Regla @keyframes</h2>
+<p>Al especificar estilos CSS dentro de la @keyframes norma, la animación cambiará gradualmente desde el estilo actual al nuevo estilo en determinados momentos.</p>
+<p>Para conseguir una animación para el trabajo, debe obligar a la animación a un elemento.</p>
+<p>La animationpropiedad es una propiedad abreviada para:</p>
+<ul>
+  <li>animation-name: La propiedad animation-name especifica un nombre para el @keyframes animación.</li>
+  <li>animation-duration:</li>
+  <li>animation-timing-function</li>
+  <li>animation-delay</li>
+  <li>animation-iteration-count</li>
+  <li>animation-direction</li>
+  <li>animation-fill-mode</li>
+  <li>animation-play-state</li>
+</ul>
+<hr>
+
+<style>
+		#a {
+		  width: 100px;
+		  height: 100px;
+		  background-color: red;
+		  -webkit-animation-name: ejemplo; /* Safari 4.0 - 8.0 */
+		  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+		  animation-name: ejemplo;
+		  animation-duration: 4s;
+		}
+
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes ejemplo {
+		  from {background-color: red;}
+		  to {background-color: yellow;}
+		}
+
+		/* Standard syntax */
+		@keyframes ejemplo {
+		  from {background-color: red;}
+		  to {background-color: yellow;}
+		}
+</style>
+<div id="a"></div>
+
+
+
+
+</body>
+</html>

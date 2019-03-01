@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* CSS Document */
+
+article > h2{
+	text-align: left;
+	
+}
+article div{
+	background-color: white;
+	border-radius: 0.5em;
+	padding: 25px 10px;
+	width: 95%;
+	margin: auto;
+	margin-bottom: 20px;
+	text-align: left;
+	line-height: 2em;
+	
+}
+article ul{
+	list-style-type: square;
+	color: #3366AB;
+	
+}
+article ul li{
+	margin-bottom: 10px;
+}
+
+body{
+	width: 1024px;
+	margin: 10px auto;
+	background-color: rgb(239,239,239);
+	padding: 10px;
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+	border: 3px solid red;
+	color: rgba(102,102,102,1);
+	
+	
+}
+.bordeIzquierda{
+	border-left: 2px solid blue;
+	padding: 30px 0; 
+	margin-left: 30px;
+	margin-right: 10px;
+}
+h1{
+	color:#3366AB;
+	
+}
+header div{
+	background-color: white;
+	border-radius: 0.5em;
+	padding: 10px;
+	width: 95%;
+	margin: auto;
+}
+header div img{
+	width: 100%;
+}
+
+#confeccion{
+	overflow: hidden;
+	text-align: center;
+}
+#confeccion>div{
+	width: 80%;
+	margin: auto;
+	
+}
+#confeccion >div >div{
+	background-color: white;
+	border-radius: 0.5em;
+	padding: 10px;
+	float: left;
+	width: 29%;
+	margin: 7px;
+	justify-content: space-between;
+	
+	
+}
+#confeccion  div  div  img{
+	width: 100%;
+	
+}
+
+footer{
+	color: blue;
+	text-align: center;
+}
+footer a{
+	text-decoration: none;
+}
+footer a:hover{
+	 color:#3366AB
+}
+form{
+	background-color: white;
+	width: 40%;
+	margin: auto;
+	padding: 10px;
+	border-radius: 0.5em;
+	text-align: center;
+	position: relative;
+	
+}
+
+hr{
+	border-color: blue;
+	border-style: dashed;
+	
+}
+input[type=text],input[type=tel] {
+	width: 90%;
+	border: 1px solid gray;
+	border-radius: 0.3em;
+	background-color: rgb(244,244,244);
+	margin: 5px auto;
+	padding: 5px;
+	
+}
+input[type=checkbox] {
+	margin-left: 10px;
+ 
+}
+input[type=submit] {
+	text-decoration: none;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 0.5em;
+	color: white;
+	background-color: blue;
+	
+ 
+}
+legend{
+	text-align: left;
+	margin: 15px 12px;
+	
+}
+table{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	border: 1px solid black;
+	
+	
+}
+table a{
+	text-decoration: none;
+	
+	
+}
+table a:hover{
+	color:rgba(90,166,87,1.00);
+}
+textarea{
+	resize: none;
+	background-color: rgb(244,244,244);
+	border-radius: 0.3em;
+	border: 1px solid gray;
+	margin: 5px auto;
+	padding: 7px;
+}
+.textIzq{
+	
+	text-align: left;
+}
+.textGrande{
+	font-size: 2em;
+	
+}
+.textoBlanco{
+color: white;
+}
+.textoAzul{
+	color:#3366AB;
+}
+.textCentro{
+	text-align: center;
+}
+#textWeb{
+	width:90%;
+	margin: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	line-height: 2em;
+}
+#textWeb article{
+	border-radius: 0.5em;
+	width: 45%;
+	padding: 10px;
+	text-align: center;
+	margin: 7px;
+	background-color: white;
+	
+}
+#textWeb article h2{
+	color: white;
+	background-color: blue;
+	text-align: center;
+}
+tr, th, td{
+	border:1px solid black;
+}
+th,td{
+	padding: 10px;
+}
+th{
+	color: #3366AB;
+}
+u{
+ text-decoration: underline;
+}
+mark{
+	background-color: blue;
+}
+nav ul{
+	list-style: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	
+}
+nav ul li{
+	float: left;
+}
+nav ul li a{
+	display: inline-block;
+	margin-right: 5px;
+	text-decoration: none;
+	padding: 15px 10px;
+	background-color: #3366AB;
+	color: white;
+	border-radius: 0.5em;
+}
+nav a:hover{
+	background-color: white;
+	color: #3366AB;
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <title>CSS Transformaciones</title>
+    
+    <meta charset="UTF-8">
+    <meta name="author" content="Jesús Serrano">
+    <meta name="description" content="Plantilla propia">
+    <meta name="keywords" content="HTML CSS">
+    <meta name="tittle" content="CSS Transformaciones">
+    <meta name="generator" content="Dreamweaver">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--compatibilidad Internet explorer-->
+    
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link href="css/estilos.css" type="text/css" rel="stylesheet">	
+</head>
+<body>
+<header>
+	<div style="overflow: auto;background-color: white;margin: 20px">
+		<div style="float: left;background-color: white">
+			<a href="introduccion.html" style="text-align: left"><img src="img/css3.png" alt="Logo HTML" width="128"  title="Pagina principal"></a>
+	  </div>
+		<div style="float: left;background-color: white;">
+			<h2 style="text-align:center; margin: 20px">HOJAS DE ESTILO</h2>
+			 <a href="introduccion.html" style="padding:10px;" >Introducción</a> | <a style="padding: 10px;"
+			href="bordes.html">Bordes</a> | <a style="padding: 10px;" href="listas.html">Listas</a> | <a style="padding: 10px;" href="combinadores.html">Combinadores</a>| <a  style="padding: 10px; " href="flexbox.html">Flexbox</a> | <a href="grid.html">Grid</a> | <a href="transiciones.html">Transiciones</a> | <a href="trasnformaciones.html">Transformaciones</a> |<a href="animaciones.html">Animaciones</a>
+	  </div>
+	</div>
+<h1>Las transformaciones CSS</h1>
+<p>La propiedad transforms aplica una transformación 2D o 3D a un elemento. Esta propiedad le permite rotar, escalar, mover, inclinación, etc., elementos.</p>
+</header>
+<hr>
+<nav class="nav1">
+	<a href="introduccion.html">Introducción</a> | <a href="Bordes.html">Bordes</a> | <a href="listas.html">Listas</a> | <a href="combinadores.html">Combinadores</a> | <a href="flexbox.html">Flexbox</a> | <a href="grid.html">Grid</a> | <a href="transiciones.html">Transiciones</a> | <a href="trasnformaciones.html">Transformaciones</a> |<a href="animaciones.html">Animaciones</a>
+</nav>
+<hr>
+<h2>Transformaciones CSS 2D</h2>
+<p>Métodos de transformación 2D:</p>
+<ul>
+  <li>translate(): translación</li>
+  <li>rotate(): rotación</li>
+  <li>scale(): tamaño</li>
+  <li>skewX(): sesgado en vertical</li>
+  <li>skewY(): sesgado en horizontal</li>
+  <li>matrix(): combina varios</li>
+</ul>
+<h2>El método translate ()</h2>
+<p>El método<strong> translate()</strong> mueve un elemento desde su posición actual (de acuerdo con los parámetros dados para el eje X y el eje Y).</p>
+<p>El ejemplo siguiente mueve el elemento  &lt;div&gt; 50 píxeles a la derecha, y 50 píxeles hacia abajo desde su posición actual:</p>
+<style>	
+	div{
+		overflow: hidden;
+	}
+	#a{
+		width: 100px;
+		height: 100px;
+		background-color: rgba(224,255,0,0.50);
+		border: 1px solid black;
+		
+	}
+	#b{
+		width: 100px;
+		height: 100px;
+		background-color: yellow;
+		border: 1px solid black;
+		-ms-transform: translate(50px,50px); /* IE 9 */
+		-webkit-transform: translate(50px,50px); /* Safari */
+		transform: translate(50px,50px); 		
+		position: relative;
+		top: -100px;
+		
+</style>
+<div id="a">
+	Inicio
+</div>
+<div id="b">
+	Fin
+</div>
+<hr>
+<h2>El método rotate()</h2>
+<p>El método <strong>rotate()</strong> hace girar un sentido horario elemento o antihorario según un grado dado.
+
+El ejemplo siguiente gira la &lt;div&gt; agujas del reloj elemento con 45 grados:</p>
+<style>	
+	div{
+		overflow: hidden;
+	}
+	#c{
+		width: 100px;
+		height: 100px;
+		background-color: rgba(224,255,0,0.50);
+		border: 1px solid black;
+		
+	}
+	#d{
+		width: 100px;
+		height: 100px;
+		background-color: yellow;
+		border: 1px solid black;
+		-ms-transform: rotate(45deg); /* IE 9 */
+		-webkit-transform: rotate(45deg); /* Safari */
+		transform: rotate(45deg); /* Para rotar en el otro sentido es con negativo */ 	
+		position: relative;
+		top: -130px;
+		
+</style>
+<div id="c">
+	Inicio
+</div>
+<div id="d">
+	Fin
+</div>
+<hr>
+<h2>El método scale()</h2>
+<p>Las método <strong>scale()</strong> aumenta o disminuye el tamaño de un elemento (de acuerdo con los parámetros dados para la anchura y altura).</p>
+<p>El siguiente ejemplo aumenta el elemento &lt;div&gt; ser dos veces de su anchura original, y tres veces de su altura original: </p>
+<style>	
+	div{
+		overflow: hidden;
+	}
+	#e{
+		width: 100px;
+		height: 100px;
+		background-color: rgba(224,255,0,0.50);
+		border: 1px solid black;
+		
+	}
+	#f{
+		width: 100px;
+		height: 100px;
+		background-color: yellow;
+		border: 1px solid black;
+		-ms-transform: rotate(45deg); /* IE 9 */
+		-webkit-transform: rotate(45deg); /* Safari */
+		transform: scale(0.5,0.6); /* Para rotar en el otro sentido es con negativo */ 	
+		position: relative;
+		top: -130px;
+		
+</style>
+<div id="e">
+	Inicio
+</div>
+<div id="f">
+	Fin
+</div>
+<hr>
+<h2>El Método skewX() </h2>
+<p>El método <strong>skewX()</strong> sesga un elemento a lo largo del eje X por el ángulo dado.</p>
+<p>El siguiente ejemplo sesga el elemento &lt;div&gt; -40 grados a lo largo del eje X:</p>
+<style>	
+	div{
+		overflow: hidden;
+	}
+	#g{
+		width: 100px;
+		height: 100px;
+		background-color: rgba(224,255,0,0.50);
+		border: 1px solid black;		
+	}
+	#h{
+		width: 100px;
+		height: 100px;
+		background-color: yellow;
+		border: 1px solid black;
+		-ms-transform: skewX(40deg); /* IE 9 */
+		  -webkit-transform: skewX(40deg); /* Safari */
+		  transform: skewX(-40deg); 	
+		position: relative;
+		top: -130px;
+	}
+</style>
+<div id="g">
+	Inicio
+</div>
+<div id="h">
+	Fin
+</div>
+<hr>
+<h2>El Método skewY() </h2>
+<p>El método <strong>skewY()</strong> sesga un elemento a lo largo del eje Y por el ángulo dado.</p>
+<p>El siguiente ejemplo sesga el elemento &lt;div&gt; -40 grados a lo largo del eje Y:</p>
+<style>	
+	div{
+		overflow: hidden;
+	}
+	#i{
+		width: 100px;
+		height: 100px;
+		background-color: rgba(224,255,0,0.50);
+		border: 1px solid black;		
+	}
+	#j{
+		width: 100px;
+		height: 100px;
+		background-color: yellow;
+		border: 1px solid black;
+		-ms-transform: skewY(40deg); /* IE 9 */
+		  -webkit-transform: skewY(40deg); /* Safari */
+		  transform: skewY(-40deg); 	
+		position: relative;
+		top: -130px;
+	}
+</style>
+<div id="i">
+	Inicio
+</div>
+<div id="j">
+	Fin
+</div>
+<hr>
+<h2>La método skew () </h2>
+<p>El método skew()sesga un elemento a lo largo de la X y el eje Y por los ángulos dados.</p>
+<p>El siguiente ejemplo sesga el elemento &lt;div&gt; 20 grados a lo largo del eje X, y 10 grados a lo largo del eje Y:</p>
+<style>	
+	div{
+		overflow: hidden;
+	}
+	#k{
+		width: 100px;
+		height: 100px;
+		background-color: rgba(224,255,0,0.50);
+		border: 1px solid black;		
+	}
+	#l{
+		width: 100px;
+		height: 100px;
+		background-color: yellow;
+		border: 1px solid black;
+		-ms-transform: skew(20deg, 10deg); /* IE 9 */
+		  -webkit-transform: skew(20deg, 10deg); /* Safari */
+		  transform: skew(20deg, 10deg); 	
+		position: relative;
+		top: -130px;
+	}
+</style>
+<div id="k">
+	Inicio
+</div>
+<div id="l">
+	Fin
+</div>
+<hr>
+<h2>El método matrix () </h2>
+<p>El método matrix() combina todos los métodos 2D  de transformación en una sola.</p>
+<p>El método de  matrix () toma seis parámetros, que contiene funciones matemáticas, que le permite rotar, escala, movimiento (traducir), y el sesgado elementos.</p>
+<p>Los parámetros son los siguientes: matriz (scaleX (), skewY (), skewX (), scaleY (), translateX (), translateY ()), no se utilizan las unidades si no parametros.</p>
+<style>	
+	div{
+		overflow: hidden;
+	}
+	#m{
+		width: 100px;
+		height: 100px;
+		background-color: rgba(224,255,0,0.50);
+		border: 1px solid black;		
+	}
+	#n{
+		width: 100px;
+		height: 100px;
+		background-color: yellow;
+		border: 1px solid black;
+		-ms-transform: skew(1,-40,-40,1,50,50); /* IE 9 */
+		-webkit-transform: skew(1,-40,-40,1,50,50); /* Safari */
+		transform: matrix(1,0.5,0.5,1,100,50); 	
+		position: relative;
+		top: -130px;
+	}
+</style>
+<div id="m">
+	Inicio
+</div>
+<div id="n">
+	Fin
+</div>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>

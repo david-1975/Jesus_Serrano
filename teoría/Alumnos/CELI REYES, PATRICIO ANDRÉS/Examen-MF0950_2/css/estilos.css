@@ -1,0 +1,277 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 1024px;
+    margin: auto;
+}
+
+.fondogris {
+    background-color: rgb(239, 239, 239);
+    padding: 10px;
+}
+
+hr {
+    width: 96%;
+    border: 1px dotted rgba(42, 67, 180, 0.877);
+}
+
+
+/*--------menú de navegación--------*/
+
+nav {
+    width: 95%;
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: left;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #3366AB;
+    color: white;
+    margin: 2px;
+    padding: 15px;
+    border-radius: 0.2em;
+}
+
+nav ul li a:hover {
+    color: white;
+    opacity: 0.5;
+}
+
+
+/*--------header--------*/
+
+header {
+    width: 91%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 0.4em;
+    background-color: white;
+}
+
+div {
+    border-radius: 0.5em;
+    background-color: white;
+}
+
+header img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*--------aside--------*/
+
+/* aside {
+    border-top: 2px dotted rgba(42, 67, 180, 0.877);
+    border-bottom: 2px dotted rgba(42, 67, 180, 0.877);
+} */
+
+table {
+    width: 85%;
+    height: 130px;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px double black;
+    background-color: white;
+}
+table th, table td {
+    border: 1px double black;
+}
+
+
+/*--------footer--------*/
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: rgba(42, 67, 180, 0.9);
+}
+
+footer a:hover {
+    color: red;
+}
+
+
+/*--------------------------index.html--------------------------*/
+/*--------main--------*/
+
+main section h2 {
+    text-align: center;
+    color: #3366AB;
+    font-size: 1.7em;
+}
+
+.flex-container {
+    width: 94%;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-container div {
+    padding: 10px;
+    background-color: white;
+    border-radius: 0.5em;
+    margin: 0 5px;
+}
+
+.flex-container div p {
+    text-align: center;
+}
+
+.flex-container div p span {
+    background-color: rgba(42, 67, 180, 0.877);
+    color: white;
+    padding: 10px;
+    border-radius: 0.5em;
+}
+
+.flex-container2 {
+    width: 94%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-container2 div {
+    width: 40%;
+    background-color: white;
+    border-radius: 0.5em;
+    padding: 5px 15px;
+}
+
+.flex-container2 div h3 {
+    text-align: center;
+    background-color: rgba(42, 67, 180, 0.877);
+    color: white;
+    padding: 2px;
+}
+
+.flex-container2 div p {
+    text-align: center;
+    color: rgba(102, 102, 102, 1);
+    line-height: 1.8;
+    font-size: 0.95em;
+}
+
+
+/*--------------------------lenguaje-html--------------------------*/
+/*--------main--------*/
+
+main section h3 span {
+    background-color: rgb(3, 109, 179);
+    color: white;
+    margin-left: 22px;
+}
+
+.article1 {
+    width: 94%;
+    margin: auto;
+}
+
+.article1 div {
+    padding: 15px;
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+.article1 p {
+    color: rgba(102, 102, 102, 1);
+    font-size: 0.95em;
+}
+
+.article2 {
+    width: 89%;
+    margin: auto;
+    display: block;
+}
+
+.article2 div {
+    display: block;
+    padding: 20px;
+    margin: 10px;
+    line-height: 1.8;
+}
+
+.article2 p {
+    color: rgba(102, 102, 102, 1);
+    font-size: 0.95em;
+}
+
+.article2 q {
+    display: block;
+    border-left: 3px solid #3366AB;
+    border-radius: 0;
+    font-size: 22px;
+    color: rgba(102, 102, 102, 1);
+    margin-left: 40px;
+    padding: 20px;
+}
+
+.article2 ul {
+    list-style-type: square;
+}
+
+.article2 ul li {
+    margin-left: 30px;
+    color: #3366AB;
+    font-size: 0.95em;
+}
+
+.quote {
+    position: relative;
+    font-size: xx-large;
+    bottom: 10px;
+    line-height: 30px;
+}
+
+
+form {
+    width: 60%;
+
+    background-color: white;
+    color: #3366AB;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: left;
+}
+form input[type=text], form input[type=tel], form input[type=email] {
+    width: 94%;
+    padding: 10px;
+    margin: 10px;
+}
+form input[type=checkbox] {
+    padding: 10px;
+    margin: 10px;
+}
+form input[type=submit] {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #3366AB;
+    color: white;
+}
+form textarea {
+    width: 94%;
+    padding: 10px;
+    margin: 10px;
+}

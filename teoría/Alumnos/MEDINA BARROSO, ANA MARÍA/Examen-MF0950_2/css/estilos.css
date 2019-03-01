@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	box-sizing: border-box;
+	font-family:Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif"
+	/*font-size: 1em;*/
+}
+
+body{
+	box-shadow: 10px 10px 16px grey;
+	background-color: rgb(239,239,239);
+	width:1024px;
+	padding: 20px;
+}
+nav a{
+	background-color: #3366AB;
+	color:white;
+	border-radius: 5px 5px;
+	padding: 15px;
+	margin: 10px;
+	text-decoration: none;
+
+	
+}
+hr{
+	border: 1.5px dotted cornflowerblue;
+	margin: 20px 0;
+}
+header img{
+	width: 100%;
+	height: 100%;
+		
+}
+header div{
+	background-color: white;
+	text-align: center;
+	margin:auto;
+	padding: 10px;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 5px 5px;
+	
+}
+h1{
+	text-align: center;
+	color: #3366AB; 
+}
+h2{
+	color:white;
+	margin: 10px -10px;
+}
+h3{
+	background-color:  #3366AB;;
+	color:white;
+	margin: 10px;
+}
+mark {
+	color:white;
+	background-color:  #3366AB;;
+}
+.lenguajes{
+	
+	overflow: hidden;
+	text-align: center;
+}
+.lenguajes>div{
+	background-color: white;
+	float:left;
+	/*padding: 5px;*/
+	margin: 5px;
+	width: 32%;
+	border-radius: 10px;
+}
+.lenguajes button{
+	background-color: #3366AB;
+	color:white;
+	border:none;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.textos{
+	display: flex;
+	justify-content: center;
+	
+}
+.textos>div{
+	background-color: white;
+	font-size: 1.3em;
+	width: 45%;
+	padding: 10px;
+	text-align: center;
+	margin: 10px 30px;
+	border-radius: 10px;
+}
+
+.textos p{
+	color: rgba(102,102,102,1);
+}
+/*.textos strong,a{
+		color:black;
+}*/
+
+.cajas,a {
+	color: rgba(102,102,102,1);
+}
+.cajas div{
+	background-color: white;
+	padding: 25px;
+	margin: 10px;
+	border-radius: 10px;
+}
+#linea{
+	width: 90%;
+    margin: auto;
+	margin-bottom: 10px;
+}
+#linea q{
+	border-left: 2px solid #3366AB;
+	font-size: 1.2em;
+}
+#lista{
+	color:#3366AB;;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 10px;
+	
+}
+/*#lista ul li{
+	margin:20px;
+}*/
+#comillas{
+	width: 90%;
+	margin: auto;
+}
+#comillas>span{
+	text-align: center;
+}
+footer{
+	text-align: center;
+	color:blue;
+}
+footer a{
+	text-decoration: none;
+	color:blue;
+	
+}
+table, th, td{
+	color:blue;
+	border: 2px solid black;
+	/*padding: 15px; */
+	text-align: left; 
+	/*border-spacing: 5px; */
+	width: 100%;
+}
+th,td {
+	
+	width:20%;
+	text-align: center;
+	padding: 10px;
+}
+td>a{
+	text-decoration: none;
+}
+.formulario{
+	width: 50%;
+	margin:auto;
+	text-align: left;
+	background-color: white;
+	padding: 20px;
+	border-radius: 20px;
+	
+}
+.formulario div{
+	padding: 20px;
+	border-radius: 20px;
+	
+}
+input, textarea{
+	background-color: lightgray;
+	width:  100%;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+input[type="checkbox"]{
+	border: 2px solid red;
+	width:auto;
+}
+input[type="submit"]{
+	background-color: #3366AB;
+	width: 90px;
+}
+
+
+

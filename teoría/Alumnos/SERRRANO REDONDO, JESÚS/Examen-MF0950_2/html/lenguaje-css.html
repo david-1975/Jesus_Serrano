@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <title>Examen MF0950</title>
+    
+    <meta charset="UTF-8">
+    <meta name="author" content="Jesús Serrano">
+    <meta name="description" content="Examen práctico MF0950_2">
+    <meta name="keywords" content="HTML CSS">
+    <meta name="tittle" content="Examen">
+    <meta name="generator" content="Dreamweaver">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    
+    <link rel="shortcut icon" href="../img/html5_png.png" type="image/x-icon">
+	<link rel="shortcut icon" href="../img/html5.ico.ico" type="image/x-icon">
+	<link rel="icon" href="../img/html5.ico.ico" type="image/x-icon">
+	
+	<link href="../css/estilos.css" type="text/css" rel="stylesheet">	
+	
+</head>
+<body>
+<nav>
+	<ul>
+		<li><a href="../index.html">Home</a></li>
+		<li><a href="lenguaje-html.html">HTML</a></li>
+		<li><a href="lenguaje-css.html">CSS</a></li>
+		<li><a href="lenguaje-js.html">JS</a></li>
+	</ul>
+</nav>
+<hr>
+<header>	
+	<figure><img src="../img/banner-css3.jpg" alt="portada_css" title="Lenguaje CSS"></figure>
+</header>
+<main>
+	<section>
+		<article>
+			<h2>Hoja de Estilos en Cascada</h2>
+			<div>
+				<h3>Lenguaje CSS</h3>
+				<p><strong>CSS</strong>, siglas en inglés de <b>C</b>ascading <b>S</b>tyle <b>S</b>heets, (<u>en español "Hojas de estilo en cascada"</u>), <strong>es un lenguaje de diseño gráfico</strong> <em>para definir y crear la presentación de un documento</em> estructurado escrito en un lenguaje de marcado. Es usado para establecer el <strong><i>diseño visual de los documentos web</i></strong>, e interfaces de usuario escritas en <strong>HTML</strong> o <strong>XHTML</strong>. Junto con <abbr title="HyperText Markup Language">HTML</abbr> y JavaScript, <abbr title="Cascading Style Sheets">CSS</abbr> es una tecnología usada por muchos sitios web para crear páginas visualmente atractivas, interfaces de usuario para aplicaciones web.</p>
+			</div>
+			<div>
+				<p>La especificación <strong><abbr title="Cascading Style Sheets">CSS</abbr></strong> es mantenida por el <em><b>W</b>orld <b>W</b>ide <b>W</b>eb <b>C</b>onsortium</em> (<u>W3C®</u>) WWW, organización dedicada a la estandarización del <abbr title="Multipurpose Internet Mail Extensions">MIME</abbr> type text/css, registrado para su uso descrito en el RFC 23185.</p>
+				<p><strong>CSS busca mejorar la accesibilidad del documento</strong>, provee más flexibilidad y control en la especificación de características presentacionales, permitiendo que varios documentos <strong><abbr title="HyperText Markup Language">HTML</abbr></strong> compartan un mismo estilo usando una sola hoja de estilos separada en un archivo .css. Con ello, se reduce la complejidad y la repetición de código en la estructura del documento.</p>		
+			</div>
+		</article>
+		<hr>
+		<article>
+			<h2>Estándar CSS</h2>
+			<div>
+				<p class="comentario"><q><abbr title="Cascading Style Sheets">CSS</abbr> separa el contenido de un documento de la forma de presentación.</q></p>
+			</div>
+			<div>
+				<ul class="lista">
+					<li><strong>La separación del formato y el contenido</strong>  hace posible presentar el mismo documento marcado en diferentes estilos para mostrar una página web de manera distinta dependiendo del tamaño de la pantalla o tipo de dispositivo.</li>
+					<li><strong>La especificación <abbr title="Cascading Style Sheets">CSS</abbr></strong> describe un esquema prioritario para determinar qué reglas de estilo se aplican si más de una regla coincide para un elemento en particular. Estas reglas son aplicadas con un sistema llamado de <em>cascada</em>, de modo que las prioridades son calculadas y asignadas a las reglas. </li>
+				</ul>
+			</div>
+			<div class="cita">
+				<p><q><i>Cada navegador web usa un motor de renderizado, el soporte de CSS no es exactamente igual en ninguno de ellos..</i></q></p>
+				<p><i><u><strong><cite>Håkon Wium Lie</cite>, CTO de la compañía Opera Software y cocreador del estándar CSS</strong></u></i></p>								
+			</div>
+		</article>
+		<hr>
+	</section>
+
+	<aside>
+		<table>		
+			<thead>
+			<tr>
+				<th colspan="5">Navegadores WEB</th>				
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td><img src="../img/icono-chrome.gif" alt="chrome" title="Chrome"></td>
+				<td><img src="../img/icono-firefox.gif" alt="firefox" title="Firefox"></td>
+				<td><img src="../img/icono-internet-explorer.gif" alt="IExplorer" title="Internet Explorer"></td>
+				<td><img src="../img/icono-opera.gif" alt="opera" title="Ópera"></td>
+				<td><img src="../img/icono-safari.gif" alt="safari" title="Safari"></td>
+			</tr>
+			<tr>
+				<td><a href="https://www.google.com/intl/es_ALL/chrome/">Chrome</a></td>
+				<td><a href="https://www.mozilla.org/es-ES/firefox/new/">Firefox</a></td>
+				<td><a href="https://www.microsoft.com/es-es/windows/microsoft-edge">Explorer</a></td>
+				<td><a href="https://www.opera.com/es">Ópera</a></td>
+				<td><a href="https://www.apple.com/es/safari/">Safari</a></td>
+			</tr>
+			</tbody>
+		</table>
+	</aside>
+	<hr>
+	<aside class="formulario">
+		<h2>Deja un comentario</h2>
+		<form action="mailto:correo@gmail.com" method="post" name="formulario_examen" enctype="multipart/form-data" accept-charset="UTF-8">	
+			<input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre y apellidos" required pattern="[A-Za-z]{5,40}" title="Introduzca su nombre y apellidos" autocomplete="off"><br>
+			<input type="email" name="email" id="email"  placeholder="Escribe tu email"  required><br>
+			<input type="text" name="telefono" id="telefono"  placeholder="Escribe tu teléfono" pattern="[0-9]{9}" title="El tf debe tener 9 números" required><br>	
+			<textarea name="consulta" id="consulta" rows="6" cols="70" placeholder="Escribe un comentario" spellcheck="true" required  autocomplete="off"></textarea><br>
+			<input type="checkbox" name="terminos" required><span> Acepto los términos y condiciones de privacidad</span><br>
+			<input type="submit" value="Enviar"><br>
+		</form>
+	</aside>
+</main>
+<hr>
+<footer>
+	<p> <a href="#">Aviso legal</a> &#124; <a href="#">Política de cookies</a>  &#124; <a href="#">Política de privacidad</a>  &#124; <a href="#">Accesibilidad</a> </p>
+</footer> 
+<hr>
+</body>
+</html>

@@ -1,0 +1,253 @@
+@charset "utf-8";
+/*CSS Document*/
+
+*{
+box-sizing: border-box;
+}
+
+body{
+font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', sans-serif;
+font-size: 16.5px;
+width: 1024px;
+margin: auto;
+background-color: rgb(239, 239, 239);
+color: rgb(102, 102, 102, 1);
+padding: 50px 0px;
+line-height: 2em;
+}
+
+h1{
+color: #3366AB;
+font-weight: 600;
+margin-bottom: 40px;
+}
+
+h2{
+background-color: #3366AB;
+color: white;
+display: inline-block;
+}
+
+h3{
+color: black;
+}
+
+h1{
+text-align: center;
+}
+
+div{
+background-color: white;
+padding: 20px;
+width: 98%;
+margin: auto;
+}
+
+a{
+text-decoration: none;
+}
+
+nav ul li a{
+background-color: #3366AB;
+padding: 16px 14px;
+margin-left: 6px;
+}
+
+nav ul{
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+}
+
+nav ul li{
+display: inline-block;
+}
+
+nav a, .enlacesIndex a span{
+color: white;
+}
+
+nav a:hover, .enlacesIndex a:hover{
+opacity: 0.5;
+}
+
+header img{
+width: 100%;
+}
+
+.enlacesIndex{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+text-align: center;
+padding: 0px 20px;
+}
+
+.enlacesIndex div{
+width: 30%;
+}
+
+.enlacesIndex a span{
+background-color: #3366AB;
+padding: 10px 20px;
+}
+
+div, nav ul li a{
+border-radius: 5px;
+}
+
+.enlacesIndex a span{
+border-radius: 8px;
+}
+
+.enlacesIndex img{
+margin-bottom: 20px;
+}
+
+hr{
+margin: 20px 0px;
+border: none;
+border-bottom: 2px dotted #3366AB;
+}
+
+.textoIndex{
+text-align: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+padding: 30px;
+}
+
+.textoIndex h2{
+display: block;
+}
+
+.textoIndex .div1{
+width: 48%;
+}
+
+.textoIndex .div2{
+width: 48%;
+}
+
+article div{
+margin: auto;
+margin-bottom: 20px;
+}
+
+.article2 div{
+width: 93%;
+}
+
+article ul{
+list-style-type: square;
+}
+
+article li{
+color: #3366AB;
+width: 90%;
+margin: auto auto 20px;
+}
+
+blockquote{
+border-left: 3px solid #3366AB;
+padding-left: 20px;
+height: 40px;
+font-size: 22px;
+}
+
+.cita1{
+padding: 1px 20px; 
+}
+
+.cita2{
+text-align: center;
+font-style: italic;
+}
+
+.cita2 q:before, .cita2 q:after{
+font-size: 40px;
+}
+
+table{
+text-align: center;
+width: 80%;
+margin: auto;
+height: 150px;
+color: #3366AB;
+font-size: 16px;
+}
+
+table, th, td{
+border: 1px double black;
+background-color: white;
+}
+
+td{
+width: 20%;
+}
+
+form{
+background-color: white;
+padding: 20px 30px 40px;
+width: 60%;
+margin: auto;
+border-radius: 5px;
+color: #3366AB;
+}
+
+form div{
+margin: 0px;
+padding: 0px;
+font-size: 14px;
+}
+
+form input[type=text], [type=email], [type=tel], textarea{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+font-size: 13px;
+padding: 8px 16px;
+margin-bottom: 16px;
+border: 2px solid rgb(199, 196, 196);
+border-radius: 3px;
+width: 100%;
+background-color: rgba(239, 239, 239, 0.767);
+}
+
+form input[type=text]:hover, [type=email]:hover, [type=tel]:hover, textarea:hover{
+background-color: rgba(174, 191, 214, 0.521);
+}
+
+form input[type=checkbox]{
+margin-bottom: 30px;
+}
+
+form input[type=submit]{
+background-color: #3366AB;
+color: white;
+border: none;
+border-radius: 8px;
+padding: 10px 28px;
+}
+
+form input[type=submit]:hover{
+opacity: 0.5;
+}
+
+form input[type=submit]:hover, form input[type=checkbox], form label:hover{
+cursor:pointer;
+}
+
+footer{
+text-align: center;
+}
+
+footer, footer a, table a{
+color: #3366AB;
+}
+
+footer a:hover, table a:hover{
+color: rgb(26, 58, 100);
+}
+
+
+

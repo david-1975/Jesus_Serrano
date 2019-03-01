@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+*{box-sizing: border-box}
+body{ width: 90%;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif"}
+footer{ text-align: center;}
+footer a {}
+span{color: red; }
+.divPadre{background-color: lightgray;width: 98%;padding-top: 5px;padding-bottom: 20px;}
+.divBaner{
+	width: 100%;
+	/*border: 1px solid red;*/
+	margin: auto;	
+}
+.divPBaner{background-color: white; width: 92%;padding: 5px;margin: auto}
+
+.navIndex{ }
+
+.navIndex ul{}
+
+.navIndex ul li{margin: 5px;display: inline-block;background-color: blue;padding: 5px;
+border-radius: 4px}
+
+.navIndex ul li a{text-decoration: none;color: white;padding-left: 5px;padding-right: 5px;}
+
+H2{ text-align: center;margin: auto;}
+h3{padding-left: 35px}
+hr{width: 90%;margin: auto;}
+/*------------------------------------------------*/
+
+.divLogIndex{width: 100%;	border: 1px solid black;	overflow: hidden;}
+.divLogIndexI{width: 20%;float: left;}
+.divLogIndexD{width: 20%;	float: right;}
+.divLogIndexC{width: 20%;margin: auto;}
+.div3{	width: 100%;border:  1px solid red;overflow: hidden}
+.n31{width: 30%;	background-color: white;padding: 20px;float: left;margin-left: 100px;}
+.n32{width: 30%;	background-color: white;padding: 20px;float: right;margin-right: 100px;}
+.h3{text-align: center;background-color: darkgray; color: white;}
+/*----------------------------------------------------*/ 
+.divApa{background-color: white;border-radius: 5px;margin: auto;width: 90%;padding: 10px;}
+.divApa div p{border-left: 2px solid blue; font-size: 1.2em;padding: 15px; padding-left: 10px;}
+.divApaAzul{background-color: white;border-radius: 5px;margin: auto;width: 90%;padding:      10px;;color:darkcyan;padding-left: 50px;}
+.divApaFin{background-color: white;border-radius: 5px;margin: auto;width: 90%;padding: 10px;}
+.divApaFin p{font-size: .95em;text-align: center;}
+.divApaFin b{font-size: 1.5em}
+
+/*--------------------------------------------------------*/
+
+table{ margin: auto; margin-top: 20px;margin-bottom: 20px;;width: 70%;background-color: white;}
+table th{ color: darkblue;}
+table td{color: cornflowerblue;text-align: center;}
+table td img {width: 20%;}
+
+
