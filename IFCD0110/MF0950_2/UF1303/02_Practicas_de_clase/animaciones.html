@@ -20,13 +20,13 @@
 <header>
 	<div style="overflow: auto;background-color: white;margin: 20px">
 		<div style="float: left;background-color: white">
-			<a href="introduccion.html" style="text-align: left"><img src="img/css3.png" alt="Logo HTML" width="128"  title="Pagina principal"></a>
-	  </div>
-		<div style="float: left;background-color: white;">
+			<a href="introduccion.html" style="text-align:left"><img src="img/css3.png" alt="Logo HTML" width="128"  title="Pagina principal"></a>
+	 <div style="float: right;background-color: white;">
 			<h2 style="text-align:center; margin: 20px">HOJAS DE ESTILO</h2>
-			 <a href="introduccion.html" style="padding:10px;" >Introducción</a> | <a style="padding: 10px;"
+			<a href="introduccion.html" style="padding:10px;" >Introducción</a> | <a style="padding: 10px;"
 			href="bordes.html">Bordes</a> | <a style="padding: 10px;" href="listas.html">Listas</a> | <a style="padding: 10px;" href="combinadores.html">Combinadores</a>| <a  style="padding: 10px; " href="flexbox.html">Flexbox</a> | <a href="grid.html">Grid</a> | <a href="transiciones.html">Transiciones</a> | <a href="trasnformaciones.html">Transformaciones</a> | <a href="animaciones.html">Animaciones</a>
-	  </div>
+		</div>
+	</div>
 	</div>
 <h1>Animaciones CSS</h1>
 <p>Una animación permite a un elemento de cambiar gradualmente de un estilo a otro.
@@ -39,26 +39,17 @@ Fotogramas clave conservar lo estilos el elemento tendrá en determinados moment
 </header>
 <hr>
 <nav class="nav1">
-	<a href="introduccion.html">Introducción</a> | <a href="Bordes.html">Bordes</a> | <a href="listas.html">Listas</a> | <a href="combinadores.html">Combinadores</a> | <a href="flexbox.html">Flexbox</a> | <a href="grid.html">Grid</a> | <a href="transiciones.html">Transiciones</a> | <a href="trasnformaciones.html">Transformaciones</a> | <a href="animaciones.html">Animaciones</a>
+	<a href="introduccion.html">Introducción</a> | <a href="Bordes.html">Bordes</a> | <a href="listas.html">Listas</a> | <a href="combinadores.html">Combinadores</a> | <a href="flexbox.html">Flexbox</a> | <a href="grid.html">Grid</a> | <a href="transiciones.html">Transiciones</a> | <a href="trasnformaciones.html">Transformaciones</a> | <a href="animaciones.html">Animaciones</a>	
 </nav>
 <hr>
 <h2>La Regla @keyframes</h2>
 <p>Al especificar estilos CSS dentro de la @keyframes norma, la animación cambiará gradualmente desde el estilo actual al nuevo estilo en determinados momentos.</p>
 <p>Para conseguir una animación para el trabajo, debe obligar a la animación a un elemento.</p>
-<p>La animationpropiedad es una propiedad abreviada para:</p>
+<p>La propiedad animation es una propiedad abreviada para:</p>
 <ul>
-  <li>animation-name: La propiedad animation-name especifica un nombre para el @keyframes animación.</li>
-  <li>animation-duration:</li>
-  <li>animation-timing-function</li>
-  <li>animation-delay</li>
-  <li>animation-iteration-count</li>
-  <li>animation-direction</li>
-  <li>animation-fill-mode</li>
-  <li>animation-play-state</li>
-</ul>
-<hr>
-
-<style>
+  <li><strong>animation-name</strong>: La propiedad animation-name especifica un nombre para el @keyframes animación.</li>
+  <li><strong>animation-duration</strong>: Especifica la duración de la animación.
+		<style>
 		#a {
 		  width: 100px;
 		  height: 100px;
@@ -80,8 +71,262 @@ Fotogramas clave conservar lo estilos el elemento tendrá en determinados moment
 		  from {background-color: red;}
 		  to {background-color: yellow;}
 		}
-</style>
-<div id="a"></div>
+		</style>
+		<div id="a"></div>
+  </li>
+  <li><strong>animation-timing-function</strong>: especifica la curva de velocidad de la animación.
+    <p>La propiedad-tiempo-función de animación puede tener los siguientes valores:</p>
+    <ul>
+      <li>ease - Especifica una animación con un comienzo lento, luego rápido, y luego terminar lentamente (esto es por defecto)</li>
+      <li>linear - Especifica una animación con la misma velocidad de principio a fin</li>
+      <li>ease-in - Especifica una animación con un comienzo lento</li>
+      <li>ease-out - Especifica una animación con un final lenta</li>
+      <li>ease-in-out - Especifica una animación con un lento comienzo y fin</li>
+      <li>cubic-bezier(n,n,n,n) - le permite definir sus propios valores de una función cúbica-Bezier</li>
+    </ul>
+		<style>
+		#div1, #div2, #div3, #div4, #div5{
+		width: 100px;
+		height: 50px;
+		background-color: red;
+		font-weight: bold;
+		position: relative;
+		-webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+		animation: mymove 5s infinite;
+		}
+
+		/* Safari 4.0 - 8.0 */
+		#div1 {-webkit-animation-timing-function: linear;}
+		#div2 {-webkit-animation-timing-function: ease;}
+		#div3 {-webkit-animation-timing-function: ease-in;}
+		#div4 {-webkit-animation-timing-function: ease-out;}
+		#div5 {-webkit-animation-timing-function: ease-in-out;}
+
+		/* Standard syntax */
+		#div1 {animation-timing-function: linear;}
+		#div2 {animation-timing-function: ease;}
+		#div3 {animation-timing-function: ease-in;}
+		#div4 {animation-timing-function: ease-out;}
+		#div5 {animation-timing-function: ease-in-out;}
+
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes mymove {
+		from {left: 0px;}
+		to {left: 300px;}
+		}
+
+		/* Standard syntax */
+		@keyframes mymove {
+		from {left: 0px;}
+		to {left: 300px;}
+		}
+		</style>
+		<div id="div1">linear</div>
+		<div id="div2">ease</div>
+		<div id="div3">ease-in</div>
+		<div id="div4">ease-out</div>
+		<div id="div5">ease-in-out</div>
+		</li>
+  <li><strong>animation-delay</strong>: Especifica el retraso de inicio de la animación.
+		<style> 
+		#b {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		position: relative;
+		-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+		-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+		-webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+		animation-name: example;
+		animation-duration: 4s;
+		animation-delay: 2s;
+		}
+
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes example {
+		0%   {background-color:red; left:0px; top:0px;}
+		25%  {background-color:yellow; left:200px; top:0px;}
+		50%  {background-color:blue; left:200px; top:200px;}
+		75%  {background-color:green; left:0px; top:200px;}
+		100% {background-color:red; left:0px; top:0px;}
+		}
+
+		/* Standard syntax */
+		@keyframes example {
+		0%   {background-color:red; left:0px; top:0px;}
+		25%  {background-color:yellow; left:200px; top:0px;}
+		50%  {background-color:blue; left:200px; top:200px;}
+		75%  {background-color:green; left:0px; top:200px;}
+		100% {background-color:red; left:0px; top:0px;}
+		}
+		</style>
+		<div id="b"></div>
+  </li><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <li><strong>animation-iteration-count</strong>: Especifica el número de veces que se realiza la animación.
+		<style>
+		#c {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		-webkit-animation-name: ejemplo; /* Safari 4.0 - 8.0 */
+		-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+		animation-name: ejemplo;
+		animation-duration: 4s;
+		animation-iteration-count: 3;
+		}
+
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes ejemplo {
+		from {background-color: red;}
+		to {background-color: yellow;}
+		}
+
+		/* Standard syntax */
+		@keyframes ejemplo {
+		from {background-color: red;}
+		to {background-color: yellow;}
+		}
+		</style>
+		<div id="c"></div>
+  </li>
+  <li><strong>animation-direction</strong>: especifica la dirección de la animación.
+    <p>La propiedad de animación dirección puede tener los siguientes valores:</p>
+    <ul>
+      <li>normal- La animación se mueve hacia delante. Esto es por defecto</li>
+      <li>reverse - La animación se mueve en dirección inversa (hacia atrás)</li>
+      <li>alternate - La animación se reproduce hacia delante en primer lugar, luego hacia atrás</li>
+      <li>alternate-reverse - La animación se reproduce hacia atrás al principio, y luego hacia delante</li>
+    </ul>
+    <style> 
+			#d {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: relative;
+			-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+			-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+			-webkit-animation-direction: reverse; /* Safari 4.0 - 8.0 */
+			animation-name: example;
+			animation-duration: 4s;
+			animation-direction: reverse;  
+			}
+
+			/* Safari 4.0 - 8.0 */
+			@-webkit-keyframes example {
+			0%   {background-color:red; left:0px; top:0px;}
+			25%  {background-color:yellow; left:200px; top:0px;}
+			50%  {background-color:blue; left:200px; top:200px;}
+			75%  {background-color:green; left:0px; top:200px;}
+			100% {background-color:red; left:0px; top:0px;}
+			}
+
+			/* Standard syntax */
+			@keyframes example {
+			0%   {background-color:red; left:0px; top:0px;}
+			25%  {background-color:yellow; left:200px; top:0px;}
+			50%  {background-color:blue; left:200px; top:200px;}
+			75%  {background-color:green; left:0px; top:200px;}
+			100% {background-color:red; left:0px; top:0px;}
+			}
+			</style>
+			<div id="d"></div>
+  </li><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <li><strong>animation-fill-mode</strong>:especifica un estilo para el elemento de destino cuando la animación no se ejecuta (antes de que comience, después de que termine, o ambos).
+    <p>La propiedad-fill-mode animación puede tener los siguientes valores:</p>
+    <ul>
+      <li>none- Valor por defecto. La animación no se aplicará ningún estilo al elemento antes o después de que se esté ejecutando</li>
+      <li>forwards - El elemento conservará los valores de estilo que se define por el último fotograma clave (depende de la animación dirección y animación-iteración de conteo)</li>
+      <li>backwards - El elemento obtendrá los valores de estilo que se define por el primer fotograma clave (depende de la animación-dirección), y retener a esto durante el periodo de retardo de animación</li>
+      <li>both - La animación seguir las reglas para tanto hacia delante y hacia atrás, extendiendo las propiedades de animación en ambas direcciones</li>
+    </ul>
+		<style> 
+		#e {
+		width: 100px;
+		height: 100px;
+		background: red;
+		position: relative;
+		-webkit-animation-name: example;  /* Safari 4.0 - 8.0 */
+		-webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */  
+		-webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+		animation-name: example;
+		animation-duration: 3s;  
+		animation-fill-mode: forwards;
+		}
+
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes example {
+		from {top: 0px;}
+		to {top: 200px; background-color: blue;}
+		}
+
+		@keyframes example {
+		from {top: 0px;}
+		to {top: 200px; background-color: blue;}
+		}
+		</style>
+		<div id="e"></div>
+  </li><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <li><strong>animation-play-state</strong>: especifica si la animación se está ejecutando o en pausa.
+			<style> 
+			#f {
+			width: 100px;
+			height: 100px;
+			background: red;
+			position: relative;
+			-webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+			animation: mymove 5s infinite;
+			}
+
+			#f:hover {
+			-webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
+			animation-play-state: paused;
+			}
+
+			/* Safari 4.0 - 8.0 */
+			@-webkit-keyframes mymove {
+			from {left: 0px;}
+			to {left: 200px;}
+			}
+
+			@keyframes mymove {
+			from {left: 0px;}
+			to {left: 200px;}
+			}
+			</style>
+			<div id="f"></div>
+	</li>
+</ul>
+<hr>
+
+<hr>
+
 
 
 

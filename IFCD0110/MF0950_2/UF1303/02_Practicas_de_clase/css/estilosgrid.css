@@ -1,8 +1,25 @@
 @charset "utf-8";
 /* CSS Document */
 body{
-	font-size: 1.3em;
+	font-size: 1.1em;
 	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
 	margin: auto;
 	width: 90%;
+}
+.nav1{
+	background-color: black;
+	padding: 20px;
+	text-align: center;
+}
+.nav1 a{
+	background-color: grey;
+	color: black;
+	font-size: 0.9em;
+	padding: 10px 10px;
+	text-decoration: none;
+}
+.nav1 a:hover{
+	background-color: darkgrey;
+	color: darkblue;
+	text-decoration: none;
 }
