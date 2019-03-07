@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Fechas</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="./funciones.js"></script>
+<!--<link href="./estilos.css" rel="stylesheet" type="text/css">
+-->
+</head>
+
+<body>
+<h2><strong>Fechas con JavaScript</strong></h2>
+<hr>
+<p><strong>Introducir la fecha de nacimiento y calcular la edad.</strong></p>
+<form id="form1" name="form1" method="post">
+  <label for="number">Año de nacimiento:</label>
+  <input type="date" name="number" id="campo1">
+  <input type="button" name="button" id="button" value="Enviar" onClick="fun1()">
+</form>
+<p id="idres1"> </p>
+<hr>
+
+
+<p><a title="" role="heading"><strong>Introducir el año y mostrar el año anterior, el año introducido y el año posterior</strong></a><strong>.</strong></p>
+<form id="form2" name="form2" method="post">
+  <label for="number">Año:</label>
+  <input type="number" name="number" id="campo2">
+  <input type="button" name="button" id="button" value="Enviar" onClick="fun2()">
+</form>
+<p id="idres2"> </p>
+<hr>
+
+
+<p><strong>A partir de 3 campos de formulario, día, mes y año, mostar la fecha  en este formato &quot;dd/mm/aaaa&quot;.</strong></p>
+<form id="form3" name="form3" method="post">
+  <label for="number">Día:</label>
+  <input type="number" name="number" value ="Día: " id="campo3">
+  <label for="number3_2">Mes:</label>
+  <input type="number" name="number2" value ="Mes: " id="campo3_2">
+  <label for="number3_3">Año:</label>
+  <input type="number" name="number3" value="Año: " id="campo3_3">
+  <input type="button" name="button" id="button" value="Enviar" onClick="fun3()">
+</form>
+<p id="idres3"> </p>
+<hr>
+
+
+<p><strong>A partir de 3 campos de formulario, hora, minutos y segundos, mostar la hora en este formato &quot;hh:mm:ss&quot;.</strong></p>
+<form id="form4" name="form4" method="post">
+  <label for="number">Hora:</label>
+  <input type="number" name="number" value ="Hora: " id="campo4">
+  <label for="number4_2">Minuto:</label>
+  <input type="number" name="number2" value ="Minuto: " id="campo4_2">
+  <label for="number4_3">Segundo:</label>
+  <input type="number" name="number3" value="segundo: " id="campo4_3">
+  <input type="button" name="button" id="button" value="Enviar" onClick="fun4()">
+</form>
+<p id="idres4"> </p>
+<hr>
+
+
+<p><strong>Introducir una fecha y mostrarla en este formato: &quot;Hoy es martes, 11 de Noviembre de 2018&quot;.</strong></p>
+<form id="form5" name="form1" method="post">
+  <label for="number">Fecha:</label>
+  <input type="date" name="number" id="campo5">
+  <input type="button" name="button" id="button" value="Enviar" onClick="fun5()">
+</form>
+<p id="idres5"> </p>
+<hr>
+
+
+<p><strong>Mostrar la fecha y hora actual en este formato: &quot;Has iniciado sesión el día 13/11/2018 a las 15:30:25&quot;.</strong></p>
+<form id="form6" name="form1" method="post">
+  <input type="button" name="button" id="button" value="Enviar" onClick="fun6()">
+</form>
+<p id="idres6"> </p>
+<hr>
+
+
+<p><strong>Calcular los días que faltan para tu cumpleaños a partir de una fecha de nacimiento introducida.</strong></p>
+  <form id="form7" name="form1" method="post">
+  <label for="number">Fecha nacimiento:</label>
+  <input type="date" name="number" id="campo7">
+  <input type="button" name="button" id="button" value="Enviar" onClick="fun7()">
+</form>
+<p id="idres7"> </p>
+<hr>
+
+
+<p><strong>Calcular cuantos días, horas, minutos y segundos ha vivido una persona a partir de su fecha de nacimiento.</strong></p>
+<form id="form8" name="form1" method="post">
+  <label for="number">Fecha nacimiento:</label>
+  <input type="date" name="number" id="campo8">
+  <input type="button" name="button" id="button" value="Enviar" onClick="fun8()">
+</form>
+<p id="idres8"> </p>
+<hr>
+
+
+<p><strong>Mostrar a que  trimestre pertenece una fecha introducida.</strong></p>
+<form id="form9" name="form9" method="post">
+  <label for="number">Fecha:</label>
+  <input type="date" name="number" id="campo9">
+  <input type="button" name="button" id="button" value="Enviar" onClick="fun9()">
+</form>
+<p id="idres9"> </p>
+<hr>
+
+
+<p><strong>Mostrar el signo del zodiaco según la fecha de nacimiento introducida por el usuario.</strong></p>
+<form id="form10" name="form10" method="post">
+  <label for="number">Fecha nacimiento:</label>
+  <input type="date" name="number" id="campo10">
+  <input type="button" name="button" id="button" value="Enviar" onClick="fun10()">
+</form>
+<img id="idres10" width="50" height="50" src="./img/zodiaco.gif">
+<p id="idres10_02"> </p>
+
+<hr>
+
+<p><br>
+</p>
+</body>
+</html>

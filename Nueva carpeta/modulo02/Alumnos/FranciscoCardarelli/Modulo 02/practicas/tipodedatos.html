@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Tipo de datos JavaScript</title>
+<meta name="keywords" content="HTML CSS JavaScript">
+<meta name="description" content="Aprende JavaScript con ejemplos prácticos">
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+	<h1>Tipo de datos JavaScript</h1>
+	<hr class="hrtop">
+    
+    <h2>El concepto de tipos de datos</h2>
+    <p>Variables de JavaScript pueden contener muchos tipos de datos : números, cadenas, objetos y más:<br>
+    En la programación, tipos de datos es un concepto importante, que nos permiten operar con las variables.</p>
+    
+    <div>
+      <div class="divalineado">
+            <ul>
+                <li>var x = 16 + "Volvo";<br> X = <span id="demo1"></span></li><br>
+                <li>var y = "16" + "Volvo";<br> y = <span id="demo2"></span></li><br>
+                <li>var z = "Volvo" + 16;<br> z = <span id="demo3"></span></li>
+            </ul>
+        </div>
+        
+      <div class="divalineado">
+            <ul>    
+                <li>var a = 16 + 4 + "Volvo";<br> a = <span id="demo4"></span></li><br>
+                <li>var b = "Volvo" + 16 + 4;<br> b = <span id="demo5"></span></li><br>
+                <li>var c = 16 + "Volvo" +4;<br> c = <span id="demo6"></span></li>
+            </ul>
+        </div>
+        
+      <div class="divalineado">
+            <ul>    
+                <li>var d = "16" + 4 + "Volvo";<br> d = <span id="demo7"></span></li><br>
+                <li>var e = "16" + "4" + "Volvo";<br> e = <span id="demo8"></span></li><br>
+                <li>var f = "Volvo" + 16 + "4" + ;<br> f = <span id="demo9"></span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+<br>
+<br>
+<div class="concept">
+	<h2>Tienes que saber</h2>
+	<li>JavaScript evalúa las expresiones de izquierda a derecha.</li>
+	<li>Al añadir un número y una cadena, JavaScript tratará el número como una cadena.</li>
+	<li>El signo + se utiliza para concatenar o unir, exepto cuando se trata de números, que es utilizado para sumar.</li>
+	<br>
+</div>
+    
+<script>
+	var x = 16 + "Volvo";
+	var y = "16" + "Volvo";
+	var z = "Volvo" + 16;
+	var a = 16 + 4 + "Volvo";
+	var b = "Volvo" + 16 + 4;
+	var c = 16 + "Volvo" +4;
+	var d = "16" + 4 + "Volvo";
+   	var e = "16" + "4" + "Volvo";
+    var f = "Volvo" + 16 + "4";
+	document.getElementById("demo1").innerHTML = x;
+	document.getElementById("demo2").innerHTML = y;
+	document.getElementById("demo3").innerHTML = z;
+	document.getElementById("demo4").innerHTML = a;
+	document.getElementById("demo5").innerHTML = b;
+	document.getElementById("demo6").innerHTML = c;
+	document.getElementById("demo7").innerHTML = d;
+	document.getElementById("demo8").innerHTML = e;
+	document.getElementById("demo9").innerHTML = f;
+</script>
+        
+<br>
+<hr>
+<br>
+	
+	<h2>El operador typeof</h2>
+	<p>En JavaScript <strong>typeof</strong> es un operador para mostrar el tipo de una variable.<br>
+	El <strong>typeof</strong> operador devuelve el tipo de una variable o una expresión:</p>
+    
+<table>
+  <thead>
+    <tr>
+      <th>Datos</th>
+      <th>Tipo</th>
+      <th>Expresión</th>
+      <th>Tipo de datos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>var coches = &quot;Volvo S40&quot;;</td>
+      <td>Cadena de texto</td>
+      <td>typeof (coches);</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>var pi = 3.14</td>
+      <td>Dato númerico</td>
+      <td>typeof (pi)</td>
+      <td>Number</td>
+    </tr>
+    <tr>
+      <td>var comparar = (x == y);</td>
+      <td>Comparativa</td>
+      <td>typeof (comparar);</td>
+      <td>Booleans</td>
+    </tr>
+    <tr>
+      <td>var marca = [&quot;Adidas&quot;, &quot;Nike&quot;, Puma];</td>
+      <td>Matriz de datos</td>
+      <td>typeof (marca);</td>
+      <td>Array</td>
+    </tr>
+    <tr>
+      <td>var persona = {nombre:&quot;Juan&quot;, apellido:&quot;Pérez&quot;, edad:14};</td>
+      <td>Objeto de datos</td>
+      <td>typeof (persona.nombre);</td>
+      <td>Object</td>
+    </tr>
+    <tr>
+      <td>var comidas;</td>
+      <td>Dato indefinido</td>
+      <td>typeof (comidas)</td>
+      <td>Undefined</td>
+    </tr>
+    <tr>
+      <td>var calculo = 2/0;</td>
+      <td>Dato infinito</td>
+      <td>typeof (calculo)</td>
+      <td>Infinity</td>
+    </tr>
+    <tr>
+      <td>function miFuncion( a, b ){ return a * b }; </td>
+      <td>Función</td>
+      <td>typeof ()</td>
+      <td>Function</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<hr>	
+<br>
+
+	<h2>Typeof = String</h2>
+	<p>Un string (cadena de texto) es uno o más caracteres escritos entre comillas  simples o dobles. Las cadenas JavaScript se utilizan para almacenar y manipular texto.</p>
+	<p>Se puede usar comillas simples dentro de una cadena, siempre y cuando no coincidan con las comillas dobles que rodean la cadena.</p>
+
+<div>
+	<div class="divalineado1">
+		<h2>Ejemplo de cadenas de texto</h2>
+			var coche = &quot; &quot;;<br>
+			var coche = &quot;Volvo&quot;;<br>
+			var coche = &quot;Volvo  XC60&quot;;<br>
+			var coche = &quot;Volvo 'modelo' XC60&quot;; <br>
+			var coche = &quot;Volvo \&quot;modelo\&quot; XC60&quot;;</p>
+		<p>	document.getElementById("demo").innerHTML = typeof (coche);</p>
+	</div>
+
+	<h2 id="demo38" class="h2answer"></h2>
+	<script>
+		var coche = "Volvo XC60";
+		document.getElementById("demo38").innerHTML = 
+		"<u>El tipo de dato de la variable coche es:</u>" + "<strong> " 
+		+ typeof (coche) + "</strong>" + " (cadena de texto)";
+	</script>
+	
+<div class="divalineado1">
+		<h2>Ejemplo de cadenas con números</h2>
+			var numero = &quot;10&quot;;<br>
+		  	var numero = &quot;10.50€&quot;;<br>
+		  	var numero = 
+		  	&quot;123e5&quot;;<br>
+		  	var numero = &quot;19:33&quot;;<br>
+		  	var numero = 
+		  	&quot;654874587&quot;;</p>
+		<p>	document.getElementById("demo").innerHTML = typeof (numero);</p>
+</div>
+		<h2 id="demo39" class="h2answer"></h2>
+		<script>
+			var numero = "10+5";
+			document.getElementById("demo39").innerHTML = 
+			"<u>El tipo de dato de la variable numero es:</u>" + "<strong> " 
+			+ typeof (numero) + "</strong>" + " (cadena de texto)";
+		</script>
+</div>
+<hr>
+<br>
+	<h2>Typeof  = Number</h2>
+	<p>JavaScript tiene sólo un tipo de número. Los números se pueden escribir con o sin decimales. </p>
+	<p>Los decimales se separan con un punto, y no con una coma. Los números se escriben sin comillas.</p>
+<div>
+	<div class="divalineado1">
+		<h2>Ejemplo de datos numéricos</h2>
+		<p>	var numerico = 3;<br>
+		  	var numerico = 3.14;<br>
+		  	var numerico = 123e5;<br>
+		  	var numerico = 123e-5;<br>
+		  	var numerico = 0xFF;</p>
+		<p>	document.getElementById(&quot;demo&quot;).innerHTML = typeof (numerico);</p>
+	</div>
+		<h2 id="demo40" class="h2answer"></h2>
+		<script>
+			var numerico = 123e5;
+			document.getElementById("demo40").innerHTML = 
+			"<u>El tipo de dato de la variable numerico es:</u>" + "<strong> " 
+			+ typeof (numerico) + "</strong>" + " (dato numérico)";
+		</script>
+	
+	<div class="divalineado1">
+		<h2>Ejemplo de datos numéricos</h2>
+		<p>var numeral = &quot;10&quot; - &quot;5&quot;;<br>
+		  var numeral = &quot;10&quot; / &quot;5&quot;;<br>
+		  var numeral = &quot;10&quot; * &quot;5&quot;;<br>
+		  var numeral = (0.2 * 10 ) / 10;<br>
+		  var numeral = (0.2 * 10 + 0.1 * 10) / 10; </p>
+		<p>document.getElementById(&quot;demo&quot;).innerHTML = typeof (numeral);</p>
+	</div>
+		<h2 id="demo41" class="h2answer"></h2>
+		<script>
+			var numeral = (0.2 * 10 + 0.1 * 10) / 10;
+			document.getElementById("demo41").innerHTML = 
+			"<u>El tipo de dato de la variable numeral es:</u>" + "<strong> " 
+			+ typeof (numeral) + "</strong>" + " (dato numérico)";
+		</script>
+<hr>
+<br>    
+	<h2>Typeof = Booleans, Objects, Functions</h2>
+	<ul>
+    <li>Los datos <strong>booleanos</strong> se utilizan para realizar comparativas entre datos y pueden tener dos valores: true (verdadero) o falce (falso.)</li>
+    <li>Los <strong>objetos</strong> de datos se escriben con llaves y las propiedades del objeto se separan por comas. Las propiedades y sus valores se separan con dos puntos ( : )</li>
+    <li>Las  <strong>matrices</strong> de datos se escriben con corchetes y los elementos de la matriz están separados por comas. Son variables con múltiples datos.</li>
+	<li>Una  <strong>función</strong> es un bloque de código diseñado para realizar una tarea en particular que se ejecuta cuando se le invoca (llama)</li>
+    </ul>
+
+<div>
+	<div class="divalineado">
+	  <h2>Ejemplos de datos Booleanos</h2>
+	  <p>var x = 5; var y = 5; var z = 6; <br>
+	    comparar = ( x == y ); //Retorna true (verdadero)<br>
+	    comparar = ( x == z ); //Retorna false (falso)</p>
+	  <p>documet.getElementById("demo").innerHTML = typeof (comparacion); </p>
+      <p id="demo42"></p>
+	<script>
+		var x = 5; var y = 5;
+		comparacion = ( x == y );
+		document.getElementById("demo42").innerHTML = "<u>El tipo de variable es: </u>" + "<strong>" + typeof (comparacion) + "</strong>" + " (dato booleano)";
+	</script>
+	</div>
+
+	<div class="divalineado">
+	  <h2>Ejemplos de datos Función</h2>
+	  <p>function &nbsp;miFuncion ( x, y )<br>
+	    { var x = 3; var y = 5; var z = ( x * y );<br>
+      return z; };</p>
+	  <p>document.getElementById("demo").IinnerHTML = typeof (miFuncion); </p>
+      <p id="demo43"></p>
+		<script>
+      	function miFuncion ( x, y )
+	    { var x = 3; var y = 5; var z = ( x * y );
+	    return z;};
+	  	document.getElementById("demo43").innerHTML = "<u>El tipo de dato es: </u>" + "<strong>" + typeof (miFuncion) + "</strong>" + " (dato función)";
+		</script>
+	</div>
+
+	<div class="clearfix"></div>
+    <br>
+	
+	<div class="divalineado">
+	  <h2>Ejemplos de Objeto de datos </h2>
+	  <p>var personas = <br>
+      {nombre: "Juan", apellido: "Gómez", edad: 50, email: "user@mail.es", telefono: 916845741 };</p>
+	  <p>document.getElementById("demo").innerHTML = typeof  (persona);</p>
+      <p id="demo44"></p>
+		<script>
+        var personas = 
+		{nombre: "Juan", apellidos: "Sanchez Gómez", edad: 50, email: "usuario@email.com", telefono: 916845741 };
+		document.getElementById("demo44").innerHTML =  "<u>El tipo de dato es: </u>" + "<strong>" + typeof (personas) + "</strong>" + " (objeto de datos)";
+        </script>	
+	</div>
+   
+    
+  <div class="divalineado">
+    	    <h2>Ejemplos de datos Booleanos</h2>
+    	    <p>var marcas =<br>
+    	    [&quot;Saab&quot;, &quot;Volvo&quot;. &quot;Opel&quot;, &quot;Audi&quot;; &quot;Wolsvagen&quot;, &quot;Seat&quot;, &quot;Renault&quot;, &quot;Peugeot&quot;. &quot;Citroën&quot;];</p>
+    	    <p>document.getElementById("demo").innerHTML = + typeof (marcas);</p>
+            <p id="demo45"></p>
+<script>
+            var marcas = ["Saab", "Volvo", "Opel", "Audi", "Wolsvagen", "Seat", "Renault", "Peugeot", "Citroën"];
+			document.getElementById("demo45").innerHTML = "<u>El tipo de dato es: </u>" + "<strong>" + typeof (marcas) + "</strong>" + " (matriz de datos)"
+            </script> 
+    </div>
+</div>
+
+<div class="clearfix"></div>
+<br>
+<hr>
+
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cálculos con JavaScript</title>
+<script src="funciones.js"></script>
+<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+<h2><strong>Operaciones de cálculo con JavaScript</strong></h2>
+<hr>
+
+
+
+
+
+<div class="violeta">
+<p><strong>(Números primos)</strong> <strong><br>
+Determina si un número introducido es primo o no</strong>.<br>
+(Clave: los números primos sólo son divisible por sí mismos y por uno)</p>
+
+<form id="form16" name="form16" method="post">
+  <label for="num_primo">Introduce un número entero:</label>
+  <input type="number" name="num_primo" id="num_primo">
+  
+  <input type="button" name="boton_primo" id="boton_primo" onClick="fun_primo2()" value="¿Es primo?">
+</form>
+
+<p id="primo"></p>
+</div>
+
+
+<div class="azul">
+<p><strong>(Números primos)</strong> <strong><br>
+Lista de primos</strong>.<br>
+(Clave: los números primos sólo son divisible por sí mismos y por uno)</p>
+
+<form id="form17" name="form17" method="post">
+ 
+  <input type="button" name="boton17" id="boton17" onClick="lista_primos()" value="Listar primos">
+</form>
+
+<p id="listaprimos"></p>
+</div>
+
+<div class="violeta">
+<p><strong><h3>Pulgadas</h3> <br>
+Calcular cuántos centímetros son X pulgadas de una pantalla. <span id="demo9"></span><br>
+</strong>(1 pulgada = 2,54 centímetros)</p>
+<form id="form1" name="form1" method="post">
+  <label for="num_pantalla">Introduce las pulgadas:</label>
+  <input type="number" name="num_pantalla" id="num_pantalla">
+  <input type="button" name="boton_pantalla" id="boton_pantalla" onClick="conv_pantalla()" value="Calcular">
+</form>
+
+<p id="pantalla"></p>
+
+
+</div>
+
+<div class="azul">
+<p><span><strong>(Número par o impar) <br>
+  Comprobar si un número es par o impar</strong></span>.<br>
+(número % = 0) </p>
+
+<form id="form2" name="form2" method="post">
+  <label for="num_impar">Introduce un número:</label>
+  <input type="number" name="num_impar" id="num_impar">
+  <input type="button" name="boton_impar" id="boton_impar" onClick="conv_impar()" value="Calcular">
+</form>
+
+<p id="impar"></p>
+
+
+
+</div>
+
+<div class="violeta">
+<p><strong>(Precio final) <br>
+  Calcular el precio final de un producto introduciendo un precio, un descuento y el impuesto (IVA) a pagar.<br>
+</strong>
+(ejemplo: precio = 50€, Descuento -20%, Impuesto +21%)</p>
+<form id="form3" name="form3" method="post">
+  <label for="num_precio">Introduce el precio:</label>
+  <input type="number" name="num_precio" id="num_precio"><br><br>
+  <label for="num_descuento">Introduce el descuento (en %):</label>
+  <input type="number" name="num_descuento" id="num_descuento"><br><br>
+  <label for="num_iva">Introduce el IVA (en %):</label>
+  <input type="number" name="num_iva" id="num_iva"><br><br>
+
+  
+  
+  <input type="button" name="boton_precio" id="boton_precio" onClick="conv_precio()" value="Calcular precio final">
+</form>
+
+<p id="precio"></p>
+
+</div>
+
+
+
+<div class="azul">
+<p><strong>(Byte y bit) <br>
+  Calcular cuántos son X gigabytes en megabyte, kilobytes, bytes y bit.</strong><br>
+(1 Gigabytes = 1024 Megabytes), (1Megabytes = 1024 Kilobytes), (1Kilobytes = 1024 Bytes), (1Bytes = 8 bit)</p>
+
+<form id="form4" name="form4" method="post">
+  <label for="num_byte">Introduce el número de Gigabytes:</label>
+  <input type="number" name="num_byte" id="num_byte">
+  <input type="button" name="boton_byte" id="boton_byte" onClick="conv_byte()" value="Calcular">
+</form>
+
+<p id="byte"></p>
+</div>
+
+<div class="violeta">
+<p><strong>(Días, semanas, meses) <br>
+  Calcular cuántos días, semanas y meses hay en X años.<br>
+</strong>(1 año = 365 días), (1 año = 52.142857142857146 semanas), (1 año = 12 meses)</p>
+<form id="form5" name="form5" method="post">
+  <label for="num_year">Introduce el número de años:</label>
+  <input type="number" name="num_year" id="num_year">
+  <input type="button" name="boton_year" id="boton_year" onClick="conv_year()" value="Calcular">
+</form>
+
+<p id="year"></p>
+
+</div>
+
+<!--<div class="azul">
+<p><strong>(Números primos) <br>
+Realizar un función que compruebe si un número es primo o no<br>
+</strong> (un número es primo cuando solo es divisible entre 1 y entre el mismo y el resto es 0)</p>
+<form id="form6" name="form6" method="post">
+  <label for="num_primo">Introduce un número:</label>
+  <input type="number" name="num_primo" id="num_primo">
+  <input type="button" name="boton_primo" id="boton_primo" onClick="conv_primo()" value="Calcular si es primo">
+</form>
+
+<p id="primo"></p>
+</div>-->
+
+<div class="azul">
+<p><strong>(Área de un circulo)</strong> <strong><br>
+  Calcular el área de un circulo de X diámetro en centímetros.</strong> <br>
+  fórmula área por diámetro: (área = PI*(diámetro2/4); fórmula área por radio: (área = PI*radio2); (PI= 3.1416)</p>
+
+<form id="form7" name="form7" method="post">
+  <label for="num_circu">Introduce el diámetro en cm:</label>
+  <input type="number" name="num_circu" id="num_circu">
+  <input type="button" name="boton_circu" id="boton_circu" onClick="conv_circu()" value="Calcular área círculo">
+</form>
+
+<p id="circulo"></p>
+</div>
+
+
+<div class="violeta">
+<p><strong>(Área de un cuadrado)</strong> <strong><br>
+Calcular el área de un cuadrado o rectángulo de X metros de lado y X metros de alto.</strong> <br>
+fórmula área cuadrado = base *altura= m2) (ejemplo área = 3 m x 3 m = 9 m2)</p>
+<form id="form8" name="form8" method="post">
+  <label for="num_rect_base">Introduce la base en m:</label>
+  <input type="number" name="num_rect_base" id="num_rect_base">
+   <label for="num_rect_altura">Introduce la altura en m:</label>
+  <input type="number" name="num_rect_altura" id="num_rect_altura">
+  
+  <input type="button" name="boton_rect" id="boton_rect" onClick="conv_rect()" value="Calcular área rectángulo">
+</form>
+
+<p id="rectangulo"></p>
+
+</div>
+
+
+<div class="azul">
+<p><strong>(Área de un triángulo)</strong> <strong><br>
+Calcular el área de un triángulo de X metros de lado y X metros de altura.</strong> <br>
+fórmula área triángulo = (base *altura)/2 = m2) (ejemplo área = (3 m * 3 m) / 2 = 4,5 m2)</p>
+<form id="form9" name="form9" method="post">
+  <label for="num_trian_base">Introduce la base en m:</label>
+  <input type="number" name="num_trian_base" id="num_trian_base">
+   <label for="num_trian_altura">Introduce la altura en m:</label>
+  <input type="number" name="num_trian_altura" id="num_trian_altura">
+  
+  <input type="button" name="boton_trian" id="boton_trian" onClick="conv_trian()" value="Calcular área triángulo">
+</form>
+
+<p id="triangulo"></p>
+
+</div>
+
+<div class="violeta">
+<p><strong>(Distancia) <br>
+Calcular el tiempo que se necesita para recorrer X distancia en kilómetros circulando a X km/h. <br>
+</strong>(1 km = 1000 metros), (1 km/h = 0,277778 metros/s) (ejemplo: 1 km = distancia / velocidad * segundos (3600)</p>
+<form id="form10" name="form10" method="post">
+  <label for="num_dist">Introduce la distancia a recorrer en km:</label>
+  <input type="number" name="num_dist" id="num_dist"><br><br>
+   <label for="num_velo">Introduce la velocidad en km/h:</label>
+  <input type="number" name="num_velo" id="num_velo"><br><br>
+  
+  <input type="button" name="boton_tiempo" id="boton_tiempo" onClick="conv_tiempo()" value="Calcular el tiempo">
+</form>
+
+<p id="tiempo"></p>
+
+
+</div>
+
+
+<div class="azul">
+<p><strong>(Tiempo de descarga) <br>
+  Calcular cuánto tiempo tardaría en descargar un archivo de X megabytes 
+  con una velocidad de descarga de  10 mbps (megabit por segundo).<br>
+</strong>(Fórmula: tamaño de archivo / tasa de transferencia = tiempo en segundos) (1*1024*8) / 10) = 819,2 segundos; 819,2 / 60 = 13,65 minutos y segundos.<br>
+(Almacenamiento 1024 byte, transferencia 1000
+bps)<br>
+
+<!--<p><strong>(Tasa de datos) <br>
+Calcular cuánto tiempo (horas y minutos) tardaría en descargar un archivo de X gigabytes con un ancho de banda de 10 mbp/s</strong><br>
+(10 mbps = 10 megabit por segundo), (1 minuto = 60 segundos)  (ej: 1Gb = 1000 Mb / 10 mbp/s = 100 segundos)</p>
+<p><br>
+</p>-->
+
+<form id="form11" name="form11" method="post">
+  <label for="num_descarga">Introduce el tamaño del archivo en Megabytes:</label>
+  <input type="number" name="num_descarga" id="num_descarga">
+  
+  <input type="button" name="boton_descarga" id="boton_descarga" onClick="conv_descarga()" value="Calcular tiempo de descarga">
+</form>
+
+<p id="descarga"></p>
+
+</div>
+
+<div class="clearfix"></div>
+<h2>Ejercicios añadidos</h2>
+<hr>
+<div class="violeta">
+<p><strong>(Sueldo Neto) <br>
+  Calcular el sueldo neto mensual a recibir por una persona que cobra X euros de salario bruto al año.<br>
+</strong>(Seguridad Social = 6,4%), (IRPF = 15%), (pagas = 14), (fórmula: sueldo mensual - (IRPF + Seguridad Social)</p>
+
+<form id="form12" name="form12" method="post">
+  <label for="num_sueldo">Introduce el salario bruto total al año:</label>
+  <input type="number" name="num_sueldo" id="num_sueldo">
+  
+  <input type="button" name="boton_sueldo" id="boton_sueldo" onClick="conv_sueldo()" value="Calcular salario neto mensual">
+</form>
+
+<p id="sueldo"></p>
+
+
+</div>
+
+
+<div class="azul">
+<p><strong>(Velocidad) <br>
+  Calcular a cuantos metros por segundo va un ciclista que circula a X km/h.<br>
+</strong>(1 kilómetro = 1000 metros), (1 hora = 3600 segundos), (fórmula: X*1000/3600)</p>
+<form id="form13" name="form13" method="post">
+  <label for="num_ciclista">Introduce la velocidad del ciclista en <strong>km/h</strong>:</label>
+  <input type="number" name="num_ciclista" id="num_ciclista">
+  
+  <input type="button" name="boton_ciclista" id="boton_ciclista" onClick="conv_ciclista()" value="Convertir a metros por segundo ">
+</form>
+
+<p id="ciclista"></p>
+</div>
+
+<div class="violeta">
+<p><strong>(Coste desplazamiento)</strong> <br>
+  <strong>Calcular el coste del desplazamiento de un trabajador por X kilómetros si el coste es  0,5 euros por kilómetro</strong>.<br>
+(fórmula: 1 kilómetro = 0.5 €/km)<strong><br>
+</strong></p>
+<form id="form14" name="form14" method="post">
+  <label for="num_coste">¿Cuántos kilómetros ha recorrido el trabajador?:</label>
+  <input type="number" name="num_coste" id="num_coste">
+  
+  <input type="button" name="boton_coste" id="boton_coste" onClick="conv_coste()" value="Calcular el coste del desplazamiento">
+</form>
+
+<p id="coste"></p>
+
+</div>
+
+
+<div class="azul">
+<p><strong>(Espacio de almacén)</strong> <strong><br>
+Calcular cuántas canciones de X megabytes se  pueden almacenar en un DVD de 4,7 gigabytes</strong>.<br>
+(1 gigabytes = 1024 megabytes) (formula: capacidad / peso de la canción)</p>
+
+<form id="form15" name="form15" method="post">
+  <label for="num_canciones">Introduce el número promedio de megabytes por canción:</label>
+  <input type="number" name="num_canciones" id="num_canciones">
+  
+  <input type="button" name="boton_canciones" id="boton_canciones" onClick="conv_canciones()" value="Calcular el número de canciones">
+</form>
+
+<p id="canciones"></p>
+</div>
+
+
+
+
+
+
+</body>
+</html>

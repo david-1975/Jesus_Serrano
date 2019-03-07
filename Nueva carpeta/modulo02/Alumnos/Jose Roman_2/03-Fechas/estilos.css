@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+* {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0px;
+}
+body{
+    background: rgba(178, 209, 235, 0.432);
+}
+h1{
+    text-align: center;
+              
+     height: 60px;
+     padding:5px 0px;
+     border-radius: 5px;   
+     background: #286af0;
+     color: #fff;
+}
+hr{
+    border: 2px solid
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(8, 8, 8);
+}
+.number{
+    width: 60px;
+}
+.caja{
+    background: rgba(97, 147, 204, 0.7);
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    border:2px solid black;
+    box-shadow:2px 2px rgba(0,0,0,0.4);
+}
+form{
+    background: yellowgreen;
+    padding: 2px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    align-items: center
+
+}
+.caja p {
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+footer{
+ 
+    height: 40px;
+    padding:5px 0px;
+    border-radius: 5px;
+    background: #286af0;
+    text-align: center;
+    color: #fff;
+}
+/* FECHAS */
+
+ div.z  {
+    text-align: center;
+}
+
+/* ARRAY */

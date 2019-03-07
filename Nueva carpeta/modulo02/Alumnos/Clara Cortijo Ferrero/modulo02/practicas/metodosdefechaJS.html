@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+
+<title>Métodos de fecha JavaScript</title>
+<meta name="keywords" content="HTML5,CSS3,JavaScript">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Aprende  JavaScript con ejemplos pr&aacute;cticos">
+
+<link rel="stylesheet" type="text/css" href="./css/estilos.css">
+<script src="./js/funciones4.js"></script>
+
+
+</head>
+
+<body>
+<h2>Métodos de fecha</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <th height="47">Method</th>
+      <th>Description</th>
+      <th>&nbsp;</th>
+    </tr>
+    
+      <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_obj_date.asp">new Date()</a></td>
+      <td>Coge la fecha actual del sistema</td>
+      <td><button type="buttom" onClick="nuevafecha()">Ejecutar</button></td>
+    </tr>
+    
+     <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getfullyear.asp">getFullYear()</a></td>
+      <td>Devuelve el año</td>
+      <td><button type="buttom" onClick="devuelveaño()">Ejecutar</button></td>
+    </tr>
+    
+     <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getmonth.asp">getMonth()</a></td>
+      <td>Devuelve el mes</td>
+      <td><button type="buttom" onClick="devuelvemes()">Ejecutar</button></td>
+    </tr>
+    
+     <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getday.asp">getDay()</a></td>
+      <td>Devuelve el día</td>
+      <td><button type="buttom" onClick="devuelvedia()">Ejecutar</button></td>
+    </tr>
+
+     <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getweek.asp">getWeek()</a></td>
+      <td>Devuelve la semana del año</td>
+      <td><button type="buttom" onClick="devuelvesemana()">Ejecutar</button></td>
+    </tr>
+
+    
+    
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getdate.asp">getDate()</a></td>
+      <td>Devuelve el día del mes (entre 1 y 31)</td>
+      <td><button type="buttom" onClick="diadelmes()">Ejecutar</button></td>
+    </tr>
+
+
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_gethours.asp">getHours()</a></td>
+      <td>Devuelve la hora (desde las 0 a las 23h)</td>
+      <td><button type="buttom" onClick="devuelvehora()">Ejecutar</button></td>
+    </tr>
+    
+       <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getminutes.asp">getMinutes()</a></td>
+      <td>Devuelve los minutos (de 0 a 59)</td>
+      <td><button type="buttom" onClick="minutos()">Ejecutar</button></td>
+    </tr>
+
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getseconds.asp">getSeconds()</a></td>
+      <td>Devuelve los segundos (de 0 a 59)</td>
+      <td><button type="buttom" onClick="segundos()">Ejecutar</button></td>
+    </tr>
+    
+    
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getmilliseconds.asp">getMilliseconds()</a></td>
+      <td>Devuelve los milisegundos (de 0 a 999)</td>
+      <td><button type="buttom" onClick="milisegundos()">Ejecutar</button></td>
+    </tr>
+
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_gettime.asp">getTime()</a></td>
+      <td>Devuelve el número de milisegundos desde la medianoche del 1 de Enero de 1970, y una fecha especificada</td>
+      <td><button type="buttom" onClick="devuelvetiempo()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_gettimezoneoffset.asp">getTimezoneOffset()</a></td>
+      <td>Devuelve el tiempo de diferencia entre el UTC (tiempo universal coordinado) y el tiempo local en minutos.</td>
+      <td><button type="buttom" onClick="offsetzonahoraria()">Ejecutar</button></td>
+    </tr>
+    
+     <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_now.asp">now()</a></td>
+      <td>Devuelve el número de milisegundos desde la medianoche del 1 de Enero de 1970, y una fecha especificada</td>
+      <td><button type="buttom" onClick="ahora()">Ejecutar</button></td>
+    </tr>
+    
+    
+    
+    
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getutcdate.asp">getUTCDate()</a></td>
+      <td>Returns the day of the month, according to universal time (from 1-31)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getutcday.asp">getUTCDay()</a></td>
+      <td>Returns the day of the week, according to universal time (from 0-6)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getutcfullyear.asp">getUTCFullYear()</a></td>
+      <td>Returns the year, according to universal time</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getutchours.asp">getUTCHours()</a></td>
+      <td>Returns the hour, according to universal time (from 0-23)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getutcmilliseconds.asp">getUTCMilliseconds()</a></td>
+      <td>Returns the milliseconds, according to universal time (from 0-999)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getutcminutes.asp">getUTCMinutes()</a></td>
+      <td>Returns the minutes, according to universal time (from 0-59)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getutcmonth.asp">getUTCMonth()</a></td>
+      <td>Returns the month, according to universal time (from 0-11)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getutcseconds.asp">getUTCSeconds()</a></td>
+      <td>Returns the seconds, according to universal time (from 0-59)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>getYear()</td>
+      <td>Deprecated. Use the <a href="https://www.w3schools.com/jsref/jsref_getfullyear.asp">getFullYear()</a> method instead</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_now.asp">now()</a></td>
+      <td>Returns the number of milliseconds since midnight Jan 1, 1970</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_parse.asp">parse()</a></td>
+      <td>Parses a date string and returns the number of milliseconds since January 1, 1970</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_setdate.asp">setDate()</a></td>
+      <td>Sets the day of the month of a date object</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_setfullyear.asp">setFullYear()</a></td>
+      <td>Sets the year of a date object</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_sethours.asp">setHours()</a></td>
+      <td>Sets the hour of a date object</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_setmilliseconds.asp">setMilliseconds()</a></td>
+      <td>Sets the milliseconds of a date object</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_setminutes.asp">setMinutes()</a></td>
+      <td>Set the minutes of a date object</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_setmonth.asp">setMonth()</a></td>
+      <td>Sets the month of a date object</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_setseconds.asp">setSeconds()</a></td>
+      <td>Sets the seconds of a date object</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_settime.asp">setTime()</a></td>
+      <td>Sets a date to a specified number of milliseconds after/before January 1, 1970</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_setutcdate.asp">setUTCDate()</a></td>
+      <td>Sets the day of the month of a date object, according to universal time</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_setutcfullyear.asp">setUTCFullYear()</a></td>
+      <td>Sets the year of a date object, according to universal time</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_setutchours.asp">setUTCHours()</a></td>
+      <td>Sets the hour of a date object, according to universal time</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_setutcmilliseconds.asp">setUTCMilliseconds()</a></td>
+      <td>Sets the milliseconds of a date object, according to universal time</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_setutcminutes.asp">setUTCMinutes()</a></td>
+      <td>Set the minutes of a date object, according to universal time</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_setutcmonth.asp">setUTCMonth()</a></td>
+      <td>Sets the month of a date object, according to universal time</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_setutcseconds.asp">setUTCSeconds()</a></td>
+      <td>Set the seconds of a date object, according to universal time</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>setYear()</td>
+      <td>Deprecated. Use the <a href="https://www.w3schools.com/jsref/jsref_setfullyear.asp">setFullYear()</a> method instead</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_todatestring.asp">toDateString()</a></td>
+      <td>Converts the date portion of a Date object into a readable string</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>toGMTString()</td>
+      <td>Deprecated. Use the <a href="https://www.w3schools.com/jsref/jsref_toutcstring.asp">toUTCString()</a> method instead</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_toisostring.asp">toISOString()</a></td>
+      <td>Returns the date as a string, using the ISO standard</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_tojson.asp">toJSON()</a></td>
+      <td>Returns the date as a string, formatted as a JSON date</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_tolocaledatestring.asp">toLocaleDateString()</a></td>
+      <td>Returns the date portion of a Date object as a string, using locale conventions</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_tolocaletimestring.asp">toLocaleTimeString()</a></td>
+      <td>Returns the time portion of a Date object as a string, using locale conventions</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_tolocalestring.asp">toLocaleString()</a></td>
+      <td>Converts a Date object to a string, using locale conventions</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_tostring_date.asp">toString()</a></td>
+      <td>Converts a Date object to a string</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_totimestring.asp">toTimeString()</a></td>
+      <td>Converts the time portion of a Date object to a string</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_toutcstring.asp">toUTCString()</a></td>
+      <td>Converts a Date object to a string, according to universal time</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_utc.asp">UTC()</a></td>
+      <td>Returns the number of milliseconds in a date since midnight of January 1, 1970, according to UTC time</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_valueof_date.asp">valueOf()</a></td>
+      <td>Returns the primitive value of a Date object</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+
+ 
+</body>
+
+</html>

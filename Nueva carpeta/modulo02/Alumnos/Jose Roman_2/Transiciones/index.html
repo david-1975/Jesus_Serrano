@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="es-Es">
+<head>
+<meta charset="utf-8">
+<title>Transiciones, Transformacione sy Animaciones con CSS</title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/js.js"></script>
+</head>
+
+<body>
+
+<nav>
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="responsiveTopnav()">
+  <i class="menu-bar-icon"><img src="img/menu-icon.png" width="32" height="32" alt=""/></i>
+  </a>
+</div>
+</nav>
+
+<header>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/estrenos1.jpg" alt="estrenos1"  style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img/estrenos2.jpg" alt="estrenos2"  style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/estrenos3.jpg" alt="estrenos3" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</header>
+
+<script>
+	window.onload = slideShow();
+</script>
+
+<div class="divGeneral">
+
+    <div class="contenedor">
+        <img src="img/pelis/aniquilacion.jpg" alt="imagen avatar" title="Avatar" class="imagen">
+        <div class="superponerTop">
+       	  <div class="texto"><strong>Aniquilación</strong><br><br>Lena, bióloga y antigua soldado, se une a la misión que busca a su esposo, desaparecido en una región de acceso restringido. Mientras recorren el área comprueban que está poblada por criaturas terroríficas, tan hermosas como mortíferas.<br><br>
+<!-- Trigger/Open The Modal -->
+<button id="myBtn" class="boton" onClick="cajaModal()">Ver trailer</button>
+</div>
+          
+  </div>
+	</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+<iframe width="100%" height="400px" src="https://www.youtube.com/embed/JIGXgCvLTXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+</div>
+
+
+
+    <div class="contenedor">
+        <img src="img/pelis/black-panther.jpg" alt="imagen avatar" title="Avatar" class="imagen">
+        <div class="superponerBottom">
+       	  <div class="texto"><strong>Black Panther</strong><br><br>Después de morir su padre, T'Challa regresa a su nación, Wakanda. Una vez allí, descubre que tiene un nuevo y terrible enemigo, y T'Challa asume la personalidad de Pantera Negra para salvar no solo al reino de Wakanda, sino a toda la humanidad.<br><br>
+          <button id="myBtn2" class="boton" onClick="cajaModal2()">Ver trailer</button>
+          </div>
+    	</div>
+	</div>
+    <!-- The Modal -->
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close2">&times;</span>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/repsxoJnobc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+        <div class="contenedor">
+        <img src="img/pelis/coco.jpg" alt="imagen avatar" title="Avatar" class="imagen">
+        <div class="superponerLeft">
+             <div class="texto"><strong>Coco</strong><br><br>Miguel es un niño que sueña con ser músico, pero su familia se lo prohíbe porque su tatarabuelo, músico, los abandonó, y quieren obligar a Miguel a ser zapatero, como todos los miembros de la familia. Por accidente, Miguel entra en la Tierra de los Muertos.<br><br>
+                <button id="myBtn3" class="boton" onClick="cajaModal3()">Ver trailer</button></div>
+        </div>
+        <div id="myModal3" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close3">&times;</span>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/n70iIZiO8Mk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+	</div>
+        </div>
+        <div class="contenedor">
+        <img src="img/pelis/deadpool.jpg" alt="imagen avatar" title="Avatar" class="imagen">
+        <div class="superponerRight">
+            <div class="texto"><strong>Deadpool</strong><br><br>Un ex mercenario quien, tras haber sido sometido a un cruel experimento adquiere el súper poder de sanar rápidamente, pretende vengarse del hombre que destrozó su vida.<br><br>
+                <button id="myBt4" class="boton" onClick="cajaModal4()">Ver trailer</button></div>
+        </div>
+        <div id="myModal4" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close4">&times;</span>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/-yu6Y0_-FPg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+	</div>
+        </div>
+    
+    <div class="contenedor">
+        <img src="img/pelis/el-amanecer-del-planeta-de-los-simios.jpg" alt="imagen avatar" title="Avatar" class="imagen">
+      <div class="superponerTodo">
+        <div class="texto"><strong>el-amanecer-del-planeta-de-los-simios</strong><br><br>Los simios genéticamente evolucionados de César y los humanos sobrevivientes de un virus mortal batallan por la supremacía.<br><br>
+            <button id="myBt5" class="boton" onClick="cajaModal5()">Ver trailer</button></div>
+    </div>
+    <div id="myModal5" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close5">&times;</span>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/akZXXR_0qVk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+  </div>
+</div>
+    <div class="contenedor">
+        <img src="img/pelis/el-corredor-del-laberinto.jpg" alt="imagen avatar" title="Avatar" class="imagen">
+      <div class="superponerBottomCorto">
+       	<div class="texto"><strong>El corredor del laberinto</strong><br><br>Las memorias de unos niños son borradas y deben unirse para escapar de un laberinto en el que están atrapados.<br><br><button id="myBtn6" class="boton" onClick="cajaModal6()">Ver trailer</button></div>
+         </div>
+         <div id="myModal6" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close6">&times;</span>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/gHIoC80urRw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+  </div>
+</div>
+    
+<div class="contenedor">
+    <img src="img/pelis/freed-sombras-liberadas.jpg" alt="imagen avatar" title="Avatar" class="imagen">
+    <div class="superponerLeft">
+         <div class="texto"><strong>50 Sombras</strong><br><br>Miguel es un niño que sueña con ser músico, pero su familia se lo prohíbe porque su tatarabuelo, músico, los abandonó, y quieren obligar a Miguel a ser zapatero, como todos los miembros de la familia. Por accidente, Miguel entra en la Tierra de los Muertos.<br><br>
+            <button id="myBtn7" class="boton" onClick="cajaModal7()">Ver trailer</button></div>
+    </div>
+    <div id="myModal7" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close7">&times;</span>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/oPgWolSQgCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+</div>
+    </div>
+    
+    <div class="contenedor">
+        <img src="img/pelis/gorion-rojo.jpg" alt="imagen avatar" title="Avatar" class="imagen">
+        <div class="superponerLeft">
+             <div class="texto"><strong>Gorrión Rojo</strong><br><br>Dominika, una antigua bailarina se convierte en agente secreto del servicio ruso, pero la dureza del entrenamiento le pasa factura. Su primera misión le involucra con un agente de la CIA junto al que cae en una espiral de atracción y engaño<br><br>
+                <button id="myBtn8" class="boton" onClick="cajaModal8()">Ver trailer</button></div>
+        </div>
+        <div id="myModal8" class="modal">
+    
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close8">&times;</span>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/3B-Wbe01DQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    </div>
+        </div>
+    
+    
+<div class="contenedor">
+        <img src="img/pelis/guardianes-galaxia.jpg" alt="imagen avatar" title="Avatar" class="imagen">
+    <div class="superponerTopLeft-BottomRight">
+   	  <div class="texto">Hola Mundo</div>
+    	</div>
+  </div>
+    
+    <div class="contenedor">
+        <img src="img/pelis/it-eso.jpg" alt="imagen avatar" title="Avatar" class="imagen">
+      <div class="superponerTopRight-BottomLeft">
+       	<div class="texto">Hola Mundo</div>
+    	</div>
+  </div>
+    
+    <div class="contenedor">
+        <img src="img/pelis/jurassic-park.jpg" alt="imagen avatar" title="Avatar" class="imagen">
+      <div class="superponerBottomLeft-TopRight">
+       	<div class="texto">Hola Mundo</div>
+    	</div>
+  </div>
+    
+    <div class="contenedor">
+        <img src="img/pelis/jurassic-world.jpg" alt="imagen avatar" title="Avatar" class="imagen">
+      <div class="superponerBottomRight-TopLeft">
+       	<div class="texto">Hola Mundo</div>
+    	</div>
+  </div>
+  
+  
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cálculos de fechas con JavaScript</title>
+<script src="funciones.js"></script>
+<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+<h1><strong>Cálculos de fechas con JavaScript</strong></h1>
+<hr>
+<div class="caja">
+    <h2>Edad</h2>
+    <p><strong>Introducir el año de nacimiento y calcular la edad.</strong></p>
+  <form id="form1" name="form1" method="post">
+    <label for="num_edad">Introduce el año de nacimiento:</label>
+    <input type="date" name="num_edad" id="num_edad">
+    <input type="button" name="boton_edad" id="boton_edad" onClick="calcularEdad()" value="Calcula  la edad">
+  </form>
+  
+  <p id="cumple"></p>
+  </div>
+  <br>
+  <div class="caja">
+    <h2>Año</h2>
+    <p><strong>Introducir el año y mostrar el año anterior, el año introducido y el año posterior</strong></p>
+  <form id="form2" name="form2" method="post">
+    <label for="num_año">Introduce el año :</label>
+    <input type="number" name="num_año" id="num_año" min="1950" max="2100">
+    <input type="button" name="boton_año" id="boton_año" onClick="calcularAño()" value="Calcula el año anterior y posterior">
+  </form>
+  
+  <p id="año"></p>
+  </div>
+  <br>
+  <div class="caja">
+    <h2>Fecha</h2>
+    <p><strong>A partir de 3 campos de formulario, día, mes y año, mostrar la fecha  en este formato &quot;dd/mm/aaaa&quot;.</strong></p>
+  <form id="form3" name="form3" method="post">
+    <label for="num_dia">Introduce el dia :</label>
+    <input type="number" name="num_dia" id="num_dia" min="1" max="31" step="1"><br>
+    <label for="num_mes">Introduce el mes :</label>
+    <input type="number" name="num_mes" id="num_mes" min="1" max="12" step="1"><br>
+    <label for="num_año2">Introduce el año :</label>
+    <input type="number" name="num_año2" id="num_año2" min="1950" max="2018"><br>
+    <input type="button" name="boton_f" id="boton_f" onClick="calcularFecha()" value="Calcula la fecha">
+  </form>
+  
+  <p id="fecha"></p>
+  </div>
+<br>
+<div class="caja">
+    <h2>Hora</h2>
+    <p><strong>A partir de 3 campos de formulario, hora, minutos y segundos, mostrar la hora en este formato &quot;hh:mm:ss&quot;.</strong></p>
+  <form id="form4" name="form4" method="post">
+    <label for="num_h">Introduce la hora :</label>
+    <input type="number" name="num_h" id="num_h" min="00" max="23"><br>
+    <label for="num_mes">Introduce los minutos :</label>
+    <input type="number" name="num_m" id="num_m" min="00" max="59"><br>
+    <label for="num_año2">Introduce los segundos :</label>
+    <input type="number" name="num_s" id="num_s" min="00" max="59"><br>
+    <input type="button" name="boton_s" id="boton_s" onClick="calcularHora()" value="Calcula la hora">
+  </form>
+  
+  <p id="hora"></p>
+  </div>
+  <br>
+  <div class="caja">
+      <h2>Formato</h2>
+      <p><strong>Introducir una fecha y mostrarla en este formato: &quot;Hoy es martes, 11 de Noviembre de 2018&quot;.</strong></p>
+    <form id="form5" name="form5" method="post">
+      <label for="num_fe">Introduce una fecha :</label>
+      <input type="date" name="num_fe" id="num_fe" ><br>
+      <input type="button" name="boton_s" id="boton_s" onClick="calcularFormato()" value="Calcula">
+    </form>
+    
+    <p id="formato"></p>
+    </div>
+    <br>
+    <div class="caja">
+        <h2>Formato actual</h2>
+        <p><strong>Mostrar la fecha y hora actual en este formato: &quot;Has iniciado sesión el día 13/11/2018 a las 15:30:25&quot;.</strong></p>
+      <form id="form6" name="form6" method="post">
+        <label for="num_fe1">Login :</label>
+        <!--input type="date" name="num_fe1" id="num_fe1" >-->
+        <input type="button" name="boton_s1" id="boton_s1" onClick="calcularFormatoActual()" value="Calcula">
+      </form>
+      
+      <p id="formato1"></p>
+      </div>
+      <br>
+    <div class="caja">
+        <h2>Días cumpleaños</h2>
+        <p><strong>Calcular los días que faltan para tu cumpleaños a partir de una fecha de nacimiento introducida.</strong></p>
+      <form id="form7" name="form7" method="post">
+        <label for="num_cum">Introduce tu cumpleaños :</label>
+        <input type="date" name="num_cum" id="num_cum" >
+        <input type="button" name="boton_cum" id="boton_cum" onClick="diasCumple()" value="Calcula los días">
+      </form>
+      
+      <p id="cumpleaños"></p>
+      </div>
+      <br>
+    <div class="caja">
+        <h2>Vida</h2>
+        <p><strong>Calcular cuántos días, horas, minutos y segundos ha vivido una persona a partir de su fecha de nacimiento.</strong></p>
+      <form id="form8" name="form8" method="post">
+        <label for="num_v">Introduce tu cumpleaños :</label>
+        <input type="date" name="num_v" id="num_v" >
+        <input type="button" name="boton_cum" id="boton_cum" onClick="vida()" value="Calcula tus días">
+      </form>
+      
+      <p id="vida"></p>
+      </div>
+
+      <br>
+      <div class="caja">
+          <h2>Trimestre</h2>
+          <p><strong>Mostrar a que  trimestre pertenece una fecha introducida.</strong></p>
+        <form id="form9" name="form9" method="post">
+          <label for="num_t">Introduce la fecha :</label>
+          <input type="date" name="num_t" id="num_t" >
+          <input type="button" name="boton_t" id="boton_t" onClick="trimestre()" value="Calcula el trimestre">
+        </form>
+        
+        <p id="trimestre"></p>
+        </div>
+        <br>
+      <div class="caja">
+          <h2>Zodiaco</h2>
+          <p><strong>Mostrar a que  trimestre pertenece una fecha introducida.</strong></p>
+           
+        <form id="form10" name="form10" method="post">
+          <label for="num_z">Introduce la fecha :</label>
+          <input type="date" name="num_z" id="num_z" >
+          <input type="button" name="boton_z" id="boton_z" onClick="zodiaco()" value="Calcula tu signo">
+        </form>
+        <div class="z">
+          <img id="imagen" src="" width="76 " height="76" alt="">
+        </div> 
+        <p id="zodiaco"></p> 
+        
+        </div>
+        <hr>
+        <footer>
+
+        </footer>
+</body>
+</html>

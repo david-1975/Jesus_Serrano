@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+hr{
+	
+	background-color:#C8EFF6;
+	border: 2px solid #77C3F4;
+	
+	}
+
+div{
+	background-color:#F9D7EC;
+	border: 2px dashed #77C3F4;
+	padding: 10px;
+	margin:10px;
+	}

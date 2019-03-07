@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Metodos numéricos Js</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="./js/funciones2.js"></script>
+<link href="./css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div>
+    <div class="divejemplo2">
+        <p id="demo2"> </p>
+    </div>
+    <div class="divejemplo2">
+        <p id="demo1"> </p>
+    </div>
+</div>
+<h2>Métodos numéricos</h2>
+<table>
+  <tbody>
+    <tr>
+      <th>Method</th>
+      <th>formato</th>
+      <th>Description</th>
+      <th>exex</th>
+    </tr>
+    <tr>
+      <td><a href="#">isFinite()</a></td>
+      <td>isFinite(valor)</td>
+      <td>Comprobar si un valor es un número finito</td>
+      <td><button type="button" onClick="esFinito()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">isInteger()</a></td>
+      <td>isInteger(valor)</td>
+      <td>Comprobar si un valor es un número entero</td>
+      <td><button type="button" onClick="esEntero()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">isNaN()</a></td>
+      <td>isNaN()</td>
+      <td>Comprobar si un valor es un número</td>
+      <td><button type="button" onClick="esNumero()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">toExponential()</a></td>
+      <td>dato.toExponential(valor)</td>
+      <td>Convierte numer a notación exponencial</td>
+      <td><button type="button" onClick="aExponencial()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">toFixed()</a></td>
+      <td>num.toFixed(digitos a tratar)</td>
+      <td>Redondea un número</td>
+      <td><button type="button" onClick="redondea()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">toPrecision()</a></td>
+      <td>num.Precision(digitos)</td>
+      <td>Extrae el numero con los digitos solicitados</td>
+      <td><button type="button" onClick="digPrecision()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">toString()</a></td>
+      <td>num.toString(parm)</td>
+      <td>Devuelve un número como una cadena</td>
+      <td><button type="button" onClick="toCadena()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">valueOf()</a></td>
+      <td>var.valueOf()</td>
+      <td>Devuelve el valor primitivo (original) de una variable.<strong> Revisar en casa no le encuentro utilidad<strong></td>
+      <td><button type="button" onClick="valorDe()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <p>Todos los métodos numéricos devuelven un valor nuevo. No cambian la variable original.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es-ES"><head>
+<meta charset="utf-8">
+<title>Elementos HTMl del DOM</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="js/funciones7.js"></script>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>JavaScript HTML DOM</h1>
+<hr>
+<h2>El DOM HTML (Document Object Model)</h2>
+<p>Cuando se carga una página web, el navegador crea un <strong>D</strong>ocument<strong> O</strong>bject<strong> M</strong>odelo<strong> <strong>DOM, (</strong>M</strong>odelo de <strong>O</strong>bjetos del <strong>D</strong>ocumento). El <strong>DOM</strong> es el modelo de objetos para la representación de documentos') es esencialmente una interfaz de plataforma que proporciona un conjunto estándar de objetos para representar documentos HTML.</p>
+<p>JavaScript puede acceder y cambiar todos los elementos de un documento HTML. El responsable del DOM es el <a href="#" title="World Wide Web Consortium" target="_blank">World Wide Web Consortium</a> (W3C).</p>
+<div id="principal">
+  <div class="divIMG">
+<p><img src="img/document-window-navigator.png" width="664" height="444" alt="imagen DOM"/></p>
+<p><strong>Más información en... </strong><a href="https://webaim.org/blog/user-agent-string-history/" target="_blank">https://webaim.org/blog/user-agent-string-history/</a></p>
+</div>
+
+<div id="infoNav" class="divNAV">Info Navegador<script>window.onload = infoNavegador();</script></div>
+</div>
+
+<hr>
+<h2>Encontrar Elementos HTML</h2>
+<div id="div1" class="divDOM"><p>&nbsp;</p></div>
+<table>
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="#">document.getElementById(<em>id</em>)</a></td>
+      <td>Encuentra el elemento por su identidificador (id)</td>
+      <td><button type="button" onClick="miDivId()" target="iframe1">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">document.getElementsByTagName(<em>name</em>)</a></td>
+      <td>Encuentra el elemento por su nombre de etiqueta (TagName)</td>
+      <td><button type="button" onClick="miIframe2()" target="iframe1">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">document.getElementsByClassName(<em>name</em>)</a></td>
+      <td>Encuentra el elemento por su nombre de la clase CSS (ClassName)</td>
+      <td><button type="button" onClick="miIframe3()" target="iframe1">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">document.getElementsByName(<em>name</em>)</a></td>
+      <td>Encuentra el elemento html por su nombre (Name)</td>
+      <td><button type="button" onClick="miIframe3()" target="iframe1">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">document.getElementsBySelector(all)(<em>name</em>)</a></td>
+      <td>Encuentra el elemento por su nombre de salector CSS (CSS Selector)</td>
+      <td><button type="button" onClick="miIframe3()" target="iframe1">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+<h2>Cambiar los elementos HTML</h2>
+<table>
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><em>element</em>.innerHTML =  <em>new html content</em></td>
+      <td>Cambia el contenido de un elemento  HTML.</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><em>element</em>.<em>attribute = new value</em></td>
+      <td>Cambia el valor del atributo de un elemento  HTML.</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><em>element</em>.setAttribute<em>(attribute, value)</em></td>
+      <td>Cambia el valor del atributo de un elemento  HTML.</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><em>element</em>.style.<em>property = new style</em></td>
+      <td>Cambia el estilo CSS de un elemento HTML.</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+<h2>Añadir o eliminar elementos HTML</h2>
+<table>
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td>document.createElement(<em>element</em>)</td>
+      <td>Crea un elemento HTML</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>document.removeChild(<em>element</em>)</td>
+      <td>Elimina un elemento HTML</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>document.appendChild(<em>element</em>)</td>
+      <td>Añade un elemento HTML</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>document.replaceChild(<em>element</em>)</td>
+      <td>Reeplaza un elemento HTML</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>document.write(<em>text</em>)</td>
+      <td>Escribe en el flujo de salida  HTML</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+<div>
+  <div class="divejemplo2">
+    <h2>¿Qué puede hacer JavaScript en HTML?</h2>
+    <p>Con el modelo de objetos, JavaScript recibe toda la energía que necesita para crear HTML dinámico:</p>
+    <ul>
+      <li>JavaScript puede cambiar todos los elementos HTML en la página</li>
+      <li>JavaScript puede cambiar todos los atributos de HTML en la página</li>
+      <li>JavaScript puede cambiar todos los estilos CSS en la página</li>
+      <li>JavaScript puede eliminar elementos y atributos HTML existente</li>
+      <li>JavaScript puede añadir nuevos elementos y atributos HTML</li>
+      <li>JavaScript puede reaccionar a todos los eventos de HTML existentes en la página.</li>
+      <li>JavaScript puede crear nuevos eventos en la página HTML</li>
+    </ul>
+    <br>
+  </div>
+  <div class="divejemplo2">
+    <h2>¿Qué es el código HTML DOM?</h2>
+    <p>El DOM HTML es un estándar <strong>de objetos</strong> de modelo y de <strong>programación de interfaces</strong> para HTML. Se define:</p>
+    <ul>
+      <li>Los elementos HTML como <strong>objetos</strong></li>
+      <li>Las <strong>propiedades</strong> de todos los elementos HTML</li>
+      <li>Los <strong>métodos</strong> para acceder a todos los elementos HTML</li>
+      <li>Los <strong>eventos</strong> de todos los elementos HTML</li>
+    </ul>
+    <p>En otras palabras: <strong>El DOM HTML es un estándar de cómo obtener, cambiar, añadir o eliminar elementos HTML.</strong></p>
+  </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

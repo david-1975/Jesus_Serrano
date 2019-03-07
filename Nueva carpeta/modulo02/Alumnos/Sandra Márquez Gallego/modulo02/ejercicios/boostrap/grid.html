@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<title>Página con bootstrap 4</title>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie-edge">
+ <!-- Bootstrap CSS -->
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<style type="text/css">
+	.estilo {
+	padding-top: .55rem;
+    padding-bottom: .55rem;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+	}
+	</style>
+</head>
+
+<body>
+<!-- -----------------EMPIEZA EL CONTENIDO---------------- -->
+<!-- 
+XS (0 < 575)
+SM (576 - 767)
+MD (768 - 991)
+LG (992 -1199)
+XL (1200 >)
+ -->
+
+<div class="container">
+<h1>Bootstrap! 4</h1>
+<p>Bootstrap es un framework web o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web. Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño basado en HTML y CSS, así como extensiones de JavaScript adicionales. A diferencia de muchos frameworks web, solo se ocupa del desarrollo front-end. </p> 		
+<hr>
+<h2>Grid - Cuadrícula - Rejilla</h2>
+<p>12 columnas por bloque. La suma de todas las columnas debe ser 12. Si no se alcanza el número 12 quedarán huecos</p>
+	<div class="row">
+	 	<div class="col-1 estilo">col-1</div>
+	 	<div class="col-1 estilo">col-1</div>
+	 	<div class="col-1 estilo">col-1</div>
+	 	<div class="col-1 estilo">col-1</div>
+	 	<div class="col-1 estilo">col-1</div>
+	 	<div class="col-1 estilo">col-1</div>
+	 	<div class="col-1 estilo">col-1</div>
+	 	<div class="col-1 estilo">col-1</div>
+	 	<div class="col-1 estilo">col-1</div>
+	 	<div class="col-1 estilo">col-1</div>
+	 	<div class="col-1 estilo">col-1</div>
+	 	<div class="col-1 estilo">col-1</div>
+	</div>
+	<br>
+	<div class="row">
+	 	<div class="col-2 estilo">col-2</div>
+	 	<div class="col-2 estilo">col-2</div>
+	 	<div class="col-2 estilo">col-2</div>
+	 	<div class="col-2 estilo">col-2</div>
+	 	<div class="col-2 estilo">col-2</div>
+	 	<div class="col-2 estilo">col-2</div>
+	</div>
+	<br>
+		<div class="row">
+	 	<div class="col-3 estilo">col-3</div>
+	 	<div class="col-3 estilo">col-3</div>
+	 	<div class="col-3 estilo">col-3</div>
+	 	<div class="col-3 estilo">col-3</div>
+	</div>
+	<br>
+		<div class="row">
+	 	<div class="col-4 estilo">col-4</div>
+	 	<div class="col-4 estilo">col-4</div>
+	 	<div class="col-4 estilo">col-4</div>
+	</div>
+	<br>
+		<div class="row">
+	 	<div class="col-6 estilo">col-6</div>
+	 	<div class="col-6 estilo">col-6</div>
+	</div>
+	<br>
+		<div class="row">
+	 	<div class="col-12 estilo">col-12</div>
+	</div>
+		<br>
+		<hr>
+	
+ 	<div class="row">
+	 	<div class="col-lg-4 col-xl-4">
+	 		<h3>5 niveles de rejilla</h3>
+	 		<ul>
+	 			<li><b>Extra small</b> menor de 576px. </li>
+	 			<li><b>Small</b> mayor o igual de 576px.</li>
+	 			<li><b>Medium</b> mayor o igual de 768px.</li>
+	 			<li><b>Large</b> mayor o igual de 992px.</li>
+	 			<li><b>Extra Large</b> mayor de 1200px.</li>
+	 		</ul>
+	 					<p>Hay cinco niveles en el sistema de cuadrícula, uno para cada tipo de dispositivo, comienza desde el más pequeño al más grande.</p>
+	 	</div>
+	 	<div class="col-lg-8 col-xl-8">
+        	<p><img src="../img/img-dispositivos.png" alt="Dispositivos" class="img-thumbnail"></p>
+	 	</div>
+	</div>
+	
+	<br>
+	
+	<div class="row">
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 estilo">Extra small - <code>col</code></div>
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 estilo">Small - <code>col-sm</code></div>
+		<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-2 estilo">Medium - <code>col-md</code></div>
+		<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-2 estilo">Large - <code>col-lg</code></div>
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 estilo">Extra Large  - <code>col-xl</code></div>
+	</div>
+	
+	<br>
+ 	
+	 	<h3>Columnas adaptables al tamaño de pantalla</h3>
+	<div class="row">
+
+	 	<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 estilo">Uno</div>
+	 	<div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-8 estilo">Dos</div>
+	 	<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-2 estilo">Tres</div>
+	</div>
+	<br>
+		<h3>Columnas que se ocultan según el dispositivo</h3>
+	<div class="row">
+	 	<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-block estilo">Extra small - <code>d-block</code></div>
+	 	<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-none d-sm-block d-md-block d-lg-block d-xl-block estilo">d-sm-none - <code>d-md-block</code></div>
+	 	<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-2 d-none d-sm-none d-md-block d-lg-block d-xl-block estilo">d-sm-none - <code>d-md-block</code></div>
+	 	<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-2 d-none d-sm-none d-md-none d-lg-block d-xl-block estilo">d-md-none - <code>d-lg-block</code></div>
+	 	<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 d-none d-sm-none d-md-none d-lg-none d-xl-block estilo">d-lg-none  - <code>d-xl-block</code></div>
+	</div>
+	<br>
+    <br>
+	<br>	
+	<br>
+    <br>
+    <br>
+                    	
+ 	
+ 
+<!-- -----------------TERMINA EL CONTENIDO---------------- -->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../js/jquery-3.3.1.slim.js"></script>
+<script src="../js/popper.js"></script>
+<script src="../js/bootstrap.js"></script>
+
+</body>
+</html>

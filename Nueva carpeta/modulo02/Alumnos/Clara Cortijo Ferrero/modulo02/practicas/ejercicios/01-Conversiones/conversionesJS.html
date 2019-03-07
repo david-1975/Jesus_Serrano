@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+
+<script src="funciones.js"></script>
+<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+<h2><strong>Operaciones de conversión de unidades con JavaScript</strong></h2>
+<hr>
+<div class="violeta">
+<p><strong>(volumen) <br>
+¿Cuántos  son X litros en decilitros, centilitros y mililitros?</strong> <br>
+(1 litro = 10 decilitros), (1 litro = 100 centilitros), (1 litro = 1000 mililitros)</p>
+<form id="form1" name="form1" method="post">
+  <label for="num_litros">Introduce número de litros:</label>
+  <input type="number" name="num_litros" id="num_litros">
+  <input type="button" name="boton_litros" id="boton_litros" onClick="conv_litros()" value="Enviar">
+  <!--<button type="boton" name="boton" id="boton" onClick="conv_litros()">Enviar</button>-->
+ 
+</form>
+<p id="litros"></p>
+</div>
+<!--<p>document.getElementById(campo).value</p>
+<p>document.getElementById(?).innerHTML</p>-->
+
+<div class="azul">
+<p> <span><strong>(longitud) <br>
+¿Cuántos son X kilómetros en metros, centímetros y milímetros? </strong></span><br>
+(1 km = 1000 metros), (1 metros = 100 centímetros), (1 centímetro = 10 milímetros)</p>
+
+<form id="form2" name="form2" method="post">
+  <label for="num_longitud">Introduce los metros:</label>
+  <input type="number" name="num_longitud" id="num_longitud">
+  <input type="button" name="boton_longitud" id="boton_longitud" onClick="conv_longitud()" value="Enviar">
+  <!--<button type="boton" name="boton" id="boton" onClick="conv_litros()">Enviar</button>-->
+ 
+</form>
+<p id="longitud"></p>
+</div>
+
+<div class="violeta">
+<p><strong>(tiempo) <br>
+¿Cuántas  son X días en horas, minutos y segundos?</strong> <br>
+(1 día = 24 horas), (1 hora = 60 minutos), (1 minuto = 60 segundos)</p>
+<form id="form3" name="form3" method="post">
+  <label for="num_hora">Introduce el número de días:</label>
+  <input type="number" name="num_dia" id="num_dia">
+  <input type="button" name="boton_dia" id="boton_dia" onClick="conv_dia()" value="Enviar">
+</form>
+
+<p id="dia"></p>
+
+</div>
+
+<div class="azul">
+<p><strong>(temperatura) <br>
+¿Cuántos son X grados centígrados en grados fahrenheit y grados kelvin? </strong><br>
+(℉= ( ℃ * 1. 8 ) + 32 ), ( ℃ + 273.15 )</p>
+
+<form id="form4" name="form4" method="post">
+  <label for="num_hora">Introduce grados Celsius:</label>
+  <input type="number" name="num_temp" id="num_temp">
+  <input type="button" name="boton_temp" id="boton_temp" onClick="conv_temp()" value="Enviar">
+</form>
+
+<p id="temp"></p>
+
+</div>
+
+<div class="violeta">
+<p><strong>(peso) <br>
+¿Cuántos son X toneladas en kilogramos, gramos,  miligramos?<br>
+</strong>(1 tl = 1000 kilogramos), (1kg = 1000gramos), (1g = 1000miligramos)</p>
+
+<form id="form5" name="form5" method="post">
+  <label for="num_peso">Introduce toneladas:</label>
+  <input type="number" name="num_peso" id="num_peso">
+  <input type="button" name="boton_peso" id="boton_peso" onClick="conv_peso()" value="Enviar">
+</form>
+
+<p id="peso"></p>
+
+</div>
+
+<div class="azul">
+<p><strong>(pesaje) <br>
+¿Cuántos son X kilogramos en onzas, libras y piedras, quilates? <br>
+</strong>(1 kg =0.1575 piedras), (1 kg = 2.2046 libras), (1 kg = 35.274 onzas), (1 kg = 5000 kilates)</p>
+
+<form id="form6" name="form6" method="post">
+  <label for="num_peso2">Introduce kilogramos:</label>
+  <input type="number" name="num_peso2" id="num_peso2">
+  <input type="button" name="boton_peso2" id="boton_peso2" onClick="conv_peso2()" value="Enviar">
+</form>
+
+<p id="peso2"></p>
+
+
+
+</div>
+<div class="violeta">
+<p><strong>(distancia) <br>
+¿Cuántos son X kilómetros en millas, pies, yardas, pulgadas?</strong> <br>
+(1 km = 0,621371 millas), (1 km = 1093,61 yardas), (1 km =3280,84 pies), (1 km = 39370,1 pulgadas)</p>
+<form id="form7" name="form7" method="post">
+  <label for="num_km">Introduce kilómetros:</label>
+  <input type="number" name="num_km" id="num_km">
+  <input type="button" name="boton_km" id="boton_km" onClick="conv_km()" value="Enviar">
+</form>
+
+<p id="km"></p>
+
+
+
+</div>
+
+<div class="azul">
+<p><strong>(modeda) <br>
+¿Cuántos son X euros en dólares US, libras, yenes, yuanes? <br>
+</strong>(1€ = 1,13 dólares), (1€=0,88 libras), (1€ = 128.27 yen), (1€ = 7,85 yuanes)</p>
+<form id="form8" name="form8" method="post">
+  <label for="num_moneda">Introduce moneda en euros:</label>
+  <input type="number" name="num_moneda" id="num_moneda">
+  <input type="button" name="boton_moneda" id="boton_moneda" onClick="conv_moneda()" value="Enviar">
+</form>
+
+<p id="moneda"></p>
+
+
+</div>
+
+<div class="violeta">
+<p><strong>(velocidad) <br>
+¿Cuántos son X kilómetros por hora en metros por segundo, millas por hora, nudos?</strong> <br>
+(1km/h = 0,621371 millas/h), (1 km/h = 0,539957 nudos), (1km/h = 0,277778 m/s), (1km/h = 0,911344 pies/s), </p>
+<form id="form9" name="form9" method="post">
+  <label for="num_velocidad">Introduce velocidad en kilómetros/hora:</label>
+  <input type="number" name="num_velocidad" id="num_velocidad">
+  <input type="button" name="boton_velocidad" id="boton_velocidad" onClick="conv_velocidad()" value="Enviar">
+</form>
+
+<p id="velocidad"></p>
+
+</div>
+
+
+
+<div class="azul">
+<p><strong>(áreas)</strong> <strong><br>
+  ¿Cuántos son X km cuadrados en hectareas, acres y millas cuadradas?</strong> <br>
+  (1km2 = 100 hectáreas),  (1km2 = 247,105 acres), (1km2 = 0,386102 millas cuadradas)<br>
+</p>
+<form id="form10" name="form10" method="post">
+  <label for="num_area">Introduce área en km<sup>2</sup>:</label>
+  <input type="number" name="num_area" id="num_area">
+  <input type="button" name="boton_area" id="boton_area" onClick="conv_area()" value="Enviar">
+</form>
+
+<p id="area"></p>
+
+
+
+
+</div>
+
+</body>
+</html>

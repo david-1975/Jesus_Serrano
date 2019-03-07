@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Introduccion Javascript</title>
+ 	<meta name="keywords" content="">
+	<meta name="description" content="js">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/js.css">
+	<script src="js/live.js"></script>
+
+
+</head>
+
+<body>
+
+<h1>¿ Que podemos hacer con JavaScript y tu no</h1>
+<hr>
+<h2>JavaScript puede cambiar el contenido HTML</h2>	
+<br>	
+<p>Uno de los muchos métodos JavaScript HTML es <strong> getElemenById ()</strong> .</p>
+
+<p>En este ejemplo se utiliza el método de "encontrar" un elemento HTML (con id = "demo") y cambia el contenido del elemento ( innerHTML ) para "Hola JavaScript":</p>
+<div>
+  <p><strong>Codigo Javascript</strong></p>
+  <div class="codigo">
+    <p>&lt;p id=&quot;demo&quot;&gt;Javascript pude cambiar el contenido HTML&lt;/p&gt;<br>
+    &lt;button type=&quot;button&quot; onClick=&quot;document.getElementById('demo').innerHTML='Hola JavaScript'&quot;&gt;Pulsa el botón&lt;/button&gt;</p>
+  </div>
+</div>
+<div>
+  <p><strong>Ejemplos JavaScript</strong></p>
+  
+  <div class="alineado"><p id="demo">Javascript pude cambiar el contenido HTML</p>
+  <button type="button" onClick="document.getElementById('demo').innerHTML='Hola JavaScript'">Pulsa el botón</button></div>
+  <div class="alineado">
+    <p id="demo2">Javascript could change the HTML content</p> 
+    <button type="button" onClick="document.getElementById('demo2').innerHTML='Hello JavaScript'">Push the button</button>
+  </div>
+  <div class="alineado">
+    <p id="demo3">Javascript pourrait changer le contenu HTML</p> 
+    <button type="button" onClick="document.getElementById('demo3').innerHTML='Bonjuor JavaScript'">Appuyez sur le bouton</button>
+  </div>
+</div>
+<hr>
+<!--JavaScript puede cambiar los valores de atributos HTML-->
+	
+<h1>JavaScript puede cambiar los valores de atributos HTML</h1>
+	
+<p>Cambiar los valores de atributos HTML</p>
+
+<p>En este ejemplo JavaScript cambia el valor del atributo src (fuente) de una etiqueta &lt;img&gt;:</p>
+<div>
+  <p><strong>Codigo Javascript</strong></p>
+  <div class="codigo">
+    <p>&lt;button onclick=&quot;document.getElementById('myImage').src='pic_bulbon.gif'&quot;&gt;Turn on the light&lt;/button&gt;</p>
+    <p>&lt;img id=&quot;myImage&quot; src=&quot;pic_bulboff.gif&quot; style=&quot;width:100px&quot;&gt;</p>
+    <p>&lt;button onclick=&quot;document.getElementById('myImage').src='pic_bulboff.gif'&quot;&gt;Turn off the light&lt;/button&gt;</p>
+  </div>
+</div>
+
+  <div><p><strong>Ejemplos JavaScript</strong></p>
+      <button type="button" onClick="document.getElementById('bombilla').src='img/pic_bulbon.gif'"> Enciende la luz, pichaá</button>
+
+  <img id="bombilla" src="img/pic_bulboff.gif" width="100" height="180" alt="bombilla"/>
+<button type="button" onClick="document.getElementById('bombilla').src='img/pic_bulboff.gif'" >Apaga la luz, pichaá</button></div>
+
+
+<hr><br>
+<h2>JavaScript puede cambiar los estilos HTML (CSS)</h2>
+<p>Cambiar el estilo de un elemento HTML, es una variante de cambiar un atributo HTML:</p>
+<div class="codigo">
+  <p><strong>Codigo Javascript</strong></p>
+  <p>&nbsp;</p>
+  <p id="texto">JavaScript puede cambiar el estilo</p>
+  <div class="codigo">
+    <p>&lt;p id=&quot;demo&quot;&gt;JavaScript can change the style of an HTML element.&lt;/p&gt;</p>
+    <p>&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById('demo').style.fontSize='35px'&quot;&gt;Click Me!&lt;/button&gt;</p>
+  </div>
+</div>
+	
+	<div><p><b>JavaScript puede cambiar el color</b></p>
+      <div class="codigo">
+        <p>&lt;button type=&quot;button&quot; onClick=&quot;document.getElementById('texto').style.color='red'&quot;&gt;Cambiar  color a rojo&lt;/button&gt;<br>
+          &lt;button type=&quot;button&quot; onClick=&quot;document.getElementById('texto').style.color='blue'&quot;&gt;Cambiar  color a azul&lt;/button&gt;<br>
+        &lt;button type=&quot;button&quot; onClick=&quot;document.getElementById('texto').style.color='gray'&quot;&gt;Cambiar  color a gris&lt;/button&gt;</p>
+      </div>
+  <button type="button" onClick="document.getElementById('texto').style.color='red'">Cambiar  color a rojo</button>
+  <button type="button" onClick="document.getElementById('texto').style.color='blue'">Cambiar  color a azul</button>
+  <button type="button" onClick="document.getElementById('texto').style.color='gray'">Cambiar  color a gris</button>
+</div>
+
+<br>
+<br>
+
+
+
+
+
+
+</body>
+	<footer>
+	
+	</footer>
+</html>

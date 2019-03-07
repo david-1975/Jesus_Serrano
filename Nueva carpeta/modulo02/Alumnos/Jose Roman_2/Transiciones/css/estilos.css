@@ -1,0 +1,1071 @@
+@charset "utf-8";
+
+/* CSS Document */
+body{
+    background: #213538c0;
+    width: 80%;
+    margin: 0% auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-position: 0px 0px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/fondo.jpg);
+    
+}
+
+
+    
+
+header{
+    margin :50px auto;
+}
+
+/* ------ BARRA DE NAVEGACIÓN--  */
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+
+
+/* FIN BARRA NAVEGACIÓN ----*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*----------slideshow---------------*/
+#divGrupo1 {
+	width: 300px;
+	margin: 0 auto;
+	/*border: 1px solid black;*/
+	}
+
+#divGrupo1 p {
+text-align: center;
+font-size: 110%;
+color: white;
+padding: 40px 5px 35px 5px;
+border: 1px solid black;
+}
+
+#div1,#div2,#div3,#div4,#div5 {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+#div1 {
+    -ms-transition: width 2s linear 1s; /* Microsoft IE 9 */
+	-o-transition: width 2s linear 1s; /* Opera */
+	-moz-transition: width 2s linear 1s; /* Firefox */
+	-webkit-transition: width 2s linear 1s; /* Safari */
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+#div1:hover {
+	width: 300px;
+}
+
+#div2 {
+    -ms-transition: width 2s ease 1s; /* Microsoft IE 9 */
+	-o-transition: width 2s ease 1s; /* Opera */
+	-moz-transition: width 2s ease 1s; /* Firefox */
+	-webkit-transition: width 2s ease 1s; /* Safari */
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+}
+#div2:hover {
+	width: 300px;
+}
+
+#div3 {
+    -webkit-transition: width 2s ease-in 1s; /* Safari */
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s;
+}
+#div3:hover {
+	width: 300px;
+}
+
+#div4 {
+    -ms-transition: width 2s ease-out 1s; /* Microsoft IE 9 */
+	-o-transition: width 2s ease-out 1s; /* Opera */
+	-moz-transition: width 2s ease-out 1s; /* Firefox */
+	-webkit-transition: width 2s ease-out 1s; /* Safari */
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+}
+#div4:hover {
+	width: 300px;
+}
+
+#div5 {
+    -ms-transition: width 2s ease-in-out 1s;  /* Microsoft IE 9 */
+	-o-transition: width 2s ease-in-out 1s;  /* Opera */
+	-mz-transition: width 2s ease-in-out 1s;  /* Firefox */
+	-webkit-transition: width 2s ease-in-out 1s; /* Safari */
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay:1s;
+}
+#div5:hover {
+	width: 300px;
+}
+
+
+#divGrupo2 {
+	width: 300px;
+	margin: 0 auto;
+	/*border: 1px solid black;*/
+	}
+
+#divGrupo2 p {
+text-align: center;
+font-size: 110%;
+color: white;
+padding: 40px 5px 35px 5px;
+/*border: 1px solid black;*/
+}
+
+#div6,#div7,#div8,#div9,#div10 {
+    width: 100px; 
+	height: 100px;
+    background: red;
+}
+
+#div6 {
+    width: 100px;
+    height: 100px;
+    background: red;
+	-ms-transition: width 2s, height 2s, transform 2s; /* Microsoft IE 9 */
+	-o-transition: width 2s, height 2s, transform 2s; /* Opera */
+	-moz-transition: width 2s, height 2s, transform 2s; /* Firefox */
+    -webkit-transition: width 2s, height 2s, transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#div6:hover {
+    width: 100px;
+    height: 100px;
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+	background: green;
+}
+
+#div7 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -ms-transition: width 2s, height 2s transform 2s; /* Microsoft */
+	-o-transition: width 2s, height 2s transform 2s; /* Opera */
+	-moz-transition: width 2s, height 2s transform 2s; /* Firefox */
+	-webkit-transition: width 2s, height 2s transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#div7:hover {
+    width: 100px;
+    height: 100px;
+    -webkit-transform: scale(1.5); /* Safari */
+    transform: scale(1.5);
+}
+
+#div8 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -ms-transition: width 2s, height 2s, -webkit-transform 2s; /* Microsoft */
+	-o-transition: width 2s, height 2s, -webkit-transform 2s; /* Opera */
+	-moz-transition: width 2s, height 2s, -webkit-transform 2s; /* Firefox */
+	-webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#div8:hover {
+
+    -webkit-transform: translate(100px, 100px); /* Safari */
+    transform: translate(100px);
+}
+
+#div9 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -ms-transition: width 2s, height 2s, -webkit-transform 2s; /* Microsoft */
+	-o-transition: width 2s, height 2s, -webkit-transform 2s; /* Opera */
+	-moz-transition: width 2s, height 2s, -webkit-transform 2s; /* Firefox */
+	-webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#div9:hover {
+    width: 100px;
+    height: 100px;
+    -ms-transform: skew(10deg,10deg); /* Microsoft */
+	-o-transform: skew(10deg,10deg); /* Opera */
+	-moz-transform: skew(10deg,10deg); /* Firefox */
+	-webkit-transform: skew(10deg,10deg); /* Safari */
+    transform: skew(10deg,10deg);
+}
+
+#div10 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#div10:hover {
+    width: 100px;
+    height: 100px;
+	-ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); /* Safari */
+    transform: matrix(1.3, 0.5, 0, 1, 0, 0);
+}
+
+
+#divGrupo3 {
+	width: 300px;
+	margin: 0 auto;
+	/*border: 1px solid black;*/
+	}
+
+#divGrupo3 p {
+text-align: center;
+font-size: 110%;
+color: white;
+padding: 40px 5px 35px 5px;
+/*border: 1px solid black;*/
+}
+
+#div11,#div12,#div13,#div14,#div15 {
+    width: 100px; 
+	height: 100px;
+    background: red;
+}
+
+#div11 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-animation-name: animacion1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: animacion1;
+    animation-duration: 4s;
+	transition: width 2s, height 2s, transform 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes animacion1 {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes animacion1 {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+#div11:hover {
+    width: 100px;
+    height: 100px;
+    -webkit-transform: translate(100px) rotate(360deg); /* Safari */
+    transform: translate(100px) rotate(360deg);
+}
+
+#div12 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: animacion2;
+    animation-duration: 4s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes animacion1 {
+    0%   {border-color: red;}
+    25%  {border-color: yellow;}
+    50%  {border-color: blue;}
+    75% {border-color: green;}
+	100% {border-color: red;}
+}
+
+/* Standard syntax */
+@keyframes animacion1 {
+    0%   {border-color: red;}
+    25%  {border-color: yellow;}
+    50%  {border-color: blue;}
+    75% {border-color: green;}
+	100% {border-color: red;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes animacion2 {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    75% {background-color: green;}
+	100% {background-color: red;}
+}
+
+/* Standard syntax */
+@keyframes animacion2 {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    75% {background-color: green;}
+	100% {background-color: red;}
+}
+
+#div12:hover {
+    width: 100px;
+    height: 100px;
+    -webkit-transform: scale(1.5); /* Safari */
+     
+	
+}
+
+#div13 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+	position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: animacion3;
+    animation-duration: 4s;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes animacion3 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes animacion3 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+#div13:hover {
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+}
+
+#div14 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -ms-transition: width 2s, height 2s, transform 2s; /* Microsoft */
+	-o-transition: width 2s, height 2s, transform 2s; /* Opera */
+	-moz-transition: width 2s, height 2s, transform 2s; /* Firefox */
+	-webkit-transition: width 2s, height 2s, transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+	    position: relative;
+    -webkit-animation-name: animacion4; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate-reverse; /* Safari 4.0 - 8.0 */
+    animation-name: animacion4;
+    animation-duration: 4s;
+	animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;    /*normal, reverse, alternate, alternate-reverse*/
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes animacion4 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+/* Standard syntax */
+@keyframes animacion4 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+#div14:hover {
+    width: 100px;
+    height: 100px;
+    -ms-transform: skew(10deg,10deg); /* Microsoft */
+	-o-transform: skew(10deg,10deg); /* Opera */
+	-moz-transform: skew(10deg,10deg); /* Firefox */
+	-webkit-transform: skew(10deg,10deg); /* Safari */
+    transform: skew(10deg,10deg);
+}
+
+#div15 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+	position: relative;
+    -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Safari 4.0 - 8.0 */
+    animation: animacion5 5s linear 2s infinite alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes animacion5 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes animacion5 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:100px; top:0px;}
+	50%  {background-color:green; left:150px; top:0px;}
+	75%  {background-color:blue; left:200px; top:0px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+#div15:hover {
+    width: 100px;
+    height: 100px;
+	-ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); /* Safari */
+    transform: matrix(1.3, 0.5, 0, 1, 0, 0);
+}
+
+/* -------------ANIMACION-------------------------------------- */
+#animated_div {
+width:280px;
+height:95px;
+background: #92B901;
+color: #ffffff;
+position: relative;
+font-weight:bold;
+font-size:20px;
+padding:5px;
+animation:animated_div 5s 1;
+-moz-animation:animated_div 5s 1;
+-webkit-animation:animated_div 5s 1;
+-o-animation:animated_div 5s 1;
+border-radius:5px;
+-webkit-border-radius:5px;
+}
+
+@keyframes animated_div
+{
+0% {transform: rotate(0deg);left:0px;}
+25% {transform: rotate(20deg);left:0px;}
+50% {transform: rotate(0deg);left:500px;}
+55% {transform: rotate(0deg);left:500px;}
+70% {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {transform: rotate(-360deg);left:0px;}
+}
+
+@-webkit-keyframes animated_div
+{
+0% {-webkit-transform: rotate(0deg);left:0px;}
+25% {-webkit-transform: rotate(20deg);left:0px;}
+50% {-webkit-transform: rotate(0deg);left:500px;}
+55% {-webkit-transform: rotate(0deg);left:500px;}
+70% {-webkit-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {-webkit-transform: rotate(-360deg);left:0px;}
+}
+
+@-moz-keyframes animated_div
+{
+0%  {-moz-transform: rotate(0deg);left:0px;}
+25% {-moz-transform: rotate(20deg);left:0px;}
+50%  {-moz-transform: rotate(0deg);left:500px;}
+55%  {-moz-transform: rotate(0deg);left:500px;}
+70%  {-moz-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {-moz-transform: rotate(-360deg);left:0px;}
+}
+
+@-o-keyframes animated_div
+{
+0% {transform: rotate(0deg);left:0px;}
+25% {transform: rotate(20deg);left:0px;}
+50%  {transform: rotate(0deg);left:500px;}
+55%  {transform: rotate(0deg);left:500px;}
+70%  {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {transform: rotate(-360deg);left:0px;}
+}
+/* ------------------------------------------------------------------ */
+
+
+.imagen {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+.contenedor {
+     position: relative;
+     width: 23%;
+     float: left;
+     margin: 1% 1% 1% 1%;
+     border: 10px solid white;
+     border-radius: 10px;
+     animation-play-state: paused;
+     
+}
+.contenedor:hover{
+    animation-play-state: running;
+    box-shadow: 0px 0px 27px 8px rgba(255,255,255,0.61);
+    animation: animacion1 5s linear 0.5s infinite reverse;
+    transition: width  10s linear;
+
+}
+/* --Para la otra hoja anima_css.html*/
+.contenedor2 {
+    position: relative;
+    width: 23%;
+    float: left;
+    margin: 1% 1% 1% 1%;
+    border: 10px solid white;
+    border-radius: 10px;
+    animation-play-state: paused;
+    
+}
+.contenedor2:hover{
+   animation-play-state: running;
+   box-shadow: 0px 0px 27px 8px rgba(255,255,255,0.61);
+   animation: animacion1 5s linear 0.5s infinite reverse;
+   transition: width  10s linear;
+
+}
+
+    /*Slide-Top*/
+
+.superponerTop{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+.contenedor:hover .superponerTop{
+    opacity: 0.9;
+    bottom: 0%;
+    height: 100%;
+}
+.superponerBottom{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+.contenedor:hover .superponerBottom{
+    opacity: 0.9;
+    top: 0%;
+    height: 100%;
+}
+.superponerLeft{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 100%;
+    background: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+.contenedor:hover .superponerLeft{
+    opacity: 0.9;
+    right: 100%;
+    width: 100%;
+}
+.superponerRight{
+    position: absolute;
+    top: 0%;
+    left:100%;
+    
+    background: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+.contenedor:hover .superponerRight{
+    opacity: 0.9;
+    left: 0%;
+    width: 100%;
+}
+.texto{
+    width: 90%;
+    white-space: break-word;
+    color: white;
+    font-size: 0.9rem;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.texto2{
+    width: 90%;
+   height: 100px;
+    color: white;
+    font-size:1em;
+    
+    
+    
+
+}
+.superponerTodo{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    opacity: 0;
+    background: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+.contenedor:hover .superponerTodo{
+    opacity: 0.9;
+   
+}
+.superponerFajaAbajo{
+    position: absolute;
+    
+    bottom: 0;
+    opacity: 0;
+    background: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:33%;
+    transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+.contenedor:hover .superponerFajaAbajo{
+    opacity: 0.9;
+   
+}
+.superponerFajaMedia{
+    position: absolute;
+    
+    bottom:33%;
+    opacity: 0;
+    background: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:33%;
+    transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+.contenedor:hover .superponerFajaMedia{
+    opacity: 0.9;
+   
+}
+.superponerFajaArriba{
+    position: absolute;
+    bottom:66%;
+    opacity: 0;
+    background: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:33%;
+    transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+.contenedor:hover .superponerFajaArriba{
+    opacity: 0.9;
+   
+}
+.superponerDiagonalAbajoDer{
+    position: absolute;
+    top:0%;
+    opacity: 0;
+    background: #008CBA;
+    overflow: hidden;
+    width: 0%;
+    height:0%;
+    transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+.contenedor:hover .superponerDiagonalAbajoDer{
+    opacity: 0.9;
+    width: 100%;
+    height:100%;
+}
+.superponerDiagonalAbajoIzq{
+    position: absolute;
+    top:0%;
+    right: 0%;
+    opacity: 0;
+    background: #008CBA;
+    overflow: hidden;
+    width: 0%;
+    height:0%;
+    transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+.contenedor:hover .superponerDiagonalAbajoIzq{
+    opacity: 0.9;
+    width: 100%;
+    height:100%;
+}
+
+.superponerDiagonalArribaDer{
+    position: absolute;
+    bottom:0%;
+    opacity: 0;
+    left: 0%;
+    background: #008CBA;
+    overflow: hidden;
+    width: 0%;
+    height:0%;
+    transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+.contenedor:hover .superponerDiagonalArribaDer{
+    opacity: 0.9;
+    width: 100%;
+    height:100%;
+}
+.superponerDiagonalArribaIzq{
+    position: absolute;
+    bottom:0%;
+    right: 0%;
+    opacity: 0;
+    background: #008CBA;
+    overflow: hidden;
+    width: 0%;
+    height:0%;
+    transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+.contenedor:hover .superponerDiagonalArribaIzq{
+    opacity: 0.9;
+    width: 100%;
+    height:100%;
+}
+.Peliculas{
+    width: 100%;
+    margin: 0% auto;
+    
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/* The Close Button */
+.close,.close2,.close3,.close4,.close5,.close6,.close7,.close8, {
+    color: whitesmoke;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,.close:focus,.close2:hover,.close2:focus, .close3:hover,.close3:focus,.close4:hover,.close4:focus,.close5:hover,.close5:focus,.close6:hover,.close6:focus,.close7:hover,.close7:focus,.close8:hover,.close8:focus,
+{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*botón Modal*/
+.boton {
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 5px 16px;
+    text-align: center;
+    font-size: 1em;
+    margin: 4px 2px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+iframe{
+    
+    height: 300px;
+}
+
+ 

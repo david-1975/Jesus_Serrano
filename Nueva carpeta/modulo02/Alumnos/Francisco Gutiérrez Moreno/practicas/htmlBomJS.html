@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es-ES"><head>
+<meta charset="utf-8">
+<title>Elementos HTMl del DOM</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="js/funciones6.js"></script>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>JavaScript Navegador (BOM)</h1>
+<hr>
+<h2>El BOM  (Modelo de Objetos del Nagegador)</h2>
+<p>El Modelo examinador de objetos (BOM) permite Javascript para "hablar con" el navegador.</p>
+<p><em>El <strong>B</strong>rowser <strong>O</strong>bject <strong>M</strong>odel</em> o <strong>BOM</strong>, permite acceder y modificar las propiedades de las ventanas del propio navegador. Mediante <strong>BOM</strong>, es posible redimensionar y mover la ventana del navegador, modificar el texto que se muestra en la barra de estado y realizar muchas otras manipulaciones no relacionadas con el contenido de la página HTML.</p>
+<p>No existen normas oficiales para el <strong>B</strong>rowser <strong>O</strong>bject <strong>M</strong>odelo (<strong>BOM</strong>). El mayor inconveniente de <strong>BOM</strong> es que, al contrario de lo que sucede con <strong>DOM</strong>, ninguna entidad se encarga de estandarizarlo o definir unos mínimos de interoperabilidad entre navegadores.</p>
+<div>
+<spam id = "infoventana"><script>window.onload = tamanoventana()</script></spam>
+  <div class="divIMG">
+<p><img src="img/document-window-navigator.png" width="664" height="444" alt="imagen DOM"/></p>
+<p><strong>Más información en... </strong><a href="https://webaim.org/blog/user-agent-string-history/" target="_blank">https://webaim.org/blog/user-agent-string-history/</a></p>
+</div>
+
+<div id="infoNav" class="divNAV">Info Navegador<script>window.onload = infoNavegador();</script></div>
+</div>
+
+<hr>
+<h2>Objetos de Pantalla</h2>
+<div id="divBom" class="divBom"><p>&nbsp;</p></div>
+<table>
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="#">screen.width , screen.height</a></td>
+      <td>Ancho y alto de la pantalla</td>
+      <td><button type="button" onClick="pantalla()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">screen.availWidth, screen.availHeight</a></td>
+      <td>Ancho y alto de de la pantalla disponible</td>
+      <td><button type="button" onClick="pantallaDisponible()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">screen.colorDepth, screen.pixelDepth</a></td>
+      <td>Profundidad de color y píxeles de la pantalla</td>
+      <td><button type="button" onClick="pantallaProfundidad()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+<h2>Objetos de ventana</h2>
+<div class="divDOM" id="infopantalla"></div>
+<table>
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><ul>
+        <li>window.location.href </li>
+      </ul></td>
+      <td>devuelve el href (URL) de la página actual</td>
+      <td><button type="button" onClick="urlPagina()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><ul>
+        <li>window.location.hostname </li>
+      </ul></td>
+      <td>devuelve el nombre de dominio del proveedor de alojamiento web</td>
+      <td><button type="button" onClick="hostPagina()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><ul>
+        <li>window.location.pathname </li>
+      </ul></td>
+      <td>devuelve la ruta y el nombre de la página actual</td>
+      <td><button type="button" onClick="pathPagina()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><ul>
+        <li>window.location.protocol</li>
+      </ul></td>
+      <td> devuelve el protocolo web utilizado (http: o https :)</td>
+      <td><button type="button" onClick="protocolPagina()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><ul>
+        <li>window.location.assign </li>
+      </ul></td>
+      <td>Carga un nuevo documento</td>
+      <td><button type="button" onClick="asignaPagina()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>window.location.assign </td>
+      <td>devuelve el número del puerto de host a Internet (de la página actual).</td>
+      <td><button type="button" onClick="muestraPuerto()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+<h2>Historial del Navegador</h2>
+<table>
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td>El método history.back ()</td>
+      <td>carga la URL anterior en la lista del historial</td>
+      <td><button type="button" onClick="paginaAtras()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>La historia método forward ()</td>
+      <td> carga el siguiente URL en la lista del historial.</td>
+      <td><button type="button" onClick="paginaAdelante()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+<h2>Ventanas emergentes JavaScript</h2>
+<table>
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td>la funcion alert()</td>
+      <td>Un cuadro de alerta se utiliza a menudo si usted quiere asegurarse de que la información llega hasta el usuario.</td>
+      <td><button type="button" onClick="alerta()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>La funcion confirm()</td>
+      <td> Un cuadro Confirmar menudo se utiliza si desea que el usuario verifique o aceptar algo.</td>
+      <td><button type="button" onClick="confirmacion()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+</body>
+</html>
+
+
+
+
+
+
+
+

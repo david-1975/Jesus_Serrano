@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="calculos de javascript">
+<meta name="keywords" content="javascript diseño web">
+<script src="calculoscasaJs.js"></script>
+<title>Calculos</title>
+</head>
+
+<body>
+<h2><strong>Operaciones de conversión de unidades con JavaScript</strong></h2>
+<hr>
+<p><strong>(Pulgadas) <br>
+Calcular cuántos centímetros son X pulgadas de una pantalla.<br>
+</strong>(1 pulgada = 2,54 centímetros)</p>
+
+<form id="form" name="form" method="post">
+<label for="numero"> Número : </label>
+<input type="number" name="numero" id="numero" >
+<input type="button" name="boton" id="boton" onClick=" pulgadas() " value="convertir">
+
+
+</form>
+<p id="pulgadas"></p>
+
+<hr>
+
+<p><strong>(Número par o impar)</strong> <br>
+  <strong>Comprobar si un número es par o impar.</strong><br>
+(número % = 0) </p>
+<form id="form1" name="form1" method="post">
+        <label for="numero1"> Número : </label>
+    <input type="number" name="numero1" id="numero1">
+    <input type="button" onClick="conversion()" value="resultado">
+
+
+</form>
+
+<p id="conversion"></p>
+
+<hr>
+<p><strong>(Precio final) <br>
+  Calcular el precio final de un producto introduciendo un precio, un descuento y el impuesto (IVA) a pagar.<br>
+</strong>
+(ejemplo: precio = 50€, Descuento -20%, Impuesto +21%)</p>
+
+<form id="form2" name="form2" method="post">
+        <label for="numero2"> Número : </label>
+        <input type="number" name="numero2" id="numero2">
+        <input type="button" onClick="precioFinal()" value="resultado">
+    
+    
+    </form>
+    
+    <p id="precioFinal"></p>
+    
+    <hr>
+
+
+<p><strong>(Byte y bit) <br>
+  Calcular cuántos son X gigabytes en megabyte, kilobytes, bytes y bit.</strong><br>
+(1 Gigabytes = 1024 Megabytes), (1Megabytes = 1024 Kilobytes), (1Kilobytes = 1024 Bytes), (1Bytes = 8 bit)</p>
+
+<form id="form3" name="form3" method="post">
+ <label for="numero3"> Número : </label>
+<input type="number" name="numero3" id="numero3">
+<input type="button" onClick="gigabytes ()" value="convertir">
+
+
+</form>
+<p id="gigas"></p>
+
+<hr>
+
+<p><strong>(Días, semanas, meses) <br>
+  Calcular cuántos días, semanas y meses hay en X años.<br>
+</strong>(1 año = 365 días), (1 año = 52.142857142857146 semanas), (1 año = 12 meses)</p>
+
+<form id="form4" name="form4" method="post">
+        <label for="numero4"> Número : </label>
+        <input type="number" name="numero4" id="numero4">
+        <input type="button" onClick="dias ()" value="convertir">
+        
+        
+        </form>
+        <p id="diasemana"></p>
+        
+
+
+<p><strong>(Números primos) <br>
+Realizar un función que compruebe si un número es primo o no<br>
+</strong> (un número es primo cuando no es divisible entre 2 y solo entre el mismo y el resto es 0)</p>
+
+
+<hr>
+<p><strong>(Área de un circulo)</strong> <strong><br>
+  Calcular el área de un circulo de X diámetro en centímetros.</strong> <br>
+  fórmula área por diámetro: (área = PI*(diámetro2/4); fórmula área por radio: (área = PI*radio2); (PI= 3.1416)</p>
+
+
+  <hr>
+<p><strong>(Área de un cuadrado)</strong> <strong><br>
+Calcular el área de un cuadrado o rectángulo de X metros de lado y X metros de alto.</strong> <br>
+fórmula área cuadrado = base *altura= m2) (ejemplo área = 3 m x 3 m = 9 m2)</p>
+<p><strong>(Área de un triángulo)</strong> <strong><br>
+Calcular el área de un triángulo de X metros de lado y X metros de altura.</strong> <br>
+fórmula área triángulo = (base *altura)/2 = m2) (ejemplo área = (3 m * 3 h) / 2 = 4,2 m2)</p>
+<p><strong>(Distancia) <br>
+Calcular el tiempo que se necesita para recorrer X distancia en kilómetros circulando a X km/h. <br>
+</strong>(1 km = 1000 metros), (1 km/h = 0,277778 metros/s) (ejemplo: 1 km = distancia / velocidad * segundos (3600)</p>
+<p><strong>(Tasa de datos) <br>
+Calcular cuánto tiempo (horas y minutos) tardaría en descargar un archivo de X gigabytes con un ancho de banda de 10 mbp/s</strong><br>
+(10 mbps = 10 megabit por segundo), (1 minuto = 60 segundos)  (ej: 1Gb = 1000 Mb / 10 mbp/s = 100 segundos)<br>
+</p>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="es-ES"><head>
+<meta charset="utf-8">
+<title>Elementos HTMl del BOM</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="js/funciones6.js"></script>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+
+<body>
+<h1>JavaScript Navegador (BOM)</h1>
+<hr>
+<h2>El BOM  (Modelo de Objetos del Nagegador)</h2>
+<p>El Modelo examinador de objetos (BOM) permite Javascript para "hablar con" el navegador.</p>
+<p><em>El <strong>B</strong>rowser <strong>O</strong>bject <strong>M</strong>odel</em> o <strong>BOM</strong>, permite acceder y modificar las propiedades de las ventanas del propio navegador. Mediante <strong>BOM</strong>, es posible redimensionar y mover la ventana del navegador, modificar el texto que se muestra en la barra de estado y realizar muchas otras manipulaciones no relacionadas con el contenido de la página HTML.</p>
+<p>No existen normas oficiales para el <strong>B</strong>rowser <strong>O</strong>bject <strong>M</strong>odelo (<strong>BOM</strong>). El mayor inconveniente de <strong>BOM</strong> es que, al contrario de lo que sucede con <strong>DOM</strong>, ninguna entidad se encarga de estandarizarlo o definir unos mínimos de interoperabilidad entre navegadores.</p>
+<div>
+
+
+
+  <div class="divIMG">
+  <span id="ventana"><script>window.onload = ventanita();</script></span>
+<p><img src="img/document-window-navigator.png" width="664" height="444" alt="imagen DOM"/></p>
+<p><strong>Más información en... </strong><a href="https://webaim.org/blog/user-agent-string-history/" target="_blank">https://webaim.org/blog/user-agent-string-history/</a></p>
+</div>
+<div id="infoNav" class="divNAV">Info Navegador<script>window.onload = infoNavegador();</script></div>
+</div>
+
+<hr>
+<h2>Objetos de Pantalla</h2>
+<div id="divBom" class="divBom"><p>&nbsp;</p></div>
+<table>
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="#">screen.width , screen.height</a></td>
+      <td>Ancho y alto de la pantalla</td>
+      <td><button type="button" onClick="pantalla()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">screen.availWidth, screen.availHeight</a></td>
+      <td>Ancho y alto de de la pantalla disponible</td>
+      <td><button type="button" onClick="pantallaDisponible()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">screen.colorDepth, screen.pixelDepth</a></td>
+      <td>Profundidad de color y píxeles de la pantalla</td>
+      <td><button type="button" onClick="pantallaProfundidad()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+<h2>Objetos de ventana</h2>
+<div class="divDOM" id="infoDOM"></div>
+<table>
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="#">window.location.href</a></td>
+      <td>Devuelve el href (URL) de la página actual.</td>
+      <td><button type="button" onClick="urlPagina()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">window.location.hostname</a></td>
+      <td>Devuelve el nombre de dominio del proveedor de alojamiento web.</td>
+      <td><button type="button" onClick="locationPagina()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">window.location.pathname</a></td>
+      <td>Devuelve la ruta y el nombre de la página actual.</td>
+      <td><button type="button" onClick="rutaPagina()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">window.location.protocol </a></td>
+      <td>Devuelve el protocolo web utilizado (http: o https :).</td>
+      <td><button type="button" onClick="protocolPagina()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">window.location.assign</a></td>
+      <td>Carga un nuevo documento.</td>
+      <td><button type="button" onClick="asignarPagina()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">window.location.port</a></td>
+      <td>Devuelve el número del puerto de host a Internet (de la página actual).</td>
+      <td><button type="button" onClick="puertoPagina()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+<h2>Historial</h2>
+<table>
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="#">window.history.back()</a></td>
+      <td>Avanza a la página anterior visitada.</td>
+      <td><button type="button" onClick="irAtras()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">window.history.forward()</a></td>
+      <td>Avanza a la página posterior visitada.</td>
+      <td><button type="button" onClick="irAdelante()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+
+<h2>Añadir o eliminar elementos HTML</h2>
+<table>
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td>document.createElement(<em>element</em>)</td>
+      <td>Crea un elemento HTML</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>document.removeChild(<em>element</em>)</td>
+      <td>Elimina un elemento HTML</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>document.appendChild(<em>element</em>)</td>
+      <td>Añade un elemento HTML</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>document.replaceChild(<em>element</em>)</td>
+      <td>Reeplaza un elemento HTML</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>document.write(<em>text</em>)</td>
+      <td>Escribe en el flujo de salida  HTML</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+<h2>Cajas emergentes</h2>
+<table>
+<tbody>
+  <tr></tr>
+</tbody>
+<tbody>
+  <tr>
+    <th>Método</th>
+    <th>Descripción</th>
+    <th>&nbsp;</th>
+  </tr>
+  <tr>
+    <td><a href="#">window.alert(&quot;texto&quot;);</a></td>
+    <td>Muestra un cuadro de alerta y el usuario tendria que hacer click en &quot;Aceptar&quot; para continuar.</td>
+    <td><button type="button" onClick="alerta()">Ejecutar</button></td>
+  </tr>
+  <tr>
+    <td><a href="#">window.confirm(&quot;texto&quot;);</a></td>
+    <td>Muestra un cuadro de confirmación y el suusairio tendría que verificar o aceptar algo.</td>
+    <td><button type="button" onClick="confirmar()">Ejecutar</button></td>
+  </tr>
+  <tr>
+    <td><a href="#">window.prompt(&quot;texto, defaultText&quot;);</a></td>
+    <td>Muestra un cuadro con un mensaje para que el usuario introduzca un valor.</td>
+    <td><button type="button" onClick="pronto()">Ejecutar</button></td>
+  </tr>
+</tbody>
+<tbody>
+</tbody>
+</table>
+<hr>
+<h2>Temporizadores</h2>
+<table>
+  <tbody>
+  </tbody>
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="#">window.setTimeout(function, miliseconds);</a></td>
+      <td>El método de setTimeout() pone en marcha una función rn un intervalo de tiempo.</td>
+      <td><button type="button" onClick="setTimeout(intervalo, 3000);">Ejecutar</button>
+      <button type="button" onClick="setTimeout(intervalo, 3000);">Parar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">window.setInterval(function, miliseconds);</a></td>
+      <td>Muestra un cuadro de confirmación y el suusairio tendría que verificar o aceptar algo.</td>
+      <td><button type="button" onClick="confirmar()">Ejecutar</button>
+      <button type="button" onClick="setTimeout(intervalo, 3000);">Parar</button></td>
+    </tr>
+  </tbody>
+  <tbody>
+  </tbody>
+</table>
+<p>&nbsp; </p>
+</body>
+</html>
+
+
+
+
+
+
+
+

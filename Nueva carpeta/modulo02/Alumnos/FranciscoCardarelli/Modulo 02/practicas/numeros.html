@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Métodos numéricos JS</title>
+<meta name="keywords" content="HTML CSS JavaScript">
+<meta name="description" content="Aprende JavaScript con ejemplos prácticos">
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+<script src="js/funciones2.js"></script>
+</head>
+
+<body>
+<h2>Métodos numéricos</h2>
+<div>
+    <div class="divalineado">
+	<p id="demo1"></p>
+    </div>
+    <div class="divalineado">
+	<p id="demo2"></p>
+    </div>
+</div>
+<div class="clearfix"></div>
+<br>
+<table>
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_isfinite_number.asp">isFinite()</a></td>
+      <td>Comprueba si un valor es un número finito</td>
+      <td><button type="button" onClick="esFinito()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_isinteger.asp">isInteger()</a></td>
+      <td>Comprueba si un valor es un númer entero</td>
+      <td><button type="button" onClick="esEntero()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_isnan_number.asp">isNaN()</a></td>
+      <td>Checks whether a value is Number.NaN</td>
+      <td><button type="button" onClick="NoEsUnNumero()">Ejecutar</button></td>
+    </tr>
+      <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_toexponential.asp">toExponential(x)</a></td>
+      <td>Converts a number into an exponential notation</td>
+      <td><button type="button" onClick="aExponencial()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_tofixed.asp">toFixed(x)</a></td>
+      <td>Formats a number with x numbers of digits after the decimal point</td>
+      <td><button type="button" onClick="aRedondear()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_toprecision.asp">toPrecision(x)</a></td>
+      <td>Formats a number to x length</td>
+      <td><button type="button" onClick="aPreciso()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_tostring_number.asp">toString()</a></td>
+      <td>Converts a number to a string</td>
+      <td><button type="button" onClick="aObjeto()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_valueof_number.asp">valueOf()</a></td>
+      <td>Returns the primitive value of a number</td>
+      <td><button type="button" onClick="elValor()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <p>All number methods return a new value. They do not change the original variable.</p>
+</div>
+</body>
+</html>

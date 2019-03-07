@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<script src="fechas.js"></script>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h2><strong>Cálculos de fechas con JavaScript</strong></h2>
+<hr>
+<p><strong>Introducir el año de nacimiento y calcular la edad.</strong></p>
+<form id="form1" name="form1" method="post">
+  <label for="ano">Introduce tu año de nacimiento</label>
+  <input type="text" name="textfield" onblur="edad(this.value)" />
+  <input type="button" name="button" onClick="pepe()" id="button" value="Ejecutar"><br><br>
+  <label for="number">¿Cuantos años tienes?</label>
+  <input type="text" name="pepe" id="pepe" />
+</form>
+<p><strong>Introducir el año y mostrar el año anterior, el año introducido y el año posterior</strong></p>
+<form id="form2" name="form2" method="post">
+  <label for="ano2">Introduce un año cualquiera</label>
+  <input type="number" name="number" id="number"><br><br>
+  <input type="button" name="button1" onClick="ano()" id="button1" value="Ejecutar">
+</form>
+<p id="anomasomenos" ></p>
+
+<p><strong>A partir de 3 campos de formulario, día, mes y año, mostar la fecha  en este formato &quot;dd/mm/aaaa&quot;.</strong></p>
+<form id="form3" name="form3" method="post">
+  <label for="dia">Introduce un dia numéricamente</label>
+  <input type="number" name="dia" id="dia"><br><br>
+  <label for="mes">Introduce un mes numéricamente</label>
+  <input type="number" name="mes" id="mes"><br><br>
+  <label for="año">Introduce un año numéricamente</label>
+  <input type="number" name="año" id="ano">
+  <input type="button" name="button2" onClick="fechacompuesta()" id="button2" value="Ejecutar"><br><br>
+ <label for="añocompuesto">El año en formato <strong>"día/mes/año"</strong> es: </label>
+  <input type="text" name="juan" id="juan" >
+</form>
+
+<!--<p><strong>A partir de 3 campos de formulario, hora, minutos y segundos, mostar la hora en este formato &quot;hh:mm:ss&quot;.</strong></p>
+<p><strong>Introducir una fecha y mostrarla en este formato: &quot;Hoy es martes, 11 de Noviembre de 2018&quot;.</strong></p>
+<p><strong>Mostrar la fecha y hora actual en este formato: &quot;Has iniciado sesión el día 13/11/2018 a las 15:30:25&quot;.</strong></p>-->
+<p><strong>Calcular los días que faltan para tu cumpleaños a partir de una fecha de nacimiento introducida.</strong></p>
+<form id="form7" name="form7" method="post">
+  <label for="date11">Introduce la fecha de nacimiento</label>
+  <input type="date" name="date11" id="date11" />
+  <input type="button" name="button" onClick="diasQueFaltan()" id="button3" value="Ejecutar"><br><br>
+  <label for="number">¿Cuantos dias faltan para tu cumpleaños?</label>
+  <input type="text" name="evaristo" id="cumple" />
+</form>
+<p id="evaristo"></p>
+<p><strong>Calcular cuantos días, horas, minutos y segundos ha vivido una persona a partir de su fecha de nacimiento.</strong></p>
+<form id="form8" name="form8" method="post">
+  <label for="date12">Introduce la fecha de nacimiento</label>
+  <input type="date" name="date12" id="date12" />
+  <input type="button" name="button4" onClick="diasHorasMinutosSegundos()" id="button4" value="Ejecutar"><br><br>
+  <label for="textarea">¿Cuanto has vivido?</label><br>
+  <textarea name="textarea" cols="50" rows="6" id="etiqueta2"></textarea>
+</form>
+
+<p><strong>Mostrar a que  trimestre pertenece una fecha introducida.</strong></p>
+<form id="form9" name="form9" method="post">
+  <label for="date">Fecha:</label>
+  <input type="date" name="datos" id="date16">
+  <input type="button" name="button5" onClick="buscarTrimestre()" id="button5" value="Enviar">  
+  <label for="date" id="datos16"></label>
+  <!--<label for="textfield">El trimestre es</label>-->
+ <!-- <input type="text" name="textfield" id="datos16">-->
+</form>
+<p><strong>Mostrar el signo del zodiaco según la fecha de nacimiento introducida por el usuario.</strong></p>
+</body>
+</html>

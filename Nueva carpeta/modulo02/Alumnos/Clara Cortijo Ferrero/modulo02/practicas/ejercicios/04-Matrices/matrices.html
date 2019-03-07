@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Objetos y matrices con JavaScript</title>
+<link rel="stylesheet" type="text/css" href="estilos.css">
+<script src="funciones.js"></script>
+</head>
+
+<body>
+<h2><strong>Objetos y  matrices con JavaScript</strong></h2>
+<hr>
+
+<div class="violeta">
+<p><strong>(Array)<br>
+Crea una función que, introduciendo 3 valores en un campo de formulario, cree  una matriz que almacene estos valores &quot;Seat&quot;, &quot;Audi&quot;, &quot;Skoda&quot; sin espacios en blanco. Mostrar la matriz en foma de linea horizontal.<br>
+</strong><em><u>Representación de  la matríz</u>: Grupo Volkswagen: Seat, Audi, Skoda.</em></p>
+
+<form id="form1" name="form1" method="post">
+  <label for="campo1">Introduce valores separados por comas:</label>
+  <input type="text" name="campo1" id="campo1"><br><br>
+  
+  <!--<label for="campo2">Segundo valor de la matriz:</label>
+  <input type="text" name="campo2" id="campo2"><br><br>
+  
+  <label for="campo3">Tercer valor de la matriz:</label>
+  <input type="text" name="campo3" id="campo3"><br><br>-->
+  
+  
+  
+  <input type="button" name="boton_crearmatriz" id="boton_crearmatriz" onClick="fun_crearmatriz()" value="Crear matriz">
+</form>
+<p id="crearmatriz"></p>
+
+
+</div>
+
+<div class="azul">
+<p><strong>(Array)<br>
+A partir de la matríz anterior, crear una función que permita introducir<em> &quot;Volkswagen&quot;, &quot;Bentley&quot;, &quot;Bugatti&quot;</em>  al conjunto, y los situe detrás de los valores existentes sin espacios en blanco. Mostrar la matriz como una lista ordenada.<br>
+</strong><em><u>Representación de  la matríz</u>: Grupo Volkswagen: Seat, Audi, Skoda, Volkswagen, Bentley, Bugatti.</em></p>
+ <input type="button" name="boton_agregar" id="boton_agregar" onClick="fun_agregar()" value="Agregar elementos a la matriz">
+</form>
+
+<p id="agregar"></p>
+
+</div>
+
+<div class="violeta">
+<p><strong>(Array)<br>
+A partir de la matríz anterior, crear una función que permita introducir al comienzo de la matríz los valores &quot;Ducati&quot;, &quot;Lamborghini&quot;, &quot;Porsche&quot; sin espacios en blanco. Mostrar la matriz como una tabla.</strong><strong><br>
+</strong><em><u>Representación de  la matríz</u>: Grupo Volkswagen: Ducati, Lamborghini, Porsche, Seat, Audi, Skoda, Volkswagen, Bentley, Bugatti.</em></p>
+ <input type="button" name="boton_ainicio" id="boton_ainicio" onClick="fun_agregarini()" value="Agregar elementos al inicio de la matriz">
+</form>
+
+<p id="agregarini"></p>
+
+</div>
+
+<div class="azul">
+<p><strong>(Array)<br>
+A partir de la matríz anterior, crear una función que introduzca entre los valores del conjunto &quot;Seat&quot; y &quot;Audi&quot; los valores &quot;Scania&quot; y &quot;MAN&quot; sin espacios en blanco. Mostrar la matriz como una desordenada.<br>
+</strong><em><u>Representación de  la matríz</u>: Grupo Volkswagen: Ducati, Lamborghini, Porsche, Seat, Scania, MAN, Audi, Skoda, Volkswagen, Bentley, Bugatti.</em></p>
+
+ <input type="button" name="boton_entre" id="boton_entre" onClick="fun_agregarentre()" value="Agregar elementos entre el cuarto y quinto elementos">
+</form>
+
+<p id="agregarentre"></p>
+
+</div>
+
+<div class="violeta">
+<p><strong>(Array)<br>
+  Crea una función que, introduciendo los valores numéricos del 0 al 9, construya un array, y muestre </strong><strong> el valor más bajo, el  más alto yel total de valores. Mostrar la matríz debajo del campo de formulario concatenando los resultados.<br>
+</strong><em><u>Representación de  la matríz</u>: El valor más bajo de la matríz es 0, el más alto 9 y el total de valores es 10.</em></p>
+
+<form id="form3" name="form3" method="post">
+  <label for="nums">Introduce una serie de números separados por una coma:</label>
+  <input type="text" name="nums" id="nums"><br><br>
+  
+ 
+  <input type="button" name="boton_minmax" id="boton_minmax" onClick="fun_minmax()" value="Calcular min, max, suma y longitud del array">
+</form>
+<p id="minmax"></p>
+
+</div>
+
+<div class="azul">
+<p><strong>(Array)<br>
+Crea una función que, introduciendo los valores numéricos del 0 al 9, construya un array, y se muestren</strong><strong> los valores impares por un lado y los pares por otro. 
+Mostrar las matrices en línea debajo del campo de formulario, una detrás de la otra.<br>
+</strong><em><u>Representación de  la matríz</u>: Matriz impar: 1,3,5,7,9; Matriz par: 0,2,4,6,8.</em></p>
+<form id="form4" name="form4" method="post">
+  <label for="lista">Introduce una serie de números separados por una coma:</label>
+  <input type="text" name="lista" id="lista"><br><br>
+  
+ 
+  <input type="button" name="boton_parimpar" id="boton_parimpar" onClick="fun_parimpar()" value="Calcular pares e impares">
+</form>
+<p id="parimpar"></p>
+
+</div>
+
+
+<div class="violeta">
+<p><strong>(Array)<br>
+Crea una función que, introduciendo los valores numéricos del 0 al 9, construya un array, y  muestre  los valores ordenados ascendente, descendente y aleatoiros. Mostrar la matriz debajo del cmapo del formulario según se muestra más abajo.</strong><br>
+<em><u>Representación de  la matriz</u>: Ascendente: 0,1,2,3,4,5,6,7,8,9; Descendente: 9,8,7,6,5,4,3,2,1,0; Aleatorio: 1,9,2,7,3,6,4,5,0,8</em>.</p>
+<form id="form5" name="form5" method="post">
+  <label for="listaord">Introduce una serie de números separados por una coma:</label>
+  <input type="text" name="listaord" id="listaord"><br><br>
+  
+ 
+  <input type="button" name="boton_ordenar" id="boton_ordenar" onClick="fun_ordenar()" value="Ordenar lista">
+</form>
+<p id="ordenar"></p>
+
+</div>
+
+<div class="azul">
+<p><strong>(Object)<br>
+  Crea una función que, introduciendo la frase &quot;Juan tiene 50 años y está casado&quot;, extraiga el nombre, la edad y el estado y cree un objeto con esos valores. Mostrar los valores del Objeto en línea concatenando  el nombre del campo y su valor.<br>
+</strong><em><u>Representación del objeto</u>: persona {nombre: Juan, edad: 50, estado: casado}</em></p>
+
+<input type="button" name="boton_obj" id="boton_obj" onClick="fun_crearobjeto()" value="Crear objeto">
+</form>
+<p id="crearobjeto"></p>
+</div>
+
+<div class="violeta">
+<p><strong>(Object)<br>
+A partir del objeto  anterior, crea una función que, introduciendo 3 valores separados por comas &quot;España&quot;, &quot;Español&quot; y &quot;52125478N&quot;, se añadan como valores al Objeto anterior. Muestra el resultado en una tabla debajo del campo del formulario.<br>
+</strong><em><u>Representación del objeto</u>: persona  {nombre: Juan, edad: 50, estado: casado,  país: España, idioma: Español, DNI: 52125874N }</em></p>
+
+<input type="button" name="boton_ampli" id="boton_ampli" onClick="fun_ampliarobj()" value="Ampliar objeto">
+</form>
+<p id="ampliarobj"></p>
+
+</div>
+
+<div class="azul">
+<p><strong>(Object)<br>
+A partir del objeto  anterior, crea una función que, introduciendo nuevos valores similares, cree otro objeto independiente. Muestra los dos objetos debajo del campo de formulario, uno debajo del otro de forma tabla.</strong><br>
+<em><u>Representación de  la matríz</u>: <br>
+persona1 {nombre: Juan, edad: 50, estado: casado,  país: España, idioma: Español, DNI: 52125874N }</em><br>
+<em>persona2 {nombre: María, edad: 35, estado: soltera,  país: Francia, idioma: Francés, DNI: 52114587H }</em></p>
+
+
+<input type="button" name="boton_perso2" id="boton_perso2" onClick="crear_tabla()" value="Crear tabla">
+<input type="button" name="boton_perso3" id="boton_perso3" onClick="ampliar_tabla()" value="Añadir persona">
+</form>
+<p id="perso2"></p>
+</div>
+
+</body>
+</html>

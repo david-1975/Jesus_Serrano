@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<link href="css/estilos.css" type="text/css" rel="stylesheet">
+<title> Javascript HTML Dom</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="js/funciones6.js"></script>
+
+</head>
+
+<body onLoad="infoNavegador()">
+
+<h1>HTML BOM</h1>
+<p>El Modelo de objetos del navegador (BOM) es una convención específica del navegador que se refiere a todos los objetos expuestos por el navegador web. A diferencia del Modelo de objetos de documento, no existe un estándar para la implementación ni una definición estricta, por lo que los proveedores de navegadores son libres de implementar la lista de materiales de la forma que deseen..</p>
+<p>JavaScript puede acceder y cambiar todos los elementos de un documento HTML. El responsable del DOM es el&nbsp;<a href="#" title="World Wide Web Consortium" target="_blank">World Wide Web Consortium</a>&nbsp;(W3C).
+</p>
+<p>El DOM permite el acceso dinámico a través de la programación para acceder, añadir y cambiar dinámicamente contenido estructurado en documentos con lenguajes como ECMAScript (JavaScript).</p>
+
+<div>
+<div id="infoImg" class="infoImg">
+<img src="img/document-window-navigator.png" width="664" height="444" alt="image DOM">
+</div>
+<div id="infoNav" class="infoNav"></div>
+</div>
+<div>
+<span id="infoVentana"><script>window.onload(tamanoVentana);</script> </span>
+</div>
+  <hr>
+<h2>Objetos de Pantalla</h2>
+<div id="divBom" class="divBom"><p>&nbsp;</p></div>
+<table>
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="#">screen.width , screen.height</a></td>
+      <td>Ancho y alto de la pantalla</td>
+      <td><button type="button" onClick="pantalla()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">screen.availWidth, screen.availHeight</a></td>
+      <td>Ancho y alto de de la pantalla disponible</td>
+      <td><button type="button" onClick="pantallaDisponible()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">screen.colorDepth, screen.pixelDepth</a></td>
+      <td>Profundidad de color y píxeles de la pantalla</td>
+      <td><button type="button" onClick="pantallaProfundidad()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+<h2>Cambiar los elementos HTML</h2>
+<table>
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><em>element</em>.innerHTML =  <em>new html content</em></td>
+      <td>Cambia el contenido de un elemento  HTML.</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><em>element</em>.<em>attribute = new value</em></td>
+      <td>Cambia el valor del atributo de un elemento  HTML.</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><em>element</em>.setAttribute<em>(attribute, value)</em></td>
+      <td>Cambia el valor del atributo de un elemento  HTML.</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><em>element</em>.style.<em>property = new style</em></td>
+      <td>Cambia el estilo CSS de un elemento HTML.</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+<h2>Añadir o eliminar elementos HTML</h2>
+<table>
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td>document.createElement(<em>element</em>)</td>
+      <td>Crea un elemento HTML</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>document.removeChild(<em>element</em>)</td>
+      <td>Elimina un elemento HTML</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>document.appendChild(<em>element</em>)</td>
+      <td>Añade un elemento HTML</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>document.replaceChild(<em>element</em>)</td>
+      <td>Reeplaza un elemento HTML</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>document.write(<em>text</em>)</td>
+      <td>Escribe en el flujo de salida  HTML</td>
+      <td><button type="button" onClick="bucleFor()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+<div>
+  <div class="divejemplo2">
+    <h2>¿Qué puede hacer JavaScript en HTML?</h2>
+    <p>Con el modelo de objetos, JavaScript recibe toda la energía que necesita para crear HTML dinámico:</p>
+    <ul>
+      <li>JavaScript puede cambiar todos los elementos HTML en la página</li>
+      <li>JavaScript puede cambiar todos los atributos de HTML en la página</li>
+      <li>JavaScript puede cambiar todos los estilos CSS en la página</li>
+      <li>JavaScript puede eliminar elementos y atributos HTML existente</li>
+      <li>JavaScript puede añadir nuevos elementos y atributos HTML</li>
+      <li>JavaScript puede reaccionar a todos los eventos de HTML existentes en la página.</li>
+      <li>JavaScript puede crear nuevos eventos en la página HTML</li>
+    </ul>
+    <br>
+  </div>
+  <div class="divejemplo2">
+    <h2>¿Qué es el código HTML DOM?</h2>
+    <p>El DOM HTML es un estándar <strong>de objetos</strong> de modelo y de <strong>programación de interfaces</strong> para HTML. Se define:</p>
+    <ul>
+      <li>Los elementos HTML como <strong>objetos</strong></li>
+      <li>Las <strong>propiedades</strong> de todos los elementos HTML</li>
+      <li>Los <strong>métodos</strong> para acceder a todos los elementos HTML</li>
+      <li>Los <strong>eventos</strong> de todos los elementos HTML</li>
+    </ul>
+    <p>En otras palabras: <strong>El DOM HTML es un estándar de cómo obtener, cambiar, añadir o eliminar elementos HTML.</strong></p>
+  </div>
+</div>
+ 
+
+
+
+</body>
+</html>

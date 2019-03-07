@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+
+<title>Variables JavaScript</title>
+<meta name="keywords" content="HTML5,CSS3,JavaScript">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Aprende  JavaScript con ejemplos pr&aacute;cticos">
+
+<link rel="stylesheet" type="text/css" href="./css/estilos.css">
+
+</head>
+
+<body>
+    <h1>Variables de JavaScript</h1>
+    <hr>
+    
+     <h2>Expresión de las variables</h2>
+ <p>Una <strong>expresión</strong> es una combinación de  <strong>valores, variables y operadores</strong>, que calcula un valor.</p>
+ <p>Las <b>sentencias</b> de JavaScript se componen de: <strong>valores, operadores, expresiones, palabras clave y comentarios.</strong></p>
+ 
+ 
+ <div>
+ <p><strong>Código JavaScript</strong></p>
+ 	<div class="codigo">
+    &lt;p id=&quot;demo5&quot;&gt;&lt;/p&gt;<br>
+&lt;script&gt;<br>
+var caja1 = <br>
+&quot;&lt;strong&gt;var: &lt;/strong&gt; Palabra clave para declarar una variable.&quot; + &quot;&lt;br&gt;&quot; <br>
++ &quot;&lt;strong&gt;identificador: &lt;/strong&gt; Nombre único para la variable.&quot; + &quot;&lt;br&gt;&quot; <br>
++ &quot;&lt;strong&gt;signo igual: &lt;/strong&gt; Para asignar un valor.&quot; + &quot;&lt;br&gt;&quot;<br>
++ &quot;&lt;strong&gt;valor: &lt;/strong&gt; número o cadena de texto.&quot; + &quot;&lt;br&gt;&quot; <br>
++ &quot;&lt;strong&gt;punto y coma: &lt;/strong&gt; finaliza una variable&quot; + &quot;&lt;br&gt;&quot;;<br>
+<br>
+document.getElementById(&quot;demo5&quot;).innerHTML = caja1; <br>
+&lt;/script&gt; </div>
+ </div>
+ 
+ <div>
+ <p><strong>Resultado de las variables de JavaScript</strong></p>
+ <div class="alineado">
+ <p id="demo5"></p>
+ <script>
+ var caja1 = 
+ "<strong>var: </strong> Palabra clave para declarar una variable." + "<br>" 
+ + "<strong>identificador: </strong> Nombre único para la variable." + "<br>" 
+ + "<strong>signo igual: </strong> Para asignar un valor." + "<br>"
+ + "<strong>valor: </strong> número o cadena de texto." + "<br>" 
+ + "<strong>punto y coma: </strong> finaliza una variable" + "<br>";
+ 
+document.getElementById("demo5").innerHTML = caja1; 
+ </script>
+</div>
+ 
+ <div class="alineado">
+ <p id="demo6"></p>
+ <script>
+ var caja2 = 
+ "<strong>valor numérico: </strong> Se escribe con o sin decimal." + "<br>" 
+ + "<strong>valor de texto: </strong> Se escribe entre comillas." + "<br>" 
+ + "<strong>operadores: </strong> Calculan el valor (+ - * /)." + "<br>"
+ + "<strong>la coma: </strong> Separa varias variables." + "<br>" 
+ + "<strong>el signo (+): </strong> Se utiliza para concatenar." + "<br>";
+ 
+document.getElementById("demo6").innerHTML = caja2; 
+ </script>
+ </div>
+
+ <div class="alineado">
+ <p id="demo7"></p>
+ <script>
+ var caja3 = 
+ "<strong>identificadores: </strong> Empiezan con minúsculas." + "<br>" 
+ + "<strong>identificador: </strong> Puede contener mayúsculas." + "<br>" 
+ + "<strong>identificador: </strong> Puede comenzar con (_ ó $)." + "<br>"
+ + "<strong>comentario de una línea: </strong> Doble barra //." + "<br>" 
+ + "<strong>comentario de varias líneas: </strong> Entre /* y */." + "<br>";
+ 
+document.getElementById("demo7").innerHTML = caja3; 
+ </script>
+ </div>
+
+</div>
+ 
+ <hr>
+    
+<h2>Al igual que el Álgebra</h2>
+    <p>Las variables en JavaScript son contenedores para el almacenamiento de valores de datos</p>
+    <p>JavaScript utiliza <strong>operadores aritméticos</strong> (+ - * /) para <b>calcular</b> los valores.</p>
+    <p>En este ejemplo x, y, z son variables:</p>
+          
+    
+<div>
+<p><b>Código JavaScript</b></p>
+    <div class="codigo"> 
+     <p> &lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;<br>
+    &lt;script&gt;<br>
+    var x = 10; var y = 20; var z = x + y; <br>
+    document.getElementById(&quot;demo&quot;).innerHTML = &quot;El resultado de la variable z es: &quot; + z + &quot;.&quot;;<br>
+    &lt;/script&gt;</p> 
+    </div>
+</div>   
+
+<div>
+  <p><strong>Ejemplos de variables de JavaScript</strong></p>
+      <div class="alineado">
+       <p> &lt;script&gt;<br>
+        var x = 10; <em>//Declaración de variable</em><br>
+        var y = 20; <em>//Declaración de variable</em><br>
+        var z = x + y; <em>//Cálculo de variables</em><br>
+        &lt;/script&gt;</p>
+      </div>
+     
+      <div class="alineado">
+       <p>&lt;script&gt;<br>
+       var x,y,z; <em>//Declaración de variable</em><br>
+       x=10; y=20;<em>//Valores de las variables</em><br>
+       z = x + y;<em>//Cálculo de variables</em><br>
+       &lt;/script&gt;</p>
+       </div>
+     
+       <div class="alineado">
+       <p>&lt;script&gt;<br>
+       var x; x=10;<em>//Declaración variable</em><br>
+       var y; y=20;<em>//Declaración variable</em><br>
+       var z; z = x + y;<em>//Variable y cálculo</em><br>
+       &lt;/script&gt;<br>
+       </p>
+       </div>
+       
+    
+     <!--<div class="clearfix"></div>-->
+  
+    
+    <div id="demo" class="alinearcentro" style="margin-bottom:0px;margin-top:0px"></div>
+  
+    <script>
+	var x,y,z;
+	x=10; y=20;
+	z= x+y;
+	
+	document.getElementById("demo").innerHTML = "<strong>El resultado de la variable z es:</strong> " + z + ".";
+    </script> 
+  
+       
+</div>
+
+<hr> 
+<h2>JavaScript es sensible a mayúsculas</h2>
+<p>Todos los identificadores de JavaScript empiezan con minúsculas y pueden contener <strong>mayúsculas y minúsculas</strong>.</p>
+<p>Las variables <strong>lastName y lastname</strong>, son dos variables diferentes.</p>
+
+<div>
+<p><strong>Código JavaScript</strong></p>
+    <div class="codigo">
+      <p>&lt;p id=&quot;demo2&quot;&gt;&lt;/p&gt;&lt;p id=&quot;demo3&quot;&gt;&lt;/p&gt;&lt;p id=&quot;demo4&quot;&gt;&lt;/p&gt;</p>
+      <p>&lt;script&gt;<br>
+        var nombre = &quot;Clara&quot;;
+        var apellido1 = &quot;Cortijo&quot;;
+        var apellido2 = &quot;Ferrero&quot;;<br>
+        var calle = &quot;Madrid&quot;;
+        var numero = 18; var piso = &quot;4º&quot;; var letra = &quot;C&quot;;    <br>
+        var telefonom = 666999666;
+        var email = &quot;mail@servidor.com&quot;;
+        var twitter =&quot;@jsmola&quot;;</p>
+      <p> document.getElementById(&quot;demo2&quot;).innerHTML = &quot;&lt;strong&gt;Mi nombre y apellidos son:&lt;/strong&gt;&lt;br&gt;&quot; + &quot;Nombre: &quot; + nombre + &quot;.&quot; + &quot;&lt;br&gt;&quot; + &quot;Apellido 1: &quot;+ apellido1 +&quot;.&quot;+ &quot;&lt;br&gt;&quot; + &quot;Apellido 2: &quot;+ apellido2 + &quot;.&lt;br&gt;&quot;</p>
+      <p> document.getElementById(&quot;demo3&quot;).innerHTML = &quot;&lt;strong&gt;Mi dirección es:&lt;/strong&gt;&quot; + &quot;&lt;br&gt;&quot; + &quot;Calle: &quot; + calle + &quot;.&quot; +&quot;&lt;br&gt;&quot; + &quot;Número: &quot; + numero + &quot;.&quot; + &quot;&lt;br&gt;&quot; + &quot;Piso: &quot; + piso + &quot;, &quot;+ &quot;Letra: &quot; + letra + &quot;.&quot;; </p>
+      <p> document.getElementById(&quot;demo4&quot;).innerHTML = &quot;&lt;strong&gt;Mis datos de contacto son:&lt;/strong&gt;&quot; + &quot;&lt;br&gt;&quot; + &quot;Teléfono móvil: &quot; + telefonom + &quot;&lt;br&gt;&quot; + &quot;Correo electrónico: &quot; + email + &quot;&lt;br&gt;&quot; + &quot;Twitter: &quot; + twitter;<br>
+      &lt;/script&gt;<br>
+      </p>
+  </div>
+</div>
+
+
+<div>
+<p><strong>Resultado de las variables de JavaScript</strong></p>
+    <div class="alineado">
+    <p id="demo2"></p>
+    <script>
+    var nombre = "Clara";
+    var apellido1 = "Cortijo";
+    var apellido2 = "Ferrero";
+    document.getElementById("demo2").innerHTML = "<strong>Mi nombre y apellidos son:</strong><br>" + 
+	"Nombre: " + nombre + "."+ "<br>" + 
+	"Apellido 1: "+ apellido1 +"."+ "<br>" + 
+	"Apellido 2: "+ apellido2 + ".<br>"
+    </script>
+    </div>
+    
+    <div class="alineado">
+    <p id="demo3"></p>
+    <script>
+    var calle = "Madrid";
+    var numero = 18;
+    var piso = "4º";
+    var letra = "C";
+    document.getElementById("demo3").innerHTML = "<strong>Mi dirección es:</strong>" + "<br>" 
+	+ "Calle: " + calle + "." +"<br>" +
+	"Número: " + numero + "." + "<br>" +
+	"Piso: " + piso + ", "+ "Letra: " + letra + "."; 
+    </script>
+    </div>
+    
+    <div class="alineado">
+    <p id="demo4"></p>
+    <script>
+    var telefonom = 666999666;
+    var email = "mail@servidor.com";
+    var twitter ="@jsmola";
+    document.getElementById("demo4").innerHTML = "<strong>Mis datos de contacto son:</strong>" + "<br>" 
+    +"Teléfono móvil: " + telefonom + "<br>" + "Correo electrónico: " + email + "<br>" +
+    "Twitter: " + twitter;
+    
+    </script>
+    </div>
+ </div>
+
+ 
+<br><br><br>
+</body>
+
+</html>

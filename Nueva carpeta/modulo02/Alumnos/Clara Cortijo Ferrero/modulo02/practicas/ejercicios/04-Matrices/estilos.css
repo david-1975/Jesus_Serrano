@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	
+	background-color: rgb(252, 244, 234); ;/*rgb(75, 29, 135)*/
+	
+	}
+	
+	
+.clearfix {
+	clear:both;
+	
+	}
+	
+	
+table,td,th {
+	border:1px solid black;
+	
+	}	
+
+
+	
+h2 {
+	color:black;
+	}
+
+.violeta {
+	width:70%;
+	float:left;
+	background-color:rgb(245, 232, 255);/*#EBDFFB*/
+	margin:10px auto;
+	padding: 20px;
+	border-radius: 10px;
+	border:2px solid black;
+	box-shadow:5px 3px rgba(0,0,0,0.4);
+	
+	
+	
+	}
+	
+	
+.azul {
+	width:70%;
+	float:right;
+	background-color:rgb(201, 241, 241);
+	margin:10px auto;
+	padding: 20px;
+	border-radius: 10px;
+	border:2px solid black;
+	box-shadow:5px 3px rgba(0,0,0,0.4);
+	
+	
+	}
+	
+	
+.white {
+	background-color:white;
+	padding:20px;
+	margin:20px;
+	border-radius:10px;
+	}	
+	
+	
+p#litros, p#longitud,p#dia, p#temp, p#peso, p#peso2, p#km, p#moneda,p#velocidad,p#area {
+	line-height:30px;
+	margin:40px;
+	}
+	
+div.h3 {
+	text-align:center;
+	}

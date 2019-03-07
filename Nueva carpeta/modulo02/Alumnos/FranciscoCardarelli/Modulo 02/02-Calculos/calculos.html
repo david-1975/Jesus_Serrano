@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<script src="funciones.js"></script>
+</head>
+
+<body>
+<h2><strong>Operaciones de calculo  con JavaScript</strong></h2>
+<hr>
+<p><strong>(Pulgadas) <br>
+Calcular cuántos centímetros son X pulgadas de una pantalla.<br>
+</strong>(1 pulgada = 2,54 centímetros)</p>
+<form id="form1" name="form1" method="post">
+  <label for="number">Number:</label>
+  <input type="number" name="number" id="idCampo">
+  <input type="button" name="button" id="button" value="Enviar" onClick="pulgada()">
+</form>
+<p id="demo"></p>
+<hr>
+
+<p><strong>(Sueldo Neto) <br>
+  Calcular el sueldo neto mensual a recibir por una persona que cobra X euros de salario bruto al año.<br>
+</strong>(Seguridad Social = 6,4%), (IRPF = 15%), (pagas = 14), (fórmula: sueldo mensual - (IRPF + Seguridad Social)</p>
+<form id="form1" name="form1" method="post">
+  <label for="number">Number:</label>
+  <input type="number" name="number" id="idCampo1">
+  <input type="button" name="button" id="button" value="Enviar" onClick="neto()">
+</form>
+<p id="demo1"></p>
+<hr>
+
+<p><strong>(Precio final)<br>
+  Calcular el precio final de un producto introduciendo un precio, un descuento y el impuesto (IVA) a pagar.<br>
+</strong>
+(ejemplo: precio = 50€, Descuento -20%, Impuesto +21%)</p>
+<form id="form1" name="form1" method="post">
+  <label for="number">Number:</label>
+  <input type="number" name="number" id="idCampo2">
+  <input type="button" name="button" id="button" value="Enviar" onClick="pfinal()">
+</form>
+<p id="demo2"></p>
+<hr>
+
+<p><strong>(Byte y bit) <br>
+  Calcular cuántos son X gigabytes en megabyte, kilobytes, bytes y bit.</strong><br>
+(1 Gigabytes = 1024 Megabytes), (1Megabytes = 1024 Kilobytes), (1Kilobytes = 1024 Bytes), (1Bytes = 8 bit)</p>
+<form id="form1" name="form1" method="post">
+  <label for="number">Number:</label>
+  <input type="number" name="number" id="idCampo3">
+  <input type="button" name="button" id="button" value="Enviar" onClick="bytebit()">
+</form>
+<p id="demo3"></p>
+<hr>
+
+<p><strong>(Días, semanas, meses) <br>
+  Calcular cuántos días, semanas y meses hay en X años.<br>
+</strong>(1 año = 365 días), (1 año = 52.142857142857146 semanas), (1 año = 12 meses)</p>
+<form id="form1" name="form1" method="post">
+  <label for="number">Number:</label>
+  <input type="number" name="number" id="idCampo4">
+  <input type="button" name="button" id="button" value="Enviar" onClick="dsm()">
+</form>
+<p id="demo4"></p>
+<hr>
+
+<p><strong>(Velocidad) <br>
+  Calcular a cuantos metros por segundo va un ciclista que circula a X km/h.<br>
+</strong>(1 kilómetro = 1000 metros), (1 hora = 3600 segundos), (fórmula: X*1000/3600)</p>
+<form id="form1" name="form1" method="post">
+  <label for="number">Number:</label>
+  <input type="number" name="number" id="idCampo5">
+  <input type="button" name="button" id="button" value="Enviar" onClick="velocidad()">
+</form>
+<p id="demo5"></p>
+<hr>
+
+<p><strong>(Coste desplazamiento)</strong> <br>
+  <strong>Calcular el coste del desplazamiento de un trabajador por X kilómetros si el coste es 0,5 euros por kilómetro</strong>.<br>
+ (fórmula: 1 kilómetro = 0.5 €/km)<br></p>
+<form id="form1" name="form1" method="post">
+  <label for="number">Number:</label>
+  <input type="number" name="number" id="idCampo6">
+  <input type="button" name="button" id="button" value="Enviar" onClick="desplazamiento()">
+</form>
+<p id="demo6"></p>
+<hr>
+
+<p><strong>(Espacio de almacén)</strong> <strong><br>
+Calcular cuántas canciones de X megabytes se  pueden almacenar en un DVD de 4,7 gigabytes</strong>.<br>
+(1 gigabytes = 1024 megabytes) (formula: capacidad / peso de la canción)</p>
+<form id="form1" name="form1" method="post">
+  <label for="number">Canciones:</label>
+  <input type="number" name="number" id="idCampo7">
+  <label for="number">de:</label>
+  <input type="number" name="number" id="idCampo7b">
+  <input type="button" name="button" id="button" value="Enviar" onClick="espacio()">
+</form>
+<p id="demo7"></p>
+<hr>
+
+<p><strong>(Distancia) <br>
+Calcular el tiempo que se necesita para recorrer X distancia en kilómetros circulando a X km/h. <br>
+</strong>(1 km = 1000 metros), (1 km/h = 0,277778 metros/s) (ejemplo: 1 km = distancia / velocidad * segundos (3600)</p>
+<form id="form1" name="form1" method="post">
+  <label for="number">Distancia:</label>
+  <input type="number" name="number" id="idCampo8">
+  <label for="number">Velocidad:</label>
+  <input type="number" name="number" id="idCampo8b">
+  <input type="button" name="button" id="button" value="Enviar" onClick="distancia()">
+</form>
+<p id="demo8"></p>
+<hr>
+
+
+<p><strong>(Tiempo de descarga) <br>
+  Calcular cuanto tiempo tardaría en descargar un archivo de X megabytes 
+  con una velocidad de descarga de  10 mbps (kilobit por segundo).<br>
+</strong>(Fórmula: tamaño de archivo / tasa de transferencia = tiempo en segundos) (1*1024*8) / 10) = 819,2 segundos; 819,2 / 60 = 13,65 minutos y segundos.<br>
+(Almacenamiento 1024 byte, transferencia 1000
+bps)<br></p>
+<form id="form1" name="form1" method="post">
+  <label for="number">Megabytes:</label>
+  <input type="number" name="number" id="idCampo9">
+  <input type="button" name="button" id="button" value="Enviar" onClick="descarga()">
+</form>
+<p id="demo9"></p>
+<hr>
+
+
+
+
+</body>
+</html>

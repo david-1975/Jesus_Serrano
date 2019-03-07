@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body,td,th {
+	
+	font-family: "SFNS Display";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: #494949;
+	margin: 0px auto;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: "SFNS Display";
+}
+body {
+	background-color: rgba(239,249,249,1.00);
+	/*margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;*/
+	color: black;
+	font-style: normal;
+	text-align: left;
+	width: auto;
+	display: block;
+	word-spacing: normal;
+	white-space: normal;
+	font-family: Consolas;
+	width:1024px;
+}
+a {
+	font-family: "SFNS Display";
+	font-size: 14px;
+	color: #4D82E0;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #33D55F;
+}
+a:hover {
+	text-decoration: underline;
+	color: #C31316;
+}
+a:active {
+	text-decoration: none;
+	color: rgba(228,227,22,1);
+}
+
+div{
+	background-color: rgba(255,255,255,1.00);
+	border-radius:5px;
+	padding:10px;
+	margin:10px;
+	overflow:hidden;
+}
+
+	
+	
+	div.codigo{
+		border-left:4px solid #4CAF50;
+		background: #FFFFA7;
+		/*padding-bottom:0px;
+		padding-top:0px;*/
+		
+		
+	}
+	div.alineado2{
+	width: 28%;
+	float: left;
+	box-shadow: 5px 8px 16px 5px rgb(0,0,0,0.2);
+	background:gray;
+	color:#DFC30C;
+	}
+	/* pagina de variable*/
+	
+	.centrar{
+	text-align: center;
+	font-style: normal;
+	font-weight: bold;
+		}
+
+/* tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+	text-align: left;
+	padding: 8px;
+	border-bottom: 1px solid #ddd;
+	font-style: normal;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}

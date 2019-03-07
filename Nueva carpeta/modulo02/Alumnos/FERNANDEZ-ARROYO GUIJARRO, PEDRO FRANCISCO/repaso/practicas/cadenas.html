@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Metodos cadenas Javascript</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="js/funciones.js"></script>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>Métodos string de cadenas</h1>
+<hr>
+<h2>El concepto de cadenas</h2>
+<p>Un string (cadena), es cero o maás caracteres escritos entre comillas. Se utliza como valor en propiedades de objetos, matrices y variables.</p>
+<p>Las cadenas JavaScript se utilizan para almacenar y manipular texto. Los métodos son funciones que permiten manipular las cadenas de texto. </p>
+<div>
+<div class="divejemplo2">
+  <table>
+       <caption>
+       		<strong>Secuencias de escape JavaScript</strong>
+       </caption>
+        <tbody>
+          <tr>
+            <th>Código</th>
+            <th>Resultado</th>
+          </tr>
+          <tr>
+            <td>\b</td>
+            <td>Espacio en blanco</td>
+          </tr>
+          <tr>
+            <td>\f</td>
+            <td>Avance de página</td>
+          </tr>
+          <tr>
+            <td>\n</td>
+            <td>Nueva línea</td>
+          </tr>
+          <tr>
+            <td>\r</td>
+            <td>Retorno de carro</td>
+          </tr>
+          <tr>
+            <td>\t</td>
+            <td>Tabulator Horizontal</td>
+          </tr>
+        </tbody>
+    </table>
+  <p>La secuencia <strong>\n</strong> inserta una línea nueva en una cadena</p>
+  </div>
+<div class="divejemplo2">
+  <table>
+  <caption>
+       <strong>Secuencias de escape JavaScript</strong>
+  </caption>
+    <tbody>
+      <tr>
+        <th>Código</th>
+        <th>Resultado</th>
+        <th>Descripción</th>
+      </tr>
+      <tr>
+        <td>\'</td>
+        <td>'</td>
+        <td>Comillas simples</td>
+      </tr>
+      <tr>
+        <td>\"</td>
+        <td>"</td>
+        <td>Comillas dobles</td>
+      </tr>
+      <tr>
+        <td>\\</td>
+        <td>\</td>
+        <td>Barra invertida</td>
+      </tr>
+      <tr>
+        <td>\u00F1</td>
+        <td>ñ</td>
+        <td>Letra ñ minúscula</td>
+      </tr>
+      <tr>
+        <td>\u00D1</td>
+        <td>Ñ</td>
+        <td>Letra ñ mayúscula</td>
+      </tr>
+      </tbody>
+  </table>
+  <p>La secuencia <strong>\"</strong> inserta una comilla doble en una cadena </p>
+</div> 
+</div>
+
+<hr>
+<table>
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="#">length()</a></td>
+      <td>Devuelve la longitud de una cadena</td>
+      <td><button type="button" onClick="longitud()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">charAt()</a></td>
+      <td>Devuelve el caracter especificado por un valor</td>
+      <td><button type="button" onClick="posicion()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">charCodeAt()</a></td>
+      <td>Código UNICODE de un caracter (ASCII)</td>
+      <td><button type="button" onClick="valorAscii()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">fronCharCode()</a></td>
+      <td>Caracter (ASCII) de un Código UNICODE</td>
+      <td><button type="button" onClick="unicode2Ascii()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">toUpperCase()</a></td>
+      <td>Convertir a mayusculas</td>
+      <td><button type="button" onClick="aMayusculas()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">toLowerCase()</a></td>
+      <td>Convertir a minusculas</td>
+      <td><button type="button" onClick="aMinusculas()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">concat()</a></td>
+      <td>Unir cadenas</td>
+      <td><button type="button" onClick="unirCadenas()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">endsWith()</a></td>
+      <td>Conprueba si una cadena termina con una cadena/texto especificado</td>
+      <td><button type="button" onClick="finalCadena()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">includes()</a></td>
+      <td>Conprueba si una cadena incluye una cadena/texto especificado</td>
+      <td><button type="button" onClick="enCadena()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">indexOf()</a></td>
+      <td>Busca la posicion en la que comienza una cadena</td>
+      <td><button type="button" onClick="iniCadena()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">lastIndexOf()</a></td>
+      <td>Busca la posicion en la que comienza la última ocurrencia de una cadena</td>
+      <td><button type="button" onClick="lastCadena()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">localeCompare()</a></td>
+      <td>compara 2 cadenas alfabeticamente</td>
+      <td><button type="button" onClick="comparaCadenas()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">match()</a></td>
+      <td>busca una cadena que coincida con una expresion regular y devuelve las ocurrencias separadas por comas</td>
+      <td><button type="button" onClick="buscaOcurrenciaCadena()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">repeat()</a></td>
+      <td>repite cadena n veces</td>
+      <td><button type="button" onClick="repiteCadena()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">replace(cadena1, cadena2)</a></td>
+      <td>reemplaza una cadena </td>
+      <td><button type="button" onClick="reemplazarCadena()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">search()</a></td>
+      <td>Busca una cadena o expresion regular y devuelve su posición o -1</td>
+      <td><button type="button" onClick="validaArrobaPunto()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">slice()</a></td>
+      <td>extrae partes de una cadena desde-hasta</td>
+      <td><button type="button" onClick="sliceCorreo()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">split()</a></td>
+      <td>Divide una cadena en un array de subcadenas</td>
+      <td><button type="button" onClick="splitCadena()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">startsWith()</a></td>
+      <td>Comprueba si una cadena comienza con los caracteres de una cadena específica</td>
+      <td><button type="button" onClick="empiezaCon()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">substr(posicion, longitud)</a></td>
+      <td>Extrae caracteres de una cadena comenzando en una posicion y la longitud a</td>
+      <td><button type="button" onClick="subCad1()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">substring()</a></td>
+      <td>Extrae caractere de una cadena comenzando en un punto y un numero de posiciones</td>
+      <td><button type="button" onClick="subCad2()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">toString()</a></td>
+      <td>Convierte una matriz en  una cadena de caracteres</td>
+      <td><button type="button" onClick="matriz2Cad()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#">trim()</a></td>
+      <td>elimina todos los espacios pero solo por delante y por detras</td>
+      <td><button type="button" onClick="quitaEspacios()">Ejecutar</button></td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+      <td><a href="#"></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
