@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<title>Variables JavaScript</title>
+<meta charset="UTF-8">
+    <meta name="author" content="Jesús Serrano">
+    <meta name="description" content="JavaScript">
+    <meta name="keywords" content="JS JavaScript">
+    <meta name="tittle" content="Introducción al JavaScript">
+    <meta name="generator" content="Dreamweaver">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--compatibilidad Internet explorer-->
+    
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link href="css/estilos.css" type="text/css" rel="stylesheet">
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container mt-3">
+	<nav>
+		<img src="img/logo_js.jpg" alt="JavaScript" title="Código JS" height="150px"><a href="introduccion.html"> Introducción</a> | <a href="codigo-javascript.html">Código</a> | <a href="tipo_de_datos_js.html">Tipos de datos</a> | <a href="operadores-js.html">Operadores</a> | <a href="variables.html">Variables</a> | <a href="salida.html">Salida</a>
+	</nav>
+	<h1>Salida Javascript</h1>
+	<hr>
+	<h2>Las posibilidades de visualización de JavaScript</h2>
+	<p>JavaScript puede alterar los datos "Display" de diferentes maneras:</p>
+	<ul>
+	  <li>La escritura en un elemento HTML, usando <code>innerHTML</code>.</li>
+	  <li>La escritura en la salida HTML utilizando <code>document.write()</code>.</li>
+	  <li>Escribir en un cuadro de alerta, utilizando <code>window.alert()</code>.</li>
+	  <li>Escribir en la consola del navegador, usando <code>console.log()</code>.</li>
+	</ul>
+	<div class="container bg-light rounded p-3">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="m-1 p-2 bg-white rounded shadow-lg">
+					<p><strong>usando innerHtml</strong></p>					
+				  <p>Define el contenido HTML</p>					
+					<p style="font-size: 10px;"><samp>&lt;button onClick=&quot;demo1()&quot; class=&quot;btn-primary&quot;&gt;Pulsa&lt;/button&gt;<br>
+					&lt;p id=&quot;demo1&quot;&gt;&lt;/p&gt;<br>
+					&lt;script&gt;<br>
+					function demo1 () {<br>
+					document.getElementById(&quot;demo1&quot;).innerHTML = 5+6; <br>
+					} <br>
+					&lt;/script&gt;</samp></p>
+					<button onClick="demo1()" class="btn-primary">Pulsa</button>
+					<p id="demo1"></p>
+					<script>
+						function demo1 () {
+						document.getElementById("demo1").innerHTML = 5+6;	
+						}					
+					</script>
+			  </div>
+			</div>
+			<div class="col-md-3">
+				<div class="m-1 p-2 bg-white rounded shadow-lg">
+				  <p><strong>usando document.write</strong></p>
+				  <p>Se utiliza para pruebas</p>
+					<p style="font-size: 12px;"><samp>&lt;button onClick=&quot;demo2()&quot; class=&quot;btn-primary&quot;&gt;Pulsa&lt;/button&gt;<br>
+					&lt;script&gt;<br>
+					function demo2 () {<br>
+					document.write(5+6);<br>
+					} <br>
+					&lt;/script&gt;</samp></p>
+					<button onClick="demo2()" class="btn-primary">Pulsa</button>
+				  <script>
+						function demo2 () {
+							document.write(5+6);
+						}					
+					</script>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="m-1 p-2 bg-white rounded shadow-lg">
+				  <p><strong>usando window.alert</strong></p>
+				  <p>Saca un cuadro de alerta</p>
+					<p style="font-size: 12px;"><samp>&lt;button onClick=&quot;demo3()&quot; class=&quot;btn-primary&quot;&gt;Pulsa&lt;/button&gt;<br>
+					&lt;script&gt;<br>
+					function demo3 () {<br>
+					window.alert(5+6);<br>
+					} <br>
+					&lt;/script&gt;</samp></p>
+					<button onClick="demo3()" class="btn-primary">Pulsa</button>
+				  <script>
+						function demo3 () {
+							window.alert(5+6);
+						}					
+					</script>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="m-1 p-2 bg-white rounded shadow-lg">
+				  <p><strong>usando console.log</strong></p>
+				  <p>Muestra en consola</p>
+					<p style="font-size: 12px;"><samp>&lt;button onClick=&quot;demo4()&quot; class=&quot;btn-primary&quot;&gt;Pulsa&lt;/button&gt;<br>
+					&lt;script&gt;<br>
+					function demo4 () {<br>
+					console.log(5+6);<br>
+					} <br>
+					&lt;/script&gt;</samp></p>
+					<button onClick="demo4()" class="btn-primary">Pulsa</button>
+				  <script>
+						function demo4 () {
+							console.log(5+6);
+						}						
+					</script>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<br>
+	
+		
+	
+	
+</div>
+</body>
+</html>
