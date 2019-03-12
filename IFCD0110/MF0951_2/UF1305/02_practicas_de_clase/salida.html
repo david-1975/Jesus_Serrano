@@ -45,9 +45,10 @@
 					document.getElementById(&quot;demo1&quot;).innerHTML = 5+6; <br>
 					} <br>
 					&lt;/script&gt;</samp></p>
-					<button onClick="demo1()" class="btn-primary">Pulsa</button>
 					<p id="demo1"></p>
-					<script>
+					<button onClick="demo1()" class="btn-primary">Pulsa</button>
+					
+				  <script>
 						function demo1 () {
 						document.getElementById("demo1").innerHTML = 5+6;	
 						}					
@@ -111,9 +112,106 @@
 		</div>
 	</div>
 	<br>
-	
-		
-	
+	<h2>Cuadros de diálogos de ventanas</h2>
+	JavaScript puede mostrar cuadros de diálogos a través del DOM "Window" de diferenteas maneras:
+	<ul>
+		<li>El metodo <code>confirm()</code> muestra un cuadro diálogo con un mensaje y la oción de aceptar o cancelar</li>
+		<li>El metodo <code>alert()</code> muestra un cuadro de diálogo con un mensaje de alerta.</li>
+		<li>El metodo <code>prompt()</code> muestra un cuadro de diálogo solicitando al usuario entrada de datos.</li>
+	</ul>
+	<div class="container bg-light rounded p-3">
+		<div class="row justify-content-center">
+			<div class="col-md-3">
+			  <div class="m-1 p-2 bg-white rounded shadow-lg">
+					<p><strong>confirm()</strong></p>
+					<p style="font-size: 92%;">Muestra un cuadro de diálogo con un mensaje especificado, junto con un clic en Aceptar y un botón Cancelar</p>
+				<p><em>confirm(message)</em></p>
+					<button onClick="confirmar()" class="btn-primary">Pulsar</button>
+					<script>
+						function confirmar() {
+							var boton = confirm('¿Aceptar o Cancelar?');
+							if (boton == "true"){
+								var boton = "Bien! quieres que se acabe el mundo!";
+							}
+							else {
+								var boton = "Maldita sea Austin Powers!!! Has vuelto a salvar el mundo :(";
+							}
+							alert(boton);
+						}						
+					</script>
+			  </div>				
+			</div>
+			<div class="col-4">
+				<div class="m-1 p-2 bg-white rounded shadow-lg">
+					<p><strong>alert()</strong></p>	
+					<p>Muerstra un cuadro de alerta con un mensaje especificado y un botón Aceptar</p>
+					<p>&nbsp;</p>
+					<p><em>alert(message)</em></p>
+					<button onClick="fechaHora()" class="btn-primary">Pulsar</button>
+				  <script>
+					function fechaHora(){
+						var fecha = new Date();//Coge la fecha
+						var extraerDia = fecha.getDay(); //Selecciona del new Date el día de la semana del 0 al 6
+						var diaSemana = ["Domingo","Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+						var extraerMes = fecha.getMonth(); // Da resultado del 0 al 11
+						var mes = [							"Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"
+								   ];	//Haciendo esta matriz, hacemos lo mismo que con el día de la semana		
+						alert("Hoy es " + diaSemana [extraerDia] + ", " + fecha.getDate() + " de " + 
+							  mes[extraerMes] + " del año " + fecha.getFullYear() + ", que tengas un buen día!!!"); //Con el resultado del getDay escogemos el valor de la matriz
+					}					
+					</script>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="m-1 p-2 bg-white rounded shadow-lg">
+					<p><strong>prompt()</strong></p>
+					<p>Muestra un cuadro de diálogo que solicita al visitante una entrada de datos</p>
+					<p>&nbsp;</p>
+					<p><em>prompt(text, defaultText)</em></p>
+				  	<button onClick="simbolo()" class="btn-primary">Pulsar</button>
+				  <script>						
+						function simbolo(){
+							var respuesta = prompt('¿Qué opina del aborto de la gallina?', 'escriba aquí');
+							alert(respuesta);
+						}//Lo dejamos dentro de una función para que no se ejecute directamente
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<h2>Otros métodos de salida</h2>
+	<div class="container bg-light rounded p-3">
+		<div class="row justify-content-center">
+			<div class="col-md-3">
+			  <div class="m-1 p-2 bg-white rounded shadow-lg">
+					<p><strong>open()</strong></p>
+					<p>abre una nueva ventana del navegador.</p>
+					<p>&nbsp;</p>
+					<p><em>open()</em></p>
+				  	<button onClick="ventana()" class="btn-primary">Pulsar</button>
+				<script>						
+						function ventana(){
+							var respuesta = open("", "", "width=200,height=100");//también se puede con window.open
+						respuesta.document.write("<p>Toma una ventana nueva!!!</p>");
+						}
+					</script>
+				</div>
+				<div class="m-1 p-2 bg-white rounded shadow-lg">
+					<p><strong>close()</strong></p>
+					<p></p>
+					<p>&nbsp;</p>
+					<p><em>close()</em></p>
+				</div>
+				<div class="m-1 p-2 bg-white rounded shadow-lg">
+					<p><strong>open()</strong></p>
+					<p></p>
+					<p>&nbsp;</p>
+					<p><em>print()</em></p>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 </div>
 </body>
