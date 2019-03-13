@@ -120,11 +120,11 @@
 		<li>El metodo <code>prompt()</code> muestra un cuadro de diálogo solicitando al usuario entrada de datos.</li>
 	</ul>
 	<div class="container bg-light rounded p-3">
-		<div class="row justify-content-center">
-			<div class="col-md-3">
+		<div class="row">
+			<div class="col-md-4">
 			  <div class="m-1 p-2 bg-white rounded shadow-lg">
 					<p><strong>confirm()</strong></p>
-					<p style="font-size: 92%;">Muestra un cuadro de diálogo con un mensaje especificado, junto con un clic en Aceptar y un botón Cancelar</p>
+					<p>Muestra un cuadro de diálogo con un mensaje especificado, junto con un clic en Aceptar y un botón Cancelar</p>
 				<p><em>confirm(message)</em></p>
 					<button onClick="confirmar()" class="btn-primary">Pulsar</button>
 					<script>
@@ -141,7 +141,7 @@
 					</script>
 			  </div>				
 			</div>
-			<div class="col-4">
+			<div class="col-md-4">
 				<div class="m-1 p-2 bg-white rounded shadow-lg">
 					<p><strong>alert()</strong></p>	
 					<p>Muerstra un cuadro de alerta con un mensaje especificado y un botón Aceptar</p>
@@ -162,7 +162,7 @@
 					</script>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-md-4">
 				<div class="m-1 p-2 bg-white rounded shadow-lg">
 					<p><strong>prompt()</strong></p>
 					<p>Muestra un cuadro de diálogo que solicita al visitante una entrada de datos</p>
@@ -182,36 +182,165 @@
 	<br>
 	<h2>Otros métodos de salida</h2>
 	<div class="container bg-light rounded p-3">
-		<div class="row justify-content-center">
-			<div class="col-md-3">
+		<div class="row">
+			<div class="col-md-4">
 			  <div class="m-1 p-2 bg-white rounded shadow-lg">
 					<p><strong>open()</strong></p>
-					<p>abre una nueva ventana del navegador.</p>
-					<p>&nbsp;</p>
-					<p><em>open()</em></p>
+					<p>Abre una nueva ventana del navegador.</p>
+					
+					<p><em>open(url,name,width,height)</em></p>
 				  	<button onClick="ventana()" class="btn-primary">Pulsar</button>
-				<script>						
+					<script>						
 						function ventana(){
 							var respuesta = open("", "", "width=200,height=100");//también se puede con window.open
 						respuesta.document.write("<p>Toma una ventana nueva!!!</p>");
 						}
 					</script>
 				</div>
-				<div class="m-1 p-2 bg-white rounded shadow-lg">
-					<p><strong>close()</strong></p>
-					<p></p>
-					<p>&nbsp;</p>
-					<p><em>close()</em></p>
 				</div>
-				<div class="m-1 p-2 bg-white rounded shadow-lg">
-					<p><strong>open()</strong></p>
-					<p></p>
-					<p>&nbsp;</p>
-					<p><em>print()</em></p>
+				<div class="col-md-4">
+					<div class="m-1 p-2 bg-white rounded shadow-lg justify-content-between">
+						<p><strong>close()</strong></p>
+						<p>Cierra una ventana, suele ir con el método open()</p>
+						
+						<p><em>close()</em></p>
+						<button onClick="abre()" class="btn-primary">Abrir</button>
+						<button onClick="cierra()" class="btn-primary">Cerrar</button>
+					<script>
+						var respuesta1;
+							function abre() {
+								respuesta1 = open("", "ventana", "width=200,height=100");//también se puede con window.open al generar "ventana" solo abre 1 y después con document solo escribe en esa página
+								respuesta1.document.write("<p>Toma una ventana nueva!!!</p>");
+							}
+							function cierra() {
+								respuesta1.close();
+							}
+						</script>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="m-1 p-2 bg-white rounded shadow-lg">
+						<p><strong>print()</strong></p>
+						<p>Abre ventana de impresión de la página en la que estamos</p>
+						
+						<p><em>print()</em></p>
+						<button onClick="print()"  class="btn-primary">Imprimir</button>
+					</div>			
+				</div>
+				<div class="col-md-4">
+					<div class="m-1 p-2 bg-white rounded shadow-lg">
+						<p><strong>stop()</strong></p>
+						<p>Para la carga de la página, es como si lo haces desde el navegador</p>
+						
+						<p><em>stop()</em></p>
+						<button onClick="stop()"  class="btn-primary">Parar carga</button>
+					</div>			
+				</div>
+			<div class="col-md-4">
+			  	<div class="m-1 p-2 bg-white rounded shadow-lg">
+					<p><strong>setInterval()</strong></p>
+					<p> llama a una función a intervalos especificados(milisegundos)</p>
+
+					<p><em>setInterval(ms)</em></p>
+					<button onClick="intervalo()"  class="btn-primary">Iniciar</button>
+					<script>
+						
+						function intervalo(){
+							var ciclo = setInterval(function(){ alert("quítame de aquí!!!"); }, 3000);
+						}					
+					</script>
 				</div>
 			</div>
+			<div class="col-md-4">
+			  	<div class="m-1 p-2 bg-white rounded shadow-lg">
+					<p><strong>clearInterval()</strong></p>
+					<p> llama a una función a intervalos especificados(milisegundos)</p>
+
+					<p><em>clearInterval()</em></p>
+					<button onClick="pararintervalo()"  class="btn-primary">Parar</button>
+					<button onClick="intervalo()"  class="btn-primary">Iniciar</button>
+					<script>
+						function pararintervalo(){
+							var ciclo = setInterval(function(){ alert("quítame de aquí!!!"); }, 3000);
+							clearInterval(ciclo);
+						}					
+					</script>
+				</div>
+			</div>
+			<div class="col-md-4">
+			  	<div class="m-1 p-2 bg-white rounded shadow-lg">
+					<p><strong>btoa() y atob()</strong></p>
+					<p>Codifica y decodifica una cadena en base-64</p>
+
+					<p><em>window.btoa(str)</em></p>
+					<button onClick="codigo()"  class="btn-primary">Prueba</button>
+					<p id="texto1" style="font-size: 70%"></p>
+					<script>
+						var texto = "Estudia más!";
+						var enc = btoa(texto);
+						var codificado = "Texto codificado: " + enc
+						var decodificado = "Texto decodificado: " + atob(enc)
+						function codigo(){
+							document.getElementById("texto1").innerHTML = codificado + "<br>" + decodificado;
+						}									
+					</script>
+				</div>
+			</div>
+			<div class="col-md-4">
+			  	<div class="m-1 p-2 bg-white rounded shadow-lg">
+					<p><strong>moveBy() y moveTo()</strong></p>
+					<p><code>moveBy() </code>mueve una ventana creada a una posición determinada y <code>moveTo() </code>mueve una ventana creada los parámetros indicado</p>
+
+					<p><em>moveBy(x,y) moveTo(x,y)</em></p>
+					<button onclick="openWin()"  class="btn-primary">Abrir</button>
+					<button onclick="moveWinTo()" class="btn-primary">moveBy</button>
+					<button onclick="moveWinBy()" class="btn-primary">moveTo</button>
+
+					<script>
+						var myWindow;
+						function openWin() {
+							myWindow = window.open("", "", "width=250, height=250");
+						}
+						function moveWinTo() {
+							myWindow.moveTo(150, 150);
+							myWindow.focus();//Esto hace que la ventana esté en primer plano
+						}
+						function moveWinBy() {
+							myWindow.moveBy(75, 50);
+							myWindow.focus();
+						}
+					</script>
+				</div>
+			</div>			
+			<div class="col-md-4">
+			  	<div class="m-1 p-2 bg-white rounded shadow-lg">
+					<p><strong>resizeTo() y resizeBy()</strong></p>
+					<p><code>resizeTo() </code>cambia el tamaño de una ventana a un tamaño específico y <code>resizeBy() </code>agranda o recorta una ventana</p>
+
+					<p><em>resizeBy(x,y) resizeBy(x,y)</em></p>					
+					<button onclick="openWin()" class="btn-primary">Abrir</button>
+					<button onclick="resizeWinTo()" class="btn-primary">resizeTo</button>
+					<button onclick="resizeWinBy()" class="btn-primary">resizeBy</button>
+					<script>
+						var tamano;
+						function openWin() {
+						tamano = window.open("", "", "width=250, height=250");
+						}
+						function resizeWinTo() {
+						tamano.resizeTo(800, 600);
+						tamano.focus();
+						}
+						function resizeWinBy() {
+						tamano.resizeBy(-100, -50);
+						tamano.focus();
+						}
+					</script>
+
+				</div>
+			</div>			
 		</div>
 	</div>
+	
 	
 </div>
 </body>
