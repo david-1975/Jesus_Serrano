@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es-ES"><head>
+   <title>Fechas</title>
+    
+    <meta charset="UTF-8">
+    <meta name="author" content="Jesús Serrano">
+    <meta name="description" content="JavaScript">
+    <meta name="keywords" content="JS JavaScript">
+    <meta name="tittle" content="Introducción al JavaScript">
+    <meta name="generator" content="Dreamweaver">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--compatibilidad Internet explorer-->
+    
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<script src="js/funciones-fechas.js"s></script>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container mt-3">
+<nav>
+		<img src="img/logo_js.jpg" alt="JavaScript" title="Código JS" height="150px"><a href="introduccion.html"> Introducción</a> | <a href="codigo-javascript.html">Código</a> | <a href="tipo_de_datos_js.html">Tipos de datos</a> | <a href="operadores-js.html">Operadores</a> | <a href="variables.html">Variables</a> | <a href="salida.html">Salida</a> | <a href="cadenas.html">Cadenas</a> | <a href="numeros.html">Números</a> | <a href="fechas.html">Fechas</a>
+</nav>
+
+<h1>Métodos fechas y hora (Date)</h1>
+<hr>
+<h2>El concepto de fecha</h2>
+
+<p>Por defecto, JavaScript utilizará la zona horaria del navegador y mostrar una fecha como una cadena de texto completo:</p>
+<p><strong>Mar Mar 19 de 2019 12:50:43 GMT + 0100 (Hora Estándar de Europa central)</strong></p>
+<p>Los métodos numéricos devuelven un valor nuevo y no cambian la variable original,  y puede utilizarse con cualquier tipo de número (literales, variables o expresiones).  </p>
+<p>Fecha objetos se crean con el new Date()constructor. new Date()crea un nuevo objeto Date con la <strong>fecha y hora actual</strong>.</p>
+<div id="contenedor" class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+<button class="btn btn-primary btn-sm m-2" type="button" onClick="cerrar()">Cerrar</button>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="bg-light shadow rounded p-3 h-100">
+				<h3 class="border-bottom border-info">Definición  y uso</h3>
+				<p id="demo1"></p>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="bg-light shadow rounded p-3 h-100">
+				<h3 class="border-bottom border-info">Resultado del uso </h3>
+				<p id="demo2"></p>
+			</div>
+		</div> 
+	</div>
+</div>
+<style>
+	#contenedor, #contenedor1 {display:none;}
+</style>
+<hr>
+<h2>Métodos fechas</h2>
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="#"></a>getDate()</td>
+      <td>Crea un nuevo objeto Date con la fecha y hora actual</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="nuevaFecha()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#"></a>getFullYear()</td>
+      <td>      Comprueba si un valor es un entero.</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="esEntero() ">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getMonth()</a></td>
+      <td>Comprueba si un valor no es un número (NaN).</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="noEsNumero()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getHours()</a></td>
+      <td>Convierte un número en un número exponencial. x es igual al número de dígitos.</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="aExponencial()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getMinutes()</a></td>
+      <td>Formatea un número con x números de dígitos después del punto decimal.</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="aFijar()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getSeconds()</a></td>
+      <td>Formatea un número a una longitud.</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="aPrecision()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getMilliseconds()</a></td>
+      <td>Convierte un número en una cadena y lo representa en una base aritmética.</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="aCadena()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getTime()</a></td>
+      <td>Devuelve el valor primitivo de un número.</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="valorDe() ">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getDay()</a></td>
+      <td>Devuelve el valor primitivo de un número.</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="valorDe() ">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">Date.now()</a></td>
+      <td>Devuelve el valor primitivo de un número.</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="valorDe() ">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+	
+<hr>
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
