@@ -1,6 +1,5 @@
 // JavaScript Document
 
-
 //if
 function horaIf(){
 	var hoy = new Date();
@@ -29,7 +28,6 @@ function horaIf(){
 	   }
 	alert(mensaje);
 }
-
 
 //if else
 function horaElse(){
@@ -94,27 +92,54 @@ switch(hoy.getDay()) {
 //for
 
 function bucleFor(){
-	var colores = ["Rojo", "Naranja","Amarillo","Verde","Cian","Azul", "Violeta"]
-	var i;
-	var texto="";
-	for(i=0;i<colores.length;i++){
-		texto += colores[i] + "\n";	//esto es lo mismo que texto=texto+colores[i]
-		}
+	//var colores = ["Rojo", "Naranja","Amarillo","Verde","Cian","Azul", "Violeta"];
+//	var x;
+//	var texto="";
+//	for(x=0;x<colores.length;x++){  //marcamos inicio, final y qué se ejecuta al final de la condición
+//		texto += colores[x] + "\n";	//esto es lo mismo que texto=texto+colores[i]
+//		}
+//	alert("Los colores del arcoiris son: " + "\n"+ texto);			
+//}
 
-	alert("Los colores del arcoiris son: " + "\n"+ texto);			
+	var y = prompt("introduce un número y te daré su tabla de multiplicar");	
+	var z = parseInt(y);
+	var a = isNaN(z);
+	var x;
+	var resultado ="";	
+	if (a === false){		
+		for(x=1;x<=10;x++){
+			resultado += y + " x " + x + " = " + (x * z + "\n"); 			
+		}
+		alert ("la tabla de multiplicar es: \n" +  resultado);
+	}
+	else{
+		alert("No has introducido un número");
+		bucleFor();		
+	}	
 }
 
 //while
 
 function mientrasWhile(){
-	var i = 0;
+	var x = 0;
 	var texto="";
-	while(i<10){
-		texto = texto +"\n" + "El número es " + i;
-		i++;
+	while (x<10) {
+		texto = texto +"\n" + "El número es " + x;
+		x++;
 	}	
 	alert(texto);
 }
 
 //while do
 
+function hacerMientrasDoWhile(){	
+	var x = 0;
+	var texto="";
+	do {	
+		texto = texto +"\n El número es: " + x;
+		x++;
+		}
+	while (x<=10){
+		alert(texto);
+	}
+}

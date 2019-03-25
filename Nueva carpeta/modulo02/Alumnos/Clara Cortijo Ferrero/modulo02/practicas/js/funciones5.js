@@ -309,21 +309,18 @@ while(i<10){
 	
 	
 	
-	function hazmientras(){
-	
-var i = 0;
-var texto="";
+function hacerMientrasDoWhile(){	
+	var i = 0;
+	var texto="";
 
-do {
-	
-	texto = texto +"\n El número es: " + i;
-	i++;
-	}
+	do {
+		texto = texto +"\n El número es: " + i;
+		i++;
+		}
 
-while(i<10){
-	alert(texto);
-	}
-	
+	while(i<10){
+		alert(texto);
+		}	
 
 	}
 	

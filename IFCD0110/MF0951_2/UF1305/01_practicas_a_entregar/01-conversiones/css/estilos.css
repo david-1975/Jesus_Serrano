@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+.pregunta{
+	float: left;
+}
+
+.respuesta{
+	float: right;
+	color: blue;
+}
