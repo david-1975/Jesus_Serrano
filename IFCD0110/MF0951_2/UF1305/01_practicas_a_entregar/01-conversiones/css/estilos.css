@@ -3,9 +3,11 @@
 
 .pregunta{
 	float: left;
+	width: 60%;
 }
 
 .respuesta{
 	float: right;
 	color: blue;
+	width: 35%;
 }
