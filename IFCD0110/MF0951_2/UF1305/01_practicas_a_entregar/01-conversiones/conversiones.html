@@ -18,7 +18,7 @@
 </head>
 
 <body>
-<h2><strong>Operaciones de conversión de unidades con JavaScript</strong></h2>
+<h1><strong>Operaciones de conversión de unidades con JavaScript</strong></h1>
 <hr>
 <div class="pregunta">
 <p><strong>(volumen) <br>
@@ -27,7 +27,7 @@
 <form id="form1" name="form1" method="post">
   <label for="number1">Introduce un número de litros:</label>
   <br>
-  <input type="number" name="number1" id="number1">
+  <input type="number" name="number1" id="number1" required>
   <input type="button" name="button1" id="button1" value="Enviar" onClick="obtenerlitros()">
 </form>
 </div>
@@ -125,7 +125,11 @@
   <br>
   <input type="number" name="number10" id="number10">
   <input type="button" name="button10" id="button10" value="Enviar" onClick="obtenerArea()">
-</form></div>
+</form>
+</div>
+
 <div  class="respuesta" id="etiqueta10"></div>
+
+
 </body>
 </html>

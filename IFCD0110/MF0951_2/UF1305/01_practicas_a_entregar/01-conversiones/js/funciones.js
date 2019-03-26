@@ -2,12 +2,13 @@
 
 //volumen
 
-function obtenerlitros(){
+function obtenerlitros(){	
+	if (document.getElementById("number1").value != "") { //introducimos esto para que no de solucion con NaN
 	var litros = parseInt(document.getElementById("number1").value);
-	
+			
 	var decilitros = litros * 10;
-	var centilitros = litros *100;
-	var mililitros = litros *1000;
+	var centilitros = litros * 100;
+	var mililitros = litros * 1000;
 	
 	document.getElementById('etiqueta1').innerHTML=
 		"Número de litros: " + "<strong>" + litros + "</strong>" + "<br>" +
@@ -16,11 +17,13 @@ function obtenerlitros(){
 		"<strong>" + litros + "</strong>" + " litros son " + "<strong>" +  centilitros + "</strong>" + 
 		" centilitros" + "<br>" +
 		"<strong>" + litros + "</strong>" + " litros son " + "<strong>" + mililitros + "</strong>" + " mililitros";
+	}
 }
 
 //longitud
 
 function obtenerlongitud(){
+	if (document.getElementById("number2").value != "") {
 	var longitud = parseInt(document.getElementById("number2").value);
 	
 	var decimetros = longitud * 10;
@@ -32,11 +35,12 @@ function obtenerlongitud(){
 		"<strong>" + decimetros + "</strong>" + " decimetros" + "<br>" +
 		"<strong>" + centimetros + "</strong>" + " centimetros" + "<br>" +
 		"<strong>" + milimetros + "</strong>" + " milimetros";
+	}
 }
-
 //tiempo
 
 function obtenerTiempo(){
+	if (document.getElementById("number3").value != "") {
 	var dia = parseInt(document.getElementById("number3").value);
 	
 	var hora = dia * 24;
@@ -48,11 +52,12 @@ function obtenerTiempo(){
 		"<strong>" + hora + "</strong>" + " horas" + "<br>" +
 		"<strong>" + minuto + "</strong>" + " minutos" + "<br>" +
 		"<strong>" + segundo + "</strong>" + " segundos";	
+	}
 }
-
 //temperatura
 
 function obtenerTemperatura(){
+	if (document.getElementById("number4").value != "") {
 	var grados = parseInt(document.getElementById("number4").value);
 	
 	var farenheit = ( grados * 1.8 ) + 32;
@@ -62,11 +67,12 @@ function obtenerTemperatura(){
 		"Has escogido " + "<strong>" + grados + "</strong>" + "</strong>" + " ºCentrigrados, que son: " + "<br>" +
 		"<strong>" + parseInt(farenheit) + "</strong>" + " ºFarenheit" + "<br>" +    //Le añado el parseInt para que no salgan decimales
 		"<strong>" + parseInt(kelvin) + "</strong>" + " ºKelvin";	
+	}
 }
-
 //peso
 
 function obtenerPeso(){
+	if (document.getElementById("number5").value != "") {
 	var toneladas = parseInt(document.getElementById("number5").value);
 	
 	var kilos = toneladas * 1000;
@@ -78,11 +84,12 @@ function obtenerPeso(){
 		"<strong>" + kilos + "</strong>" + " kilos" + "<br>" +
 		"<strong>" + gramos + "</strong>" + " gramos" + "<br>" +
 		"<strong>" + miligramos + "</strong>" + " miligramos";		
+	}
 }
-
 //pesaje
 
 function obtenerPesaje(){
+	if (document.getElementById("number6").value != "") {
 	var peso = parseInt(document.getElementById("number6").value);
 	
 	var onzas = peso * 35.274;
@@ -96,10 +103,11 @@ function obtenerPesaje(){
 		"<strong>" + parseInt(libras) + "</strong>" + " libras" + "<br>" +
 		"<strong>" + parseInt(piedras) + "</strong>" + " piedras" + "<br>" +
 		"<strong>" + parseInt(kilates) + "</strong>" + " kilates";		
+	}
 }
-
 //distancia
-function obtenerDistancia(){
+function obtenerDistancia(){	
+	if (document.getElementById("number7").value != "") {
 	var km = parseInt(document.getElementById("number7").value);
 	
 	var millas = km * 0.621371;
@@ -113,10 +121,11 @@ function obtenerDistancia(){
 		"<strong>" + parseInt(pies) + "</strong>" + " pies" + "<br>" +
 		"<strong>" + parseInt(yardas) + "</strong>" + " yardas" + "<br>" +
 		"<strong>" + parseInt(pulgadas) + "</strong>" + " pulgadas";		
+	}
 }
-
 //moneda
 function obtenerMoneda(){
+	if (document.getElementById("number8").value != "") {
 	var euro = parseInt(document.getElementById("number8").value);
 	
 	var dolar = euro * 1.13;
@@ -130,10 +139,11 @@ function obtenerMoneda(){
 		"<strong>" + parseInt(libras) + "</strong>" + " libras" + "<br>" +
 		"<strong>" + parseInt(yenes) + "</strong>" + " yenes" + "<br>" +
 		"<strong>" + parseInt(yuanes) + "</strong>" + " yuanes";		
+	}
 }
-
 //velocidad
 function obtenerVelocidad(){
+	if (document.getElementById("number9").value != "") {
 	var km = parseInt(document.getElementById("number9").value);
 	
 	var ms = km * 35.274;
@@ -145,10 +155,11 @@ function obtenerVelocidad(){
 		"<strong>" + parseInt(ms) + "</strong>" + " m/s" + "<br>" +
 		"<strong>" + parseInt(millas) + "</strong>" + " milla/s" + "<br>" +	
 		"<strong>" + parseInt(nudos) + "</strong>" + " nudos/s";		
+	}
 }
-
 //areas
 function obtenerArea(){
+	if (document.getElementById("number10").value != "") {
 	var km = parseInt(document.getElementById("number10").value);
 	
 	var hc = km * 100;
@@ -160,4 +171,5 @@ function obtenerArea(){
 		"<strong>" + parseInt(hc) + "</strong>" + " hectáreas" + "<br>" +
 		"<strong>" + parseInt(acres) + "</strong>" + " acres" + "<br>" +	
 		"<strong>" + parseInt(millas) + "</strong>" + " millas cuadradas";			
+	}
 }
