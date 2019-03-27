@@ -45,11 +45,11 @@ function descarga (){
 		var tiempo = bits / 10;		
 				
 		if(tiempo > 3600){
-			var hours = Math.floor( tiempo / 3600 );  
-			var minutos = Math.floor( (tiempo % 3600) / 60 );
-			var segundos = tiempo % 60;
+			var horas = Math.floor( tiempo / 3600 );  //saca las horas
+			var minutos = Math.floor( (tiempo % 3600) / 60 );  //saca los minutos
+			var segundos = tiempo % 60;        //saca los segundos
 
-			var resultado = hours + " horas, " + minutos + " minutos y " + parseInt(segundos);  
+			var resultado = horas + " horas, " + minutos + " minutos y " + parseInt(segundos);  
 			
 			document.getElementById('etiqueta3').innerHTML= "Tu archivo de "+ tamaño + " MBytes se descargará en" + "<br>" + resultado + " segundos.";
 		}
@@ -69,81 +69,105 @@ function descarga (){
 	
 //ejercicio 4
 
-//function frases(){
-//	if (document.getElementById("number4").value != "") {
-//		var frase = document.getElementById("number4").value;
-//		
-//		var comillas = ;
-//		var mayusculas = toUpperCase(frase.str(""));
-//		var minusculas = toLowerCase(frase);
-//		var alreves = ;
-//		var cita = ;
-//		var todos = ;
-//	
-//		document.getElementById('etiqueta4').innerHTML= 
-//			"Tu frase introducida es: " + frase + "<br>" +
-//			"Tu frase intrecomillada es: " + comillas + "<br>" +
-//			"Tu frase en mayúsculas es: " + mayusculas + "<br>" +
-//			"Tu frase en minúsculas es: " + minusculas + "<br>" +
-//			"Tu frase al revés es: " + alreves +  "<br>" +
-//			"Tu frase encitada es " + cita + "<br>" +
-//			"Tu frase con todo es: " + todos;
-//	}	
-//}
+function frases(){
+	if (document.getElementById("number4").value != "") {
+		var frase = document.getElementById("number4").value;
+		
+		
+		var comillas = "\"" + frase + "\"";
+		var mayusculas = frase.toUpperCase();
+		var minusculas = frase.toLowerCase();
+		
+		var matriz = frase.split(" ");
+		var alreves = matriz.reverse();
+		var completo  = alreves.toString().replace(/,/g, " ");	//búsqueda para cambiar las comas por espacios	
+		var cita = "Cita: " + frase;		
 	
+		document.getElementById('etiqueta4').innerHTML= 
+			"Tu frase introducida es: " + frase + "<br>" +
+			"Tu frase intrecomillada es: " + comillas + "<br>" +
+			"Tu frase en mayúsculas es: " + mayusculas + "<br>" +
+			"Tu frase en minúsculas es: " + minusculas + "<br>" +
+			"Tu frase al revés es: " + completo +  "<br>" +
+			"Tu frase encitada es: " + cita + "<br>";			
+	}	
+}	
 
 //Ejercicio 5
 function numeros(){
 	if (document.getElementById("number5").value != "") {
-	
-		document.getElementById('etiqueta5').innerHTML="";
+		var numeros = document.getElementById("number5").value;				
+		
+		var busqueda1 = numeros.indexOf(" ");
+		var busqueda2 = numeros.lastIndexOf(" ");
+		
+		var numero1 = parseInt(numeros.slice(0, busqueda1));
+		var numero2 = parseInt(numeros.slice(busqueda1 +1, busqueda2));
+		var numero3 = parseInt(numeros.slice(busqueda2+1));
+		
+		var matriz = new Array (numero1, numero2, numero3);
+		
+		if(numero1 > numero2 && numero1 > numero3){
+			var mensaje = numero1;
+			if(numero2 > numero3){
+				var mensaje2 = numero3;
+			}
+			else if(numero2 < numero3){
+				 var mensaje2 = numero2;
+			}
+			else{
+				var mensaje2 = numero2 + "y" + numero3;
+			}
+		}
+		else if(numero2 > numero1 && numero2 > numero3){
+			var mensaje = numero2;
+			if(numero1>numero3){
+				var mensaje2=numero3;
+			}
+			else if( numero1 < numero3 ){
+				var mensaje2=numero1;
+			}
+			else{
+				var mensaje2 = numero1 + "y" + numero3;
+			}
+		}
+		else if(numero3 > numero1 && numero3 > numero2){
+			var mensaje = numero3;
+			if(numero2 > numero1){
+				var mensaje2 = numero1;
+			}
+			else if(numero2<numero1){
+				var mensaje2 = numero2;
+			}
+			else{
+				var mensaje2 = numero1 + "y" + numero2;
+			}
+		}		
+		else if(numero1 == numero2 && numero1 > numero3){
+			var mensaje = numero1 + " y " + numero2;
+			var mensaje2 = numero3;
+		}
+		else if(numero2 == numero3 && numero2 > numero1){
+			var mensaje = numero2 + " y " + numero3;
+			var mensaje2 = numero1;
+		}
+		else if(numero1 == numero3 && numero1 > numero2){
+			var mensaje = numero1 + " y " + numero3;
+			var mensaje2 = numero2;		
+		}
+		else {
+			var mensaje = "Todos son iguales";
+			var mensaje2 = "Todos son iguales";
+		}
+		
+		var suma = matriz[0] + matriz[1] + matriz[2];
+				
+		document.getElementById('etiqueta5').innerHTML= "Resultados:" + "<ul>" +
+			"<li>" + "Has introducido los siguientes números: " + numero1 + " " +  numero2 + " " + numero3 + 
+			"</li>" +
+			"<li>" + "El número más alto introducido es el " + "<strong>" + mensaje + "</strong>"+ "</li>" + 
+			"<li>" + "El número más bajo introducido es el " + "<strong>" + mensaje2 + "</strong>"+ "</li>" + 
+			"<li>" + "La suma de los valores es " + "<strong>" + suma + "</strong>" + "</li>" + "</ul>";
 	}
 }
 
-//Ejercicio 6
-function palabras(){
-	if (document.getElementById("number6").value != "") {
-		
-		document.getElementById('etiqueta6').innerHTML="";
-	}	
-}
-
-//Ejercicio 7
-function datos(){
-	if (document.getElementById("number7").value != "") {
-		
-		document.getElementById('etiqueta6').innerHTML="";
-	}	
-}
-
-//Ejercicio 8
-function orden(){
-	if (document.getElementById("number8").value != "") {
-		
-		document.getElementById('etiqueta8').innerHTML="";
-	}	
-}
-
-//Ejercicio 9
-function correo(){
-	if (document.getElementById("number9").value != "") {
-		
-		document.getElementById('etiqueta9').innerHTML="";
-	}	
-}
-
-//Ejercicio 10
-function multiplicar(){
-	if (document.getElementById("number10").value != "") {
-	
-		document.getElementById('etiqueta10').innerHTML="";
-	}	
-}
-	
-
-
-
-	
-	
-	
-	
