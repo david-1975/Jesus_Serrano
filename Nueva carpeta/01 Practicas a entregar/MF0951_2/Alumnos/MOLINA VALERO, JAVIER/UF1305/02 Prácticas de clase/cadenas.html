@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Variables JavaScript</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+<script src="js/cadenas.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<h1>Métodos string (cadenas)</h1>
+    <hr>
+    <h2>El concepto de cadenas</h2>
+	<p>Un string (cadena), es cero o más caracteres escritos entre comillas. Se utiliza como valor en propiedades de objetos, matrices y variables.</p>
+
+	<p>Las cadenas JavaScript se utilizan para almacenar y manipular texto. Los métodos son funciones que permiten manipular las cadenas de texto.</p>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Código</th>
+				<th>Resultado</th>
+				
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+	<hr>
+	<table class="table table-dark">
+		<thead>
+			<tr>
+				<th>Método</th>
+				<th>Descripción</th>
+				<th>Uso</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td><code>length</code></td>
+			<td>La propiedad length devuelve la longitud de una cadena</td>
+			<td><button onClick="longitud()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		<tr>
+			<td><code>indexOf()</code></td>
+			<td>Devuelve la posición de la primera aparición encontrada de un valor especificado en una cadena.</td>
+			<td><button onClick="posicion()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		<tr>
+			<td><code>lastIndexOf()</code></td>
+			<td>Devuelve la posición de la última aparición encontrada de un valor especificado en una cadena.</td>
+			<td><button onClick="encontrar()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		
+		<tr>
+			<td><code>charAt()</code></td>
+			<td>Devuelve el carácter en el índice especificado (posición)</td>
+			<td><button onClick="caracter()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		<tr>
+			<td><code>charCodeAt()</code></td>
+			<td>Devuelve el índice del caracter Unicode especificado.</td>
+			<td><button onClick="caracterunicode()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		<tr>
+			<td><code>fromCharCode()</code></td>
+			<td>Convierte los valores Unicode en caracteres. Nota: Este es un método estático del objeto String, y la sintaxis es siempre String.fromCharCode ().</td>
+			<td><button onClick="caracterunicodefrom()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		<tr>
+			<td><code>toUpperCase()</code></td>
+			<td>Convierte una cadena en mayúsculas.</td>
+			<td><button onClick="mayusculas()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		<tr>
+			<td><code>toLowerCase()</code></td>
+			<td>Convierte una cadena a minúsculas.</td>
+			<td><button onClick="minusculas()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		<tr>
+			<td><code>concat()</code></td>
+			<td>Convierte dos o más cadenas en una nueva cadena concatenada.</td>
+			<td><button onClick="concatenar()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		<tr>
+			<td><code>endsWith()</code></td>
+			<td>Comprueba si una cadena termina con una cadena/caracteres especificados. Este método devuelve true  y false.</td>
+			<td><button onClick="comprobarFinal()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		<tr>
+			<td><code>includes()</code></td>
+			<td>Comprueba si una cadena contiene la cadena/caracteres especificados. Devuelve true o false.</td>
+			<td><button onClick="incluido()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		<tr>
+			<td><code>match()</code></td>
+			<td>Busca una cadena que coincida con una expresión regular y devuelve las coincidencias separadas por comas</td>
+			<td><button onClick="compro()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		<tr>
+			<td><code>repeat()</code></td>
+			<td>Devuelve una cadena nueva con un número especificado de copias de una cadena existente</td>
+			<td><button onClick="repetir()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		<tr>
+			<td><code>replace()</code></td>
+			<td>Busca una cadena con una expresión regular y devuelve una nueva cadena sustituyendo los valores especificados</td>
+			<td><button onClick="reemplazar()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		<tr>
+			<td><code>search()</code></td>
+			<td>Busca una cadena para un valor especificado o una expresión regular y devuelve la posición de la coincidencia</td>
+			<td><button onClick="buscar()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		<tr>
+			<td><code>slice()</code></td>
+			<td>Extrae parte de una cadena y devuelve una nueva cadena con la parte extraída.</td>
+		  <td><button onClick="extraer()" class="btn-primary border-0">Ejecutar</button></td>
+			</tr>
+		  <tr>
+			  <td><code>split()</code></td>
+		  	<td>Divide una cadena en una matriz de subcadenas</td>
+		  	<td><button onClick="dividirMatriz()" class="btn-primary border-0">Ejecutar</button></td>
+		  </tr>
+		<tr>
+			<td><code>startsWith()</code></td>
+			<td>Comprueba si una cadena empieza con una cadena/caracteres especificados.</td>
+			<td><button onClick="empiezaPor()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		<tr>
+			<td><code>substr()</code></td>
+			<td>Extrae partes de una cadena, comenzando en una posición especificada y la longitud de caracteres a mostrar.</td>
+			<td><button onClick="substraer()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		<tr>
+			<td><code>substring()</code></td>
+			<td>Extrae los caracteres de una cadena, entre dos índices especificados (posición). No vale valores negativos a diferencia de slice</td>
+			<td><button onClick="recortar()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		<tr>
+			<td><code>trim()</code></td>
+			<td>Elimina el espacio en blanco de ambos extremos de una cadena</td>
+			<td><button onClick="espacios()" class="btn-primary border-0">Ejecutar</button></td>
+		</tr>
+		</tbody>
+	</table>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Salida de datos</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="AMMB">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link href="css/introducionjs.css" rel="stylesheet" type="text/css">
+
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<style>
+	body{
+		width:80%;
+		margin: 20px auto;
+		background-color: white;
+		
+	}
+	
+	.boton {
+		border:none;
+		 color: red;
+		 padding: 15px 32px;
+		 float: right;
+		 text-decoration: none;
+		 display: inline-block;
+		 sfont-size: 36px;
+		 margin: 4px 2px;
+		 cursor: pointer;
+	}
+	
+	</style>
+</head>
+
+<body class=" m-auto w-75 ">
+	 <p style="text-align: right"><a href="file:///C:/Users/ma%C3%B1anas/Documents/AnaMMB/MF0951_2/Menu_practicas%20m-II.html"  class="boton"><button onclick="playPause()"><strong>MENU</strong></button> </a></p>
+	
+	<h1>JAVASCRIPT</h1>
+    <hr>
+    <a href="introducion.html"><strong>INICIO</strong></a> | <a href="donde.html"><strong>DONDE</strong></a> | <a href="operadores-js.html"><strong class="linkactual">OPERADORES</strong></a> | <a href="tipo_de_datos.html"><strong>TIPO DE DATOS</strong></a> | <a href="variables.html"><strong>VARIABLES</strong></a> | <a href="salida.html"><strong>SALIDA DATOS</strong></a> | <a href="cadenas.html"><strong>CADENAS</strong></a> | <a href="numeros.html"><strong>NUMEROS</strong></a>| <a href="fechas.html"><strong>FECHAS</strong></a>| <a href="matrices.html"><strong>ARRAYS</strong></a>| <a href="estructuras-control.html"><strong>CONTROL</strong></a>
+    <hr>
+	<div class="container">
+	<h1>JavaScript salida</h1>
+	<hr>
+	<h2>Las posibilidades de visualización de JavaScript</h2>
+	<p>JavaScript puede alterar los datos "Display" de diferentes maneras:</p>
+	<ul>
+	  <li>La escritura en un elemento HTML, usando  <code>innerHTML</code>.</li>
+	  <li>La escritura en la salida HTML utilizando <code>document.write()</code>.</li>
+	  <li>Escribir en un cuadro de alerta, utilizando  <code>window.alert()</code>.</li>
+	  <li>Escribir en la consola del navegador, usando  <code>console.log()</code>.</li>
+	</ul>
+	<p>&nbsp;</p>
+	<div class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+	<div class="row">
+	<div class="col-md-3 mb-2">
+		<div class="bg-light shadow rounded p-2">
+		<p><strong>Usando innerHtml</strong></p>
+		<p>Para acceder al contenido HTML de un elemento se utiliza innerHTML. Podemos cambiar el contenido de cualquier elemento: texto para &lt;p&gt; , imagen (src) para &lt;img&gt; ...</p>
+		<button class="btn btn-primary" onClick="demo1()">Pulsa</button>
+		<p id="demo1"></p>
+		<script>
+			function demo1 () {
+				document.getElementById("demo1").innerHTML = 5 + 6;
+			}
+		</script>
+		</div>
+	</div>
+	<div class="col-md-3 mb-2">
+		<div class="bg-light shadow rounded p-2">
+		<p><strong>Usando document.write</strong></p>
+		<p>Para propósitos de prueba se utiliza document.write(). Modifica el contenido de todo el documento.</p>
+		<button class="btn btn-primary" onClick="demo2()"
+		>Pulsar</button>
+			<p>
+			<script>
+			function demo2 () {
+				document.write(5 + 6);
+			}
+			</script>
+			</p>
+		</div>
+	</div>
+	<div class="col-md-3 mb-2">
+		<div class="bg-light shadow rounded p-2">
+		<p><strong>Usando window.alert</strong></p>
+		<p>Para propósitos informativo utilizar el método window.alert() para mostrar los datos en una ventana de alerta.</p>
+		<button class="btn btn-primary" onClick="demo3()"
+		>Pulsar</button>
+			<p><script>
+			function demo3 () {		
+			window.alert(5 + 6);
+			}
+			</script>
+			</p>
+		</div>
+	</div>
+	<div class="col-md-3 mb-2">
+		<div class="bg-light shadow rounded p-2">
+		<p><strong>Usando console.log</strong></p>
+		<p>Para propósitos de depuración utilizar el método console.log() para mostrar los datos. En F12/console</p>
+		<button class="btn btn-primary" onClick="demo4()"
+		>Pulsar</button>
+		<p>
+			<script>
+			function demo4 () {		
+			console.log(5 + 6);
+			}
+			</script>
+			</p>
+		</div>
+	</div>
+	</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div class="bg-info shadow rounded p-2">
+				<p><strong>confirm()</strong></p> 
+				<p>El método de confirmación () muestra un cuadro de diálogo con un mensaje especificado, junto con un clic en Aceptar y un botón Cancelar.</p>
+				<p><em>confirm(message)</em></p>
+				<button onClick="confirmar()">Pulsar</button>
+
+				<script>
+					function confirmar() {
+						var inicial;
+						var pulsarBoton = confirm('¿Aceptar o Cancelar?');
+						if (pulsarBoton == true) {
+							inicial = "Has pulsado Aceptar"; }
+						else { 
+							inicial = "Has pulsado a Cancelar"; }
+							alert(inicial);
+						}
+				</script>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="bg-info shadow rounded p-2">
+				<p><strong>alert()</strong></p>
+				<p>El método de alerta () muestra un cuadro de alerta con un mensaje especificado y un botón Aceptar.</p>
+				<p><em>alert(message)</em></p>
+				<button onClick="fechaHora()">Pulsar</button>
+				<script>
+					function fechaHora () {
+						var fecha = new Date();
+						var extraerDia = fecha.getDay(); //2
+						var diaSemana = ["domingo", "lunes", "Martes", "miércoles", "jueves", "viernes", "sábado"];
+						var extraerDiaMes = fecha.getDate(); //12
+						var extraerMes = fecha.getMonth(); //3
+						var nombreMes = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septimbre", "octubre", "noviembre", "diciembre"];
+						var ano = fecha.getFullYear(); //2019
+
+						alert( "Hoy es: " + diaSemana[extraerDia] +
+						" día " + extraerDiaMes + " del mes " +
+						nombreMes[extraerMes] + " del año " + ano);
+							}
+				</script>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="bg-info shadow rounded p-2">
+					<p><strong>prompt()</strong></p>
+					<p>El método prompt () muestra un cuadro de diálogo que solicita al visitante una entrada de datos</p>
+					<p><em>prompt(text, defaultText)</em></p>
+					<button onClick="simbolo()">Pulsar</button>
+					<script> 
+						function simbolo () {
+							var nombre = prompt('Introduce tu nombre');	
+							var apellido = prompt('Introduce tu apellido');
+							window.alert(
+								'Tu nombre es: ' + nombre + 
+								'\n y tu apellido es: ' + apellido);
+						}
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="container">
+		<div class="row">
+		<div class="col-4">
+			<div class="bg-info shadow rounded p-2">
+			<p><strong>open()</strong></p> 
+			<p>El método open () abre una nueva ventana del navegador.</p>
+			<p><em>window.open("ruta")</em></p>
+			<button onClick="abrir()">Pulsar</button>
+			<script>
+
+			function abrir() {
+				window.open("https://www.w3schools.com");
+				}
+			</script>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="bg-info shadow rounded p-3">
+			<p><strong>close()</strong></p>
+			<p>El método close () cierra la ventana actual.</p>
+			<p><em>window.close()</em></p>
+			<button onClick="cerrar()">Pulsar</button>
+			<script>
+				function cerrar() {
+					window.close();
+				}
+
+			</script>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="bg-info shadow rounded p-3">
+			<p><strong>print()</strong></p>
+			<p>El método print () imprime el contenido de la ventana actual. Abre el cuadro de diálofo Imprimir para seleccionar opciones</p>
+			<p><em>window.print()</em></p>
+			<button onClick="imprimir()">Pulsar</button>
+			<script> 
+				function imprimir () {
+					window.print();
+				}
+			</script>
+			</div>
+		</div>
+		</div>
+	</div>
+	</div>
+	<br>
+	<div class="container">
+		<div class="row">
+		<div class="col-4">
+			<div class="bg-info shadow rounded p-2">
+			<p><strong>setInterval()</strong></p> 
+			<p>Llama a una función o evalúa una expresión a intervalos especificados (en milisegundos).Repite</p>
+			<p><em>setInterval(function, milliseconds, param1, param2, ...)</em></p>
+			<button onClick="repite()">Pulsar</button>
+			<script>
+
+				function repite() {
+					setInterval(function(){ alert("Hello"); }, 3000);
+				}
+			</script>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="bg-info shadow rounded p-3">
+			<p><strong>setTimeout()</strong></p>
+			<p>Llama a una función o evalúa una expresión después de los milisegundos especificados. Una vez</p>
+			<p><em>setTimeout(function, milliseconds, param1, param2, ...)</em></p>
+			<button onClick="repiteunavez()">Pulsar</button>
+			<script>
+				function repiteunavez() {
+					setTimeout(function(){ alert("Hello"); }, 3000);
+				}
+
+			</script>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="bg-info shadow rounded p-3">
+			<p><strong>atob()y btoa()</strong></p>
+			<p>Codifica (btoa) o decodifica (atob) una cadena en base 64.</p>
+			<p><em>window.atob(var)</em></p>
+			<p><em>window.btoa(var)</em></p>
+			<p style="font-size: 0.8em"><strong id="texto2"></strong></p>
+			<button onClick="codifica()">Pulsar</button>
+			
+			<script> 
+				
+				function codifica() {
+					
+					var texto = "Hola Mundo";
+					var codif = window.btoa(texto);
+					var decodif = window.atob(codif);
+					var respuesta = 'Texto codificado: ' + codif + "<br>" + 'Texto decodificado: ' + decodif;
+					document.getElementById("texto2").innerHTML = respuesta;
+				}
+							
+			</script>
+			</div>
+		</div>
+		</div>
+	</div>
+	<br>
+	<div class="container">
+		<div class="row">
+		<div class="col-4">
+			<div class="bg-info shadow rounded p-2">
+			<p><strong>zzz()</strong></p> 
+			<p>Llama a una función o evalúa una expresión a intervalos especificados (en milisegundos).Repite</p>
+			<p><em>setInterval(function, milliseconds, param1, param2, ...)</em></p>
+			<button onClick="repite()">Pulsar</button>
+			<script>
+
+				function repite() {
+					setInterval(function(){ alert("Hello"); }, 3000);
+				}
+			</script>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="bg-info shadow rounded p-3">
+			<p><strong>zzz()</strong></p>
+			<p>Llama a una función o evalúa una expresión después de los milisegundos especificados. Una vez</p>
+			<p><em>setTimeout(function, milliseconds, param1, param2, ...)</em></p>
+			<button onClick="repiteunavez()">Pulsar</button>
+			<script>
+				function repiteunavez() {
+					setTimeout(function(){ alert("Hello"); }, 3000);
+				}
+
+			</script>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="bg-info shadow rounded p-3">
+			<p><strong>zzz</strong></p>
+			<p>Codifica (btoa) o decodifica (atob) una cadena en base 64.</p>
+			<p><em>window.atob(var)</em></p>
+			<p><em>window.btoa(var)</em></p>
+			
+			<button onClick="codifica()">Pulsar</button>
+			
+			<script> 
+				
+				function codifica() {
+					
+					var texto = "Hola Mundo";
+					var codif = window.btoa(texto);
+					var decodif = window.atob(codif);
+					var respuesta = 'Texto codificado: ' + codif + "<br>" + 'Texto decodificado: ' + decodif;
+					document.getElementById("texto2").innerHTML = respuesta;
+				}
+							
+			</script>
+			</div>
+		</div>
+		</div>
+	</div>
+	<hr>
+	<p><b>Ana María Medina Barroso</b></p>
+	<p style="text-align:right"><b>Marzo 2019</b></p>	
+</body>
+</html>

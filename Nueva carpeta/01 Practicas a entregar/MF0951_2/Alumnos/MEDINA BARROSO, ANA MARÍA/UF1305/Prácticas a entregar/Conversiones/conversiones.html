@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Conversiones Javascript</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="funcionesconversion.js"></script>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<style>
+	body{
+		width:80%;
+		margin: 20px auto;
+		background-color: white;
+		
+	}
+	
+	.boton {
+		border:none;
+		 color: red;
+		 padding: 15px 32px;
+		 float: right;
+		 text-decoration: none;
+		 display: inline-block;
+		 sfont-size: 36px;
+		 margin: 4px 2px;
+		 cursor: pointer;
+	}
+	.divmio1 {
+		background-color: lightpink;
+		margin : 0px 0px 0px 100px;
+		padding: 20px;
+		border-radius: 20px;
+	}
+	.divmio2 {
+		background-color: lightblue;
+		margin : 0px 100px 0px 0px;
+		padding: 20px;
+		border-radius: 20px;
+	}
+	.result{
+		background-color: antiquewhite;
+		border: 1px solid black;
+		padding: 10px;
+		width: 30%;
+		margin:auto;
+	}
+	</style>
+</head>
+
+<body onLoad="startTime()" class=" m-auto w-75 ">
+		<p style="text-align: right"><a href="file:///C:/Users/ma%C3%B1anas/Documents/AnaMMB/MF0951_2/Menu_practicas%20m-II.html"  class="boton"><button onclick="playPause()"><strong>MENU</strong></button> </a>
+			<h1>JAVASCRIPT</h1>
+			<hr>
+
+	<h2><strong>Operaciones de conversión de unidades con JavaScript</strong></h2>
+	<hr>
+	<p style="text-align: center;font-size:1.5em"><strong>VOLUMEN <br></strong></p>
+	<div class="divmio1">
+		<p><strong>¿Cuántos  son X litros en decilitros, centilitros y mililitros?</strong> <br>
+		(1 litro = 10 decilitros), (1 litro = 100 centilitros), (1 litro = 1000 mililitros)</p>
+		<form id="form1" name="form1" method="post">
+		  <label for="number1">Introduce un número de litros:</label>
+		  <br>
+		  <input type="number" name="number1" id="number1">
+		  <input type="button" name="button1" id="button1" value="Enviar" onClick="obtenerlitros()">
+		</form>
+		<br>
+		<p id="etiqueta1" class="result"><b>RESULTADO:</b></p>
+	</div>
+	<!---------------------------->
+	<p style="text-align: center;font-size:1.5em"><strong>LONGITUD <br></strong></p>
+	<div class="divmio2">
+		<p><strong>¿Cuántos son X kilómetros en metros, centímetros y milímetros? </strong></span><br>
+		(1 km = 1000 metros), (1 metro = 100 centímetros), (1 centímetro = 10 milímetros)</p>
+		<form id="form2" name="form2" method="post">
+	  	<label for="number2">Introduce un número de kilómetros:<br>
+	  	</label>
+	  	<input type="number" name="number2" id="number2">
+	  	<input type="button" name="button2" id="button2" value="Enviar" onClick="obtenerlongitud()">
+		</form>
+		<br>
+		<p id="etiqueta2" class="result"><b>RESULTADO:</b></p>
+	</div>
+	<!---------------------------->
+	<p style="text-align: center;font-size:1.5em"><strong>TIEMPO <br></strong></p>
+	<div class="divmio1">
+		<p><strong>¿Cuántas  son X días en horas, minutos y segundos?</strong> <br>
+		(1 día = 24 horas), (1 hora = 60 minutos), (1 minuto = 60 segundos)</p>
+		<form id="form3" name="form3" method="post">
+		  <label for="number3">Introduce un número de dias:<br>
+		  </label>
+		  <input type="number" name="number3" id="number3">
+		  <input type="button" name="button3" id="button3" value="Enviar" onClick="obtenerTiempo()">
+		</form>
+		<br>
+		<p id="etiqueta3" class="result"><b>RESULTADO:</b></p>
+	</div>
+	<!---------------------------->
+	<p style="text-align: center;font-size:1.5em"><strong>TEMPERATURA <br></strong></p>
+	<div class="divmio2">
+		<p><strong>¿Cuántos son X grados centígrados en grados fahrenheit y grados kelvin? </strong><br>
+		(℉= ( ℃ * 1. 8 ) + 32 ), ( ℃ + 273.15 )</p>
+		<form id="form4" name="form4" method="post">
+		  <label for="number4">Introduce un número de grados:</label>
+		  <br>
+		  <input type="number" name="number4" id="number4">
+		  <input type="button" name="button4" id="button4" value="Enviar" onClick="obtenerTemperatura()">
+		</form>
+		<br>
+		<p id="etiqueta4" class="result"><b>RESULTADO:</b></p>
+	</div>
+	<!---------------------------->
+	
+	<p style="text-align: center;font-size:1.5em"><strong>PESO <br></strong></p>
+	<div class="divmio1">
+			<p><strong>¿Cuántos son X toneladas en kilogramos, gramos,  miligramos?<br>
+		</strong>(1 tonelada = 1000 kilogramos), (1kilogramo = 1000 gramos), (1 gramo = 1000 miligramos)</p>
+		<form id="form5" name="form5" method="post">
+		  <label for="number5">Introduce un número de toneladas:</label>
+		  <br>
+		  <input type="number" name="number5" id="number5">
+		  <input type="button" name="button5" id="button5" value="Enviar" onClick="obtenerPeso()">
+		</form>
+		<br>
+		<p id="etiqueta5" class="result"><b>RESULTADO:</b></p>
+	</div>
+	<!---------------------------->
+	<p style="text-align: center;font-size:1.5em"><strong>PESAJE <br></strong></p>
+	<div class="divmio2">
+			<p><strong>	¿Cuántos son X kilogramos en onzas, libras , piedras y quilates? <br>
+		</strong>(1kg = 35.274 onzas),(1 kg = 2.2046 libras),(1kg = 0.1575 piedras) y (1 kg = 5000 Quilates)</p>
+		<form id="form6" name="form6" method="post">
+		  <label for="number6">Introduce un número de kilogramos:</label>
+		  <br>
+		  <input type="number" name="number6" id="number6">
+		  <input type="button" name="button6" id="button6" value="Enviar" onClick="obtenerPesaje()">
+		</form>
+		<br>
+		<p id="etiqueta6" class="result"><b>RESULTADO:</b></p>
+	</div>
+	<!---------------------------->
+	<p style="text-align: center;font-size:1.5em"><strong>DISTANCIA <br></strong></p>
+	<div class="divmio1">
+			<p><strong>	¿Cuántos son X kilómetros en millas, pies, yardas, pulgadas?</strong> <br>
+		(1 km = 0,621371 millas), (1 km = 1093,61 yardas), (1 km =3280,84 pies), (1 km = 39370,1 pulgadas)</p>
+		<form id="form7" name="form7" method="post">
+		  <label for="number7">Introduce un número de kilómetros:</label>
+		  <br>
+		  <input type="number" name="number7" id="number7">
+		  <input type="button" name="button7" id="button7" value="Enviar" onClick="obtenerDistancia()">
+		</form>
+		<br>
+		<p id="etiqueta7" class="result"><b>RESULTADO:</b></p>
+	</div>
+	<!---------------------------->
+	<p style="text-align: center;font-size:1.5em"><strong>MONEDA <br></strong></p>
+	<div class="divmio2">
+		<p><strong>	¿Cuántos son X euros en dólares US, libras, yenes, yuanes? <br>
+		</strong>(1€ = 1,13 dólares), (1€=0,88 libras), (1€ = 128.27 yenes), (1€ = 7,85 yuanes)</p>
+		<form id="form8" name="form8" method="post">
+		  <label for="number8">Introduce un importe en Euros:</label>
+		  <br>
+		  <input type="number" name="number8" id="number8">
+		  <input type="button" name="button8" id="button8" value="Enviar" onClick="obtenerMoneda()">
+		</form>
+		<br>
+		<p id="etiqueta8" class="result"><b>RESULTADO:</b></p>
+	</div>
+	<!---------------------------->
+	<p style="text-align: center;font-size:1.5em"><strong>VELOCIDAD <br></strong></p>
+	<div class="divmio1">
+		<p><strong>
+		¿Cuántos son X kilómetros por hora en metros por segundo, millas por hora, nudos?</strong> <br>
+		(1km/h = 0,277778 m/s),(1km/h = 0,621371m/h), (1 km/h = 0,539957 nudos). </p>
+		<form id="form9" name="form9" method="post">
+		  <label for="number9">Introduce un número de kilómetros por hora:</label>
+		  <br>
+		  <input type="number" name="number9" id="number9">
+		  <input type="button" name="button9" id="button9" value="Enviar" onClick="obtenerVelocidad()">
+		</form>
+		<br>
+		<p id="etiqueta9" class="result"><b>RESULTADO:</b></p>
+	</div>
+	<!---------------------------->
+	<p style="text-align: center;font-size:1.5em"><strong>ÁREAS <br></strong></p>
+	<div class="divmio2">
+		<p><strong>
+		  	  ¿Cuántos son X km<sup>2</sup> en hectareas, acres y millas cuadradas?</strong> <br>
+		(1km<sup>2</sup> = 100 hectáreas),  (1km<sup>2</sup> = 247,105 acres), (1km<sup>2</sup> = 0,386102 millas cuadradas)</p>
+		<form id="form10" name="form10" method="post">
+		  <label for="number10">Introduce un número de kilómetros<sup>2</sup>:</label>
+		  <br>
+		  <input type="number" name="number10" id="number10">
+		  <input type="button" name="button10" id="button10" value="Enviar" onClick="obtenerArea()">
+		</form>
+		<br>
+		<p id="etiqueta10" class="result"><b>RESULTADO:</b></p>
+	</div>
+	<!---------------------------->
+	<br>
+	<hr>
+	   <p><b>Ana María Medina Barroso</b></p>
+		<p style="text-align:right"><b>Marzo 2019</b></p>
+</body>
+</html>

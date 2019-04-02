@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Métodos numéricos Javascript</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="js/funciones-fechas.js"></script>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+<script>
+	window.onload = function() {
+		return reloj();
+	};
+</script>
+</head>
+
+<body>
+<div class="container">
+<h1>Métodos Fechas (Date)</h1>
+<hr>
+<h2>El concepto de Fecha</h2>
+<p>Por defecto, JavaScript utilizará la zona horaria del navegador y mostrar una fecha como una cadena de texto completo:</p>
+<p><strong>Mar Mar 19 de 2019 12:50:06 GMT + 0100 (Hora Estándar de Europa central)</strong></p>
+<p>Fecha objetos se crean con el new Date()constructor. new Date()crea un nuevo objeto Date con la <strong>fecha y hora actual</strong>:</p>
+<div id="contenedor" class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+  <button class="btn btn-primary btn-sm" type="button" onClick="cerrar()">Cerrar</button>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="bg-light shadow rounded p-3 h-100">
+				<h3 id="fechalarga" class="centrar mb-4"></h3>
+				<p class="centrar" id="demo1">
+					<a class="enlace" id="link1" href="#">Enlace1</a>	
+					<a class="enlace" id="link2" href="#">Enlace2</a>	
+					<a class="enlace" id="link3" href="#">Enlace3</a>	
+					<a class="enlace" id="link4" href="#">Enlace4</a>	
+					<a class="enlace" id="link5" href="#">Enlace5</a>	
+					<a class="enlace" id="link6" href="#">Enlace6</a>	
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+	.enlace{background-color: #4CAF50;color:white;text-decoration: none;padding: 10px 16px;}
+	.enlace:hover{background-color: green; color: white; text-decoration: none;padding: 10px 16px; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+	.centrar{text-align:center;}
+</style>
+<style>
+	#contenedor {display:block;}
+</style>
+<hr>
+<h2>Métodos de fecha</h2>
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>Síntasix</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="#">new Date()</a></td>
+      <td>Crea un nuevo objeto de tipo Date con la fecha y hora actual.</td>
+      <td><em>new Date()</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="nuevaFecha()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getFullYear()</a></td>
+      <td>.Devuelve el año (cuatro dígitos yyyy de la fecha especificada.</td>
+      <td><em>Date</em>.getFullYear()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerAno() ">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getMonth()</a></td>
+      <td>Comprueba si un valor no es un número (NaN).</td>
+      <td><em>Date</em>.getHours()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerMes()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getDate()</a></td>
+      <td>Devuelve el día del mes (de 1 a 31) de la fecha especificada.</td>
+      <td><em>Date</em>.getDate()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerDia()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getHours()</a></td>
+      <td> Devuelve la hora (de 0 a 23) de la fecha y hora especificadas.</td>
+      <td><em>Date.getHours()</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerHora()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getMinutes()</a></td>
+      <td>Devuelve los minutos (de 0 a 59) de la fecha y hora especificadas</td>
+      <td><em>Date.getMinutes()</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerMinutos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getSeconds()</a></td>
+      <td>Devuelve los segundos (de 0 a 59) de la fecha y hora especificadas.</td>
+      <td><em>Date.getSeconds()</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerSegundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getMilliseconds()</a></td>
+      <td> Devuelve los milisegundos (de 0 a 999) de la fecha y hora especificadas.</td>
+      <td><em>Date</em>.getMilliseconds()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerMilisegundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getTime()</a></td>
+      <td>Devuelve el número de milisegundos entre la medianoche 1 de enero de 1970 y la fecha especificada.</td>
+      <td>Date.getTime()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerHora()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getDay()</a></td>
+      <td>Devuelve el día de la semana (de 0 a 6) para la fecha especificada.</td>
+      <td><em>Date</em>.getDay()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerDiaSemana()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

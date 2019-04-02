@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Métodos Array Javascript</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="js/funciones-matrices.js"></script>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+<h1>Métodos Array (Matriz)</h1>
+<hr>
+<h2>El concepto de Array</h2>
+<p>Por defecto, JavaScript utilizará la zona horaria del navegador y mostrar una fecha como una cadena de texto completo:</p>
+<p><strong>Mar Mar 19 de 2019 12:50:06 GMT + 0100 (Hora Estándar de Europa central)</strong></p>
+<p>Fecha objetos se crean con el new Date()constructor. new Date()crea un nuevo objeto Date con la <strong>fecha y hora actual</strong>:</p>
+<div id="contenedor" class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+  <!--<button class="btn btn-primary btn-sm" type="button" onClick="cerrar()">Cerrar</button>-->
+	<div class="row">
+		<div class="col-md-12">
+			<div class="bg-light shadow rounded p-3 h-100">
+				<h3 id="fechalarga" class="centrar mb-4"></h3>
+					<p class="centrar">
+					<a id="link1" href="#" class="enlace">Enlace1</a>
+					<a id="link2" href="#" class="enlace">Enlace2</a>
+					<a id="link3" href="#" class="enlace">Enlace3</a>
+					<a id="link4" href="#" class="enlace">Enlace4</a>
+					<a id="link5" href="#" class="enlace">Enlace5</a>
+					<a id="link6" href="#" class="enlace">Enlace6</a>
+				</p>
+			</div>
+		</div>
+		
+	</div>
+</div>
+<script>
+	window.onload= function(){
+		//se ponen aque las funciones a ejecutar
+		return reloj();
+	}
+</script>
+<style>
+	.enlace { background-color: #4CAF50; color: white;
+	text-decoration: none; padding: 10px 16px;}	
+	.enlace:hover {background-color: green; color: white;
+	text-decoration: none; padding: 10px 16px; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+	.centrar{text-align: center;}
+</style>
+<style>
+	#contenedor {display:block;}
+</style>
+<hr>
+<h2>Métodos de fecha</h2>
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>Síntasix</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="#">new Array()</a></td>
+      <td>Crea un nuevo objeto de tipo matriz con los datos existentes en  variables.</td>
+      <td><em>new Array()</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="matriz()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_concat_array.asp">concat()</a></td>
+      <td>Se utiliza para unir dos o más matrices. 
+        <p>No cambia las matrices existentes, pero devuelve una nueva , que contiene los valores de las matrices unidas.</p></td>
+      <td><em>array1</em>.concat(<em>array2</em>,<em> array3</em>, ...,<em> arrayX</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="unir()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_copywithin.asp">copyWithin()</a></td>
+      <td>Copia método de los elementos de la matriz dentro de la matriz, hacia y desde las posiciones especificadas.</td>
+      <td><em>array</em>.copyWithin(<em>target, start, end</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="copiar()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">entries()</a></td>
+      <td>Devuelve un objeto Iterador matriz con pares clave / valor.</td>
+      <td><em>array</em>.entries()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="emparejar()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_every.asp">every()</a></td>
+      <td>Comprueba si todos los elementos de una matriz pasan una prueba (proporcionado como una función).</td>
+      <td><em>array</em>.every(<em>function(currentValue, index, arr), thisValue</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="comprobar()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_fill.asp">fill()</a></td>
+      <td>Fill the elements in an array with a static value</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerMinutos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_filter.asp">filter()</a></td>
+      <td>Ccrea una matriz llena de todos los elementos de la matriz que pasan una prueba (proporcionado como una función).</td>
+      <td><em>array</em>.filter(<em>function(currentValue, index, arr), thisValue</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="filtrar()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_find.asp">find()</a></td>
+      <td>Returns the value of the first element in an array that pass a test</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerMilisegundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_findindex.asp">findIndex()</a></td>
+      <td>Returns the index of the first element in an array that pass a test</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerHora()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_foreach.asp">forEach()</a></td>
+      <td>Calls a function for each array element</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerSegundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_from.asp">from()</a></td>
+      <td>Creates an array from an object</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerMilisegundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_includes_array.asp">includes()</a></td>
+      <td>Check if an array contains the specified element</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerHora()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_indexof_array.asp">indexOf()</a></td>
+      <td>Search the array for an element and returns its position</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerDiaSemana()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_isarray.asp">isArray()</a></td>
+      <td>Checks whether an object is an array</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerHora()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_join.asp">join()</a></td>
+      <td><p>Une a todos los elementos de la matriz en una cadena.</p>
+        <br></td>
+      <td><em>array</em>.join(<em>separator</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="enlazar()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_keys.asp">keys()</a></td>
+      <td>Returns a Array Iteration Object, containing the keys of the original array</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerSegundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_lastindexof_array.asp">lastIndexOf()</a></td>
+      <td>Search the array for an element, starting at the end, and returns its position</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerMilisegundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_map.asp">map()</a></td>
+      <td>Crea una nueva matriz con los resultados de llamar a una función para cada elemento de la matriz.</td>
+      <td><em>array</em>.map(<em>function(currentValue, index, arr), thisValue</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="llamar()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_pop.asp">pop()</a></td>
+      <td>Removes the last element of an array, and returns that element</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerSegundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_push.asp">push()</a></td>
+      <td>Añade nuevos elementos al final de una matriz, y devuelve la nueva longitud.</td>
+      <td><em>array</em>.push(<em>item1</em>, <em>item2</em>, ..., <em>itemX</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="anadir()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_reduce.asp">reduce()</a></td>
+      <td>Reduce the values of an array to a single value (going left-to-right)</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerHora()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_reduceright.asp">reduceRight()</a></td>
+      <td>Reduce the values of an array to a single value (going right-to-left)</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerDiaSemana()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_reverse.asp">reverse()</a></td>
+      <td>Reverses the order of the elements in an array</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerDiaSemana()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_shift.asp">shift()</a></td>
+      <td>Removes the first element of an array, and returns that element</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerHora()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_slice_array.asp">slice()</a></td>
+      <td>Selects a part of an array, and returns the new array</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerMinutos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_some.asp">some()</a></td>
+      <td>Checks if any of the elements in an array pass a test</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerSegundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_sort.asp">sort()</a></td>
+      <td>Sorts the elements of an array</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerMilisegundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_splice.asp">splice()</a></td>
+      <td>Adds/Removes elements from an array</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerHora()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_tostring_array.asp">toString()</a></td>
+      <td>Converts an array to a string, and returns the result</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerSegundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_unshift.asp">unshift()</a></td>
+      <td>Adds new elements to the beginning of an array, and returns the new length</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerMilisegundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_valueof_array.asp">valueOf()</a></td>
+      <td>Returns the primitive value of an array</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerHora()">Ejecutar</button></td>
+    </tr>
+    
+  </tbody>
+</table>
+<br>
+<hr>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

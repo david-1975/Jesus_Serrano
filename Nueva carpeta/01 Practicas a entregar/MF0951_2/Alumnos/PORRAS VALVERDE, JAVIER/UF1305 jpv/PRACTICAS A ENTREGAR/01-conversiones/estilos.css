@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+body { width: 95% ; margin: auto; }
+.contenedor{width: 100%;
+	padding: 5px;
+	background-color: rgba(251,0,0,0.12);
+    margin: 10px
+}
+.rojo { color: rgba(73,0,1,1.00);text-align: center;}
+.diviZ{ width: 75% ;margin: 10px; 
+	    border: 1px solid rgba(0,0,0,0.79);
+	    border-radius: 5px;
+        padding: 5px;
+	    background-color: antiquewhite
+	   }
+
+.diviD{ width: 75% ; margin-left: 15%;  
+	    border: 1px solid rgba(0,0,0,0.79);
+	    border-radius: 5px;
+        padding: 5px;
+	    background-color: antiquewhite;
+	
+	   }
+
+input[type=button]{background-color: green; color: white;}

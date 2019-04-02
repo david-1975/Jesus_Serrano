@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Métodos Arrays JavaScript</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="js/funciones_matrices.js"></script>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+<h1>Métodos Array (matríz)</h1>
+<hr>
+<h2>El concepto de matrices</h2>
+<p></p>
+<div id="contenedor" class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+  
+	<div class="row">
+		<div class="col-md-12">
+			<div class="bg-light shadow rounded p-3 h-100">
+				
+				<h3 id="fechaLarga" class="text-center"></h3>
+				<p class="mt-4 text-center">
+				<a class="enlace" id="enlaceAno" href="#">enlace1</a>
+				<a class="enlace" id="enlaceMes" href="#">enlace2</a>
+				<a class="enlace" id="enlaceDia" href="#">enlace3</a>
+				<a class="enlace" id="enlaceHora" href="#">enlace4</a>
+				<a class="enlace" id="enlaceMin" href="#">enlace5</a>
+				<a class="enlace" id="enlaceSg" href="#">enlace6</a>
+				</p>
+			</div>
+			<script>
+			window.onload=reloj();
+			</script>
+			<style>
+				.enlace{
+					background-color: #4CAF50;
+					padding: 10px 16px;
+					color:white;
+					text-decoration: none;
+						
+				}
+				.enlace:hover{
+					text-decoration: none;
+					color:white;
+					background-color: green;
+					box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+				}
+			</style>
+		</div>
+	</div>
+</div>
+
+<hr>
+<h2>Métodos de array</h2>
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>Síntasix</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="#">new Array()</a></td>
+      <td>Crea un nuevo objeto de tipo Array con los datos existentes en variables</td>
+      <td>new Array()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="matriz()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="">push()</a></td>
+		<td>El método push () añade nuevos elementos al final de una matriz, y devuelve la nueva longitud</td>
+      <td><em>array</em>.push(<em>item1</em>, <em>item2</em>, ..., <em>itemX</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="anadir()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">concat()</a></td>
+      <td>El método concat () se utiliza para unir dos o más matrices.</td>
+      <td><em>array1</em>.concat(<em>array2</em>,<em> array3</em>, ...,<em> arrayX</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="concatenar()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">constructor</a></td>
+      <td>En JavaScript, la propiedad constructor devuelve la función constructora de un objeto</td>
+      <td><em>array</em>.constructor</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="sintaxis()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">toString()</a></td>
+      <td>El método JavaScript toString()convierte una matriz a una cadena de (separados por comas) valores de la matriz</td>
+      <td>array.toString()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="texto()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">join()</a></td>
+      <td>El método join() también se une a todos los elementos de la matriz en una cadena.</td>
+      <td>array.join()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="textoDos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">pop()</a></td>
+      <td>El método pop() elimina el último elemento de una matriz</td>
+      <td>array.pop()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="eliminarUltimo()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">shift()</a></td>
+      <td>El método shift() elimina el primer elemento de matriz y "desplaza" todos los otros elementos a un índice inferior.</td>
+      <td>array.shift()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="eliminarPrimero()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">unshift()</a></td>
+      <td>El método unshift() añade un nuevo elemento a una matriz (al principio), y "unshifts" elementos mayores</td>
+      <td>array.unshift()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="anadirPrincipio()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">length</a></td>
+      <td>La propiedad  length ofrece una forma fácil de añadir un nuevo elemento a una matriz adema de poder ver cuantos elementos contiene</td>
+      <td>array[array.length]</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="anadirConlength()">Ejecutar</button></td>
+    </tr>
+    <tr>
+    	<td><a href="#">delete</a></td>
+    	<td>Desde arrays JavaScript son objetos, los elementos se pueden eliminar mediante el operador de JavaScript delete</td>
+    	<td>delete array[0]</td>
+    	<td><button class="btn btn-primary btn-sm" type="button" onClick="borrar()">Ejecutar</button></td>
+    </tr>
+	 <tr>
+	 	<td><a href="#">splice()</a></td>
+	 	<td><p>El método splice() se puede utilizar para añadir nuevos elementos a una matriz.</p>
+ 	    <p>El primer parámetro (1,..) define la posición <strong>donde</strong> se deben nuevos elementos <strong>añadidos</strong> (empalmados in).</p>
+ 	    <p>El resto de los parámetros (0,0,........ ) definen los nuevos elementos que se <strong>añaden</strong> .</p>
+ 	    <p>El splice()método devuelve una matriz con los elementos eliminados</p>
+ 	    <p>El segundo parámetro (0,0) define <strong>el número de</strong> elementos debe ser <strong>eliminado</strong> .</p></td>
+	 	<td>array.splice(2, 0, &quot;Lemon&quot;, &quot;Kiwi&quot;)</td>
+	 	<td><button class="btn btn-primary btn-sm" type="button" onClick="anadirConsplice()">Ejecutar</button></td>
+	 </tr>
+	 <tr>
+	 	<td><a href="#">slice()</a></td>
+	 	<td><p>El slice()método rebana un pedazo de una matriz en una matriz nueva.</p>
+ 	    <p>El slice()método puede tomar dos argumentos como slice(1, 3).</p>
+ 	    <p>El método selecciona entonces elementos de la argumento comienzo, y hasta (pero no incluyendo) el argumento final.</p>
+ 	    <p>Si se omite el argumento final, el slice() método rebana el resto de la matriz.</p></td>
+	 	<td>array.slice()</td>
+	 	<td><button class="btn btn-primary btn-sm" type="button" onClick="rebanar()">Ejecutar</button></td>
+	 </tr>
+	 <tr>
+	 	<td><a href="https://www.w3schools.com/js/js_array_sort.asp" target="_blank">sort()</a></td>
+	 	<td><p>El método  sort()ordena una matriz alfabéticamente</p>
+ 	    <p>Por defecto, la sort()función ordena los valores como <strong>cadenas</strong> .</p>
+ 	    <p>Sin embargo, si los números se clasifican como cadenas, "25" es más grande que el "100", ya que "2" es más grande que el "1".</p>
+ 	    <p>Debido a esto, el sort()método producirá resultado incorrecto al ordenar los números.</p>
+ 	    <p>Puedes solucionar este problema proporcionando una <strong>función de comparación</strong> </p></td>
+	 	<td><p>array.sort()</p>
+ 	    <p>array.sort(function(a, b){return a - b});</p></td>
+	 	<td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+	 </tr>
+	 <tr>
+	 	<td><a href="#">filter()</a></td>
+	 	<td><p>El método filter () crea una matriz llena de todos los elementos de la matriz que pasan una prueba (proporcionado como una función).</p>
+	 	  <p><strong>Nota:</strong> filter () no se ejecuta la función de elementos de la matriz sin valores.</p>
+ 	    <p><strong>Nota:</strong> filter () no cambia la matriz original.</p></td>
+	 	<td><em>array</em>.filter(<em>function(currentValue, index, arr), thisValue</em>)</td>
+	 	<td><button class="btn btn-primary btn-sm" type="button" onClick="">Ejecutar</button></td>
+	 </tr>
+  </tbody>
+</table>
+<h2>&nbsp;</h2>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>introduccion-javascript</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<script src="html/js/funciones-js"></script>
+<style>
+	div{margin:10px;}
+	#habitacion{ width: 63%; align-content: center;}
+	/*body{ width: 80%;margin: auto;}*/
+</style>
+</head>
+
+<body class="w-75 m-auto">
+<h1 class="text-primary">Qué podemos hacer con java script</h1>
+<hr>
+<h2>JavaScript puede cambiar el contenido HTML</h2>
+<p>Uno de los muchos métodos JavaScript HTML es <code>getElementById().</code></p>
+<p>En este ejemplo se utiliza el método de "encontrar" un elemento HTML (con id = "demo") y cambia el contenido del elemento <code>( innerHTML)</code> a "Hola JavaScript":</p>
+<div class="bg-light p-2">
+    <h4 class="pl-2">Ejemplo</h4>
+	<div class="alert-warning ">
+	  <samp>document.getElementById("demo").innerHTML = "Hello JavaScript";</samp>	
+	
+    </div>
+</div>
+<br>
+<div class="row bg-secondary rounded" >
+	<div class="col-3 bg-white rounded shadow p-3">
+		<p id="demo1">JavaScript puede cambiar el contenido HTML</p>
+		<button class="btn btn-outline-success" type="button" onclick="document.getElementById('demo1').innerHTML='Hola Javascript'">Clica me¡</button>
+	</div>
+	<div class="col-3 bg-white rounded shadow p-3">
+	<p id="demo2">JavaScript puede cambiar el contenido HTML</p>
+		<button class="btn btn-outline-success" type="button" onclick="document.getElementById('demo2').innerHTML='hello Javascript'">Clica me¡ </button>
+	</div>
+	<div class="col-3 bg-white rounded shadow p-3">
+		<p id="demo3">JavaScript puede cambiar el contenido HTML</p>
+		<button class="btn btn-outline-success" type="button" onclick="document.getElementById('demo3').innerHTML='Bonjour Javascript'">Clic moi¡ </button>
+	</div>
+</div>
+<hr>
+<h2>JavaScript puede cambiar los valores de atributos HTML</h2>
+<p>Uno de los muchos métodos JavaScript HTML es <code>getElementById().</code></p>
+<p>En este ejemplo se utiliza el método de "encontrar" un elemento HTML (con id = "demo") y cambia el contenido del elemento ( innerHTML) a "Hola JavaScript":</p>
+
+<div class="bg-light p-2">
+    <h4 class="pl-2">Ejemplo</h4>
+    <div class="alert-warning">
+	  <samp>"document.getElementById('myImage').src='pic_bulbon.gif'"</samp>	
+	  <samp>"document.getElementById('myImage').src='pic_bulboff.gif'"</samp>	  	
+    </div>
+</div>
+
+<script>
+	function habitacionA(){document.getElementById("habitacion").style.backgroundColor="#777777";}
+	function habitacionE(){document.getElementById("habitacion").style.backgroundColor="white";}
+	function apagar(){document.getElementById('myImage').src='img/pic_bulboff.gif';
+		habitacionA();}
+	function encender(){document.getElementById('myImage').src='img/pic_bulbon.gif';
+		habitacionE();}
+</script>
+
+<div id="habitacion" class="py-2 rounded">
+
+  <button class="btn btn-success btn-lg rounded m-2" onclick="encender" >ENCENDIDO</button>
+ <img id="myImage" src="img/pic_bulboff.gif" style="width:100px">
+	<button class="btn btn-danger btn-lg rounded m-2" onclick="apagar()">APAGADO</button>
+  
+</div> 
+	<hr>
+	<h2>Javascript puede cambiar los estilos HTML </h2>
+<div>
+		<p id="texto" class="h4 p-2" >JavaScript puede cambiar los estilos HTML (CSS)</p>
+		
+		<div>
+			<button type="button" class="btn btn-danger"  onClick="document.getElementById('texto').style.color='red' " >Ponte Rojo</button>
+			<button type="button" class="btn btn-primary" onClick="document.getElementById('texto').style.color='blue' " >Ponte Azul</button>
+			<button type="button" class="btn btn-warning" onClick="document.getElementById('texto').style.color='yellow'" >Ponte Amarillo</button>
+			<br>
+		</div>
+		<div>
+			<p id="tamaño">Javascript puede cambiar el tamaño del texto</p>
+			<button type="button" class="btn btn-info" onClick="document.getElementById('tamaño').style.fontSize = '35px'">A 35px</button>
+			<button type="button" class="btn btn-info" onClick="document.getElementById('tamaño').style.fontSize = '16px'">A 16px</button>
+		</div>
+		<div>
+		  <p id="ocultar">JavaScript puede ocultar elementos HTML</p>
+		  <button type="button" class="btn btn-info"    onClick="document.getElementById('ocultar').style.display = 'none'">Ocultar</button>
+		  <button type="button" class="btn btn-warning" onClick="document.getElementById('ocultar').style.display = 'block'">mostrar</button>
+		</div>
+		<div>
+		  <p id="mostrar" style="display: none">JavaScript puede mostrar los elementos HTML</p>
+		  <button type="button" class="btn btn-warning" onClick="document.getElementById('mostrar').style.display = 'block'">Mostrar</button>
+		  <button type="button" class="btn btn-info"    onClick="document.getElementById('mostrar').style.display = 'none'">Ocultar</button>  
+		</div>
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

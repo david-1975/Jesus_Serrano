@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Arrays Javascript</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="js/funciones-matrices.js"></script>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<style>
+	body{
+		width:80%;
+		margin: 20px auto;
+		background-color: white;
+		
+	}
+	
+	.boton {
+		border:none;
+		 color: red;
+		 padding: 15px 32px;
+		 float: right;
+		 text-decoration: none;
+		 display: inline-block;
+		 sfont-size: 36px;
+		 margin: 4px 2px;
+		 cursor: pointer;
+	}
+	
+	</style>
+</head>
+
+<body class=" m-auto w-75 ">
+	<p style="text-align: right"><a href="file:///C:/Users/ma%C3%B1anas/Documents/AnaMMB/MF0951_2/Menu_practicas%20m-II.html"  class="boton"><button onclick="playPause()"><strong>MENU</strong></button> </a>
+		<h1>JAVASCRIPT</h1>
+		<hr>
+		<a href="introducion.html"><strong>INICIO</strong></a> | <a href="donde.html"><strong>DONDE</strong></a> | <a href="operadores-js.html"><strong class="linkactual">OPERADORES</strong></a> | <a href="tipo_de_datos.html"><strong>TIPO DE DATOS</strong></a> | <a href="variables.html"><strong>VARIABLES</strong></a> | <a href="salida.html"><strong>SALIDA DATOS</strong></a> | <a href="cadenas.html"><strong>CADENAS</strong></a> | <a href="numeros.html"><strong>NUMEROS</strong></a>| <a href="fechas.html"><strong>FECHAS</strong></a>| <a href="matrices.html"><strong>ARRAYS</strong></a>| <a href="estructuras-control.html"><strong>CONTROL</strong></a>
+		<hr>
+	<div class="container">
+	<h1>Matrices (Arrays)</h1>
+	<hr>
+	<p>Las matrices de JavaScript se utilizan para almacenar varios valores en una sola variable</p>
+	<p>Los objetos de fecha se crean con el new Date()</p>
+	
+	<hr>
+	<h2>Métodos de array</h2>
+	<p id="prueba"></p>
+	<table class="table table-striped">
+	  <tbody>
+		<tr>
+		  <th>Método</th>
+		  <th>Descripción</th>
+		  <th>Síntasix</th>
+		  <th>&nbsp;</th>
+		</tr>
+		<tr>
+	  <td><a href="https://www.w3schools.com/js/js_arrays.asp">new Array()</a></td>
+		  <td>Crea un nuevo objeto tipo Array con los datos que indiquemos</td>
+		   <td>new Array()</td>
+		  <td><button class="btn btn-primary btn-sm" type="button" onClick="arraycolores()">Ejecutar</button></td>
+		</tr>
+		<tr>
+		  <td><a href="https://www.w3schools.com/js/js_array_methods.asp">push()</a></td>
+		  <td>Inserta un nuevo elemento al final y devuelve la nueva longitud de la matriz</td>
+		  <td>colores.push("Kiwi");</td>
+		  <td><button class="btn btn-primary btn-sm" type="button" onClick="inserta()">Ejecutar</button></td>
+		</tr>
+		<tr>
+		  <td><a href="https://www.w3schools.com/js/js_array_methods.asp">unshift()</a></td>
+		  <td>Inserta un nuevo elemento al principio y devuelve la nueva longitud de la matriz</td>
+		  <td>colores.unshift("Kiwi")</td>
+		  <td><button class="btn btn-primary btn-sm" type="button" onClick="inserta2()">Ejecutar</button></td>
+		</tr>
+		<tr>
+		  <td><a href="https://www.w3schools.com/js/js_array_methods.asp">pop()</a></td>
+		  <td>Elimina el último elemento y devuelve ese valor.</td>
+		  <td>frutas.pop(frutas.length-1)</td>
+		  <td><button class="btn btn-primary btn-sm" type="button" onClick="elimina()">Ejecutar</button></td>
+		</tr>
+		<tr>
+		  <td><a href="https://www.w3schools.com/js/js_array_methods.asp">shift()</a></td>
+		  <td> Elimina el primer elemento de la matriz y desplaza los demás. Devuelve la cadena eliminada:  </td>
+		  <td>frutas.shift(frutas)</td>
+		  <td><button class="btn btn-primary btn-sm" type="button" onClick="elimina2() ">Ejecutar</button></td>
+		</tr>
+		<tr>
+		  <td><a href="https://www.w3schools.com/js/js_array_methods.asp">delete()</a></td>
+		  <td>Elimina el contenido de un elemento de la matriz pero la mantiene.</td>
+		  <td>delete frutas[posicion];</td>
+		  <td><button class="btn btn-primary btn-sm" type="button" onClick="elimina3()">Ejecutar</button></td>
+		</tr>
+		<tr>
+		  <td><a href="https://www.w3schools.com/js/js_array_methods.asp">splice()</a></td>
+		  <td>Inserta o elimina varios elementos a la vez. (desde donde, cuantos, valores a insertar)</td>
+		  <td>frutas.splice(2, 0, "Limón", "Kiwi");</td>
+		  <td><button class="btn btn-primary btn-sm" type="button" onClick="inserta3()">Ejecutar</button></td>
+		</tr>
+		<tr>
+		  <td><a href="https://www.w3schools.com/js/js_array_methods.asp">concat ()</a></td>
+		  <td>Une dos o más matrices en una.</td>
+		  <td>var lista= frutas.concat(verduras, otros); </td>
+		  <td><button class="btn btn-primary btn-sm" type="button" onClick="concatena()">Ejecutar</button></td>
+		</tr>
+		<tr>
+		  <td><a href="https://www.w3schools.com/js/js_array_methods.asp">slice()</a></td>
+		  <td>Corta una parte de una matriz en una nueva matriz.</td>
+		  <td>&nbsp;</td>
+		  <td><button class="btn btn-primary btn-sm" type="button" onClick="corta()">PROBAR</button></td>
+	    </tr>
+	    <tr>
+		  <td><a href="https://www.w3schools.com/js/js_array_sort.asp">sort() y reverse()</a></td>
+		  <td>sort() Ordena una matriz alfabéticamente: y reverse() invierte el orden.</td>
+		  <td>&nbsp;</td>
+		  <td><button class="btn btn-primary btn-sm" type="button" onClick="ordena()">Ejecutar</button></td>
+	    </tr>
+	    <tr>
+		  <td><a href="https://www.w3schools.com/js/js_array_sort.asp">copyWithin()</a></td>
+		  <td>copia elementos de matriz dentro de la matriz, hacia y desde las posiciones especificadas.</td>
+		  <td>fruits.copyWithin(2, 0);</td>
+		  <td><button class="btn btn-primary btn-sm" type="button" onClick="ordena()">Ejecutar</button></td>
+	    </tr>
+	    
+	    El método  
+		
+	  </tbody>
+	</table>
+	<hr>
+	   <p><b>Ana María Medina Barroso</b></p>
+		<p style="text-align:right"><b>Marzo 2019</b></p>	
+</body>
+</html>

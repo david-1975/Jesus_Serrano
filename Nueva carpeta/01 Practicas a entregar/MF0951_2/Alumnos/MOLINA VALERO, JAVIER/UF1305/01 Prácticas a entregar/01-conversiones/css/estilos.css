@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+@-webkit-keyframes example {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:0px;}
+  75%  {left:0px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+   0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:0px;}
+  75%  {left:0px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+@-webkit-keyframes exampleDos {
+  0%   {left:0px; top:0px;}
+  25%  {left:-200px; top:0px;}
+  50%  {left:-200px; top:0px;}
+  75%  {left:0px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes exampleDos {
+   0%   {left:0px; top:0px;}
+  25%  {left:-200px; top:0px;}
+  50%  {left:-200px; top:0px;}
+  75%  {left:0px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+
+body {
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+	width: 80%;
+	margin: auto;
+	flex-flow: column;
+}
+
+.divIzq{
+	background-image: -webkit-linear-gradient(to right,  orange, orange,rgba(170,0,0,0.7));
+	background-image: -o-linear-gradient(to right,  orange, orange,rgba(170,0,0,0.7));
+	background-image: linear-gradient(to right,rgb(0,230,230),rgb(26,255,255),rgb(51,255,255), rgb(230,255,255),rgb(0,204,204));
+	padding: 10px;
+	border-radius: 1em;
+	margin-bottom: 10px;
+	width: 79%;
+	position: relative;
+-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+.contenedor{
+	display: flex;
+	justify-content: flex-end;
+}
+.divDer{
+	background-color: rgba(155,144,213,1.00);
+	padding: 10px;
+	border-radius: 1em;
+	margin-bottom: 10px;
+	width: 79%;
+	position: relative;
+	-webkit-animation-name: exampleDos; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: exampleDos;
+  animation-duration: 4s;
+  animation-delay: 2s;
+	
+
+	
+}
+input[type=button]{
+	text-decoration: none;
+	border: 0;
+	background-color: black;
+	color: white;
+	padding: 6px;
+	border-radius: 0.2em;
+	cursor: pointer;
+}
+input[type=number]{
+	padding: 5px;
+}

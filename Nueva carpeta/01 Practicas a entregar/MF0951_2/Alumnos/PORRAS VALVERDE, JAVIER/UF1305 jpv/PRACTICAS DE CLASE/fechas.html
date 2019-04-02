@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Métodos fechas Javascript</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="js/funciones-fechas.js"></script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="obtenerHora()">
+<div class="container">
+<h1>Métodos Fechas(date)</h1>
+<hr>
+<h2>El concepto de fechas</h2>
+<p>Por defecto, JavaScript utilizará la zona horaria del navegador y mostrar una fecha como una cadena de texto completo:</p>
+<h2 id = "fechaLarga" > </h2>
+<p>Fecha objetos se crean con el new Date()constructor. new Date()crea un nuevo objeto Date con la <strong>fecha y hora actual</strong>:</p>
+<div id="contenedor" class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+<button class="btn btn-primary btn-sm" type="button" onClick="cerrar()">Cerrar</button>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="bg-light shadow rounded p-3 h-100">
+				<br>
+					<p class="centrar">
+					<a class="enlace" id="link1" href="#">Enlace1</a>
+					<a class="enlace" id="link2" href="#">Enlace2</a>
+					<a class="enlace" id="link3" href="#">Enlace3</a>
+					<a class="enlace" id="link4" href="#">Enlace4</a>
+					<a class="enlace" id="link5" href="#">Enlace5</a>
+					<a class="enlace" id="link6" href="#">Enlace6</a>
+					
+				</p>
+				<p class="centrar">&nbsp;</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--<script>
+	 function Hora(){
+/*	return reloj();
+*/  var fecha = new Date();
+	document.getElementById("fechaLarga").innerHTML= fecha;
+
+	}
+	
+</script>
+-->
+
+<style>
+	.enlace{ background-color: #4caf50;color: white;text-decoration: none;padding: 18px 16px;}
+	.enlace:hover {background-color: green;color: white;text-decoration: none;padding: 18px 16px;
+	                box-shadow: 0 8px 16px 0 rgba(0,0,0,2), 0 6px 20px 0 rgba (0,0,0,19); 
+	       }
+	.centrar{text-align: center;}
+</style>
+<style>
+	#contenedor {display:block;}
+</style>
+<hr>
+<h2>Métodos Fecha</h2>
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>Síntasix</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getdate.asp" target="_blank">getDate()</a></td>
+      <td>Crea un nuevo objeto de tipo date con la fecha y hora actual</td>
+      <td><em>d</em>.getDate(<em>value</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="nuevaFecha()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getfullyear.asp" target="_blank">getFullYear()</a></td>
+      <td>Devuelve el año de una fecha como un número de cuatro dígitos:</td>
+      <td>d.getFullYear()(<em>value</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="nuevoAño() ">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getmonth.asp" target="_blank">getMonth()()</a></td>
+      <td>Comprueba si un valor no es un número (NaN).</td>
+      <td>.getMonth(<em>value</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="obtenerMes()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_gethours.asp" target="_blank">getHours()</a></td>
+      <td>devuelve las horas de una fecha como un número (0-23):</td>
+      <td><em></em>.getHours(<em> </em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="obtenerHora()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getminutes.asp" target="_blank">getMinutes()</a></td>
+      <td>devuelve los minutos de una fecha como un número (0-59):</td>
+      <td><em></em>.getMinutes(<em> </em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="obtenerMinutos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getseconds.asp" target="_blank">getSeconds()</a></td>
+      <td>devuelve los segundos de una fecha como un número (0-59):</td>
+      <td><em></em>.getSeconds()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="obtenerSegundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getmilliseconds.asp" target="_blank">getMilliseconds()</a></td>
+      <td>Devuelve los milisegundos de una fecha como un número (0-999):</td>
+      <td><em></em>getMilliseconds()<em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="obtenerSegundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_gettime.asp" target="_blank">getTime()</a></td>
+      <td>Devuelve el número de milisegundos entre la medianoche 1 de enero de 1970 y la fecha especificada.</td>
+      <td><em></em>.getTime()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="obtenerTiempoDesde() ">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_getday.asp" target="_blank">getDay()</a></td>
+      <td>Devuelve el día de la semana (de 0 a 6) para la fecha especificada.</td>
+      <td><em></em>.getDay()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="obtenerDia() ">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Métodos Array JavaScript</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="js/funciones-matrices.js"></script>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+<script>
+	window.onload = function() {
+		return reloj();
+	};
+</script>
+</head>
+
+<body>
+
+<div class="container">
+<h1>Métodos Array (matriz)</h1>
+<hr>
+<h2>El concepto de matrices</h2>
+<p>Por defecto, JavaScript utilizará la zona horaria del navegador y mostrar una fecha como una cadena de texto completo:</p>
+<p><strong>Mar Mar 19 de 2019 12:50:06 GMT + 0100 (Hora Estándar de Europa central)</strong></p>
+<p>Fecha objetos se crean con el new Date()constructor. new Date()crea un nuevo objeto Date con la <strong>fecha y hora actual</strong>:</p>
+<div id="contenedor" class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+  <button class="btn btn-primary btn-sm" type="button" onClick="cerrar()">Cerrar</button>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="bg-light shadow rounded p-3 h-100">
+				<h3 id="fechalarga" class="centrar mb-4"></h3>
+				<p class="centrar" id="demo1">
+					<a class="enlace" id="link1" href="#">Enlace1</a>	
+					<a class="enlace" id="link2" href="#">Enlace2</a>	
+					<a class="enlace" id="link3" href="#">Enlace3</a>	
+					<a class="enlace" id="link4" href="#">Enlace4</a>	
+					<a class="enlace" id="link5" href="#">Enlace5</a>	
+					<a class="enlace" id="link6" href="#">Enlace6</a>	
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+	.enlace{background-color: #4CAF50;color:white;text-decoration: none;padding: 10px 16px;}
+	.enlace:hover{background-color: green; color: white; text-decoration: none;padding: 10px 16px; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+	.centrar{text-align:center;}
+</style>
+<style>
+	#contenedor {display:block;}
+</style>
+<hr>
+<h2>Métodos de array</h2>
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>Síntasix</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="#">new Array()</a></td>
+      <td>Crea un nuevo objeto de tipo matriz con los datos existentes en una variable.</td>
+      <td><em>new Array()</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="matriz()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">join()</a></td>
+      <td>Joins all array elements into a string but in addition you can specify the separator.</td>
+      <td>matriz1.join(&quot; * &quot;)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="join() ">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">pop()</a></td>
+      <td>Removes the last element from an array.</td>
+      <td>matriz1.pop()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="pop()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">push()</a></td>
+      <td>Adds an element to an array.</td>
+      <td>matriz1.push("Kia")</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="push()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">shift()</a></td>
+      <td>Removes the first  element and "shifts" other elements to  lower index.</td>
+      <td>matriz1.shift()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="shift()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">splice()</a></td>
+      <td>Elimina elementos y añade otros nuevos al array.</td>
+      <td>matriz1.splice(2, 0, "Kia", "Honda")</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="splice()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">concat()</a></td>
+      <td>Crea un array mediante la unión de dos dos arrays ya existentes</td>
+      <td>matriz1.concat(matriz2)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="concat()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">sort()</a></td>
+      <td>The sort() method sorts an array alphabetically</td>
+      <td> matriz1.sort()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="sort()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerHora()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerDiaSemana()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

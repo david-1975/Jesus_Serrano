@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="title" content="introduccion">
+<meta name="author" content="Ana Merche">
+
+<link  href="css/estilos.css" type="text/css" rel="stylesheet">
+<script src="js/funciones.js"></script>
+<link rel="icon" type="image/png" href="img/html5.png">
+<link rel="icon" type="image/gif" href="img/html5.gif">
+<link rel="icon" type="image/vnd.microsoft.icon" href="img/html5.ico">
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Introducción al JavaScript</title>
+<style>
+	/*body{
+		width: 80%;
+		margin: 20px auto;
+	}	*/
+	
+</style>
+
+</head>
+
+<body class="w-75 m-auto">
+<h1 class="text-primary display-4">¿Que podemos hacer con JavaScript?</h1>
+
+<hr>
+
+<div class="bg-light">
+ 
+  <h3>¿Dónde se inserta JavaScript?</h3>
+   <h2>La etiqueta &lt;script&gt;</h2>
+  <ul>
+	<li>El código JavaScript en HTML debe ser insertado entre &lt;script&gt;y &lt;/script&gt;etiquetas.</li>
+		<li>Los scripts pueden ser colocados en la sección &lt;body&gt;, o en el &lt;head&gt; de una página HTML, o en ambos.</li>
+		<li>Los scripts pueden ser colocados en archivos externos com js7funciones.je</li>
+	<li>El código JavaScript puede ser insertado en líneas, en las etiquetas de HTML del del atributo del evento onClick.</li>
+	</ul>
+	<div class="alert alert-warning"> 
+		<p>Ejemplos de edad de JavaScript pueden utilizar un atributo de tipo: &lt;script type = "text / javascript"&gt;. <br>
+		No se requiere el atributo type. JavaScript es el lenguaje de scripts por defecto en HTML.</p>
+	</div>
+	</div>
+	<div>
+		<div class="row">
+			<div class="shadow-lg p-3 mb-5 bg-white rounded col-8">
+			  <h2>JavaScript en &lt;head&gt;</h2>			  
+			  	<h3>Código</h3>
+				<div>&lt;!DOCTYPE html&gt;<br>
+				  &lt;html&gt;
+				  <p>&lt;head&gt;<br>
+					&lt;script&gt;<br>
+					function myFunction() {<br>
+					document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+					}<br>
+					&lt;/script&gt;<br>
+					&lt;/head&gt;<br>
+					&lt;body&gt;</p>
+				  <p>&lt;h1&gt;A Web Page&lt;/h1&gt;<br>
+					&lt;p id="demo"&gt;A Paragraph&lt;/p&gt;<br>
+					&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;</p>
+				  <p>&lt;/body&gt;<br>
+					&lt;/html&gt;</p>
+				</div>
+			</div>
+			<div class="col-4">
+			<h2>Ejemplo de uso</h2>
+				<p>La función se llama cuando se hace clic en un botón:</p>
+					<!--<head>-->
+					<script>
+						function myFunction() {
+						  document.getElementById("demo").innerHTML = "Párrafo cambiado";
+						}
+					</script>
+					<!--</head>
+					<body>-->
+					
+					<p id="demo">Un párrafo.</p>
+					<button type="button" onclick="myFunction()">Cámbialo</button>
+			  </div>
+		 </div>
+		</div>
+		<div class="row">
+			<div class="shadow-lg p-3 mb-5 bg-white rounded col-8">
+				<h2>JavaScript en &lt;body&gt;</h2>
+				<p>En este ejemplo, un JavaScript functionse coloca en la &lt;body&gt; sección de una página HTML.</p>
+				<h3>Código</h3>
+			  <div><p>&lt;!DOCTYPE html&gt;<br>
+				  &lt;html&gt;
+			    &lt;head&gt;<br>
+			    &lt;/head&gt;<br>
+				&lt;body&gt;                  
+				 &lt;h1&gt;Una página Web&lt;/h1&gt;<br>
+					&lt;p id=&quot;demo&quot;&gt;Un párrafo&lt;/p&gt;<br>
+					&lt;button type=&quot;button&quot; onclick=&quot;myFunction()&quot;&gt;Cambialo&lt;/button&gt;
+				   &lt;script&gt;   function myFunction() {<br>
+				    document.getElementById(&quot;demo&quot;).innerHTML = &quot;Paragraph changed.&quot;;<br>
+				    }<br>
+  					&lt;/script&gt;</p>
+				  <p> &lt;/body&gt;<br>
+  						&lt;/html&gt;</p>
+				</div>                                 
+			  </div>
+			  <div class="col-4">
+			  	<h1>Ejemplo de uso</h1>
+				<p id="demobody">Un párrafo</p>
+				<button type="button" onclick="myFunction()">Cámbialo</button>
+
+				<script>
+				function myFunction() {
+				 document.getElementById("demobody").innerHTML = "Párrafo cambiado.";
+				}
+				</script>
+
+			  </div>			  
+	  </div>
+			  
+			 
+		<div class="row">
+			<div class="shadow-lg p-3 mb-5 bg-white rounded col-8">
+				<h2>JavaScript en un archivo externo</h2>
+				<p>Código</p>
+				<p>&lt;p id=&quot;demostracion&quot;&gt;Un párrafo.&lt;/p&gt;</p>
+				<p>&lt;button type=&quot;button&quot; onclick=&quot;miFuncion()&quot;&gt;Try it&lt;/button&gt;</p>
+				<p>&lt;p&gt;(miFuncion is stored in an external file called &quot;myScript.js&quot;)&lt;/p&gt;</p>
+				<p>&lt;script src=&quot;myScript.js&quot;&gt;&lt;/script&gt;<br>
+			  </p>
+			</div>
+			<div class="col-4">
+				<h2>Ejemplo de uso:</h2>
+				<p id="demostracion">Pulsa el botón y el texto cambiará</p>
+				<button type="button" onclick="miFuncion()">Cámbialo</button>
+			</div>
+		</div>
+
+
+</body>
+</html>

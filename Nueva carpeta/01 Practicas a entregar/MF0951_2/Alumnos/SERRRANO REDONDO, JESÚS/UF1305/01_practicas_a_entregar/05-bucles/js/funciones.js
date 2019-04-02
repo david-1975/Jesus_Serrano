@@ -33,54 +33,54 @@ function signozodiaco(){
 			var fecha = new Date(document.getElementById("date2").value);
 			var dia = fecha.getDate; 
 			var mes = fecha.getMonth +1; //sumamos 1 para darle igualdad a la realidad
-			var signo;
-			var imagen;
-			if( (dia >= 21 && mes == 3) || (dia <= 20 && mes == 4 )){ //doble parentesis para doble condicion
+			var signo = "";
+			var imagen ="";
+			if( (dia >= 21 && mes == 3) || (dia <= 20 && mes == 4 ){ //doble parentesis para doble condicion
 				signo = "Aries";
 				imagen = "../img/aries.jpg";
 			}
 			  else if ((dia >= 21 && mes == 4) || (dia <= 20 && mes == 5)) {
-				signo="Tauro";
+				signo="tauro";
 				img= "../img/tauro.jpg";
 			}
 			else if ((dia >= 21 && mes == 5) || (dia <= 21 && mes == 6)) {
-				signo= "Géminis";
+				signo= "géminis";
 				img= "../img/geminis.jpg";
 			}
 			else if ((dia >= 22 && mes == 6) || (dia <= 22 && mes == 7)) {
-				signo= "Cáncer";
+				signo= "cáncer";
 				img= "../img/cancer.jpg";
 			}
 			else if ((dia >= 23 && mes == 7) || (dia <= 23 && mes == 8)) {
-				signo= "Leo";
+				signo= "leo";
 				img= "../img/leo.jpg";
 			}
 			else if ((dia >= 24 && mes == 8) || (dia <= 23 && mes == 9)) {
-				signo= "Virgo";
+				signo= "virgo";
 				img= "../img/virgo.jpg";
 			}
 			else if ((dia >= 24 && mes == 9) || (dia <= 22 && mes == 10)) {
-				signo= "Libra";
+				signo= "libra";
 				img= "../img/libra.jpg";
 			}
 			else if ((dia >= 23 && mes == 10) || (dia <= 22 && mes == 11)) {
-				signo= "Escorpio";
+				signo= "escorpio";
 				img= "../img/escorpio.jpg";
 			}
 			else if ((dia >= 23 && mes == 11) || (dia <= 21 && mes == 12)) {
-				signo= "Sagitario";
+				signo= "sagitario";
 				img= "../img/sagitario.jpg";
 			}
 			else if ((dia >= 22 && mes == 12) || (dia <= 19 && mes == 01)) {
-				signo= "Capricornio";
+				signo= "capricornio";
 				img= "../img/capricornio.jpg";
 			}
 			else if ((dia >= 20 && mes == 01) || (dia <= 19 && mes == 02)) {
-				signo= "Acuario";
+				signo= "acuario";
 				img= "../img/acuario.jpg";
 			}
 			else {
-				signo= "Piscis";
+				signo= "piscis";
 				img= "../img/piscis.jpg";
 			}
 		document.getElementById("etiqueta2").innerHTML=	signo + "<img src="+"'"+img+"'"+"width=100px height=100px>";
@@ -90,52 +90,104 @@ function signozodiaco(){
 function categoria(){
 		if (document.getElementById("date3").value != "") {
 			var fecha = new Date(document.getElementById('date3').value);
-			var fechaActual = new Date();
+			var ano = fecha.getFullYear();
+			var anoact = new Date().getFullYear();
+			var resta = parseInt(anoact - ano);
+
+			var categoria = "";
+
+			switch (resta) {      //Prebenjamines = 5,6,7 años 
+
+					case 0:
+					case 1:
+					case 2:
+					case 3:
+					case 4:	
+						categoria = "No existe categoría " + resta + " años";
+						break;	
+					case 5:
+					case 6:
+					case 7:
+						categoria = "Prebenjamin ";
+						break;
+					case 8:
+					case 9:
+						categoria = "Benjamin ";
+						break;
+					case 10:
+					case 11:
+						categoria = "Alevin ";
+						break;
+					case 12:
+					case 13:
+						categoria = "Infantil ";
+						break;
+					case 14:
+					case 15:
+						categoria = "Cadete ";
+						break;
+					case 16:
+					case 17:
+					case 18:
+						categoria = "Juvenil ";
+						break;
+					default:
+					categoria = "No existe la categoría de " + resta + " años";
+					break;
+			}
 			
-			var edad = (fechaActual.getFullYear() - fecha.getFullYear());
+		document.getElementById("etiqueta3").innerHTML = categoria + ano; 
+			}
+		document.getElementById("etiqueta3").innerHTML=""	;
+		}
+}
+//ejercicio 3
+function categoria(){
+		if (document.getElementById("date3").value != "") {
+			var fecha = new Date(document.getElementById('date3').value);
+			var ano = fecha.getFullYear();
+			var anoSys = new Date().getFullYear();
+			var resta = parseInt(anoSys - ano);
+			if (resta >= 4) { 
+				document.getElementById("etiqueta3").innerHTML = 
+				"No tienes edad para competir"; 
+			} else {
 
-			var resultado = " ";
-
-			switch (edad) {
+			var categoria = "";
+			switch (resta) {
 				case 5:
 				case 6:
 				case 7:
-				   resultado = "Prebenjamines";
-				   break;
+					categoria = "Prebenjamín";
+					break;
 				case 8:
 				case 9:
-				   resultado = "Benjamines";
-				   break;
+					categoria = "Benjamín";
+					break;
 				case 10:
 				case 11:
-				   resultado = "Alevines";
-				   break;
+					categoria = "Alevín";
+					break;
 				case 12:
 				case 13:
-				   resultado = "Infantiles";
-				   break;
+					categoria = "Infantil";
+					break;
 				case 14:
 				case 15:
-				   resultado = "Cadetes";
-				   break;
+					categoria = "Cadete";
+					break;
 				case 16:
 				case 17:
 				case 18:
-				   resultado = "Juveniles";
-				   break;
-				default: 
-				   break;
-			}
-				if (edad > 18) {
-					resultado = "Liga senior de aficionados";
+					categoria = "Juvenil";
+					break;
+				default:
+					categoria = "No existe la categoría de " + resta + " años";
+					break;
 				}
-				else if (edad < 5) {
-					resultado = "No tienes la edad aún";
-				}	
-
-			document.getElementById("etiqueta3").innerHTML = "Tienes " + edad + " años" + "<br>" + "Tu categoría profesional es " + resultado;
-		}
-}
+			 document.getElementById("etiqueta3").innerHTML = "tu catergía es: " + categoria;
+			}		
+}	
 
 //ejercicio 4
 
@@ -146,7 +198,7 @@ function fruteria(){
 			var lista= ""; //para hacer la lista se declara la variable de texto
 			for (i = 0 ; i < frutas.length;i++) {
 			lista += "<li>" + frutas[i] + "</li>";//+= se pone para añadir valores dentro de la lista en los distintos li
-			document.getElementById('etiqueta4').innerHTML= lista;
+			document.getElementById('etiqueta4').innerHTML=lista;
     }
 }	
 

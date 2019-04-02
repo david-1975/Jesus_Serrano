@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Cálculos JavaScript</title><!doctype html>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="funcionescalculos.js"></script>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<style>
+	body{
+		width:80%;
+		margin: 20px auto;
+		background-color: white;
+		
+	}
+	
+	.boton {
+		border:none;
+		 color: red;
+		 padding: 15px 32px;
+		 float: right;
+		 text-decoration: none;
+		 display: inline-block;
+		 sfont-size: 36px;
+		 margin: 4px 2px;
+		 cursor: pointer;
+	}
+	.divmio1 {
+		background-color: lightpink;
+		margin : 0px 0px 0px 100px;
+		padding: 20px;
+		border-radius: 20px;
+	}
+	.divmio2 {
+		background-color: lightblue;
+		margin : 0px 100px 0px 0px;
+		padding: 20px;
+		border-radius: 20px;
+	}
+	.result{
+		background-color: antiquewhite;
+		border: 1px solid black;
+		padding: 10px;
+		width: 30%;
+		margin:auto;
+	}
+	</style>
+</head>
+
+<body onLoad="startTime()" class=" m-auto w-75 ">
+	<p style="text-align: right"><a href="file:///C:/Users/ma%C3%B1anas/Documents/AnaMMB/MF0951_2/Menu_practicas%20m-II.html"  class="boton"><button onclick="playPause()"><strong>MENU</strong></button> </a>
+	<h2><strong>Operaciones de cálculo con JavaScript</strong></h2>
+	<hr>
+	
+	<p style="text-align: center;font-size:1.5em"><strong>CALCULO SUELDO NETO <br></strong></p>
+	<div class="divmio1">
+		<p><strong>Crear una función  que calcule el sueldo neto mensual introduciendo el salario bruto anual.</strong><br>
+		(Seguridad Social = 6,4%), (IRPF = 15%), (pagas = 14), (fórmula: sueldo  mensual - (IRPF + Seguridad Social).</p>
+		<form id="form1" name="form1" method="post">
+		  <label for="number1">Introduce el sueldo bruto:</label>
+		  <br>
+		  <input type="number" name="number1" id="number1">
+		  <input type="button" name="button1" id="button1" value="Enviar" onClick="sueldoneto()">
+		</form>
+		<p id="etiqueta1" class="result"><b>RESULTADO:</b></p>
+	</div>
+		<!------------------------------------------------------------------------------------>
+	
+  	<p style="text-align: center;font-size:1.5em"><strong>CALCULO DE PRECIO FINAL<br></strong></p>
+	<div class="divmio2">
+		<p><strong>Crear una función  que calcule el precio final de un producto aplicándole un descuento y el  impuesto. Mostrar los datos desglosados como se visualizan en un ticket de compra.<br> </strong>(Ejemplo: precio = 50€, Descuento -20%, IVA +21%).</p>
+		<form id="form2" name="form2" method="post">
+		  <label for="number2">Introduce el precio del producto:<br>
+		  </label>
+		  <input type="number" name="number2" id="number2">
+		  <input type="button" name="button2" id="button2" value="Enviar" onClick="preciofinal()">
+		</form>
+		<p id="etiqueta2" class="result"><b>RESULTADO:</b></p>
+	</div>
+	<!------------------------------------------------------------------------------------>
+	
+	<p style="text-align: center;font-size:1.5em"><strong>CALCULO DE TIEMPO DE TRASFERENCIA<br></strong></p>
+	<div class="divmio1">
+		<p><strong>Crear una función  que calcule en tiempo de descarga de archivo de X megabytes a una velocidad de  10 mbps (Megabit por segundo). <br></strong>(Fórmula: tamaño de archivo / tasa de transferencia = tiempo en segundos)  (1*1024*8) / 10) = 819,2 segundos; 819,2 / 60 = 13,65 minutos y segundos. (Almacenamiento  1024 byte, transferencia 1000 bps).</p>
+		<form id="form3" name="form3" method="post">
+		  <label for="number3">Introduce el peso del archivo<br>
+		  </label>
+		  <input type="number" name="number3" id="number3">
+		  <input type="button" name="button3" id="button3" value="Enviar" onClick="tiempodescarga()">
+		</form>
+		<p id="etiqueta3" class="result"><b>RESULTADO:</b></p>
+	</div>
+	<!------------------------------------------------------------------------------------>
+	<p style="text-align: center;font-size:1.5em"><strong>CADENAS<br></strong></p>
+	<div class="divmio2">
+		<p><strong>Crear una  función que, al introducir una frase, muestre la frase entre comillas, en  mayúsculas, en minúsculas, al revés y con la palabra &quot;Cita:&quot; al  comienzo de la frase. Representar el resultado con saltos de línea.</strong></p>
+		<form id="form4" name="form4" method="post">
+		  <label for="number4">Introduce una frase:</label>
+		  <br>
+		  <input type="text" name="number4" id="number4">
+		  <input type="button" name="button4" id="button4" value="Enviar" onClick="frase()">
+		</form>
+		<p id="etiqueta4" class="result"><b>RESULTADO:</b></p>
+	</div>
+	<!------------------------------------------------------------------------------------>
+	<p style="text-align: center;font-size:1.5em"><strong>COMPARAR<br></strong></p>
+	<div class="divmio1">
+		<p><strong>Crear  una función, que introduciendo 3 valores numéricos compare cual es el número  mayor, el menor, y muestre el  resultado  de sumar los números. Representar los datos a través de en una lista desordenada  HTML.</strong><strong> </strong></p>
+		<form id="form5" name="form5" method="post">
+		  <label for="number5">Introduce 3 valores numéricos</label>
+		  <br>
+		  <input type="text" name="number5" id="number5">
+		  <input type="button" name="button5" id="button5" value="Enviar" onClick="compara()">
+		</form>
+		<p id="etiqueta5" class="result"><b>RESULTADO:</b></p>
+	</div>
+	
+	<!---------------------------->
+	<br>
+	<hr>
+	   <p><b>Ana María Medina Barroso</b></p>
+		<p style="text-align:right"><b>Marzo 2019</b></p>
+</body>
+</html>
