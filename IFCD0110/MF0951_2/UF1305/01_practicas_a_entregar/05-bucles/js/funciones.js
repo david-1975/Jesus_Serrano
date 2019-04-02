@@ -31,59 +31,62 @@ function dni(){
 function signozodiaco(){
 		if (document.getElementById("date2").value != "") {
 			var fecha = new Date(document.getElementById("date2").value);
-			var dia = fecha.getDate; 
-			var mes = fecha.getMonth +1; //sumamos 1 para darle igualdad a la realidad
+			var dia = fecha.getDate(); 
+			var mes = fecha.getMonth() +1; //sumamos 1 para darle igualdad a la realidad
 			var signo;
-			var imagen;
+			var img;
 			if( (dia >= 21 && mes == 3) || (dia <= 20 && mes == 4 )){ //doble parentesis para doble condicion
 				signo = "Aries";
-				imagen = "../img/aries.jpg";
+				img = "img/aries.jpg";
 			}
 			  else if ((dia >= 21 && mes == 4) || (dia <= 20 && mes == 5)) {
 				signo="Tauro";
-				img= "../img/tauro.jpg";
+				img= "img/tauro.jpg";
 			}
 			else if ((dia >= 21 && mes == 5) || (dia <= 21 && mes == 6)) {
 				signo= "Géminis";
-				img= "../img/geminis.jpg";
+				img= "img/geminis.jpg";
 			}
 			else if ((dia >= 22 && mes == 6) || (dia <= 22 && mes == 7)) {
 				signo= "Cáncer";
-				img= "../img/cancer.jpg";
+				img= "img/cancer.jpg";
 			}
 			else if ((dia >= 23 && mes == 7) || (dia <= 23 && mes == 8)) {
 				signo= "Leo";
-				img= "../img/leo.jpg";
+				img= "img/leo.jpg";
 			}
 			else if ((dia >= 24 && mes == 8) || (dia <= 23 && mes == 9)) {
 				signo= "Virgo";
-				img= "../img/virgo.jpg";
+				img= "img/virgo.jpg";
 			}
 			else if ((dia >= 24 && mes == 9) || (dia <= 22 && mes == 10)) {
 				signo= "Libra";
-				img= "../img/libra.jpg";
+				img= "img/libra.jpg";
 			}
 			else if ((dia >= 23 && mes == 10) || (dia <= 22 && mes == 11)) {
 				signo= "Escorpio";
-				img= "../img/escorpio.jpg";
+				img= "img/escorpio.jpg";
 			}
 			else if ((dia >= 23 && mes == 11) || (dia <= 21 && mes == 12)) {
 				signo= "Sagitario";
-				img= "../img/sagitario.jpg";
+				img= "img/sagitario.jpg";
 			}
 			else if ((dia >= 22 && mes == 12) || (dia <= 19 && mes == 01)) {
 				signo= "Capricornio";
-				img= "../img/capricornio.jpg";
+				img= "img/capricornio.jpg";
 			}
 			else if ((dia >= 20 && mes == 01) || (dia <= 19 && mes == 02)) {
 				signo= "Acuario";
-				img= "../img/acuario.jpg";
+				img= "img/acuario.jpg";
+			}
+			else if ((dia >= 20 && mes === 2) || (dia <021 && mes === 3)) {
+				signo ="Piscis";
+				img = "img/piscis.jpg";
 			}
 			else {
-				signo= "Piscis";
-				img= "../img/piscis.jpg";
+				signo= "Hay algo mal";
 			}
-		document.getElementById("etiqueta2").innerHTML=	signo + "<img src="+"'"+img+"'"+"width=100px height=100px>";
+		document.getElementById("etiqueta2").innerHTML=	signo + "<img src=" + "'" + img + "'" + "width=100px height=100px>";
 }
 }
 //ejercicio 3
@@ -100,40 +103,40 @@ function categoria(){
 				case 5:
 				case 6:
 				case 7:
-				   resultado = "Prebenjamines";
+				   resultado = "Prebenjamin";
 				   break;
 				case 8:
 				case 9:
-				   resultado = "Benjamines";
+				   resultado = "Benjamin";
 				   break;
 				case 10:
 				case 11:
-				   resultado = "Alevines";
+				   resultado = "Alevin";
 				   break;
 				case 12:
 				case 13:
-				   resultado = "Infantiles";
+				   resultado = "Infantil";
 				   break;
 				case 14:
 				case 15:
-				   resultado = "Cadetes";
+				   resultado = "Cadete";
 				   break;
 				case 16:
 				case 17:
 				case 18:
-				   resultado = "Juveniles";
+				   resultado = "Juvenil";
 				   break;
 				default: 
 				   break;
 			}
 				if (edad > 18) {
-					resultado = "Liga senior de aficionados";
+					resultado = "Aficionado, si eres profesional eres un sortudo";
 				}
 				else if (edad < 5) {
 					resultado = "No tienes la edad aún";
 				}	
 
-			document.getElementById("etiqueta3").innerHTML = "Tienes " + edad + " años" + "<br>" + "Tu categoría profesional es " + resultado;
+			document.getElementById("etiqueta3").innerHTML = "Tienes " + edad + " años" + "<br>" + "Tu categoría es " + resultado;
 		}
 }
 
@@ -141,24 +144,30 @@ function categoria(){
 
 function fruteria(){
 		if (document.getElementById("text4").value != "") {
-			var entrada= (document.getElementById("text4").value);
-			var frutas= entrada.split(" ");
-			var lista= ""; //para hacer la lista se declara la variable de texto
-			for (i = 0 ; i < frutas.length;i++) {
+			var entrada = (document.getElementById("text4").value);
+			var frutas = entrada.split(" ");
+			var lista = ""; //para hacer la lista se declara la variable de texto
+			var i;
+			for (i = 0 ; i < frutas.length ; i++) {
 			lista += "<li>" + frutas[i] + "</li>";//+= se pone para añadir valores dentro de la lista en los distintos li
-			document.getElementById('etiqueta4').innerHTML= lista;
-    }
+			}
+			document.getElementById('etiqueta4').innerHTML= 
+				"Has generado el array frutas con los siguientes elementos: " + 
+				"<ul>" + lista + "</ul>";
+		}
 }	
 
 //Ejercicio 5
 function multiplicacion(){
-		if (document.getElementById("numer5").value != "") {
-			var y = document.getElementById("numer5").value;				
+		if (document.getElementById("number5").value != "") {
+			var y = document.getElementById("number5").value;				
 			var x = "";
 			var resultado = "";						
 			for( x = 1 ; x <= 10 ; x++){
-				resultado += y + " x " + x + " = " + (x * y + "\n"); 			
+				resultado += "<tr>" + "<td>" + y + " x " + x + " = " + (x * y) + 
+					"</td>" + "</tr>";  			
 				}
-		document.getElementById("etiqueta5").innerHTML= "la tabla de multiplicar es: \n" +  resultado;
-			}								
+		document.getElementById("etiqueta5").innerHTML= 
+		"<table style='border:1px solid grey'><tbody><tr><th>La tabla de multiplicar es: </th></tr>" +  resultado + "</tbody> </table>";
+}
 }
