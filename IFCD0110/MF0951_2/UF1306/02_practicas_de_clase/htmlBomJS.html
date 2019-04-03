@@ -98,6 +98,11 @@
       <td>Carga un nuevo documento.</td>
       <td><button type="button" onClick="cargarPagina()">Ejecutar</button></td>
     </tr>
+    <tr>
+      <td><a href="#">window.location.port</a></td>
+      <td>Devuelve el puerto de conexión</td>
+      <td><button type="button" onClick="cargarPuerto()">Ejecutar</button></td>
+    </tr>
   </tbody>
 </table>
 <br>
@@ -119,6 +124,11 @@
       <td><a href="@">history.forward ( ) </a></td>
       <td>El método history.forward () carga la  siguiente URL en la lista del historial.</td>
       <td><button type="button" onClick="irAdelante()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="@">history.go ( ) </a></td>
+      <td>El método history.go (x) carga una URL específica en la lista del historial.</td>
+      <td><button type="button" onClick="irHistorial()">Ejecutar</button></td>
     </tr>
   </tbody>
 </table>
@@ -163,18 +173,19 @@
       </a><a href="@">window.clearTimeout(<em>timeoutVariable</em>)</a><a href="#">;      </a></td>
       <td>El método setTimeout ( ) ejecuta una función  en un intervalo de tiempo especificado.<br>
       El método clearTimeout ( ) detiene la ejecución de la función especificada en setTimeout ( ).</td>
-      <td><button type="button" onClick="myVar = setTimeout(miFuncion, 3000)">Iniciar</button><button type="button" onClick="clearTimeout(myVar)">Parar</button></td>
+      <td><button type="button" onClick="myVar = setTimeout(reloj, 3000)">Iniciar</button><button type="button" onClick="clearTimeout(myVar)">Parar</button></td> <!--La parada aquí sólo vale para los 3 segundos primeros, si no aparecerá en el div. No es muy útil pero así vemos como funciona-->
     </tr>
     <tr>
       <td><a href="#">window.setInterval(function, milliseconds);<br>
       </a><a href="@">window.clearInterval(timerVariable);</a><a href="#"> </a></td>
       <td>El método setInterval ( ) repite una función dada en cada intervalo de tiempo dado..<br>
       El método clearInterval ( ) detiene la ejecución de la función especificada en setTimeout ( ).</td>
-      <td><button type="button" onClick="myTimer()">Iniciar</button>
-        <button type="button" onClick="clearInterval(myVar)">Parar</button></td>
+      <td><button type="button" onClick="intervalo()">Iniciar</button>
+        <button type="button" onClick="parar()">Parar</button></td>
     </tr>
   </tbody>
 </table>
+<div id="pruebaReloj" class="divBom"></div>
 <br>
 <hr>
 </body>
