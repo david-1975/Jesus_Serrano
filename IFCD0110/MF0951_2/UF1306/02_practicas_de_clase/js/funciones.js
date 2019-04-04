@@ -24,8 +24,8 @@ function tamanoVentana(){
 
 	var h = window.innerHeight	|| document.documentElement.clientHeight || document.body.clientHeight;
 	
-	document.getElementById("infoVentana").innerHTML= "El ancho de la ventana es: " + w + 
-	" píxeles. El alto de la ventana es: " + h + " píxeles.";
+	document.getElementById("infoVentana").innerHTML= "<h3>El ancho de la ventana es: " + w + 
+	" píxeles. El alto de la ventana es: " + h + " píxeles.</h3>";
 }
 
 function urlPagina() {
@@ -55,6 +55,10 @@ function irAdelante() {
 }
 function irHistorial(){
 	window.history.go(-2); //Nos va a dos páginas hacia atrás, en positivo va hacia delante
+}
+function tamañoHistorial(){
+	var x= window.history.length;
+	alert ("El número de páginas en historial es " + x);
 }
 
 //Ventanas emergentes
@@ -92,19 +96,102 @@ function parar(){
 //Informacion Navegador
 
 function infoNavegador(){	
+	
 	//motor navegador
 	var motorNombre = window.navigator.appName;  //Si no añadimos window tambien funciona
 	if (motorNombre === "Netscape"){
 		motorNombre = "JavaScript";
 	}
+	
+	
 	//Nombre navegador
-	var navegador = window.navigator.appCodeName;
+	var navegador;  //Siempre devuelve Mozilla
+	var agenteUsuario1 = navigator.userAgent;
+	if (agenteUsuario1.indexOf("Firefox") > -1){		//Muy importante el orden de búsqueda
+		navegador = "Firefox";
+	}
+	else if ((agenteUsuario1.indexOf("Opera") > -1) || (agenteUsuario1.indexOf("OPR") > -1)){
+		navegador = "Opera";
+	}
+	else if ((agenteUsuario1.indexOf("Trident") > -1) || (agenteUsuario1.indexOf("MSIE") > -1)){
+		navegador = "I.Explorer";
+	}
+	else if (agenteUsuario1.indexOf("Edge") > -1){		
+		navegador = "Edge";
+	}		
+	else if ((agenteUsuario1.indexOf("Chrome") > -1) && (agenteUsuario1.indexOf("Safari") > -1)){		
+		navegador = "Chrome";
+	}
+	else if (agenteUsuario1.indexOf("Safari") > -1){		
+		navegador = "Safari";
+	}
+	else { navegador = "desconocido";}
+	
 	
 	//Version navegador
-	var version = window.navigator.appVersion;
+	var version = window.navigator.appVersion;//dependiendo del navegador devuelve algo así: 5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+	var agenteUsuario = navigator.userAgent; 
+	if (agenteUsuario.indexOf("Firefox") > -1){
+		var indice1 = agenteUsuario.lastIndexOf("Firefox/");
+		var versionN = agenteUsuario.substr(indice1,12);
+		var localizar = versionN.search("/");
+		version = versionN.slice(localizar+1,12);
+	}
+	else if ((agenteUsuario1.indexOf("Opera") > -1) || (agenteUsuario1.indexOf("OPR") > -1)){
+		var indice1 = agenteUsuario.lastIndexOf("OPR/");
+		var versionN = agenteUsuario.substr(indice1,15);
+		var localizar = versionN.search("/");
+		version = versionN.slice(localizar+1,8);
+	}
+	else if ((agenteUsuario1.indexOf("Trident") > -1) || (agenteUsuario1.indexOf("MSIE") > -1)){
+		var indice1 = agenteUsuario.lastIndexOf("Trident/");
+		var versionN = agenteUsuario.substr(indice1,13);
+		var localizar = versionN.search("/");
+		version = versionN.slice(localizar+1,11);
+	}
+	else if (agenteUsuario1.indexOf("Edge") > -1){		
+		var indice1 = agenteUsuario.lastIndexOf("Edge/");
+		var versionN = agenteUsuario.substr(indice1,13);
+		var localizar = versionN.search("/");
+		version = versionN.slice(localizar+1,9);
+	}		
+	else if ((agenteUsuario1.indexOf("Chrome") > -1) && (agenteUsuario1.indexOf("Safari") > -1)){		
+		var indice1 = agenteUsuario.lastIndexOf("Chrome/");
+		var versionN = agenteUsuario.substr(indice1,20);
+		var localizar = versionN.search("/");
+		version = versionN.slice(localizar+1,11);
+	}
+	else if (agenteUsuario1.indexOf("Safari") > -1){		
+		var indice1 = agenteUsuario.lastIndexOf("Safari/");
+		var versionN = agenteUsuario.substr(indice1,12);
+		var localizar = versionN.search("/");
+		version = versionN.slice(localizar+1,12);
+	}
+	else { navegador = "desconocido";}
 	
+		
 	//Propietario
-	var propietaro = "Google Inc";
+	var propietario;
+	var agenteUsuario1 = navigator.userAgent;
+	if (agenteUsuario1.indexOf("Firefox") > -1){		//Muy importante el orden de búsqueda
+		propietario = "Fundación Mozilla";
+	}
+	else if ((agenteUsuario1.indexOf("Opera") > -1) || (agenteUsuario1.indexOf("OPR") > -1)){
+		propietario = "Opera Software";
+	}
+	else if ((agenteUsuario1.indexOf("Trident") > -1) || (agenteUsuario1.indexOf("MSIE") > -1)){
+		propietario = "Microsoft Corporation";
+	}
+	else if (agenteUsuario1.indexOf("Edge") > -1){		
+		propietario = "Microsoft Corporation";
+	}		
+	else if ((agenteUsuario1.indexOf("Chrome") > -1) && (agenteUsuario1.indexOf("Safari") > -1)){		
+		propietario = "Google, Inc.";
+	}
+	else if (agenteUsuario1.indexOf("Safari") > -1){		
+		propietario = "Apple Computer, Inc.";
+	}
+	else { propietario = "desconocido";}
 	
 	//Lenguaje navegador
 	var lenguaje = window.navigator.language;
@@ -147,8 +234,7 @@ function infoNavegador(){
 		 (plataformaNav.indexOf("MSIE") > -1)) {
 		var indice8 = plataformaNav.lastIndexOf("WOW64");
 		plataforma = "Win64"; 
-	}
-	
+	}	
 	
 	//Navegador Online
 	var enlinea = window.navigator.onLine;
@@ -198,7 +284,7 @@ function infoNavegador(){
 	txt += "<p><b>Motor navegador: </b>" + motorNombre + "</p>";
 	txt += "<p><b>Nombre navegador: </b>" + navegador + "</p>";
 	txt += "<p><b>Versión navegador: </b>" + version + "</p>";
-	txt += "<p><b>Propietario: </b>" + propietaro + "</p>";
+	txt += "<p><b>Propietario: </b>" + propietario + "</p>";
 	txt += "<p><b>Lenguaje navegador: </b>" + lenguaje + "</p>";
 	txt += "<p><b>Sistema Operativo: </b>" + so + "</p>";
 	txt += "<p><b>Plataforma: </b>" + plataforma + "</p>";
@@ -210,6 +296,58 @@ function infoNavegador(){
 	
 	document.getElementById("infoNav").innerHTML = txt +		
 		
-	"El producto es " + navigator.product + "<br>" ;
-	 
+	"El producto es " + navigator.product + "<br>" ; //Siempre devuelve Geccko	 
 }
+
+//Geolocalización
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+   document.getElementById("geolocalizacion").innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+function showPosition(position) {	
+	document.getElementById("geolocalizacion").innerHTML = 
+		"<h3>Gelocalización</h3>Latitud: <strong>" + position.coords.latitude + "</strong><br>Longitud: <strong>" + position.coords.longitude + "</strong>"; 
+}
+
+//Cookies
+
+//Crear cookie
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  var expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+//Obtener cookie del documento
+function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+//Chequear cookies
+function checkCookie() {
+  var user = getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+    user = prompt("Please enter your name:", "");
+    if (user != "" && user != null) {
+      setCookie("username", user, 365);
+    }
+  }
+}
+var a = document.cookie;
+alert (a);
