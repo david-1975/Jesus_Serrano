@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Métodos Array Javascript</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+
+<script src="js/funciones-matrices.js"></script>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</head>
+
+<body onLoad="startTime()">
+<div class="container">
+<div id="txt"></div>
+<h1>Métodos Array (matríz)</h1>
+<hr>
+<h2>El concepto de matrices</h2>
+<p>Por defecto, JavaScript utilizará la zona horaria del navegador y mostrar una fecha como una cadena de texto completa:</p>
+<p><strong>Mar Mar 19 de 2019 12:50:06 GMT + 0100 (Hora Estándar de Europa central)</strong></p>
+<p>Los objetos de fecha se crean con  Date(), el constructor. new Date() crea un nuevo objeto Date con la <strong>fecha y hora actual</strong>:</p>
+<div id="contenedor" class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="bg-light shadow rounded p-3 h-100">
+				<h3 id="fechalarga" class="centrar text-dark mb-4"></h3>
+				<p id="fechalarga" class="centrar"></p>
+<p class="centrar">
+<a id="enlace1" name="link1" href="#" class="enlace">Enlace1</a>
+<a id="enlace2" name="link2" href="#" class="enlace">Enlace2</a>
+<a id="enlace3" name="link3" href="#" class="enlace">Enlace3</a>
+<a id="enlace4" name="link4" href="#" class="enlace">Enlace4</a>
+<a id="enlace5" name="link5" href="#" class="enlace">Enlace5</a>
+<a id="enlace6" name="link6" href="#" class="enlace">Enlace6</a>
+</p>
+				<p id="demo1"></p>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+	#contenedor {display:block;}
+</style>
+<script>
+	window.onload = function() {
+  //funciones a ejecutar
+		return reloj();
+};
+</script>
+<style>
+	.enlace{background-color: green;color: white;text-decoration: none;
+	    color: #FFFFFF;background-color: #4CAF50;padding: 10px 16px;}
+	.enlace:hover{background-color: green;color: white;text-decoration: none;
+	    color: #FFFFFF;background-color: #4CAF50;padding: 10px 16px;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		text-decoration: none;}
+	.centrar{text-align: center;}
+</style>
+<hr>
+<style>
+.w3-center {
+    text-align: center!important;
+	}
+.w3-btn, .w3-btn:link, .w3-btn:visited {
+    color: #FFFFFF;
+    background-color: #4CAF50;
+	}
+.w3-btn, .w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.w3-margin-bottom {
+    margin-bottom: 16px!important;
+}
+.w3-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	text-decoration: none;
+}
+
+  </style>
+
+<hr>
+<h2>Métodos de array</h2>
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>Síntasix</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="#">new Array()</a></td>
+      <td>Crea un nuevo objeto de tipo Array con los datos existentes en  variables</td>
+      <td><em>new Array()</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="matriz()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerAno() ">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerMes()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerDia()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerHora()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerMinutos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerSegundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerMilisegundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerHora()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cogerDiaSemana()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

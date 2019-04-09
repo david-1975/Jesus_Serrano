@@ -23,48 +23,65 @@
 		font-family: "Playfair Display";
 		letter-spacing: 5px;
 		}
-		#galletas{
-			display:none;			
+		#todo{											/*Estilo caja envolvente*/
+			background-color: black;
+			display: block;			
+			height: 100%;
+			opacity: 0.75;
+			position: fixed;			
+			width: 100%;
+			z-index: 10;		/*Le ponemos una capa superior a la página*/
+		}
+		#galletas{										/*Estilo caja cookies*/
 			background-color: maroon;			
 			border-radius: 10px;
 			bottom: 0;
 			box-shadow: 4px 4px 3px rgb(100,100,100);
 			color: yellow;
-			margin: 0 10% 8px 10%;
-			opacity: 1;
-			padding: 10px;
+			display:block;
+			font-size: 110%;					
+			padding: 10px 25px;
 			position: fixed;			
 			text-align: center;
-			width: 80%;
-			z-index: 1000;			
+			width: 100%;		/*Le ponemos el 100% para el ancho completo xq lo pide el ejercicio*/
+			z-index: 11;		/*Le ponemos una capa superior al div todo para que esté por encima*/			
 		}
-		#equis{
+		#equis{											/*Estilo cruz*/
 			font-size: 120%;
 			position: absolute;
 			right: 5px;
 			top: 0;
 			text-decoration-line: none;
 		}
-		#galletas button{
+		#galletas button{								/*Estilo botón*/
 			background-color: darkgoldenrod;
 			border-color: yellow;
 			border-radius: 4px;
-			color: darkred;
+			color: darkred;			
 			font-weight: 600;			
 		}	
-		#todo{	
-			background-color: black;
-			/*display: none;*/
-			width: 100%;
-			height: 100%;
-			z-index: 999;
+		#galletas button:hover{
+			color: yellow;
+			opacity: 0.7;
 		}
+		#galletas a:visited{
+			color: orangered;
+		}
+	
 	</style>	
 </head>
 
 <body>
-<div id="todo">
-	<!-- Navbar (sit on top) -->
+	<!-- COOKIES -->
+<div id="todo" onClick="aceptar()"></div>   <!--Div que ocupa toda la página -->
+		<div id="galletas">					<!--Div que informa de las cookies -->
+			<p style="text-align: justify;">Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación. Si pulsa en el botón o continúa navegando, consideramos que acepta su uso. Puede cambiar la configuración u obtener más información <a href="#"  target="_blank" onclick="texto()">‘aquí’.</a></p>
+			<a id="equis" href="#" onClick="aceptar()" title="Cerrar este mensaje es como aceptarlo">&times;</a>
+			<button type="button" onClick="aceptar()">ACEPTAR</button>
+		</div>
+	
+	
+<!-- Navbar (sit on top) -->
 	<div class="w3-top">
 	  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
 		<a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>
@@ -77,13 +94,6 @@
 	  </div>
 	</div>
 	
-	<!-- COOKIES -->
-	<div id="galletas"><script>window.onload = galletitas();</script>
-		<p>Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación. Si pulsa en el botón o continúa navegando, consideramos que acepta su uso. Puede cambiar la configuración u obtener más información <a href="#"  target="_blank" onclick="texto()">‘aquí’.</a></p>
-		<a id="equis" href="#" onClick="aceptar()" >&times;</a>
-		<button type="button" onClick="aceptar()">ACEPTAR</button>
-	</div>
-
 	<!-- Header -->
 	<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
 	  <img class="w3-image" src="img/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
@@ -160,6 +170,7 @@
 	<footer class="w3-center w3-light-grey w3-padding-32">
 	  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 	</footer>
-</div>
+
+
 </body>
 </html>
