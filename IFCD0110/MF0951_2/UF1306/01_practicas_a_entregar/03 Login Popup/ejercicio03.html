@@ -310,7 +310,18 @@ function w3_close() {
 	top: 2%;			
 	width: 40%;	
 	z-index: 10001;
-	transition: display 3s;
+	-webkit-animation-name: zoom;		/*TRANSICION*/
+	-webkit-animation-duration: 0.8s;
+	animation-name: zoom;
+	animation-duration: 0.8s;
+}
+@-webkit-keyframes zoom {
+	from {-webkit-transform:scale(0)} 
+	to {-webkit-transform:scale(1)}
+	}
+@keyframes zoom {					/*COMPORTAMIENTO DEL ZOOM*/
+	from {transform:scale(0)} 
+	to {transform:scale(1)}
 }
 #formulario img{
 	border-radius: 150px;
