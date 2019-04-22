@@ -1,40 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Ejercicio 03 Login Popup</title>
-	<meta charset="utf-8">
-	<meta name="keywords" content="HTML, CSS, JavaScript">
-	<meta name="author" content="Jesús Serrano">
-	<meta name="description" content="JavaScript">
-	<meta name="keywords" content="JS JavaScript">
-	<meta name="tittle" content="Introducción al JavaScript">
-	<meta name="generator" content="Dreamweaver">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-	
-  <link href="css/estilos.css" rel="stylesheet" type="text/css">
-  <script src="js/funciones.js"></script>
-	
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="css/estilologin.css">
+<script src="js/login.js"></script>
 <style>
 .w3-sidebar a {font-family: "Roboto", sans-serif}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </style>
 </head>
+<body class="w3-content" style="max-width:1200px">
 
-<body class="w3-content" style="max-width:1500px">
-<div id="todo" onClick="cerrar()"></div> <!--Fondo negro -->
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
     <h3 class="w3-wide"><b>LOGO</b></h3>
-    <p id="usuarioFinal"></p>		<!--MENSAJE DE BIENVENIDA AL USUARIO -->
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
     <a href="#" class="w3-bar-item w3-button">Shirts</a>
@@ -54,7 +42,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <a href="#" class="w3-bar-item w3-button">Shoes</a>
   </div>
   <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
-  <a href="#" class="w3-bar-item w3-button w3-padding" onclick="formu()">Login</a> 
+  <a href="#" class="w3-bar-item w3-button w3-padding" onclick="login()">Login</a> 
   <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
 </nav>
 
@@ -229,6 +217,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </div>
 </div>
 
+
+
 <script>
 // Accordion 
 function myAccFunc() {
@@ -256,191 +246,35 @@ function w3_close() {
 }
 </script>
 
-<!--FORMULARIO LOGIN -->
-
-<div id="formulario">
-	<img src="img/img_avatar.png" alt="foto" title="Foto usuario">
-	<p id="equis"><a href="#" onClick="cerrar()">&times;</a></p>
-	<form  name="inicioSesion" enctype="multipart/form-data" accept-charset="UTF-8">
-		<label for="usuario">Usuario</label><br>		<!--usuario -->
-		<input type="text" name="usuario" id="usuario" placeholder="Entrar usuario"  pattern="[A-Za-z0-9!?-]{4,12}" title="Introduzca su usuario, mínimo de 4 valores" required><br>
-		<p id="erroruser">Has introducido mal el usuario</p>
-		<div id="mostrarContra">
-			<label for="password">Contraseña</label><br>	<!--password -->
-			<input type="password" name="password" id="password" placeholder="Entrar contraseña" pattern="[0-9]{0,4}" title="Contraseña de 4 dígitos numéricos" required onFocus="verUsuario()"><br> <!--comprobamos datos recibidos en usuario -->
-			<input type="checkbox" name="visor" id="visor" onClick="verPass()"><span id="spanvisor">Ver contraseña</span>		
-			<p id="errorpass">Has introducido mal el password</p>
-		</div>		
-		<div id="mostrarPin">
-			<label for="password">Introduce PIN de usuario</label><br>		<!--pin -->
-			<input type="password" name="pin" id="pin" placeholder="Entrar PIN para recordar clave" pattern="[0-9]{0,3}" title="Contraseña de 3 dígitos numéricos" onFocus="verUsuario()" required><br>
-			<input type="checkbox" name="visorPin" id="visorPin" onClick="verPass()"><span id="spanvisorPin">Ver PIN</span>
-			<p id="errorpin">Has introducido mal el PIN</p>
-		</div>		
-		<a id="enviar" href="#" onClick="iniciar()">Iniciar sesión</a><br>		<!--iniciar sesion -->
-		<a id="enviarPin" href="#" onClick="iniciarPin()">Enviar Pin</a><br>
-		<input type="checkbox" name="recordatorio" id="recordar">Recordarme		
+<!-- Formulario de login -->
+<div id="divgrande">
+<div id="divpeq">
+	<form method="post" id="formlogin">
+		<fieldset>
+			<div class="datosusuario">
+				<img src="img/cancel.png" alt="cerrar" class="cerrar" onClick="cerrar()">
+				<div class="usuario">
+					<img src="img/img_avatar.png" alt="avatar" class="avatar">
+				</div>
+				<br>
+				<label for="usuario"><b>Usuario</b></label><br>
+				<input name="usuario" type="text" autofocus required id="usuario" placeholder="  Usuario" pattern="[A-Za-z0-9]+" onBlur="comprobarusuario()">
+				<label for="passw"><b>Contraseña </b></label><i class="far fa-eye" id="iojo" onClick="activarpw()" onMouseOver="document.getElementById('iojo').style.cursor='pointer'"></i><br>
+				<input type="password" name="passw" id="passw" maxlength="4" placeholder="  Contraseña" required pattern="[0-9]{4}*">
+				<br><br>
+				<input type="text" name="pin" id="pin" placeholder="  Indique aquí el Pin" class="coculto cpin">
+				<p class="coculto txtrojo" id="errorlogin"></p>
+				<input type="submit" value="Iniciar sesión" class="width100 colorverde" id="benviar" onClick="iniciarsesion()"><br>
+				<input type="checkbox" name="recordar" value="recordar" id="recordar"> Recordarme<br>
+			</div>
+			<div class="pieregistro">
+					<input type="submit" value="Cancelar" class="colornaranja fleft" onClick="cerrar()">	
+					<p class="fright centrado" style="vertical-align:1.2em;">¿Has olvidado la <a href="#" onClick="recordarpsw()">contraseña</a>?</p>	
+			</div>	
+		</fieldset>
 	</form>
-	<div id="pie">
-		<a href="#" id="cancelar" onClick="cerrar()">Cancelar</a>		<!--cancelar -->
-		<span id="olvidar">¿Has olvidado la <a href="#" onClick="remember()">contraseña?</a></span><!--recuperar-->
-		<span id="volver"><a href="#" onClick="volver()">Volver</a></span>
-	</div>
+</div>
 </div>
 
-<style>
-#todo{											/*Estilo caja envolvente*/
-	background-color: black;
-	display: none;			
-	height: 100%;
-	opacity: 0;
-	position: fixed;			
-	width: 100%;
-	z-index: 1000;		/*Le ponemos una capa superior a la página*/
-	transition: opacity 2s;
-}
-#formulario{
-	background-color: white;
-	border: 1px solid black;	
-	display: none;
-	left: 35%;
-	overflow: hidden;		
-	padding: 3px;
-	position: fixed;
-	top: 2%;			
-	width: 40%;	
-	z-index: 10001;
-	transition: display 3s;
-}
-#formulario img{
-	border-radius: 150px;
-	margin: 10px 0 5px 30%;
-	width: 200px;	
-}
-#formulario p a{
-	color:black;
-	font-size: 150%;
-	font-weight: 700;
-	text-decoration-line: none;
-}
-#enviar{							/*Boton enviar*/
-	background-color: forestgreen;
-	border: none;	
-	color: white;
-	display: block;
-	margin: 5% 5% 0 5%;
-	padding: 10px 20px 10px 20px;	
-	text-align: center;
-	text-decoration-line: none;
-	width: 90%;
-}
-#enviar:hover{
-	opacity: 0.95;
-	cursor:pointer;
-}
-#enviarPin{
-	background-color: forestgreen;
-	border: none;	
-	color: white;
-	display: none;
-	margin: 1% 5% 4% 5%;
-	padding: 10px 20px 10px 20px;	
-	text-align: center;
-	text-decoration-line: none;
-	width: 90%;
-}
- #enviarPin:hover{
-	opacity: 0.95;
-	cursor:pointer;
-}
-#formulario input[type=text], input[type=password] {		/*Casillas formulario*/
-	margin: 5px 5%;
-	padding: 10px;
-	width: 90%;
-}
-
-#formulario input[type=checkbox]{
-	margin: 0px 5px 10px 5%;
-	padding: 10px;	
-}
-#formulario label{
-	margin: 3%;
-	padding: 10px;	
-	font-weight: 700;
-}
-#recordar {
-	margin: 0px 5% 5px 5%;
-	padding: 10px;	
-	}
-#cancelar{						/*Boton salir o cancelar*/
-	background-color: red;
-	color: white;
-	margin: 0 5%;
-	padding: 8px 20px;
-	text-decoration-line: none;
-}
-#pie{							/*Div de la parte de abajo*/
-	margin: 5% 0 ;
-	}
-#pie span{
-	float: right;
-	margin-right: 20px;
-}
-#pie a:hover{
-	opacity: 0.7;
-}
-#equis{											/*Estilo cruz*/
-	font-size: 120%;
-	position: absolute;
-	right: 10px;
-	top: 0;
-	text-decoration-line: none;		
-		}
-#erroruser, #errorpass , #errorpin{			/*mensajes de error*/
-		color: red;
-		display: none;
-		float: none;	
-		margin: 0 5%;		
-	}
-#mostrarPin, #volver{
-		display: none;
-	}
-#mostrarContra{
-		display: block;
-	}
-#visor , #spanvisor, #visorPin, #spanvisorPin{
-		display: none;
-	}
-	
-@media screen and (max-width: 993px){		/**/
-	#formulario{
-		width: 30%;
-	}
-	#formulario img{
-			border-radius: 150px;
-			margin: 10px 0 10px 30%;
-			width: 100px;
-		}
-	#formulario input[type=text], input[type=password] {		
-	margin: 10px 5%;
-	padding: 10px;
-	width: 85%;
-	}
-	#enviar, #enviarPin{
-		width: 85%;
-	}
-	#olvidar{
-		display: block;
-		margin: 3%;
-	}
-@media screen and (max-width: 600px){
-	#formulario img{
-			border-radius: 150px;
-			margin: 10px 0 10px 30%;
-			width: 50px;
-		}
-	}
-
-</style>
 </body>
 </html>

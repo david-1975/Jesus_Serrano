@@ -1,4 +1,3 @@
-@charset "utf-8";
 /* CSS Document */
 
 /* W3.CSS 4.12 November 2018 by Jan Egil and Borge Refsnes */
@@ -235,130 +234,130 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
+/*---------------------------------*/
 
 
-
-
-
-
-#todo{											/*Estilo caja envolvente*/
-	background-color: black;
-	display: none;			
-	height: 100%;
-	opacity: 0.75;
-	position: fixed;	
-	width: 100%;
-	z-index: 1000;		/*Le ponemos una capa superior a la página*/
+.img {
+	border-radius: 100%;
+	margin: 5% 20%;
+	width: 60%;
+	
+	
 }
-#formulario{
-	background-color: white;
-	border: 1px solid black;	
-	display: block;
-	left: 35%;
-	overflow: hidden;		
-	padding: 3px;
-	position: fixed;
-	top: 2%;			
-	width: 40%;	
-	z-index: 10001;
+.Char{
+	position: absolute;
+	top: 5px;
+	margin-left: 90%;
+	
+	
 }
-#formulario img{
-	border-radius: 150px;
-	margin: 10px 0 5px 30%;
-	width: 200px;	
+.Char a {
+	text-decoration: none;
+	color: black;
+	font-size: 2em;
 }
-#formulario p a{
-	color:black;
-	font-size: 150%;
-	font-weight: 700;
-	text-decoration-line: none;
+.Char a:hover {
+	color: red;
+	
 }
-#enviar{							/*Boton enviar*/
-	background-color: forestgreen;
-	border: none;	
-	color: white;
-	display: block;
-	margin: 0 5%;
-	padding: 10px 20px 10px 20px;	
-	text-align: center;
-	text-decoration-line: none;
+label {
+	font-size: 1.5em;
+	margin: 0% 5%;
+	
+	
+	
+}
+input[type="text"] {
+	padding: 5px;
+	margin: 1% 5%;
 	width: 90%;
+	
 }
-#enviar:hover{
-	opacity: 0.95;
-	cursor:pointer;
-}
-#enviarPin{
-	background-color: forestgreen;
-	border: none;	
-	color: white;
+
+#pin1 {
 	display: none;
-	margin: 0 5%;
-	padding: 10px 20px 10px 20px;	
-	text-align: center;
-	text-decoration-line: none;
+	padding: 5px;
+	margin: 1% 5%;
 	width: 90%;
+	
 }
- #enviarPin:hover{
-	opacity: 0.95;
-	cursor:pointer;
+#mensaje {
+	display: none;
+	padding: 5px;
+	margin: 1% 5%;
+	width: 90%;
+	color: red;
+	
 }
-#formulario input[type=text], input[type=password] {		/*Casillas formulario*/
-	margin: 5px 5%;
+input[type="password"] {
+	padding: 5px;
+	margin: 1% 5%;
+	width: 90%;
+	
+}
+input[type="submit"]{
+	background-color: green;
+	width: 90%;
+	padding: 1%;
+	color: white;
+	font-size: 1.5em;
+	margin: 0% 5%;
+	
+}
+input[type="checkbox"]{
 	padding: 10px;
-	width: 85%;
+	font-size: 1.7em;
+	margin: 5%;
 }
-#formulario input[type=checkbox]{
-	margin: 0px 5px 10px 5%;
-	padding: 10px;	
+.footer {
+	background-color: lightgray;
+	padding: 5%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
-#visorPin {
-	margin: 0 5%;
-}
-#formulario label{
-	margin: 3%;
-	padding: 10px;	
-	font-weight: 700;
-}
-#recordar {
-	margin: 0px 5% 5px 5%;
-	padding: 10px;	
-	}
-#cancelar{						/*Boton salir o cancelar*/
+button[type="button"]{
 	background-color: red;
 	color: white;
-	margin: 0 5%;
-	padding: 8px 20px;
-	text-decoration-line: none;
 }
-#pie{							/*Div de la parte de abajo*/
-	margin: 10px 0 ;
-	}
-#pie span{
-	float: right;
-	margin-right: 20px;
-}
-#pie a:hover{
-	opacity: 0.7;
-}
-#equis{											/*Estilo cruz*/
-	font-size: 120%;
-	position: absolute;
-	right: 10px;
-	top: 0;
-	text-decoration-line: none;		
-		}
-#erroruser, #errorpass , #errorpin{			/*mensajes de error*/
-		color: red;
-		display: none;
-		float: none;	
-		margin: 0 5%;		
-	}
-#mostrarPin, #volver{
-		display: none;
-	}
-#mostrarContra{
-		display: block;
-	}
 
+/* El Modal (pantalla oscura la de debajo del formulario) */
+.modal {
+  display: none; /*oculto por defecto*/
+  position: fixed;  /*Permanece en el sitio*/ 
+  z-index: 10000;  /*Colocado en primera posición*/  
+  padding-top: 100px;  /*Localización en la caja*/ 
+  left: 0;
+  top: 0;
+  width: 100%; /* Anchura completa */
+  height: 100%; /* Altura completa */
+  overflow: auto;  /* Scroll activado si fuese necesario */ 
+  background-color: rgba(0,0,0,0.9); /* Opacidad*/
+  transition: 2s ease;
+}
 
+/* Contenido del Modal (imagen) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 350px;
+  border: 1px solid red;	
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  background-color: ghostwhite;
+  position: relative;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
