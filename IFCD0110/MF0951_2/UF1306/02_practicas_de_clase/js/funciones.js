@@ -349,5 +349,3 @@ function checkCookie() {
     }
   }
 }
-var a = document.cookie;
-alert (a);

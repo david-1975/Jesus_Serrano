@@ -2,15 +2,15 @@
 
 //Boton login de la pagina abre el formulario
 function formu(){
-	document.getElementById("formulario").style.display = "block";
-	document.getElementById("todo").style.opacity = "0.75";
-	document.getElementById("todo").style.display = "block";			//FALTA TRANSICION
+	document.getElementById("formulario").style.display = "block";	
+	document.getElementById("todo").style.display = "block";		
 }
 
 //Salir del login
 function cerrar(){
 	document.getElementById("formulario").style.display = "none";
 	document.getElementById("todo").style.display = "none";
+	document.getElementById("subscribe").style.display = "none";
 }
 
 //COMPROBACION DE USUARIO
@@ -176,7 +176,18 @@ function guardarCookie(){
 		d.setTime(d.getTime() - (2 * 24 * 60 * 60 * 1000)); //asignamos 2 dias la cookie
 		var expires = "expires="+d.toUTCString();
 		document.cookie = primeraCookie + "=" + visit + ";" + expires + ";path=/";
-		alert("Se ha eliminado la cookie");
-	}
-  
+	}  
 }
+
+
+//subscribirse
+function subs(){	
+	document.getElementById("todo").style.display = "block";
+	document.getElementById("subscribe").style.display = "block";	
+}
+
+//newsletter
+function news(){	
+	document.getElementById("newsletter").style.display = "block";
+}
+
