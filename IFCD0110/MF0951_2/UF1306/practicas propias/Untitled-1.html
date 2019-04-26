@@ -5,7 +5,7 @@
 <title>Práctica repaso</title>
 </head>
 
-<body>
+<body> 
 <p>INDEX<br>
   --------------------------------------------------------<br>
   Integrar componentes software en páginas web</p>
@@ -67,9 +67,34 @@ function ejercicio1(){
   
 <p>Ejercicio 3: <br>
   Crea una función que, introduciendo 3 frutas separadas por comas en un campo de formulario, muestre los datos introducidos en una lista desordenada de HTML. Mostrar la lista debajo del campo de formulario. </p>
-  
-  
-  
+ <form id="form3" name="form3" method="post">
+  <label for="text1">Introduce 3 frutas</label>
+  <br>
+  <input type="text" name="text1" id="text1">
+  <input type="button" name="button3" id="button3" value="Enviar" onClick="ejercicio3()"><br>
+  <label for="text3" id="etiqueta3"></label>
+</form>
+   <script>
+	   function ejercicio3(){
+		if (document.getElementById("text1").value != "") {		
+			var palabras = document.getElementById("text1").value;
+			var sinespaciosaloslados = palabras.trim();		//Elimino los espacios a los lados
+			var sincomas = sinespaciosaloslados.replace(/,/g, " ");		//Elimino las comas para la búsqueda
+
+			var busqueda1 = sincomas.indexOf(" ");  //Búsqueda hasta primer espacio
+			var busqueda2 = sincomas.lastIndexOf(" ");		//Búsqueda último espacio
+
+			var a = sincomas.slice(0, busqueda1);
+			var b = sincomas.slice(busqueda1 +1, busqueda2);
+			var c = sincomas.slice(busqueda2+1);
+			document.getElementById("etiqueta3").innerHTML= "<ul><li>" + a + "</li><li>" + b + "</li><li>" + c + "</li></ul>";
+		}
+		   else{
+			   document.getElementById("etiqueta3").innerHTML= "introduce 3 frutas";
+			   document.getElementById("etiqueta3").style.color = "red";
+		   }
+	   }	 
+	</script>    
 <p>Ejercicio 4: <br>
   Crea una función que, introduciendo en un campo de formulario una fecha, capture la hora, minutos y segundos del sistema, y muestre la fecha introducida junto a la hora del sistema en este formato: “Has iniciado sesión el día 13/11/2018 a las 15:30:25”</p>
   
@@ -77,8 +102,29 @@ function ejercicio1(){
   
 <p>Ejercicio 5: <br>
   Crea una función que, introduciendo un precio en un campo de formulario, calcule el precio final, aplicándole un descuento del 20%, y sumándole los impuestos 21% IVA. Mostrar el precio con el símbolo del Euro y con dos decimales. Utiliza una etiqueta de párrafo debajo del campo de formulario, para mostrar el precio desglosado como en el ejemplo.</p>
-  
-  
+  <form id="form5" name="form5" method="post">
+	<label for="number5">Introduce el precio del producto:<br>
+	</label>
+	<input type="number" name="number5" id="number5">
+	<input type="button" name="button5" id="button5" value="Enviar" onClick="ejercicio5()">
+	 <label for="text5" id="etiqueta5"></label>
+	</form>
+  <script>
+	  function ejercicio5(){
+	if (document.getElementById("number5").value != "") {
+		var precio = parseInt(document.getElementById("number5").value);
+
+		var descuento = precio * 0.20; 
+		var descontado = precio - descuento;
+		var iva = descontado * 0.21 ;
+		var total = descontado - iva;
+
+		document.getElementById('etiqueta5').innerHTML= "Factura: " + "<br>" + "Producto............. " + precio + "€" + "<br>" +
+			"descuento 20%.. -" + descuento.toFixed(2) + "€" + "<br>" + "IVA.................... " + 
+			iva.toFixed(2) + "€" + "<br>" + "Total factura..... " + "<strong>" + total.toFixed(2) + "€" + "</strong>";
+	}
+}	
+</script>
   
 <p>Ejercicio 6: <br>
   Crear una función que, introduciendo la fecha de nacimiento de una persona en un campo de formulario, le diga el signo del zodiaco y le muestre una imagen del signo encima del texto. La imagen y el texto deben de estar alineadas al centro.</p>
@@ -87,14 +133,90 @@ function ejercicio1(){
   
 <p>Ejercicio 7: <br>
   Crear una función que, introduciendo un número del 1 al 10 en un campo de formulario, muestre la tabla de multiplicar de ese número. Muestra el resultado de la tabla de multiplicar en forma de listado hacia abajo como se muestra en el ejemplo. Mostrar mensaje de aviso en rojo si no se introduce un número comprendido entre 1 y 10.</p>
-  
-  
+  <form id="form7" name="form7" method="post">
+  <label for="number7">Introduce un número</label>
+  <br>
+  <input type="number" name="number5" id="number7">
+  <input type="button" name="button5" id="button7" value="Enviar" onClick="ejercicio7()">
+  <br>
+  <label for="number7" id="etiqueta7"></label>
+</form>
+  <script>
+	function ejercicio7(){				
+			var y = document.getElementById("number7").value;
+			if( y > 0 && y < 11){
+				var x = "";
+				var resultado = "";						
+				for( x = 1 ; x <= 10 ; x++){
+					resultado += "<tr>" + "<td>" + y + " x " + x + " = " + (x * y) + 
+					"</td>" + "</tr>";  			
+					}
+				document.getElementById("etiqueta7").innerHTML= 
+				"<table style='border:1px solid grey'><tbody><tr><th>La tabla de multiplicar es: </th></tr>" +  resultado + "</tbody> </table>";
+				document.getElementById("etiqueta7").style.color = "green";
+			}
+			else{
+				document.getElementById("etiqueta7").innerHTML= "introduzca un número del 1 al 10";
+				document.getElementById("etiqueta7").style.color = "red";
+			}				
+		}
+	</script>
   
 <p>Ejercicio 8:<br>
   Crear una función que, al introducir una fecha de nacimiento a partir de año 2000, compruebe a que categoría deportiva de fútbol pertenece. Utiliza una etiqueta de párrafo debajo del campo de formulario, para mostrar la categoría.</p>
-  
-  
-  
+  <form id="form8" name="form8" method="post">
+  <label for="date3">Introduce fecha de nacimiento</label><br>
+  <input type="date" name="date8" id="date8">
+  <input type="button" name="button8" id="button8" value="Enviar" onClick="ejercicio8()"><br>
+  <label for="date8" id="etiqueta8"></label>
+  </form>
+  <script>
+  	function ejercicio8(){
+		if (document.getElementById("date8").value != "") {
+			var fecha = new Date(document.getElementById('date8').value);
+			var fechaActual = new Date();			
+			var edad = (fechaActual.getFullYear() - fecha.getFullYear());
+			var resultado = " ";
+			switch (edad) {
+				case 5:
+				case 6:
+				case 7:
+				   resultado = "Prebenjamin";
+				   break;
+				case 8:
+				case 9:
+				   resultado = "Benjamin";
+				   break;
+				case 10:
+				case 11:
+				   resultado = "Alevin";
+				   break;
+				case 12:
+				case 13:
+				   resultado = "Infantil";
+				   break;
+				case 14:
+				case 15:
+				   resultado = "Cadete";
+				   break;
+				case 16:
+				case 17:
+				case 18:
+				   resultado = "Juvenil";
+				   break;
+				default: 
+				   break;
+			}
+				if (edad > 18) {
+					resultado = "Aficionado, si eres profesional eres un sortudo";
+				}
+				else if (edad < 5) {
+					resultado = "No tienes la edad aún";
+				}	
+			document.getElementById("etiqueta8").innerHTML = "Tienes " + edad + " años" + "<br>" + "Tu categoría es " + resultado;
+		}
+}
+ </script>  
 <p>Ejercicio 9: <br>
   Crea una función que, al pulsar en un botón de formulario, le pida al usuario sus datos personales a través del prompt y los muestre en una tabla html creada con Javascript. Los datos a recoger son: Nombre, apellido, teléfono, email, fecha de nacimiento y la edad se deberá calcular. Mostrar como en el ejemplo.</p>
   
